@@ -181,15 +181,22 @@ def fetch_match_details(
 
 
 def search_cricket_match_info(query: str) -> Optional[str]:
-    """
-    Use WebSearch MCP tool to find match info.
+    """Search DuckDuckGo for cricket match info; returns raw result text."""
+    import urllib.request
+    import urllib.parse
+    import re
 
-    In implementation, this will call the WebSearch tool to search for cricket match details.
-    For now, returns None to indicate search not implemented.
-    """
-    # This will be called from CLI which has access to WebSearch tool
-    # Implementation returns search result text
-    return None
+    try:
+        params = urllib.parse.urlencode({"q": query, "kl": "us-en"})
+        url = f"https://html.duckduckgo.com/html/?{params}"
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as response:
+            html = response.read().decode("utf-8", errors="ignore")
+        text = re.sub(r"<[^>]+>", " ", html)
+        text = re.sub(r"\s+", " ", text)
+        return text[:6000]
+    except Exception:
+        return None
 
 
 def parse_search_results(
