@@ -279,10 +279,12 @@ def _calculate_pitch_calibration_adjustment(
     # Second-order effect 2: Spin pitch + aggressive batting in dominant series
     # (Model currently suppresses -15, but dominant home teams (3-0+) score much better)
     # Validation showed India vs SL Match 4: spin -15 penalty was too aggressive
+    # Phase 2 refinement: elite teams at home with dominant series position → no suppression
     elif pitch_type == "spin_friendly" and scenario == "batting_first":
         if series_score >= 3:
-            # Dominant home team on spin pitch: much less suppression (-5 not -15)
-            additional = 10.0  # Reduce penalty from -15 to -5 effectively
+            # Dominant home team on spin pitch: elite scenario, minimal/no suppression
+            # Changed from -5 to 0 (no penalty) when dominant
+            additional = 15.0  # Reduce penalty from -15 to 0 effectively
         else:
             # Normal case: home team batting on spin pitch with momentum is less suppressed
             additional = 5.0  # Reduce penalty from -15 to -10 effectively

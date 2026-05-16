@@ -11,16 +11,16 @@
     "series_result": "loss",
     "series_wins_before": 0
   },
-  "generated_at": "2026-05-16T12:58:10.719358Z",
+  "generated_at": "2026-05-16T12:59:34.030965Z",
   "scenario": "pre_toss_blended",
   "pitch_difficulty": "very_difficult",
   "chase_penalty": -30,
   "base_runs_estimate": 120.8,
-  "adjusted_runs_estimate": 93.3,
+  "adjusted_runs_estimate": 93.2,
   "runs_lower": 103.8,
   "runs_upper": 107.8,
   "win_probability": 0.283,
-  "win_probability_reasoning": "Pre-toss blend: batting-first WP=38.1%, chasing WP=18.5% \u2192 blended 28.3%",
+  "win_probability_reasoning": "Pre-toss blend: batting-first WP=38.2%, chasing WP=18.4% \u2192 blended 28.3%",
   "selected_xi": [
     "nigar_sultana",
     "nahida_akter",
@@ -202,10 +202,10 @@
   "warnings": [],
   "batting_first_scenario": {
     "scenario": "batting_first",
-    "adjusted_runs_estimate": 110.6,
-    "runs_lower": 118.6,
-    "runs_upper": 122.6,
-    "win_probability": 0.381,
+    "adjusted_runs_estimate": 110.8,
+    "runs_lower": 118.8,
+    "runs_upper": 122.8,
+    "win_probability": 0.382,
     "pitch_difficulty": "very_difficult",
     "chase_penalty": 0,
     "tactical_flags": [
@@ -213,14 +213,14 @@
       "set_par_total_conservative_approach_first_6_overs",
       "underdog_scenario_high_risk_strategy_required"
     ],
-    "strategy_brief": "STRATEGY BRIEF: BANGLADESH vs PAKISTAN at Tribhuvan University International Cricket Ground\n======================================================================\n\nTOSS: bangladesh chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~111 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 38% (POOR)\n\nPITCH: Spin Friendly\n  High altitude (1300m) \u2014 ball carries well but pitch is slow and low. Spinners get grip and turn. Compact ground dimensions assist batters. Scores tend to be moderate.\n\nBATTING ORDER (Top 4):\n  1. Nigar Sultana Joty (SR 90)\n  2. Juairiya Ferdous (SR 105)\n  3. Dilara Akter (SR 106)\n  4. Sobhana Mostary (SR 91)\n\nBOWLING PLAN:\n  Powerplay: Rabeya Khan, Fahima Khatun, Nahida Akter, Ritu Moni\n  Middle: Nahida Akter, Ritu Moni, Taj Nehar, Fahima Khatun, Rabeya Khan\n  Death: Nahida Akter, Ritu Moni, Fahima Khatun, Shorna Akter, Rabeya Khan\n\nTACTICAL NOTES:\n  \u2022 Prioritise spinners middle overs\n  \u2022 Set par total conservative approach first 6 overs\n  \u2022 Underdog scenario high risk strategy required\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: BANGLADESH vs PAKISTAN at Tribhuvan University International Cricket Ground\n======================================================================\n\nTOSS: bangladesh chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~111 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 38% (POOR)\n\nPITCH: Spin Friendly\n  High altitude (1300m) \u2014 ball carries well but pitch is slow and low. Spinners get grip and turn. Compact ground dimensions assist batters. Scores tend to be moderate.\n\nBATTING ORDER (Top 4):\n  1. Nigar Sultana Joty (SR 90)\n  2. Juairiya Ferdous (SR 105)\n  3. Dilara Akter (SR 106)\n  4. Sobhana Mostary (SR 91)\n\nBOWLING PLAN:\n  Powerplay: Ritu Moni, Nahida Akter, Fahima Khatun, Rabeya Khan\n  Middle: Fahima Khatun, Nahida Akter, Taj Nehar, Ritu Moni, Rabeya Khan\n  Death: Fahima Khatun, Nahida Akter, Ritu Moni, Shorna Akter, Rabeya Khan\n\nTACTICAL NOTES:\n  \u2022 Prioritise spinners middle overs\n  \u2022 Set par total conservative approach first 6 overs\n  \u2022 Underdog scenario high risk strategy required\n\n======================================================================"
   },
   "chasing_scenario": {
     "scenario": "chasing",
-    "adjusted_runs_estimate": 76.0,
-    "runs_lower": 89.0,
-    "runs_upper": 93.0,
-    "win_probability": 0.185,
+    "adjusted_runs_estimate": 75.7,
+    "runs_lower": 88.7,
+    "runs_upper": 92.7,
+    "win_probability": 0.184,
     "pitch_difficulty": "very_difficult",
     "chase_penalty": -30,
     "tactical_flags": [
@@ -229,6 +229,6 @@
       "monitor_required_run_rate_per_phase",
       "underdog_scenario_high_risk_strategy_required"
     ],
-    "strategy_brief": "STRATEGY BRIEF: BANGLADESH vs PAKISTAN at Tribhuvan University International Cricket Ground\n======================================================================\n\nTOSS: pakistan chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~76 runs to win.\n  (Chase penalty applied: -30 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 18% (FAILING)\n\nPITCH: Spin Friendly\n  High altitude (1300m) \u2014 ball carries well but pitch is slow and low. Spinners get grip and turn. Compact ground dimensions assist batters. Scores tend to be moderate.\n\nBATTING ORDER (Top 4):\n  1. Nigar Sultana Joty (SR 90)\n  2. Juairiya Ferdous (SR 105)\n  3. Dilara Akter (SR 106)\n  4. Sobhana Mostary (SR 91)\n\nBOWLING PLAN:\n  Powerplay: Rabeya Khan, Fahima Khatun, Nahida Akter, Ritu Moni\n  Middle: Nahida Akter, Ritu Moni, Taj Nehar, Fahima Khatun, Rabeya Khan\n  Death: Nahida Akter, Ritu Moni, Fahima Khatun, Shorna Akter, Rabeya Khan\n\nTACTICAL NOTES:\n  \u2022 Prioritise spinners middle overs\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n  \u2022 Underdog scenario high risk strategy required\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: BANGLADESH vs PAKISTAN at Tribhuvan University International Cricket Ground\n======================================================================\n\nTOSS: pakistan chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~76 runs to win.\n  (Chase penalty applied: -30 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 18% (FAILING)\n\nPITCH: Spin Friendly\n  High altitude (1300m) \u2014 ball carries well but pitch is slow and low. Spinners get grip and turn. Compact ground dimensions assist batters. Scores tend to be moderate.\n\nBATTING ORDER (Top 4):\n  1. Nigar Sultana Joty (SR 90)\n  2. Juairiya Ferdous (SR 105)\n  3. Dilara Akter (SR 106)\n  4. Sobhana Mostary (SR 91)\n\nBOWLING PLAN:\n  Powerplay: Ritu Moni, Nahida Akter, Fahima Khatun, Rabeya Khan\n  Middle: Fahima Khatun, Nahida Akter, Taj Nehar, Ritu Moni, Rabeya Khan\n  Death: Fahima Khatun, Nahida Akter, Ritu Moni, Shorna Akter, Rabeya Khan\n\nTACTICAL NOTES:\n  \u2022 Prioritise spinners middle overs\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n  \u2022 Underdog scenario high risk strategy required\n\n======================================================================"
   }
 }

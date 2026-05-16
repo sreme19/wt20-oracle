@@ -11,16 +11,16 @@
     "series_result": "loss",
     "series_wins_before": 0
   },
-  "generated_at": "2026-05-16T12:58:00.388389Z",
+  "generated_at": "2026-05-16T12:59:23.050384Z",
   "scenario": "pre_toss_blended",
   "pitch_difficulty": "difficult",
   "chase_penalty": -25,
-  "base_runs_estimate": 126.3,
-  "adjusted_runs_estimate": 116.1,
+  "base_runs_estimate": 126.2,
+  "adjusted_runs_estimate": 116.0,
   "runs_lower": 111.8,
   "runs_upper": 115.8,
-  "win_probability": 0.443,
-  "win_probability_reasoning": "Pre-toss blend: batting-first WP=49.3%, chasing WP=39.2% \u2192 blended 44.3%",
+  "win_probability": 0.442,
+  "win_probability_reasoning": "Pre-toss blend: batting-first WP=49.1%, chasing WP=39.3% \u2192 blended 44.2%",
   "selected_xi": [
     "hayley_matthews",
     "deandra_dottin",
@@ -231,24 +231,24 @@
   "warnings": [],
   "batting_first_scenario": {
     "scenario": "batting_first",
-    "adjusted_runs_estimate": 126.2,
-    "runs_lower": 124.2,
-    "runs_upper": 128.2,
-    "win_probability": 0.493,
+    "adjusted_runs_estimate": 126.3,
+    "runs_lower": 124.3,
+    "runs_upper": 128.3,
+    "win_probability": 0.491,
     "pitch_difficulty": "difficult",
     "chase_penalty": 0,
     "tactical_flags": [
       "dew_factor_affects_grip_and_swing",
       "set_par_total_conservative_approach_first_6_overs"
     ],
-    "strategy_brief": "STRATEGY BRIEF: WEST_INDIES vs SRI_LANKA at National Cricket Stadium\n======================================================================\n\nTOSS: west_indies chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~126 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 49% (POOR)\n\nPITCH: Balanced\n  Caribbean pitch \u2014 decent pace early, slows significantly as match progresses. Spinners very effective from over 8 onwards. High humidity softens the ball quickly.\n\nBATTING ORDER (Top 4):\n  1. DJS Dottin (SR 117)\n  2. SR Taylor (SR 97)\n  3. HK Matthews (SR 110)\n  4. J Glasgow (SR 88)\n\nBOWLING PLAN:\n  Powerplay: DJS Dottin, SR Taylor, HK Matthews, Q Joseph, Z James, CA Henry\n  Middle: DJS Dottin, SR Taylor, HK Matthews, Q Joseph, CA Henry\n  Death: DJS Dottin, SR Taylor, HK Matthews, Q Joseph, Z James, CA Henry\n\nTACTICAL NOTES:\n  \u2022 Dew factor affects grip and swing\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: WEST_INDIES vs SRI_LANKA at National Cricket Stadium\n======================================================================\n\nTOSS: west_indies chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~126 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 49% (POOR)\n\nPITCH: Balanced\n  Caribbean pitch \u2014 decent pace early, slows significantly as match progresses. Spinners very effective from over 8 onwards. High humidity softens the ball quickly.\n\nBATTING ORDER (Top 4):\n  1. DJS Dottin (SR 117)\n  2. SR Taylor (SR 97)\n  3. HK Matthews (SR 110)\n  4. J Glasgow (SR 88)\n\nBOWLING PLAN:\n  Powerplay: DJS Dottin, HK Matthews, CA Henry, Z James, Q Joseph, SR Taylor\n  Middle: DJS Dottin, HK Matthews, CA Henry, Q Joseph, SR Taylor\n  Death: DJS Dottin, HK Matthews, CA Henry, Z James, Q Joseph, SR Taylor\n\nTACTICAL NOTES:\n  \u2022 Dew factor affects grip and swing\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
   },
   "chasing_scenario": {
     "scenario": "chasing",
-    "adjusted_runs_estimate": 105.9,
-    "runs_lower": 99.4,
-    "runs_upper": 103.4,
-    "win_probability": 0.392,
+    "adjusted_runs_estimate": 105.7,
+    "runs_lower": 99.2,
+    "runs_upper": 103.2,
+    "win_probability": 0.393,
     "pitch_difficulty": "difficult",
     "chase_penalty": -25,
     "tactical_flags": [
@@ -257,6 +257,6 @@
       "monitor_required_run_rate_per_phase",
       "underdog_scenario_high_risk_strategy_required"
     ],
-    "strategy_brief": "STRATEGY BRIEF: WEST_INDIES vs SRI_LANKA at National Cricket Stadium\n======================================================================\n\nTOSS: sri_lanka chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~106 runs to win.\n  (Chase penalty applied: -25 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 39% (POOR)\n\nPITCH: Balanced\n  Caribbean pitch \u2014 decent pace early, slows significantly as match progresses. Spinners very effective from over 8 onwards. High humidity softens the ball quickly.\n\nBATTING ORDER (Top 4):\n  1. DJS Dottin (SR 117)\n  2. HK Matthews (SR 110)\n  3. SR Taylor (SR 97)\n  4. J Glasgow (SR 88)\n\nBOWLING PLAN:\n  Powerplay: DJS Dottin, SR Taylor, HK Matthews, Q Joseph, Z James, CA Henry\n  Middle: DJS Dottin, SR Taylor, HK Matthews, Q Joseph, CA Henry\n  Death: DJS Dottin, SR Taylor, HK Matthews, Q Joseph, Z James, CA Henry\n\nTACTICAL NOTES:\n  \u2022 Dew factor affects grip and swing\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n  \u2022 Underdog scenario high risk strategy required\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: WEST_INDIES vs SRI_LANKA at National Cricket Stadium\n======================================================================\n\nTOSS: sri_lanka chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~106 runs to win.\n  (Chase penalty applied: -25 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 39% (POOR)\n\nPITCH: Balanced\n  Caribbean pitch \u2014 decent pace early, slows significantly as match progresses. Spinners very effective from over 8 onwards. High humidity softens the ball quickly.\n\nBATTING ORDER (Top 4):\n  1. DJS Dottin (SR 117)\n  2. HK Matthews (SR 110)\n  3. SR Taylor (SR 97)\n  4. J Glasgow (SR 88)\n\nBOWLING PLAN:\n  Powerplay: DJS Dottin, HK Matthews, CA Henry, Z James, Q Joseph, SR Taylor\n  Middle: DJS Dottin, HK Matthews, CA Henry, Q Joseph, SR Taylor\n  Death: DJS Dottin, HK Matthews, CA Henry, Z James, Q Joseph, SR Taylor\n\nTACTICAL NOTES:\n  \u2022 Dew factor affects grip and swing\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n  \u2022 Underdog scenario high risk strategy required\n\n======================================================================"
   }
 }
