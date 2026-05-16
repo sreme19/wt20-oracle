@@ -11,16 +11,16 @@
     "series_result": "win",
     "series_wins_before": 0
   },
-  "generated_at": "2026-05-16T13:05:14.347401Z",
+  "generated_at": "2026-05-16T13:06:10.634088Z",
   "scenario": "pre_toss_blended",
   "pitch_difficulty": "easy",
   "chase_penalty": -15,
-  "base_runs_estimate": 144.1,
-  "adjusted_runs_estimate": 148.6,
-  "runs_lower": 134.6,
-  "runs_upper": 138.6,
-  "win_probability": 0.508,
-  "win_probability_reasoning": "Pre-toss blend: batting-first WP=53.6%, chasing WP=48.0% \u2192 blended 50.8%",
+  "base_runs_estimate": 144.0,
+  "adjusted_runs_estimate": 148.5,
+  "runs_lower": 134.5,
+  "runs_upper": 138.5,
+  "win_probability": 0.506,
+  "win_probability_reasoning": "Pre-toss blend: batting-first WP=52.6%, chasing WP=48.6% \u2192 blended 50.6%",
   "selected_xi": [
     "nat_sciver_brunt",
     "danni_wyatt_hodge",
@@ -302,10 +302,10 @@
   ],
   "batting_first_scenario": {
     "scenario": "batting_first",
-    "adjusted_runs_estimate": 160.0,
-    "runs_lower": 142.0,
-    "runs_upper": 146.0,
-    "win_probability": 0.536,
+    "adjusted_runs_estimate": 159.9,
+    "runs_lower": 141.9,
+    "runs_upper": 145.9,
+    "win_probability": 0.526,
     "pitch_difficulty": "easy",
     "chase_penalty": 0,
     "tactical_flags": [
@@ -313,14 +313,14 @@
       "dew_factor_affects_grip_and_swing",
       "set_par_total_conservative_approach_first_6_overs"
     ],
-    "strategy_brief": "STRATEGY BRIEF: ENGLAND vs NEW_ZEALAND at Kia Oval\n======================================================================\n\nTOSS: england chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~160 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 53% (FAIR)\n\nPITCH: Flat\n  Traditionally good batting surface; high scores common in T20\n\nBATTING ORDER (Top 4):\n  1. Nat Sciver-Brunt (SR 138)\n  2. Danni Wyatt-Hodge (SR 126)\n  3. Sophia Dunkley (SR 122)\n  4. Amy Jones (SR 119)\n\nBOWLING PLAN:\n  Powerplay: Issy Wong, Danni Wyatt-Hodge, Dani Gibson, Nat Sciver-Brunt, Sophie Ecclestone, Heather Knight, Sophia Dunkley, Alice Capsey, Freya Kemp, Lauren Filer\n  Middle: Issy Wong, Danni Wyatt-Hodge, Dani Gibson, Nat Sciver-Brunt, Sophie Ecclestone, Heather Knight, Sophia Dunkley, Alice Capsey, Freya Kemp, Lauren Filer\n  Death: Issy Wong, Danni Wyatt-Hodge, Dani Gibson, Nat Sciver-Brunt, Sophie Ecclestone, Heather Knight, Sophia Dunkley, Alice Capsey, Freya Kemp, Lauren Filer\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Dew factor affects grip and swing\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: ENGLAND vs NEW_ZEALAND at Kia Oval\n======================================================================\n\nTOSS: england chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~160 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 52% (FAIR)\n\nPITCH: Flat\n  Traditionally good batting surface; high scores common in T20\n\nBATTING ORDER (Top 4):\n  1. Nat Sciver-Brunt (SR 138)\n  2. Danni Wyatt-Hodge (SR 126)\n  3. Sophia Dunkley (SR 122)\n  4. Amy Jones (SR 119)\n\nBOWLING PLAN:\n  Powerplay: Danni Wyatt-Hodge, Freya Kemp, Sophie Ecclestone, Alice Capsey, Heather Knight, Issy Wong, Dani Gibson, Sophia Dunkley, Nat Sciver-Brunt, Lauren Filer\n  Middle: Danni Wyatt-Hodge, Freya Kemp, Sophie Ecclestone, Alice Capsey, Heather Knight, Issy Wong, Dani Gibson, Sophia Dunkley, Nat Sciver-Brunt, Lauren Filer\n  Death: Danni Wyatt-Hodge, Freya Kemp, Sophie Ecclestone, Alice Capsey, Heather Knight, Issy Wong, Dani Gibson, Sophia Dunkley, Nat Sciver-Brunt, Lauren Filer\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Dew factor affects grip and swing\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
   },
   "chasing_scenario": {
     "scenario": "chasing",
     "adjusted_runs_estimate": 137.1,
     "runs_lower": 127.1,
     "runs_upper": 131.1,
-    "win_probability": 0.48,
+    "win_probability": 0.486,
     "pitch_difficulty": "easy",
     "chase_penalty": -15,
     "tactical_flags": [
@@ -329,6 +329,6 @@
       "chase_scenario_requires_calculated_aggression",
       "monitor_required_run_rate_per_phase"
     ],
-    "strategy_brief": "STRATEGY BRIEF: ENGLAND vs NEW_ZEALAND at Kia Oval\n======================================================================\n\nTOSS: new_zealand chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~137 runs to win.\n  (Chase penalty applied: -15 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 48% (POOR)\n\nPITCH: Flat\n  Traditionally good batting surface; high scores common in T20\n\nBATTING ORDER (Top 4):\n  1. Nat Sciver-Brunt (SR 138)\n  2. Danni Wyatt-Hodge (SR 126)\n  3. Sophia Dunkley (SR 122)\n  4. Amy Jones (SR 119)\n\nBOWLING PLAN:\n  Powerplay: Issy Wong, Danni Wyatt-Hodge, Dani Gibson, Nat Sciver-Brunt, Sophie Ecclestone, Heather Knight, Sophia Dunkley, Alice Capsey, Freya Kemp, Lauren Filer\n  Middle: Issy Wong, Danni Wyatt-Hodge, Dani Gibson, Nat Sciver-Brunt, Sophie Ecclestone, Heather Knight, Sophia Dunkley, Alice Capsey, Freya Kemp, Lauren Filer\n  Death: Issy Wong, Danni Wyatt-Hodge, Dani Gibson, Nat Sciver-Brunt, Sophie Ecclestone, Heather Knight, Sophia Dunkley, Alice Capsey, Freya Kemp, Lauren Filer\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Dew factor affects grip and swing\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: ENGLAND vs NEW_ZEALAND at Kia Oval\n======================================================================\n\nTOSS: new_zealand chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~137 runs to win.\n  (Chase penalty applied: -15 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 48% (POOR)\n\nPITCH: Flat\n  Traditionally good batting surface; high scores common in T20\n\nBATTING ORDER (Top 4):\n  1. Nat Sciver-Brunt (SR 138)\n  2. Danni Wyatt-Hodge (SR 126)\n  3. Sophia Dunkley (SR 122)\n  4. Amy Jones (SR 119)\n\nBOWLING PLAN:\n  Powerplay: Danni Wyatt-Hodge, Freya Kemp, Sophie Ecclestone, Alice Capsey, Heather Knight, Issy Wong, Dani Gibson, Sophia Dunkley, Nat Sciver-Brunt, Lauren Filer\n  Middle: Danni Wyatt-Hodge, Freya Kemp, Sophie Ecclestone, Alice Capsey, Heather Knight, Issy Wong, Dani Gibson, Sophia Dunkley, Nat Sciver-Brunt, Lauren Filer\n  Death: Danni Wyatt-Hodge, Freya Kemp, Sophie Ecclestone, Alice Capsey, Heather Knight, Issy Wong, Dani Gibson, Sophia Dunkley, Nat Sciver-Brunt, Lauren Filer\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Dew factor affects grip and swing\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n\n======================================================================"
   }
 }

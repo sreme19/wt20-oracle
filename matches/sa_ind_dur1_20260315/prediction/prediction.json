@@ -11,16 +11,16 @@
     "series_result": "win",
     "series_wins_before": 0
   },
-  "generated_at": "2026-05-16T13:05:07.183537Z",
+  "generated_at": "2026-05-16T13:06:03.309272Z",
   "scenario": "pre_toss_blended",
   "pitch_difficulty": "moderate",
   "chase_penalty": -20,
-  "base_runs_estimate": 139.5,
-  "adjusted_runs_estimate": 134.2,
-  "runs_lower": 130.0,
-  "runs_upper": 134.0,
-  "win_probability": 0.466,
-  "win_probability_reasoning": "Pre-toss blend: batting-first WP=49.1%, chasing WP=44.0% \u2192 blended 46.6%",
+  "base_runs_estimate": 139.3,
+  "adjusted_runs_estimate": 134.1,
+  "runs_lower": 129.8,
+  "runs_upper": 133.8,
+  "win_probability": 0.46,
+  "win_probability_reasoning": "Pre-toss blend: batting-first WP=48.8%, chasing WP=43.2% \u2192 blended 46.0%",
   "selected_xi": [
     "kayla_reyneke",
     "chloe_tryon",
@@ -282,24 +282,24 @@
   ],
   "batting_first_scenario": {
     "scenario": "batting_first",
-    "adjusted_runs_estimate": 139.5,
-    "runs_lower": 137.5,
-    "runs_upper": 141.5,
-    "win_probability": 0.491,
+    "adjusted_runs_estimate": 139.4,
+    "runs_lower": 137.4,
+    "runs_upper": 141.4,
+    "win_probability": 0.488,
     "pitch_difficulty": "moderate",
     "chase_penalty": 0,
     "tactical_flags": [
       "dew_factor_affects_grip_and_swing",
       "set_par_total_conservative_approach_first_6_overs"
     ],
-    "strategy_brief": "STRATEGY BRIEF: SOUTH_AFRICA vs INDIA at Kingsmead Cricket Ground\n======================================================================\n\nTOSS: south_africa chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~140 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 49% (POOR)\n\nPITCH: Balanced\n  Durban's humidity creates early movement for pace bowlers. Surface tends to flatten out after over 6. Good for batting post-powerplay. Dew becomes a factor in evening games.\n\nBATTING ORDER (Top 4):\n  1. Laura Wolvaardt (SR 117)\n  2. Tazmin Brits (SR 103)\n  3. Sinalo Jafta (SR 129)\n  4. Chloe Tryon (SR 125)\n\nBOWLING PLAN:\n  Powerplay: Nonkululeko Mlaba, Annerie Dercksen, Dane van Niekerk, Nadine de Klerk, Marizanne Kapp, Sune Luus, Chloe Tryon\n  Middle: Kayla Reyneke, Nonkululeko Mlaba, Annerie Dercksen, Dane van Niekerk, Nadine de Klerk, Marizanne Kapp, Sune Luus, Chloe Tryon\n  Death: Kayla Reyneke, Nonkululeko Mlaba, Annerie Dercksen, Dane van Niekerk, Nadine de Klerk, Marizanne Kapp, Sune Luus, Chloe Tryon\n\nTACTICAL NOTES:\n  \u2022 Dew factor affects grip and swing\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: SOUTH_AFRICA vs INDIA at Kingsmead Cricket Ground\n======================================================================\n\nTOSS: south_africa chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~139 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 48% (POOR)\n\nPITCH: Balanced\n  Durban's humidity creates early movement for pace bowlers. Surface tends to flatten out after over 6. Good for batting post-powerplay. Dew becomes a factor in evening games.\n\nBATTING ORDER (Top 4):\n  1. Laura Wolvaardt (SR 117)\n  2. Tazmin Brits (SR 103)\n  3. Sinalo Jafta (SR 129)\n  4. Chloe Tryon (SR 125)\n\nBOWLING PLAN:\n  Powerplay: Sune Luus, Nadine de Klerk, Marizanne Kapp, Dane van Niekerk, Nonkululeko Mlaba, Annerie Dercksen, Chloe Tryon\n  Middle: Sune Luus, Nadine de Klerk, Marizanne Kapp, Dane van Niekerk, Kayla Reyneke, Nonkululeko Mlaba, Annerie Dercksen, Chloe Tryon\n  Death: Sune Luus, Nadine de Klerk, Marizanne Kapp, Dane van Niekerk, Kayla Reyneke, Nonkululeko Mlaba, Annerie Dercksen, Chloe Tryon\n\nTACTICAL NOTES:\n  \u2022 Dew factor affects grip and swing\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
   },
   "chasing_scenario": {
     "scenario": "chasing",
-    "adjusted_runs_estimate": 129.0,
-    "runs_lower": 122.5,
-    "runs_upper": 126.5,
-    "win_probability": 0.44,
+    "adjusted_runs_estimate": 128.7,
+    "runs_lower": 122.2,
+    "runs_upper": 126.2,
+    "win_probability": 0.432,
     "pitch_difficulty": "moderate",
     "chase_penalty": -20,
     "tactical_flags": [
@@ -307,6 +307,6 @@
       "chase_scenario_requires_calculated_aggression",
       "monitor_required_run_rate_per_phase"
     ],
-    "strategy_brief": "STRATEGY BRIEF: SOUTH_AFRICA vs INDIA at Kingsmead Cricket Ground\n======================================================================\n\nTOSS: india chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~129 runs to win.\n  (Chase penalty applied: -20 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 44% (POOR)\n\nPITCH: Balanced\n  Durban's humidity creates early movement for pace bowlers. Surface tends to flatten out after over 6. Good for batting post-powerplay. Dew becomes a factor in evening games.\n\nBATTING ORDER (Top 4):\n  1. Laura Wolvaardt (SR 117)\n  2. Tazmin Brits (SR 103)\n  3. Sinalo Jafta (SR 129)\n  4. Chloe Tryon (SR 125)\n\nBOWLING PLAN:\n  Powerplay: Nonkululeko Mlaba, Annerie Dercksen, Dane van Niekerk, Nadine de Klerk, Marizanne Kapp, Sune Luus, Chloe Tryon\n  Middle: Kayla Reyneke, Nonkululeko Mlaba, Annerie Dercksen, Dane van Niekerk, Nadine de Klerk, Marizanne Kapp, Sune Luus, Chloe Tryon\n  Death: Kayla Reyneke, Nonkululeko Mlaba, Annerie Dercksen, Dane van Niekerk, Nadine de Klerk, Marizanne Kapp, Sune Luus, Chloe Tryon\n\nTACTICAL NOTES:\n  \u2022 Dew factor affects grip and swing\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: SOUTH_AFRICA vs INDIA at Kingsmead Cricket Ground\n======================================================================\n\nTOSS: india chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~129 runs to win.\n  (Chase penalty applied: -20 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 43% (POOR)\n\nPITCH: Balanced\n  Durban's humidity creates early movement for pace bowlers. Surface tends to flatten out after over 6. Good for batting post-powerplay. Dew becomes a factor in evening games.\n\nBATTING ORDER (Top 4):\n  1. Laura Wolvaardt (SR 117)\n  2. Tazmin Brits (SR 103)\n  3. Sinalo Jafta (SR 129)\n  4. Chloe Tryon (SR 125)\n\nBOWLING PLAN:\n  Powerplay: Sune Luus, Nadine de Klerk, Marizanne Kapp, Dane van Niekerk, Nonkululeko Mlaba, Annerie Dercksen, Chloe Tryon\n  Middle: Sune Luus, Nadine de Klerk, Marizanne Kapp, Dane van Niekerk, Kayla Reyneke, Nonkululeko Mlaba, Annerie Dercksen, Chloe Tryon\n  Death: Sune Luus, Nadine de Klerk, Marizanne Kapp, Dane van Niekerk, Kayla Reyneke, Nonkululeko Mlaba, Annerie Dercksen, Chloe Tryon\n\nTACTICAL NOTES:\n  \u2022 Dew factor affects grip and swing\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n\n======================================================================"
   }
 }

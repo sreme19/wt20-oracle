@@ -233,8 +233,9 @@ def _calculate_batter_bowler_boost(
             matchup = find_matchup_loose(matchups, batter_id, bowler_id)
             if matchup:
                 matchup_sr = matchup.get("strike_rate", 0)
-                if matchup_sr > 120:
-                    # Elite batter dominates this bowler (>120 SR in h2h)
+                # Phase 2 Task 6: Lower threshold from 120 to 110 for more coverage
+                if matchup_sr > 110:
+                    # Moderately strong to elite batter advantage (>110 SR in h2h)
                     bonus += 1.5  # +1.5 runs per favorable matchup
 
     # Cap bonus and return (max +5 runs from this factor)
