@@ -309,6 +309,7 @@ def prediction_node(state: PreMatchState) -> Dict[str, Any]:
       3. ScenarioHandler.adjust_win_probability() → reduces prob for chasing
       4. Batter-vs-Bowler specificity → apply matchup boost for elite matchups
       5. Series Momentum → apply aggression boost for dominant series position
+      6. (Phase 2 Task 3) Series Context Awareness → adjust momentum based on sweep likelihood
     """
     our_squad = state.get("our_squad", [])
     opponent_squad = state.get("opponent_squad", [])
@@ -398,16 +399,24 @@ def prediction_node(state: PreMatchState) -> Dict[str, Any]:
             # Potential 5-0 scenario: boost aggression based on team aggressiveness
             # Aggressive teams (India, West Indies, Pakistan) get +30%
             # Conservative teams (NZ, SA, Australia, etc.) get +25%
+            # Phase 2 Task 3: Adjust based on series context / sweep likelihood
             team_for_momentum = team_id.lower() if team_id else ""
+            sweep_likelihood = state.get("sweep_likelihood", 1.0)  # Default: assume sweep is likely
 
             if team_for_momentum in ("india", "west_indies", "pakistan"):
-                # Aggressive teams in sweep scenarios need stronger boost
-                aggression_multiplier = 1.30
-                wp_bonus = 0.09
+                # Aggressive teams in sweep scenarios: base +30%, adjusted by likelihood
+                # 1.30 + (likelihood - 1.0) * 0.10 = range from 1.20 to 1.30
+                base_multiplier = 1.30
+                likelihood_adjustment = (sweep_likelihood - 1.0) * 0.10
+                aggression_multiplier = max(1.15, base_multiplier + likelihood_adjustment)
+                wp_bonus = 0.07 + (0.02 * sweep_likelihood)  # 0.07 to 0.09
             else:
-                # Conservative teams: standard sweep boost
-                aggression_multiplier = 1.25
-                wp_bonus = 0.08
+                # Conservative teams: base +25%, adjusted by likelihood
+                # 1.25 + (likelihood - 1.0) * 0.10 = range from 1.15 to 1.25
+                base_multiplier = 1.25
+                likelihood_adjustment = (sweep_likelihood - 1.0) * 0.10
+                aggression_multiplier = max(1.10, base_multiplier + likelihood_adjustment)
+                wp_bonus = 0.06 + (0.02 * sweep_likelihood)  # 0.06 to 0.08
 
             momentum_type = "sweep"
         else:
@@ -459,6 +468,7 @@ def _run_pipeline_single(
     toss_decision: Optional[str],
     series_number: int = 0,
     series_score: int = 0,
+    sweep_likelihood: float = 1.0,
 ) -> PreMatchState:
     """Internal: run the pipeline for one specific toss outcome."""
     state: PreMatchState = {
@@ -470,6 +480,7 @@ def _run_pipeline_single(
         "toss_decision": toss_decision,
         "series_number": series_number,
         "series_score": series_score,
+        "sweep_likelihood": sweep_likelihood,
         "errors": [],
         "warnings": [],
     }
@@ -504,6 +515,7 @@ def run_pre_match_pipeline(
     toss_decision: Optional[str] = None,
     series_number: int = 0,
     series_score: int = 0,
+    sweep_likelihood: float = 1.0,
 ) -> PreMatchState:
     """
     Run the full pre-match pipeline and return completed state.
@@ -536,7 +548,7 @@ def run_pre_match_pipeline(
         # Toss known — single deterministic path
         return _run_pipeline_single(
             team_id, opponent_id, venue_id, match_date, toss_winner, toss_decision,
-            series_number, series_score
+            series_number, series_score, sweep_likelihood
         )
 
     # ── Pre-toss: run both scenarios and blend ────────────────────────────────
@@ -548,6 +560,7 @@ def run_pre_match_pipeline(
         toss_decision="bat_first",
         series_number=series_number,
         series_score=series_score,
+        sweep_likelihood=sweep_likelihood,
     )
 
     # Scenario B: opponent wins toss and bats first → we chase
@@ -557,6 +570,7 @@ def run_pre_match_pipeline(
         toss_decision="bat_first",
         series_number=series_number,
         series_score=series_score,
+        sweep_likelihood=sweep_likelihood,
     )
 
     # ── Blend headline numbers (equal 50/50 weight) ───────────────────────────

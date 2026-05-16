@@ -388,6 +388,95 @@ assert len(FIXTURES) == 30, f"Expected 30 fixtures, got {len(FIXTURES)}"
 MATCHES_DIR = ROOT / "matches"
 
 
+# ─────────────────────────────────────────────────────────────────────────
+# Phase 2 Task 3: Series Context Awareness
+# ─────────────────────────────────────────────────────────────────────────
+
+def detect_sweep_likelihood(
+    fixtures: list,
+    current_match_no: int,
+    team_id: str,
+    opponent_id: str,
+    series_name: str,
+) -> float:
+    """
+    Estimate likelihood of completing a sweep when team is 3-0 up.
+
+    Returns: sweep_likelihood (0.0 to 1.0)
+    - 1.0 = very likely to complete sweep
+    - 0.5 = neutral, unknown
+    - 0.0 = unlikely to complete sweep (team has loss while dominant)
+    """
+    # Get all matches in this series up to current match
+    series_matches = [
+        f for f in fixtures
+        if f.get("series") == series_name
+        and f.get("team_id") == team_id
+        and f.get("match_no") < current_match_no
+    ]
+
+    # Sort by match number to get chronological order
+    series_matches = sorted(series_matches, key=lambda x: x.get("match_no", 0))
+
+    # Count wins and losses while accumulating
+    wins = 0
+    had_loss_when_dominant = False
+
+    for match in series_matches:
+        if match.get("series_result") == "win":
+            wins += 1
+        elif match.get("series_result") == "loss":
+            # Check if team was already in dominant position (3-0+)
+            if wins >= 3:
+                had_loss_when_dominant = True
+
+    # Sweep likelihood logic:
+    # - If team had a loss while already 3-0 up, reduce likelihood (0.4)
+    # - If team is on winning streak without losses, high likelihood (0.9)
+    # - Otherwise neutral (0.5)
+
+    if had_loss_when_dominant:
+        # Team has already shown inability to complete sweep
+        return 0.40  # Less likely to sweep
+    elif wins >= 3 and not series_matches[-1].get("series_result") == "loss":
+        # Team is 3-0 up with no losses at dominant level
+        return 0.90  # Very likely to complete sweep
+    else:
+        # Default neutral likelihood
+        return 0.50
+
+
+def apply_series_context_adjustment(
+    team_id: str,
+    series_score: int,
+    series_number: int,
+    fixtures: list,
+    series_name: str,
+) -> float:
+    """
+    Apply series context adjustment to sweep momentum multiplier.
+
+    Returns: sweep_likelihood_multiplier (0.0 to 1.0)
+    - If team is 3-0 up and sweep is likely, return 1.0 (apply full momentum)
+    - If team is 3-0 up but sweep is unlikely, return 0.5 (reduce momentum)
+    """
+    if series_score != 3 or series_number < 4:
+        # Not a sweep scenario
+        return 1.0
+
+    # Calculate sweep likelihood
+    likelihood = detect_sweep_likelihood(
+        fixtures, series_number, team_id, "dummy_opponent", series_name
+    )
+
+    # Scale the momentum: full (1.0) if likely, reduced (0.5) if unlikely
+    # Formula: 0.5 + (0.5 * likelihood)
+    # likelihood=1.0 → multiplier=1.0 (full momentum)
+    # likelihood=0.5 → multiplier=0.75 (75% momentum)
+    # likelihood=0.4 → multiplier=0.7 (70% momentum)
+    return 0.5 + (0.5 * likelihood)
+
+
 def run_and_save(fixture: dict, dry_run: bool = False) -> dict:
     """Run pipeline for one fixture and save results to disk."""
     match_id = fixture["id"]
@@ -405,15 +494,31 @@ def run_and_save(fixture: dict, dry_run: bool = False) -> dict:
     print(f"  Running {match_id} ({fixture['team_id']} vs {fixture['opponent_id']} at {fixture['venue_id']})...")
 
     try:
+        # Phase 2 Task 3: Calculate sweep likelihood based on series context
+        series_number = fixture.get("match_no", 0)
+        series_score = fixture.get("series_wins_before", 0)
+        series_name = fixture.get("series", "")
+        team_id = fixture["team_id"]
+        opponent_id = fixture["opponent_id"]
+
+        sweep_likelihood = apply_series_context_adjustment(
+            team_id=team_id,
+            series_score=series_score,
+            series_number=series_number,
+            fixtures=FIXTURES,
+            series_name=series_name,
+        )
+
         state = run_pre_match_pipeline(
-            team_id=fixture["team_id"],
-            opponent_id=fixture["opponent_id"],
+            team_id=team_id,
+            opponent_id=opponent_id,
             venue_id=fixture["venue_id"],
             match_date=fixture["date"],
             toss_winner=None,
             toss_decision=None,
-            series_number=fixture.get("match_no", 0),
-            series_score=fixture.get("series_wins_before", 0),
+            series_number=series_number,
+            series_score=series_score,
+            sweep_likelihood=sweep_likelihood,
         )
 
         # Build output payload

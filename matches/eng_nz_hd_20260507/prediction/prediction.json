@@ -11,16 +11,16 @@
     "series_result": "win",
     "series_wins_before": 1
   },
-  "generated_at": "2026-05-16T12:59:37.713123Z",
+  "generated_at": "2026-05-16T13:02:00.960512Z",
   "scenario": "pre_toss_blended",
   "pitch_difficulty": "easy",
   "chase_penalty": -15,
-  "base_runs_estimate": 143.2,
-  "adjusted_runs_estimate": 129.2,
-  "runs_lower": 133.7,
-  "runs_upper": 137.7,
-  "win_probability": 0.512,
-  "win_probability_reasoning": "Pre-toss blend: batting-first WP=53.8%, chasing WP=48.5% \u2192 blended 51.2%",
+  "base_runs_estimate": 143.4,
+  "adjusted_runs_estimate": 129.4,
+  "runs_lower": 133.9,
+  "runs_upper": 137.9,
+  "win_probability": 0.507,
+  "win_probability_reasoning": "Pre-toss blend: batting-first WP=53.4%, chasing WP=48.0% \u2192 blended 50.7%",
   "selected_xi": [
     "nat_sciver_brunt",
     "danni_wyatt_hodge",
@@ -301,24 +301,24 @@
   ],
   "batting_first_scenario": {
     "scenario": "batting_first",
-    "adjusted_runs_estimate": 138.2,
-    "runs_lower": 141.2,
-    "runs_upper": 145.2,
-    "win_probability": 0.538,
+    "adjusted_runs_estimate": 138.5,
+    "runs_lower": 141.5,
+    "runs_upper": 145.5,
+    "win_probability": 0.534,
     "pitch_difficulty": "easy",
     "chase_penalty": 0,
     "tactical_flags": [
       "use_pace_in_powerplay",
       "set_par_total_conservative_approach_first_6_overs"
     ],
-    "strategy_brief": "STRATEGY BRIEF: ENGLAND vs NEW_ZEALAND at Headingley Cricket Ground\n======================================================================\n\nTOSS: england chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~138 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 53% (FAIR)\n\nPITCH: Seam Friendly\n  Bowler-friendly in overcast conditions common in Leeds\n\nBATTING ORDER (Top 4):\n  1. Nat Sciver-Brunt (SR 138)\n  2. Danni Wyatt-Hodge (SR 126)\n  3. Sophia Dunkley (SR 122)\n  4. Amy Jones (SR 119)\n\nBOWLING PLAN:\n  Powerplay: Dani Gibson, Heather Knight, Sophie Ecclestone, Issy Wong, Danni Wyatt-Hodge, Nat Sciver-Brunt, Alice Capsey, Sophia Dunkley, Lauren Filer, Freya Kemp\n  Middle: Dani Gibson, Heather Knight, Sophie Ecclestone, Issy Wong, Danni Wyatt-Hodge, Nat Sciver-Brunt, Alice Capsey, Sophia Dunkley, Lauren Filer, Freya Kemp\n  Death: Dani Gibson, Heather Knight, Sophie Ecclestone, Issy Wong, Danni Wyatt-Hodge, Nat Sciver-Brunt, Alice Capsey, Sophia Dunkley, Lauren Filer, Freya Kemp\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: ENGLAND vs NEW_ZEALAND at Headingley Cricket Ground\n======================================================================\n\nTOSS: england chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~138 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 53% (FAIR)\n\nPITCH: Seam Friendly\n  Bowler-friendly in overcast conditions common in Leeds\n\nBATTING ORDER (Top 4):\n  1. Nat Sciver-Brunt (SR 138)\n  2. Danni Wyatt-Hodge (SR 126)\n  3. Sophia Dunkley (SR 122)\n  4. Amy Jones (SR 119)\n\nBOWLING PLAN:\n  Powerplay: Lauren Filer, Sophia Dunkley, Dani Gibson, Nat Sciver-Brunt, Heather Knight, Sophie Ecclestone, Alice Capsey, Freya Kemp, Danni Wyatt-Hodge, Issy Wong\n  Middle: Lauren Filer, Sophia Dunkley, Dani Gibson, Nat Sciver-Brunt, Heather Knight, Sophie Ecclestone, Alice Capsey, Freya Kemp, Danni Wyatt-Hodge, Issy Wong\n  Death: Lauren Filer, Sophia Dunkley, Dani Gibson, Nat Sciver-Brunt, Heather Knight, Sophie Ecclestone, Alice Capsey, Freya Kemp, Danni Wyatt-Hodge, Issy Wong\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
   },
   "chasing_scenario": {
     "scenario": "chasing",
-    "adjusted_runs_estimate": 120.2,
-    "runs_lower": 126.2,
-    "runs_upper": 130.2,
-    "win_probability": 0.485,
+    "adjusted_runs_estimate": 120.3,
+    "runs_lower": 126.3,
+    "runs_upper": 130.3,
+    "win_probability": 0.48,
     "pitch_difficulty": "easy",
     "chase_penalty": -15,
     "tactical_flags": [
@@ -326,6 +326,6 @@
       "chase_scenario_requires_calculated_aggression",
       "monitor_required_run_rate_per_phase"
     ],
-    "strategy_brief": "STRATEGY BRIEF: ENGLAND vs NEW_ZEALAND at Headingley Cricket Ground\n======================================================================\n\nTOSS: new_zealand chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~120 runs to win.\n  (Chase penalty applied: -15 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 48% (POOR)\n\nPITCH: Seam Friendly\n  Bowler-friendly in overcast conditions common in Leeds\n\nBATTING ORDER (Top 4):\n  1. Nat Sciver-Brunt (SR 138)\n  2. Danni Wyatt-Hodge (SR 126)\n  3. Sophia Dunkley (SR 122)\n  4. Amy Jones (SR 119)\n\nBOWLING PLAN:\n  Powerplay: Dani Gibson, Heather Knight, Sophie Ecclestone, Issy Wong, Danni Wyatt-Hodge, Nat Sciver-Brunt, Alice Capsey, Sophia Dunkley, Lauren Filer, Freya Kemp\n  Middle: Dani Gibson, Heather Knight, Sophie Ecclestone, Issy Wong, Danni Wyatt-Hodge, Nat Sciver-Brunt, Alice Capsey, Sophia Dunkley, Lauren Filer, Freya Kemp\n  Death: Dani Gibson, Heather Knight, Sophie Ecclestone, Issy Wong, Danni Wyatt-Hodge, Nat Sciver-Brunt, Alice Capsey, Sophia Dunkley, Lauren Filer, Freya Kemp\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: ENGLAND vs NEW_ZEALAND at Headingley Cricket Ground\n======================================================================\n\nTOSS: new_zealand chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~120 runs to win.\n  (Chase penalty applied: -15 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 48% (POOR)\n\nPITCH: Seam Friendly\n  Bowler-friendly in overcast conditions common in Leeds\n\nBATTING ORDER (Top 4):\n  1. Nat Sciver-Brunt (SR 138)\n  2. Danni Wyatt-Hodge (SR 126)\n  3. Sophia Dunkley (SR 122)\n  4. Amy Jones (SR 119)\n\nBOWLING PLAN:\n  Powerplay: Lauren Filer, Sophia Dunkley, Dani Gibson, Nat Sciver-Brunt, Heather Knight, Sophie Ecclestone, Alice Capsey, Freya Kemp, Danni Wyatt-Hodge, Issy Wong\n  Middle: Lauren Filer, Sophia Dunkley, Dani Gibson, Nat Sciver-Brunt, Heather Knight, Sophie Ecclestone, Alice Capsey, Freya Kemp, Danni Wyatt-Hodge, Issy Wong\n  Death: Lauren Filer, Sophia Dunkley, Dani Gibson, Nat Sciver-Brunt, Heather Knight, Sophie Ecclestone, Alice Capsey, Freya Kemp, Danni Wyatt-Hodge, Issy Wong\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n\n======================================================================"
   }
 }

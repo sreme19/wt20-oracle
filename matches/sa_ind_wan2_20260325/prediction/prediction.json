@@ -11,16 +11,16 @@
     "series_result": "loss",
     "series_wins_before": 3
   },
-  "generated_at": "2026-05-16T12:59:30.560285Z",
+  "generated_at": "2026-05-16T13:01:54.360561Z",
   "scenario": "pre_toss_blended",
   "pitch_difficulty": "easy",
   "chase_penalty": -15,
-  "base_runs_estimate": 144.1,
-  "adjusted_runs_estimate": 170.8,
-  "runs_lower": 152.3,
-  "runs_upper": 156.8,
-  "win_probability": 0.529,
-  "win_probability_reasoning": "Pre-toss blend: batting-first WP=58.0%, chasing WP=47.9% \u2192 blended 52.9%",
+  "base_runs_estimate": 143.9,
+  "adjusted_runs_estimate": 170.3,
+  "runs_lower": 151.8,
+  "runs_upper": 156.3,
+  "win_probability": 0.525,
+  "win_probability_reasoning": "Pre-toss blend: batting-first WP=57.7%, chasing WP=47.4% \u2192 blended 52.5%",
   "selected_xi": [
     "kayla_reyneke",
     "chloe_tryon",
@@ -282,24 +282,24 @@
   ],
   "batting_first_scenario": {
     "scenario": "batting_first",
-    "adjusted_runs_estimate": 200.2,
-    "runs_lower": 177.7,
-    "runs_upper": 182.7,
-    "win_probability": 0.58,
+    "adjusted_runs_estimate": 199.4,
+    "runs_lower": 177.0,
+    "runs_upper": 182.0,
+    "win_probability": 0.577,
     "pitch_difficulty": "easy",
     "chase_penalty": 0,
     "tactical_flags": [
       "use_pace_in_powerplay",
       "set_par_total_conservative_approach_first_6_overs"
     ],
-    "strategy_brief": "STRATEGY BRIEF: SOUTH_AFRICA vs INDIA at Wanderers Stadium\n======================================================================\n\nTOSS: south_africa chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~200 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 57% (FAIR)\n\nPITCH: Flat\n  High altitude (1753m) \u2014 ball travels significantly further. Pace bowlers get carry and bounce without lateral movement. Batters benefit from ball coming on. Premium scoring venue; 160+ is par.\n\nBATTING ORDER (Top 4):\n  1. Laura Wolvaardt (SR 117)\n  2. Tazmin Brits (SR 103)\n  3. Sinalo Jafta (SR 129)\n  4. Chloe Tryon (SR 125)\n\nBOWLING PLAN:\n  Powerplay: Chloe Tryon, Dane van Niekerk, Annerie Dercksen, Nadine de Klerk, Nonkululeko Mlaba, Sune Luus, Marizanne Kapp\n  Middle: Kayla Reyneke, Chloe Tryon, Dane van Niekerk, Annerie Dercksen, Nadine de Klerk, Nonkululeko Mlaba, Sune Luus, Marizanne Kapp\n  Death: Kayla Reyneke, Chloe Tryon, Dane van Niekerk, Annerie Dercksen, Nadine de Klerk, Nonkululeko Mlaba, Sune Luus, Marizanne Kapp\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: SOUTH_AFRICA vs INDIA at Wanderers Stadium\n======================================================================\n\nTOSS: south_africa chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~199 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 57% (FAIR)\n\nPITCH: Flat\n  High altitude (1753m) \u2014 ball travels significantly further. Pace bowlers get carry and bounce without lateral movement. Batters benefit from ball coming on. Premium scoring venue; 160+ is par.\n\nBATTING ORDER (Top 4):\n  1. Laura Wolvaardt (SR 117)\n  2. Tazmin Brits (SR 103)\n  3. Sinalo Jafta (SR 129)\n  4. Chloe Tryon (SR 125)\n\nBOWLING PLAN:\n  Powerplay: Sune Luus, Marizanne Kapp, Dane van Niekerk, Annerie Dercksen, Nadine de Klerk, Nonkululeko Mlaba, Chloe Tryon\n  Middle: Sune Luus, Marizanne Kapp, Dane van Niekerk, Annerie Dercksen, Nadine de Klerk, Nonkululeko Mlaba, Kayla Reyneke, Chloe Tryon\n  Death: Sune Luus, Marizanne Kapp, Dane van Niekerk, Annerie Dercksen, Nadine de Klerk, Nonkululeko Mlaba, Kayla Reyneke, Chloe Tryon\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
   },
   "chasing_scenario": {
     "scenario": "chasing",
-    "adjusted_runs_estimate": 141.5,
-    "runs_lower": 127.0,
-    "runs_upper": 131.0,
-    "win_probability": 0.479,
+    "adjusted_runs_estimate": 141.2,
+    "runs_lower": 126.7,
+    "runs_upper": 130.7,
+    "win_probability": 0.474,
     "pitch_difficulty": "easy",
     "chase_penalty": -15,
     "tactical_flags": [
@@ -307,6 +307,6 @@
       "chase_scenario_requires_calculated_aggression",
       "monitor_required_run_rate_per_phase"
     ],
-    "strategy_brief": "STRATEGY BRIEF: SOUTH_AFRICA vs INDIA at Wanderers Stadium\n======================================================================\n\nTOSS: india chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~142 runs to win.\n  (Chase penalty applied: -15 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 47% (POOR)\n\nPITCH: Flat\n  High altitude (1753m) \u2014 ball travels significantly further. Pace bowlers get carry and bounce without lateral movement. Batters benefit from ball coming on. Premium scoring venue; 160+ is par.\n\nBATTING ORDER (Top 4):\n  1. Laura Wolvaardt (SR 117)\n  2. Tazmin Brits (SR 103)\n  3. Sinalo Jafta (SR 129)\n  4. Chloe Tryon (SR 125)\n\nBOWLING PLAN:\n  Powerplay: Chloe Tryon, Dane van Niekerk, Annerie Dercksen, Nadine de Klerk, Nonkululeko Mlaba, Sune Luus, Marizanne Kapp\n  Middle: Kayla Reyneke, Chloe Tryon, Dane van Niekerk, Annerie Dercksen, Nadine de Klerk, Nonkululeko Mlaba, Sune Luus, Marizanne Kapp\n  Death: Kayla Reyneke, Chloe Tryon, Dane van Niekerk, Annerie Dercksen, Nadine de Klerk, Nonkululeko Mlaba, Sune Luus, Marizanne Kapp\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: SOUTH_AFRICA vs INDIA at Wanderers Stadium\n======================================================================\n\nTOSS: india chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~141 runs to win.\n  (Chase penalty applied: -15 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 47% (POOR)\n\nPITCH: Flat\n  High altitude (1753m) \u2014 ball travels significantly further. Pace bowlers get carry and bounce without lateral movement. Batters benefit from ball coming on. Premium scoring venue; 160+ is par.\n\nBATTING ORDER (Top 4):\n  1. Laura Wolvaardt (SR 117)\n  2. Tazmin Brits (SR 103)\n  3. Sinalo Jafta (SR 129)\n  4. Chloe Tryon (SR 125)\n\nBOWLING PLAN:\n  Powerplay: Sune Luus, Marizanne Kapp, Dane van Niekerk, Annerie Dercksen, Nadine de Klerk, Nonkululeko Mlaba, Chloe Tryon\n  Middle: Sune Luus, Marizanne Kapp, Dane van Niekerk, Annerie Dercksen, Nadine de Klerk, Nonkululeko Mlaba, Kayla Reyneke, Chloe Tryon\n  Death: Sune Luus, Marizanne Kapp, Dane van Niekerk, Annerie Dercksen, Nadine de Klerk, Nonkululeko Mlaba, Kayla Reyneke, Chloe Tryon\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n\n======================================================================"
   }
 }
