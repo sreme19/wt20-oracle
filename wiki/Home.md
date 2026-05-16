@@ -90,6 +90,7 @@ Start here:
 ### Learning the System
 - **[How It Works](How-It-Works.md)** — System overview (no code)
 - **[Architecture Explained](Architecture-Explained.md)** — System design for coders
+- **[Extensions](Extensions.md)** — All agent nodes and extensions
 - **[Pre-Match Mode](Pre-Match-Mode.md)** — Deep dive: squad selection
 - **[Live Mode](Live-Mode.md)** — Deep dive: in-match decisions
 
@@ -221,6 +222,7 @@ Home (You are here!)
 │
 ├── How It Works
 ├── Architecture Explained
+├── Extensions
 ├── Pre-Match Mode
 ├── Live Mode
 │
