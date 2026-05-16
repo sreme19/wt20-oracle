@@ -7,18 +7,20 @@
     "opponent_id": "new_zealand",
     "venue_id": "the_oval",
     "series": "England vs New Zealand T20I Series 2026",
-    "match_no": 1
+    "match_no": 1,
+    "series_result": "win",
+    "series_wins_before": 0
   },
-  "generated_at": "2026-05-16T06:03:51.109874Z",
-  "scenario": "unknown",
+  "generated_at": "2026-05-16T10:44:00.008990Z",
+  "scenario": "pre_toss_blended",
   "pitch_difficulty": "easy",
-  "chase_penalty": 0,
-  "base_runs_estimate": 144.0,
-  "adjusted_runs_estimate": 144.0,
-  "runs_lower": 140.0,
-  "runs_upper": 148.0,
-  "win_probability": 0.534,
-  "win_probability_reasoning": "Batting first: standard conditions (toss not yet known \u2014 confidence reduced)",
+  "chase_penalty": -15,
+  "base_runs_estimate": 143.9,
+  "adjusted_runs_estimate": 148.4,
+  "runs_lower": 134.4,
+  "runs_upper": 138.4,
+  "win_probability": 0.501,
+  "win_probability_reasoning": "Pre-toss blend: batting-first WP=52.5%, chasing WP=47.7% \u2192 blended 50.1%",
   "selected_xi": [
     "nat_sciver_brunt",
     "danni_wyatt_hodge",
@@ -290,10 +292,43 @@
   "key_matchups": [],
   "tactical_flags": [
     "use_pace_in_powerplay",
-    "dew_factor_affects_grip_and_swing"
+    "dew_factor_affects_grip_and_swing",
+    "set_par_total_conservative_approach_first_6_overs"
   ],
   "errors": [],
   "warnings": [
+    "MILP infeasible \u2014 used fallback utility sort for XI selection",
     "MILP infeasible \u2014 used fallback utility sort for XI selection"
-  ]
+  ],
+  "batting_first_scenario": {
+    "scenario": "batting_first",
+    "adjusted_runs_estimate": 159.8,
+    "runs_lower": 141.8,
+    "runs_upper": 145.8,
+    "win_probability": 0.525,
+    "pitch_difficulty": "easy",
+    "chase_penalty": 0,
+    "tactical_flags": [
+      "use_pace_in_powerplay",
+      "dew_factor_affects_grip_and_swing",
+      "set_par_total_conservative_approach_first_6_overs"
+    ],
+    "strategy_brief": "STRATEGY BRIEF: ENGLAND vs NEW_ZEALAND at Kia Oval\n======================================================================\n\nTOSS: england chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~160 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 52% (FAIR)\n\nPITCH: Flat\n  Traditionally good batting surface; high scores common in T20\n\nBATTING ORDER (Top 4):\n  1. Nat Sciver-Brunt (SR 138)\n  2. Danni Wyatt-Hodge (SR 126)\n  3. Sophia Dunkley (SR 122)\n  4. Amy Jones (SR 119)\n\nBOWLING PLAN:\n  Powerplay: Issy Wong, Sophia Dunkley, Danni Wyatt-Hodge, Heather Knight, Lauren Filer, Freya Kemp, Sophie Ecclestone, Alice Capsey, Nat Sciver-Brunt, Dani Gibson\n  Middle: Issy Wong, Sophia Dunkley, Danni Wyatt-Hodge, Heather Knight, Lauren Filer, Freya Kemp, Sophie Ecclestone, Alice Capsey, Nat Sciver-Brunt, Dani Gibson\n  Death: Issy Wong, Sophia Dunkley, Danni Wyatt-Hodge, Heather Knight, Lauren Filer, Freya Kemp, Sophie Ecclestone, Alice Capsey, Nat Sciver-Brunt, Dani Gibson\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Dew factor affects grip and swing\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
+  },
+  "chasing_scenario": {
+    "scenario": "chasing",
+    "adjusted_runs_estimate": 137.1,
+    "runs_lower": 127.1,
+    "runs_upper": 131.1,
+    "win_probability": 0.477,
+    "pitch_difficulty": "easy",
+    "chase_penalty": -15,
+    "tactical_flags": [
+      "use_pace_in_powerplay",
+      "dew_factor_affects_grip_and_swing",
+      "chase_scenario_requires_calculated_aggression",
+      "monitor_required_run_rate_per_phase"
+    ],
+    "strategy_brief": "STRATEGY BRIEF: ENGLAND vs NEW_ZEALAND at Kia Oval\n======================================================================\n\nTOSS: new_zealand chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~137 runs to win.\n  (Chase penalty applied: -15 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 47% (POOR)\n\nPITCH: Flat\n  Traditionally good batting surface; high scores common in T20\n\nBATTING ORDER (Top 4):\n  1. Nat Sciver-Brunt (SR 138)\n  2. Danni Wyatt-Hodge (SR 126)\n  3. Sophia Dunkley (SR 122)\n  4. Amy Jones (SR 119)\n\nBOWLING PLAN:\n  Powerplay: Issy Wong, Sophia Dunkley, Danni Wyatt-Hodge, Heather Knight, Lauren Filer, Freya Kemp, Sophie Ecclestone, Alice Capsey, Nat Sciver-Brunt, Dani Gibson\n  Middle: Issy Wong, Sophia Dunkley, Danni Wyatt-Hodge, Heather Knight, Lauren Filer, Freya Kemp, Sophie Ecclestone, Alice Capsey, Nat Sciver-Brunt, Dani Gibson\n  Death: Issy Wong, Sophia Dunkley, Danni Wyatt-Hodge, Heather Knight, Lauren Filer, Freya Kemp, Sophie Ecclestone, Alice Capsey, Nat Sciver-Brunt, Dani Gibson\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Dew factor affects grip and swing\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n\n======================================================================"
+  }
 }

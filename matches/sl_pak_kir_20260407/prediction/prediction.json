@@ -7,18 +7,20 @@
     "opponent_id": "pakistan",
     "venue_id": "tribhuvan_university_kirtipur",
     "series": "ICC Women's T20 WC Asia Qualifier 2026",
-    "match_no": 2
+    "match_no": 2,
+    "series_result": "loss",
+    "series_wins_before": 0
   },
-  "generated_at": "2026-05-16T06:03:50.663246Z",
-  "scenario": "unknown",
+  "generated_at": "2026-05-16T10:43:58.605837Z",
+  "scenario": "pre_toss_blended",
   "pitch_difficulty": "very_difficult",
-  "chase_penalty": 0,
-  "base_runs_estimate": 121.0,
-  "adjusted_runs_estimate": 121.0,
-  "runs_lower": 117.0,
-  "runs_upper": 125.0,
-  "win_probability": 0.42,
-  "win_probability_reasoning": "Batting first: standard conditions (toss not yet known \u2014 confidence reduced)",
+  "chase_penalty": -30,
+  "base_runs_estimate": 120.8,
+  "adjusted_runs_estimate": 94.1,
+  "runs_lower": 103.8,
+  "runs_upper": 107.8,
+  "win_probability": 0.326,
+  "win_probability_reasoning": "Pre-toss blend: batting-first WP=42.4%, chasing WP=22.8% \u2192 blended 32.6%",
   "selected_xi": [
     "chamari_athapaththu",
     "nilakshi_de_silva",
@@ -166,8 +168,39 @@
     }
   ],
   "tactical_flags": [
-    "prioritise_spinners_middle_overs"
+    "prioritise_spinners_middle_overs",
+    "set_par_total_conservative_approach_first_6_overs"
   ],
   "errors": [],
-  "warnings": []
+  "warnings": [],
+  "batting_first_scenario": {
+    "scenario": "batting_first",
+    "adjusted_runs_estimate": 110.9,
+    "runs_lower": 118.9,
+    "runs_upper": 122.9,
+    "win_probability": 0.424,
+    "pitch_difficulty": "very_difficult",
+    "chase_penalty": 0,
+    "tactical_flags": [
+      "prioritise_spinners_middle_overs",
+      "set_par_total_conservative_approach_first_6_overs"
+    ],
+    "strategy_brief": "STRATEGY BRIEF: SRI_LANKA vs PAKISTAN at Tribhuvan University International Cricket Ground\n======================================================================\n\nTOSS: sri_lanka chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~111 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 42% (POOR)\n\nPITCH: Spin Friendly\n  High altitude (1300m) \u2014 ball carries well but pitch is slow and low. Spinners get grip and turn. Compact ground dimensions assist batters. Scores tend to be moderate.\n\nBATTING ORDER (Top 4):\n  1. AC Jayangani (SR 107)\n  2. H Madavi (SR 97)\n  3. EMKNH Senavirathna (SR 115)\n  4. WK Dilhari (SR 105)\n\nBOWLING PLAN:\n  Powerplay: NND de Silva, K Kavindi\n  Middle: NND de Silva, K Kavindi, RMVD Gunaratne\n  Death: K Kavindi, BMSM Kumari, OU Ranasinghe, NND de Silva, KDU Prabodhani\n\nTACTICAL NOTES:\n  \u2022 Prioritise spinners middle overs\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
+  },
+  "chasing_scenario": {
+    "scenario": "chasing",
+    "adjusted_runs_estimate": 77.2,
+    "runs_lower": 88.7,
+    "runs_upper": 92.7,
+    "win_probability": 0.228,
+    "pitch_difficulty": "very_difficult",
+    "chase_penalty": -30,
+    "tactical_flags": [
+      "prioritise_spinners_middle_overs",
+      "chase_scenario_requires_calculated_aggression",
+      "monitor_required_run_rate_per_phase",
+      "underdog_scenario_high_risk_strategy_required"
+    ],
+    "strategy_brief": "STRATEGY BRIEF: SRI_LANKA vs PAKISTAN at Tribhuvan University International Cricket Ground\n======================================================================\n\nTOSS: pakistan chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~77 runs to win.\n  (Chase penalty applied: -30 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 22% (FAILING)\n\nPITCH: Spin Friendly\n  High altitude (1300m) \u2014 ball carries well but pitch is slow and low. Spinners get grip and turn. Compact ground dimensions assist batters. Scores tend to be moderate.\n\nBATTING ORDER (Top 4):\n  1. AC Jayangani (SR 107)\n  2. H Madavi (SR 97)\n  3. EMKNH Senavirathna (SR 115)\n  4. WK Dilhari (SR 105)\n\nBOWLING PLAN:\n  Powerplay: NND de Silva, K Kavindi\n  Middle: NND de Silva, K Kavindi, RMVD Gunaratne\n  Death: K Kavindi, BMSM Kumari, OU Ranasinghe, NND de Silva, KDU Prabodhani\n\nTACTICAL NOTES:\n  \u2022 Prioritise spinners middle overs\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n  \u2022 Underdog scenario high risk strategy required\n\n======================================================================"
+  }
 }

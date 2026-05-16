@@ -35,6 +35,7 @@ from wt20_oracle.pre_match_graph import run_pre_match_pipeline
 
 FIXTURES = [
     # ── India vs Sri Lanka in India (Nov 2025, 5-match series) ──────────────
+    # Result: India won 5-0
     {
         "id": "ind_sl_vis1_20251106",
         "date": "2025-11-06",
@@ -43,6 +44,8 @@ FIXTURES = [
         "venue_id": "aca_vdca_visakhapatnam",
         "series": "India vs Sri Lanka T20I Series 2025",
         "match_no": 1,
+        "series_result": "win",  # India won
+        "series_wins_before": 0,
     },
     {
         "id": "ind_sl_vis2_20251108",
@@ -52,6 +55,8 @@ FIXTURES = [
         "venue_id": "aca_vdca_visakhapatnam",
         "series": "India vs Sri Lanka T20I Series 2025",
         "match_no": 2,
+        "series_result": "win",
+        "series_wins_before": 1,
     },
     {
         "id": "ind_sl_tvm1_20251112",
@@ -61,6 +66,8 @@ FIXTURES = [
         "venue_id": "greenfield_thiruvananthapuram",
         "series": "India vs Sri Lanka T20I Series 2025",
         "match_no": 3,
+        "series_result": "win",
+        "series_wins_before": 2,
     },
     {
         "id": "ind_sl_tvm2_20251114",
@@ -70,6 +77,8 @@ FIXTURES = [
         "venue_id": "greenfield_thiruvananthapuram",
         "series": "India vs Sri Lanka T20I Series 2025",
         "match_no": 4,
+        "series_result": "win",
+        "series_wins_before": 3,  # ← 3-0 up going into this match: MOMENTUM FACTOR APPLIES
     },
     {
         "id": "ind_sl_tvm3_20251116",
@@ -79,8 +88,11 @@ FIXTURES = [
         "venue_id": "greenfield_thiruvananthapuram",
         "series": "India vs Sri Lanka T20I Series 2025",
         "match_no": 5,
+        "series_result": "win",
+        "series_wins_before": 4,
     },
     # ── Australia vs India in Australia (Jan–Feb 2026, 3-match series) ───────
+    # Result: India won 2-1 (AUS perspective: LOSS, then NR, then LOSS)
     {
         "id": "aus_ind_scg_20260118",
         "date": "2026-01-18",
@@ -89,6 +101,8 @@ FIXTURES = [
         "venue_id": "scg_sydney",
         "series": "Australia vs India T20I Series 2026",
         "match_no": 1,
+        "series_result": "loss",
+        "series_wins_before": 0,
     },
     {
         "id": "aus_ind_can_20260121",
@@ -98,6 +112,8 @@ FIXTURES = [
         "venue_id": "manuka_oval_canberra",
         "series": "Australia vs India T20I Series 2026",
         "match_no": 2,
+        "series_result": "no_result",
+        "series_wins_before": 0,
     },
     {
         "id": "aus_ind_adl_20260124",
@@ -107,8 +123,11 @@ FIXTURES = [
         "venue_id": "adelaide_oval",
         "series": "Australia vs India T20I Series 2026",
         "match_no": 3,
+        "series_result": "loss",
+        "series_wins_before": 0,
     },
     # ── West Indies vs Sri Lanka in Caribbean (Feb 2026, 3-match series) ─────
+    # Result: SL won 2-0 (WI perspective: NR, LOSS, LOSS)
     {
         "id": "wi_sl_gren1_20260201",
         "date": "2026-02-01",
@@ -117,6 +136,8 @@ FIXTURES = [
         "venue_id": "national_cricket_stadium_grenada",
         "series": "West Indies vs Sri Lanka T20I Series 2026",
         "match_no": 1,
+        "series_result": "no_result",
+        "series_wins_before": 0,
     },
     {
         "id": "wi_sl_gren2_20260203",
@@ -126,6 +147,8 @@ FIXTURES = [
         "venue_id": "national_cricket_stadium_grenada",
         "series": "West Indies vs Sri Lanka T20I Series 2026",
         "match_no": 2,
+        "series_result": "loss",
+        "series_wins_before": 0,
     },
     {
         "id": "wi_sl_gren3_20260205",
@@ -135,8 +158,11 @@ FIXTURES = [
         "venue_id": "national_cricket_stadium_grenada",
         "series": "West Indies vs Sri Lanka T20I Series 2026",
         "match_no": 3,
+        "series_result": "loss",
+        "series_wins_before": 0,
     },
     # ── New Zealand vs South Africa in New Zealand (Feb–Mar 2026, 5-match) ──
+    # Result: NZ won 4-1
     {
         "id": "nz_sa_bay_20260215",
         "date": "2026-02-15",
@@ -145,6 +171,8 @@ FIXTURES = [
         "venue_id": "bay_oval_mount_maunganui",
         "series": "New Zealand vs South Africa T20I Series 2026",
         "match_no": 1,
+        "series_result": "win",
+        "series_wins_before": 0,
     },
     {
         "id": "nz_sa_sed_20260218",
@@ -154,6 +182,8 @@ FIXTURES = [
         "venue_id": "seddon_park_hamilton",
         "series": "New Zealand vs South Africa T20I Series 2026",
         "match_no": 2,
+        "series_result": "loss",
+        "series_wins_before": 1,
     },
     {
         "id": "nz_sa_eden_20260221",
@@ -163,6 +193,8 @@ FIXTURES = [
         "venue_id": "eden_park_auckland",
         "series": "New Zealand vs South Africa T20I Series 2026",
         "match_no": 3,
+        "series_result": "win",
+        "series_wins_before": 1,
     },
     {
         "id": "nz_sa_sky_20260224",
@@ -172,6 +204,8 @@ FIXTURES = [
         "venue_id": "sky_stadium_wellington",
         "series": "New Zealand vs South Africa T20I Series 2026",
         "match_no": 4,
+        "series_result": "win",
+        "series_wins_before": 2,
     },
     {
         "id": "nz_sa_hag_20260227",
@@ -181,8 +215,11 @@ FIXTURES = [
         "venue_id": "hagley_oval_christchurch",
         "series": "New Zealand vs South Africa T20I Series 2026",
         "match_no": 5,
+        "series_result": "win",
+        "series_wins_before": 3,
     },
     # ── South Africa vs India in South Africa (Mar–Apr 2026, 5-match) ────────
+    # Result: SA won 4-1
     {
         "id": "sa_ind_dur1_20260315",
         "date": "2026-03-15",
@@ -191,6 +228,8 @@ FIXTURES = [
         "venue_id": "kingsmead_durban",
         "series": "South Africa vs India T20I Series 2026",
         "match_no": 1,
+        "series_result": "win",
+        "series_wins_before": 0,
     },
     {
         "id": "sa_ind_dur2_20260318",
@@ -200,6 +239,8 @@ FIXTURES = [
         "venue_id": "kingsmead_durban",
         "series": "South Africa vs India T20I Series 2026",
         "match_no": 2,
+        "series_result": "win",
+        "series_wins_before": 1,
     },
     {
         "id": "sa_ind_wan1_20260322",
@@ -209,6 +250,8 @@ FIXTURES = [
         "venue_id": "wanderers_johannesburg",
         "series": "South Africa vs India T20I Series 2026",
         "match_no": 3,
+        "series_result": "win",
+        "series_wins_before": 2,  # ← 2-0 up going into this; momentum starts at 3
     },
     {
         "id": "sa_ind_wan2_20260325",
@@ -218,6 +261,8 @@ FIXTURES = [
         "venue_id": "wanderers_johannesburg",
         "series": "South Africa vs India T20I Series 2026",
         "match_no": 4,
+        "series_result": "loss",
+        "series_wins_before": 3,  # ← 3-0 up but lost this one
     },
     {
         "id": "sa_ind_cen_20260427",
@@ -227,9 +272,12 @@ FIXTURES = [
         "venue_id": "supersport_park_centurion",
         "series": "South Africa vs India T20I Series 2026",
         "match_no": 5,
+        "series_result": "win",
+        "series_wins_before": 3,  # ← 3-0 up: MOMENTUM FACTOR APPLIES
         "notes": "The match that exposed the scenario-detection bug",
     },
     # ── Bangladesh vs Sri Lanka in Bangladesh (Mar 2026, 3-match series) ─────
+    # Result: SL won 2-1
     {
         "id": "ban_sl_syl1_20260301",
         "date": "2026-03-01",
@@ -238,6 +286,8 @@ FIXTURES = [
         "venue_id": "sylhet_international",
         "series": "Bangladesh vs Sri Lanka T20I Series 2026",
         "match_no": 1,
+        "series_result": "win",
+        "series_wins_before": 0,
     },
     {
         "id": "ban_sl_syl2_20260303",
@@ -247,6 +297,8 @@ FIXTURES = [
         "venue_id": "sylhet_international",
         "series": "Bangladesh vs Sri Lanka T20I Series 2026",
         "match_no": 2,
+        "series_result": "loss",
+        "series_wins_before": 1,
     },
     {
         "id": "ban_sl_syl3_20260305",
@@ -256,8 +308,11 @@ FIXTURES = [
         "venue_id": "sylhet_international",
         "series": "Bangladesh vs Sri Lanka T20I Series 2026",
         "match_no": 3,
+        "series_result": "loss",
+        "series_wins_before": 1,
     },
     # ── WT20 Qualifier Asia (Nepal, Apr 2026) — associate WC teams ───────────
+    # Group matches (not series): Pakistan dominates
     {
         "id": "ban_pak_kir_20260405",
         "date": "2026-04-05",
@@ -266,6 +321,8 @@ FIXTURES = [
         "venue_id": "tribhuvan_university_kirtipur",
         "series": "ICC Women's T20 WC Asia Qualifier 2026",
         "match_no": 1,
+        "series_result": "loss",
+        "series_wins_before": 0,
     },
     {
         "id": "sl_pak_kir_20260407",
@@ -275,6 +332,8 @@ FIXTURES = [
         "venue_id": "tribhuvan_university_kirtipur",
         "series": "ICC Women's T20 WC Asia Qualifier 2026",
         "match_no": 2,
+        "series_result": "loss",
+        "series_wins_before": 0,
     },
     {
         "id": "ban_sl_mul_20260410",
@@ -284,8 +343,11 @@ FIXTURES = [
         "venue_id": "upper_mulpani_kathmandu",
         "series": "ICC Women's T20 WC Asia Qualifier 2026",
         "match_no": 3,
+        "series_result": "win",
+        "series_wins_before": 0,
     },
     # ── England home series warm-ups (May 2026) ───────────────────────────────
+    # Result: England won 2-1
     {
         "id": "eng_nz_oval_20260501",
         "date": "2026-05-01",
@@ -294,6 +356,8 @@ FIXTURES = [
         "venue_id": "the_oval",
         "series": "England vs New Zealand T20I Series 2026",
         "match_no": 1,
+        "series_result": "win",
+        "series_wins_before": 0,
     },
     {
         "id": "eng_nz_rose_20260504",
@@ -303,6 +367,8 @@ FIXTURES = [
         "venue_id": "rose_bowl",
         "series": "England vs New Zealand T20I Series 2026",
         "match_no": 2,
+        "series_result": "loss",
+        "series_wins_before": 1,
     },
     {
         "id": "eng_nz_hd_20260507",
@@ -312,6 +378,8 @@ FIXTURES = [
         "venue_id": "headingley",
         "series": "England vs New Zealand T20I Series 2026",
         "match_no": 3,
+        "series_result": "win",
+        "series_wins_before": 1,
     },
 ]
 
@@ -344,6 +412,8 @@ def run_and_save(fixture: dict, dry_run: bool = False) -> dict:
             match_date=fixture["date"],
             toss_winner=None,
             toss_decision=None,
+            series_number=fixture.get("match_no", 0),
+            series_score=fixture.get("series_wins_before", 0),
         )
 
         # Build output payload
@@ -368,6 +438,12 @@ def run_and_save(fixture: dict, dry_run: bool = False) -> dict:
             "errors": state.get("errors", []),
             "warnings": state.get("warnings", []),
         }
+
+        # Include per-scenario details if present (dual-scenario predictions)
+        if state.get("batting_first_scenario"):
+            result["batting_first_scenario"] = state["batting_first_scenario"]
+        if state.get("chasing_scenario"):
+            result["chasing_scenario"] = state["chasing_scenario"]
 
         # Save metadata and prediction
         match_dir.mkdir(parents=True, exist_ok=True)

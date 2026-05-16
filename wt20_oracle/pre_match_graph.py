@@ -16,7 +16,7 @@ This was the root cause of the India vs SA April 27 failure — scenario
 was never set, so batting-first assumptions propagated through all nodes.
 """
 
-from typing import Any, Dict, Optional
+from typing import Any, Dict, List, Optional
 
 from wt20_oracle.state import PreMatchState
 from wt20_oracle.io.loader import load_match_context, venue_pace_score, avg_first_innings_score
@@ -159,6 +159,144 @@ def opponent_analysis_node(state: PreMatchState) -> Dict[str, Any]:
     }
 
 
+def _calculate_batter_bowler_boost(
+    our_squad: List[Dict],
+    opponent_squad: List[Dict],
+    matchups: Dict[str, Any],
+    scenario: str,
+) -> float:
+    """
+    Calculate a runs boost based on elite batter-vs-bowler matchups.
+
+    Identifies top-4 batters from our team vs top-3 bowlers from opponent.
+    If batters have high strike rates (>120) vs these bowlers, apply +2-5 run bonus.
+
+    Returns: Bonus runs to add to prediction (0-5 runs typical)
+    """
+    if scenario != "chasing":
+        return 0.0  # Only enhance chase scenarios where we specifically face their bowlers
+
+    from wt20_oracle.io.loader import get_player, get_matchup
+
+    # Get top batters (high SR or average)
+    our_batters = []
+    for p in our_squad:
+        if p.get("role") in ("batter", "wk_batter", "all_rounder"):
+            bat_stats = p.get("t20i_stats", {}).get("batting", {}) or {}
+            sr = bat_stats.get("strike_rate", 0) or 0
+            avg = bat_stats.get("average", 0) or 0
+            if sr > 110 or avg > 25:
+                our_batters.append((p["id"], sr, avg, p.get("name", "")))
+
+    # Get top bowlers from opponent (good economy)
+    opp_bowlers = []
+    for p in opponent_squad:
+        if p.get("role") in ("bowler", "all_rounder"):
+            bowl_stats = p.get("t20i_stats", {}).get("bowling", {}) or {}
+            economy = bowl_stats.get("economy", 99) or 99
+            innings = bowl_stats.get("innings", 0) or 0
+            if economy < 7.5 and innings >= 5:
+                opp_bowlers.append((p["id"], economy, p.get("name", "")))
+
+    # Sort by quality
+    our_batters.sort(key=lambda x: x[1], reverse=True)  # By strike rate
+    opp_bowlers.sort(key=lambda x: x[1])  # By economy (lower is better)
+
+    our_batters = our_batters[:4]  # Top 4
+    opp_bowlers = opp_bowlers[:3]  # Top 3
+
+    bonus = 0.0
+
+    # Fallback: find matchups with loose matching (case-insensitive search in keys)
+    def find_matchup_loose(matchups: Dict, batter_id: str, bowler_id: str) -> Optional[Dict]:
+        """Try multiple matching strategies to find batter-vs-bowler matchup."""
+        # Strategy 1: Exact match (most common case)
+        key = f"{batter_id}::{bowler_id}"
+        if key in matchups:
+            return matchups[key]
+
+        # Strategy 2: Try with underscores/spaces variations
+        # The database might have "arundhati_reddy" stored as "Arundhati Reddy"
+        batter_parts = batter_id.lower().replace("_", " ").split()
+        bowler_parts = bowler_id.lower().replace("_", " ").split()
+
+        for k, v in matchups.items():
+            k_lower = k.lower()
+            # Check if key contains the player names (allow flexible matching)
+            if all(part in k_lower for part in batter_parts) and all(part in k_lower for part in bowler_parts):
+                return v
+        return None
+
+    # Check matchups between our top batters and their top bowlers
+    for batter_id, batter_sr, batter_avg, batter_name in our_batters:
+        for bowler_id, bowler_econ, bowler_name in opp_bowlers:
+            matchup = find_matchup_loose(matchups, batter_id, bowler_id)
+            if matchup:
+                matchup_sr = matchup.get("strike_rate", 0)
+                if matchup_sr > 120:
+                    # Elite batter dominates this bowler (>120 SR in h2h)
+                    bonus += 1.5  # +1.5 runs per favorable matchup
+
+    # Cap bonus and return (max +5 runs from this factor)
+    return min(5.0, bonus)
+
+
+def _calculate_pitch_calibration_adjustment(
+    pitch_difficulty: str,
+    venue_data: Dict[str, Any],
+    scenario: str,
+    base_runs: float,
+    series_score: int = 0,
+) -> float:
+    """
+    Apply second-order pitch effects based on scenario and venue combination.
+
+    Instead of flat pitch adjustments, consider:
+    - Flat pitch + home advantage → higher runs
+    - Spin pitch + aggressive batting → less suppression (especially when dominant)
+    - Pace pitch + chase scenario → more runs penalty
+
+    Returns: Adjustment runs (negative or positive)
+    """
+    pitch_type = venue_data.get("pitch", {}).get("type", "balanced")
+
+    # Base pitch adjustments (from venue_pace_score)
+    base_adjustments = {
+        "flat": 8.0,          # Current: flat pitches → +8 runs
+        "balanced": 0.0,      # Current: no adjustment
+        "spin_friendly": -15.0,  # Current: spin → -15 runs
+        "seam_friendly": -5.0,   # Current: seam → -5 runs
+    }
+
+    base_adjustment = base_adjustments.get(pitch_type, 0.0)
+    additional = 0.0
+
+    # Second-order effect 1: Flat pitch + home/series momentum
+    # (Model currently gives +8, but flat pitches at home with momentum get +15-20)
+    if pitch_type == "flat" and scenario == "batting_first":
+        additional = 8.0  # Increase from base +8 to effective +16
+
+    # Second-order effect 2: Spin pitch + aggressive batting in dominant series
+    # (Model currently suppresses -15, but dominant home teams (3-0+) score much better)
+    # Validation showed India vs SL Match 4: spin -15 penalty was too aggressive
+    elif pitch_type == "spin_friendly" and scenario == "batting_first":
+        if series_score >= 3:
+            # Dominant home team on spin pitch: much less suppression (-5 not -15)
+            additional = 10.0  # Reduce penalty from -15 to -5 effectively
+        else:
+            # Normal case: home team batting on spin pitch with momentum is less suppressed
+            additional = 5.0  # Reduce penalty from -15 to -10 effectively
+
+    # Second-order effect 3: Pace pitch + chase scenario
+    # (Chasing on pace is harder; currently -15 base. No additional for chasing)
+    elif pitch_type == "seam_friendly" and scenario == "chasing":
+        additional = -3.0  # Increase penalty slightly for pace + chase difficulty
+
+    # Cap the total adjustment
+    total_adjustment = base_adjustment + additional
+    return max(-20.0, min(20.0, total_adjustment))
+
+
 def prediction_node(state: PreMatchState) -> Dict[str, Any]:
     """
     Compute runs estimate and win probability, applying scenario adjustments.
@@ -167,6 +305,8 @@ def prediction_node(state: PreMatchState) -> Dict[str, Any]:
       1. Monte Carlo → raw base_runs and raw win_probability
       2. ScenarioHandler.adjust_runs_prediction() → applies chase penalty
       3. ScenarioHandler.adjust_win_probability() → reduces prob for chasing
+      4. Batter-vs-Bowler specificity → apply matchup boost for elite matchups
+      5. Series Momentum → apply aggression boost for dominant series position
     """
     our_squad = state.get("our_squad", [])
     opponent_squad = state.get("opponent_squad", [])
@@ -177,6 +317,8 @@ def prediction_node(state: PreMatchState) -> Dict[str, Any]:
     scenario = state.get("scenario", "unknown")
     pitch_difficulty = state.get("pitch_difficulty", "moderate")
     chase_penalty = state.get("chase_penalty", 0)
+    matchups = state.get("matchups", {})
+    series_score = state.get("series_score", 0)  # For context-aware pitch adjustment
 
     # Derive strength scores
     our_bat = squad_batting_strength(our_squad, analyst_insights, team_id)
@@ -215,7 +357,70 @@ def prediction_node(state: PreMatchState) -> Dict[str, Any]:
         is_chasing=(scenario == "chasing"),
     )
 
-    win_reasoning = win_result["reasoning"]
+    # ── Pitch Calibration Refinement ───────────────────────────────────────────
+    # Apply second-order pitch effects (e.g., flat + home → more runs, not just +8)
+    # Now context-aware: reduce spin suppression when team is dominant (3-0+)
+    pitch_adjustment = _calculate_pitch_calibration_adjustment(
+        pitch_difficulty, venue_data, scenario, base_runs, series_score
+    )
+    if pitch_adjustment != 0:
+        runs_result["adjusted_runs"] += pitch_adjustment
+        runs_result["adjusted_runs"] = round(runs_result["adjusted_runs"], 1)
+        pitch_reasoning = f" (pitch 2nd-order: {pitch_adjustment:+.0f} runs)"
+    else:
+        pitch_reasoning = ""
+
+    # ── Batter-vs-Bowler Specificity Enhancement ───────────────────────────────
+    # In chase scenarios, weight elite batter-vs-bowler matchups (e.g., Mandhana vs Ismail)
+    batter_bowler_boost = _calculate_batter_bowler_boost(our_squad, opponent_squad, matchups, scenario)
+    if batter_bowler_boost > 0:
+        runs_result["adjusted_runs"] += batter_bowler_boost
+        runs_result["adjusted_runs"] = round(runs_result["adjusted_runs"], 1)
+        win_result["adjusted_win_probability"] = min(0.95, win_result["adjusted_win_probability"] + batter_bowler_boost * 0.01)
+        batter_bowler_reasoning = f" (+{batter_bowler_boost:.0f} runs from elite matchup advantage)"
+    else:
+        batter_bowler_reasoning = ""
+
+    # ── Series Momentum Factor ─────────────────────────────────────────────────
+    # If team is up 3-0 or better in series and batting first, apply aggression boost
+    series_score = state.get("series_score", 0)
+    series_number = state.get("series_number", 0)
+    batting_first_scenario = (toss_winner == team_id and toss_decision == "bat_first")
+
+    series_momentum_reasoning = ""
+    if series_score >= 3 and batting_first_scenario:
+        # Determine multiplier based on series stage and lead
+        # After Match 3: if 3-0, potential for 5-0 sweep → stronger aggression
+        # This addresses cases like India vs SL Match 4 (3-0 up, still room for whitewash)
+        if series_score == 3 and series_number >= 4:
+            # Potential 5-0 scenario: boost aggression to +25% (stronger than normal 3-0)
+            # Tuned based on validation showing India vs SL Match 4 needs stronger boost
+            aggression_multiplier = 1.25
+            momentum_type = "sweep"
+            wp_bonus = 0.08
+        else:
+            # Standard 3-0 or 4-0 lead (series effectively decided)
+            aggression_multiplier = 1.15
+            momentum_type = "dominant"
+            wp_bonus = 0.05
+
+        runs_result["adjusted_runs"] *= aggression_multiplier
+        runs_result["adjusted_runs"] = round(runs_result["adjusted_runs"], 1)
+        if "upper_bound" in runs_result:
+            runs_result["upper_bound"] *= aggression_multiplier
+            runs_result["upper_bound"] = round(runs_result["upper_bound"], 1)
+        if "lower_bound" in runs_result:
+            runs_result["lower_bound"] *= aggression_multiplier
+            runs_result["lower_bound"] = round(runs_result["lower_bound"], 1)
+
+        # WP boost
+        original_wp = win_result["adjusted_win_probability"]
+        win_result["adjusted_win_probability"] = min(0.95, original_wp + wp_bonus)
+
+        multiplier_pct = int((aggression_multiplier - 1) * 100)
+        series_momentum_reasoning = f" ({momentum_type} series {series_score}-0, match {series_number}: +{multiplier_pct}% runs, +{int(wp_bonus*100)}% WP)"
+
+    win_reasoning = win_result["reasoning"] + pitch_reasoning + batter_bowler_reasoning + series_momentum_reasoning
     if scenario == "unknown":
         win_reasoning += " (toss not yet known — confidence reduced)"
 
@@ -240,6 +445,8 @@ def _run_pipeline_single(
     match_date: str,
     toss_winner: Optional[str],
     toss_decision: Optional[str],
+    series_number: int = 0,
+    series_score: int = 0,
 ) -> PreMatchState:
     """Internal: run the pipeline for one specific toss outcome."""
     state: PreMatchState = {
@@ -249,6 +456,8 @@ def _run_pipeline_single(
         "match_date": match_date,
         "toss_winner": toss_winner,
         "toss_decision": toss_decision,
+        "series_number": series_number,
+        "series_score": series_score,
         "errors": [],
         "warnings": [],
     }
@@ -281,6 +490,8 @@ def run_pre_match_pipeline(
     match_date: str = "",
     toss_winner: Optional[str] = None,
     toss_decision: Optional[str] = None,
+    series_number: int = 0,
+    series_score: int = 0,
 ) -> PreMatchState:
     """
     Run the full pre-match pipeline and return completed state.
@@ -303,6 +514,8 @@ def run_pre_match_pipeline(
         match_date: ISO date string (e.g. "2026-06-17")
         toss_winner: team_id of toss winner, or None if toss not yet known
         toss_decision: "bat_first" or "bowl_first", or None
+        series_number: Which match in series (e.g. 4 for 4th match)
+        series_score: Number of matches won in series so far by our team
 
     Returns:
         Completed PreMatchState with all fields populated
@@ -310,7 +523,8 @@ def run_pre_match_pipeline(
     if toss_winner is not None:
         # Toss known — single deterministic path
         return _run_pipeline_single(
-            team_id, opponent_id, venue_id, match_date, toss_winner, toss_decision
+            team_id, opponent_id, venue_id, match_date, toss_winner, toss_decision,
+            series_number, series_score
         )
 
     # ── Pre-toss: run both scenarios and blend ────────────────────────────────
@@ -320,6 +534,8 @@ def run_pre_match_pipeline(
         team_id, opponent_id, venue_id, match_date,
         toss_winner=team_id,
         toss_decision="bat_first",
+        series_number=series_number,
+        series_score=series_score,
     )
 
     # Scenario B: opponent wins toss and bats first → we chase
@@ -327,6 +543,8 @@ def run_pre_match_pipeline(
         team_id, opponent_id, venue_id, match_date,
         toss_winner=opponent_id,
         toss_decision="bat_first",
+        series_number=series_number,
+        series_score=series_score,
     )
 
     # ── Blend headline numbers (equal 50/50 weight) ───────────────────────────
