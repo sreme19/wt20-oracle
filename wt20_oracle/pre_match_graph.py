@@ -241,6 +241,72 @@ def _calculate_batter_bowler_boost(
     return min(5.0, bonus)
 
 
+def _calculate_variable_chase_penalty(
+    pitch_difficulty: str,
+    opponent_squad: List[Dict],
+    matchups: Dict[str, Any],
+) -> float:
+    """
+    Phase 2 Task 5: Calculate dynamic chase penalty based on opponent bowling strength.
+
+    Replaces fixed penalty (-15 to -30) with economy-based calibration.
+
+    Base penalties by pitch:
+    - spin_friendly: -15
+    - seam_friendly: -20
+    - flat: -10
+    - balanced: -15
+
+    Adjustments:
+    - Weak opponent bowling (economy > 8.0): +3 (less penalty)
+    - Strong opponent bowling (economy < 7.0): -3 (more penalty)
+    - Elite batter-bowler matchups: -1 per matchup (reduces penalty)
+
+    Returns: Adjusted chase penalty (e.g., -12 to -23)
+    """
+    # Base penalty by pitch type
+    base_penalties = {
+        "spin_friendly": -15,
+        "seam_friendly": -20,
+        "flat": -10,
+        "balanced": -15,
+    }
+    base_penalty = base_penalties.get(pitch_difficulty, -15)
+
+    # Calculate opponent bowling economy (top 3 bowlers)
+    opponent_economies = []
+    for bowler in opponent_squad[:5]:  # Check top bowlers
+        economy = bowler.get("economy", 8.0)
+        if isinstance(economy, (int, float)):
+            opponent_economies.append(economy)
+
+    if opponent_economies:
+        # Use average of available economies (or top 3)
+        top_economies = sorted(opponent_economies)[:3]
+        avg_economy = sum(top_economies) / len(top_economies) if top_economies else 8.0
+    else:
+        avg_economy = 8.0
+
+    # Adjust based on bowling economy
+    if avg_economy > 8.0:  # Weak bowling
+        economy_adjustment = 3  # Less penalty needed
+    elif avg_economy < 7.0:  # Strong bowling
+        economy_adjustment = -3  # More penalty appropriate
+    else:
+        economy_adjustment = 0
+
+    # Count elite batter-bowler matchups (further reduce penalty if we have advantages)
+    # This is a simplified check; more sophisticated matching in actual implementation
+    elite_matchups = 0  # Could be enhanced to count actual elite matchups
+    matchup_adjustment = -elite_matchups * 1.0
+
+    # Combine adjustments
+    final_penalty = base_penalty + economy_adjustment + matchup_adjustment
+
+    # Cap the penalty to reasonable bounds
+    return max(-25.0, min(-5.0, final_penalty))
+
+
 def _calculate_recent_form_bonus(analyst_insights: Dict[str, Any], scenario: str, our_squad: List[Dict]) -> Dict[str, Any]:
     """
     Phase 2 Task 4: Calculate runs and WP bonus for recent star performances.
@@ -411,6 +477,23 @@ def prediction_node(state: PreMatchState) -> Dict[str, Any]:
         pitch_difficulty=pitch_difficulty,
         is_chasing=(scenario == "chasing"),
     )
+
+    # Phase 2 Task 5: Override fixed chase penalty with variable calculation
+    # When chasing, replace the standard penalty with economy-based calibration
+    if scenario == "chasing":
+        variable_penalty = _calculate_variable_chase_penalty(pitch_difficulty, opponent_squad, matchups)
+        fixed_penalty = chase_penalty
+        if variable_penalty != fixed_penalty:
+            # Apply the difference to runs_result
+            penalty_difference = variable_penalty - fixed_penalty
+            runs_result["adjusted_runs"] += penalty_difference
+            runs_result["adjusted_runs"] = round(runs_result["adjusted_runs"], 1)
+            if "upper_bound" in runs_result:
+                runs_result["upper_bound"] += penalty_difference
+            if "lower_bound" in runs_result:
+                runs_result["lower_bound"] += penalty_difference
+            # Update chase_penalty in state for reporting
+            chase_penalty = variable_penalty
 
     # ── Pitch Calibration Refinement ───────────────────────────────────────────
     # Apply second-order pitch effects (e.g., flat + home → more runs, not just +8)

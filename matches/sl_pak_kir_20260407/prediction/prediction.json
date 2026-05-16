@@ -11,16 +11,16 @@
     "series_result": "loss",
     "series_wins_before": 0
   },
-  "generated_at": "2026-05-16T13:03:53.697435Z",
+  "generated_at": "2026-05-16T13:05:13.017265Z",
   "scenario": "pre_toss_blended",
   "pitch_difficulty": "very_difficult",
   "chase_penalty": -30,
-  "base_runs_estimate": 121.0,
-  "adjusted_runs_estimate": 94.2,
-  "runs_lower": 104.0,
-  "runs_upper": 108.0,
-  "win_probability": 0.331,
-  "win_probability_reasoning": "Pre-toss blend: batting-first WP=42.6%, chasing WP=23.6% \u2192 blended 33.1%",
+  "base_runs_estimate": 120.7,
+  "adjusted_runs_estimate": 101.5,
+  "runs_lower": 111.2,
+  "runs_upper": 115.2,
+  "win_probability": 0.321,
+  "win_probability_reasoning": "Pre-toss blend: batting-first WP=41.2%, chasing WP=23.0% \u2192 blended 32.1%",
   "selected_xi": [
     "chamari_athapaththu",
     "nilakshi_de_silva",
@@ -175,24 +175,24 @@
   "warnings": [],
   "batting_first_scenario": {
     "scenario": "batting_first",
-    "adjusted_runs_estimate": 111.0,
-    "runs_lower": 119.0,
-    "runs_upper": 123.0,
-    "win_probability": 0.426,
+    "adjusted_runs_estimate": 110.7,
+    "runs_lower": 118.7,
+    "runs_upper": 122.7,
+    "win_probability": 0.412,
     "pitch_difficulty": "very_difficult",
     "chase_penalty": 0,
     "tactical_flags": [
       "prioritise_spinners_middle_overs",
       "set_par_total_conservative_approach_first_6_overs"
     ],
-    "strategy_brief": "STRATEGY BRIEF: SRI_LANKA vs PAKISTAN at Tribhuvan University International Cricket Ground\n======================================================================\n\nTOSS: sri_lanka chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~111 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 42% (POOR)\n\nPITCH: Spin Friendly\n  High altitude (1300m) \u2014 ball carries well but pitch is slow and low. Spinners get grip and turn. Compact ground dimensions assist batters. Scores tend to be moderate.\n\nBATTING ORDER (Top 4):\n  1. AC Jayangani (SR 107)\n  2. H Madavi (SR 97)\n  3. EMKNH Senavirathna (SR 115)\n  4. WK Dilhari (SR 105)\n\nBOWLING PLAN:\n  Powerplay: NND de Silva, K Kavindi\n  Middle: RMVD Gunaratne, NND de Silva, K Kavindi\n  Death: K Kavindi, OU Ranasinghe, BMSM Kumari, NND de Silva, KDU Prabodhani\n\nTACTICAL NOTES:\n  \u2022 Prioritise spinners middle overs\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: SRI_LANKA vs PAKISTAN at Tribhuvan University International Cricket Ground\n======================================================================\n\nTOSS: sri_lanka chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~111 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 41% (POOR)\n\nPITCH: Spin Friendly\n  High altitude (1300m) \u2014 ball carries well but pitch is slow and low. Spinners get grip and turn. Compact ground dimensions assist batters. Scores tend to be moderate.\n\nBATTING ORDER (Top 4):\n  1. AC Jayangani (SR 107)\n  2. H Madavi (SR 97)\n  3. EMKNH Senavirathna (SR 115)\n  4. WK Dilhari (SR 105)\n\nBOWLING PLAN:\n  Powerplay: NND de Silva, K Kavindi\n  Middle: RMVD Gunaratne, NND de Silva, K Kavindi\n  Death: OU Ranasinghe, NND de Silva, BMSM Kumari, K Kavindi, KDU Prabodhani\n\nTACTICAL NOTES:\n  \u2022 Prioritise spinners middle overs\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
   },
   "chasing_scenario": {
     "scenario": "chasing",
-    "adjusted_runs_estimate": 77.5,
-    "runs_lower": 89.0,
-    "runs_upper": 93.0,
-    "win_probability": 0.236,
+    "adjusted_runs_estimate": 92.2,
+    "runs_lower": 103.7,
+    "runs_upper": 107.7,
+    "win_probability": 0.23,
     "pitch_difficulty": "very_difficult",
     "chase_penalty": -30,
     "tactical_flags": [
@@ -201,6 +201,6 @@
       "monitor_required_run_rate_per_phase",
       "underdog_scenario_high_risk_strategy_required"
     ],
-    "strategy_brief": "STRATEGY BRIEF: SRI_LANKA vs PAKISTAN at Tribhuvan University International Cricket Ground\n======================================================================\n\nTOSS: pakistan chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~78 runs to win.\n  (Chase penalty applied: -30 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 23% (FAILING)\n\nPITCH: Spin Friendly\n  High altitude (1300m) \u2014 ball carries well but pitch is slow and low. Spinners get grip and turn. Compact ground dimensions assist batters. Scores tend to be moderate.\n\nBATTING ORDER (Top 4):\n  1. AC Jayangani (SR 107)\n  2. H Madavi (SR 97)\n  3. EMKNH Senavirathna (SR 115)\n  4. WK Dilhari (SR 105)\n\nBOWLING PLAN:\n  Powerplay: NND de Silva, K Kavindi\n  Middle: RMVD Gunaratne, NND de Silva, K Kavindi\n  Death: K Kavindi, OU Ranasinghe, BMSM Kumari, NND de Silva, KDU Prabodhani\n\nTACTICAL NOTES:\n  \u2022 Prioritise spinners middle overs\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n  \u2022 Underdog scenario high risk strategy required\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: SRI_LANKA vs PAKISTAN at Tribhuvan University International Cricket Ground\n======================================================================\n\nTOSS: pakistan chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~92 runs to win.\n  (Chase penalty applied: -30 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 23% (FAILING)\n\nPITCH: Spin Friendly\n  High altitude (1300m) \u2014 ball carries well but pitch is slow and low. Spinners get grip and turn. Compact ground dimensions assist batters. Scores tend to be moderate.\n\nBATTING ORDER (Top 4):\n  1. AC Jayangani (SR 107)\n  2. H Madavi (SR 97)\n  3. EMKNH Senavirathna (SR 115)\n  4. WK Dilhari (SR 105)\n\nBOWLING PLAN:\n  Powerplay: NND de Silva, K Kavindi\n  Middle: RMVD Gunaratne, NND de Silva, K Kavindi\n  Death: OU Ranasinghe, NND de Silva, BMSM Kumari, K Kavindi, KDU Prabodhani\n\nTACTICAL NOTES:\n  \u2022 Prioritise spinners middle overs\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n  \u2022 Underdog scenario high risk strategy required\n\n======================================================================"
   }
 }

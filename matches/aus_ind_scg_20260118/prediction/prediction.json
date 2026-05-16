@@ -11,16 +11,16 @@
     "series_result": "loss",
     "series_wins_before": 0
   },
-  "generated_at": "2026-05-16T13:03:40.021150Z",
+  "generated_at": "2026-05-16T13:04:59.694479Z",
   "scenario": "pre_toss_blended",
   "pitch_difficulty": "easy",
   "chase_penalty": -15,
-  "base_runs_estimate": 151.1,
-  "adjusted_runs_estimate": 156.3,
-  "runs_lower": 141.6,
-  "runs_upper": 145.6,
-  "win_probability": 0.581,
-  "win_probability_reasoning": "Pre-toss blend: batting-first WP=60.2%, chasing WP=55.9% \u2192 blended 58.1%",
+  "base_runs_estimate": 150.9,
+  "adjusted_runs_estimate": 156.2,
+  "runs_lower": 141.4,
+  "runs_upper": 145.4,
+  "win_probability": 0.585,
+  "win_probability_reasoning": "Pre-toss blend: batting-first WP=60.2%, chasing WP=56.8% \u2192 blended 58.5%",
   "selected_xi": [
     "lucy_hamilton",
     "grace_harris",
@@ -290,9 +290,9 @@
   ],
   "batting_first_scenario": {
     "scenario": "batting_first",
-    "adjusted_runs_estimate": 167.2,
-    "runs_lower": 149.2,
-    "runs_upper": 153.2,
+    "adjusted_runs_estimate": 167.0,
+    "runs_lower": 149.0,
+    "runs_upper": 153.0,
     "win_probability": 0.602,
     "pitch_difficulty": "easy",
     "chase_penalty": 0,
@@ -300,14 +300,14 @@
       "use_pace_in_powerplay",
       "set_par_total_conservative_approach_first_6_overs"
     ],
-    "strategy_brief": "STRATEGY BRIEF: AUSTRALIA vs INDIA at Sydney Cricket Ground\n======================================================================\n\nTOSS: australia chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~167 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 60% (FAIR)\n\nPITCH: Flat\n  Hard, true surface. Excellent batting conditions. Even bounce throughout. Pacers can generate bounce but not lateral movement. High-scoring venue.\n\nBATTING ORDER (Top 4):\n  1. Beth Mooney (SR 124)\n  2. Ellyse Perry (SR 114)\n  3. Phoebe Litchfield (SR 125)\n  4. Georgia Voll (SR 124)\n\nBOWLING PLAN:\n  Powerplay: Grace Harris, Tahlia McGrath, Megan Schutt, Annabel Sutherland, Ellyse Perry, Ash Gardner, Georgia Wareham, Lucy Hamilton\n  Middle: Grace Harris, Tahlia McGrath, Megan Schutt, Annabel Sutherland, Ellyse Perry, Ash Gardner, Georgia Wareham, Lucy Hamilton\n  Death: Grace Harris, Tahlia McGrath, Megan Schutt, Annabel Sutherland, Ellyse Perry, Ash Gardner, Georgia Wareham, Lucy Hamilton\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: AUSTRALIA vs INDIA at Sydney Cricket Ground\n======================================================================\n\nTOSS: australia chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~167 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 60% (FAIR)\n\nPITCH: Flat\n  Hard, true surface. Excellent batting conditions. Even bounce throughout. Pacers can generate bounce but not lateral movement. High-scoring venue.\n\nBATTING ORDER (Top 4):\n  1. Beth Mooney (SR 124)\n  2. Ellyse Perry (SR 114)\n  3. Phoebe Litchfield (SR 125)\n  4. Georgia Voll (SR 124)\n\nBOWLING PLAN:\n  Powerplay: Ellyse Perry, Ash Gardner, Grace Harris, Georgia Wareham, Lucy Hamilton, Megan Schutt, Annabel Sutherland, Tahlia McGrath\n  Middle: Ellyse Perry, Ash Gardner, Grace Harris, Georgia Wareham, Lucy Hamilton, Megan Schutt, Annabel Sutherland, Tahlia McGrath\n  Death: Ellyse Perry, Ash Gardner, Grace Harris, Georgia Wareham, Lucy Hamilton, Megan Schutt, Annabel Sutherland, Tahlia McGrath\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
   },
   "chasing_scenario": {
     "scenario": "chasing",
-    "adjusted_runs_estimate": 145.5,
-    "runs_lower": 134.0,
-    "runs_upper": 138.0,
-    "win_probability": 0.559,
+    "adjusted_runs_estimate": 145.3,
+    "runs_lower": 133.8,
+    "runs_upper": 137.8,
+    "win_probability": 0.568,
     "pitch_difficulty": "easy",
     "chase_penalty": -15,
     "tactical_flags": [
@@ -315,6 +315,6 @@
       "chase_scenario_requires_calculated_aggression",
       "monitor_required_run_rate_per_phase"
     ],
-    "strategy_brief": "STRATEGY BRIEF: AUSTRALIA vs INDIA at Sydney Cricket Ground\n======================================================================\n\nTOSS: india chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~146 runs to win.\n  (Chase penalty applied: -15 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 55% (FAIR)\n\nPITCH: Flat\n  Hard, true surface. Excellent batting conditions. Even bounce throughout. Pacers can generate bounce but not lateral movement. High-scoring venue.\n\nBATTING ORDER (Top 4):\n  1. Beth Mooney (SR 124)\n  2. Ellyse Perry (SR 114)\n  3. Phoebe Litchfield (SR 125)\n  4. Georgia Voll (SR 124)\n\nBOWLING PLAN:\n  Powerplay: Grace Harris, Tahlia McGrath, Megan Schutt, Annabel Sutherland, Ellyse Perry, Ash Gardner, Georgia Wareham, Lucy Hamilton\n  Middle: Grace Harris, Tahlia McGrath, Megan Schutt, Annabel Sutherland, Ellyse Perry, Ash Gardner, Georgia Wareham, Lucy Hamilton\n  Death: Grace Harris, Tahlia McGrath, Megan Schutt, Annabel Sutherland, Ellyse Perry, Ash Gardner, Georgia Wareham, Lucy Hamilton\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: AUSTRALIA vs INDIA at Sydney Cricket Ground\n======================================================================\n\nTOSS: india chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~145 runs to win.\n  (Chase penalty applied: -15 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 56% (FAIR)\n\nPITCH: Flat\n  Hard, true surface. Excellent batting conditions. Even bounce throughout. Pacers can generate bounce but not lateral movement. High-scoring venue.\n\nBATTING ORDER (Top 4):\n  1. Beth Mooney (SR 124)\n  2. Ellyse Perry (SR 114)\n  3. Phoebe Litchfield (SR 125)\n  4. Georgia Voll (SR 124)\n\nBOWLING PLAN:\n  Powerplay: Ellyse Perry, Ash Gardner, Grace Harris, Georgia Wareham, Lucy Hamilton, Megan Schutt, Annabel Sutherland, Tahlia McGrath\n  Middle: Ellyse Perry, Ash Gardner, Grace Harris, Georgia Wareham, Lucy Hamilton, Megan Schutt, Annabel Sutherland, Tahlia McGrath\n  Death: Ellyse Perry, Ash Gardner, Grace Harris, Georgia Wareham, Lucy Hamilton, Megan Schutt, Annabel Sutherland, Tahlia McGrath\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n\n======================================================================"
   }
 }
