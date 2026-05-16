@@ -1,0 +1,365 @@
+{
+  "_meta": {
+    "description": "Curated qualitative analyst insights for pre-match and live decision-making. High-signal, manually maintained by coaching staff and analysts.",
+    "tournament": "ICC Women's T20 World Cup 2026",
+    "update_frequency": "daily during tournament, weekly pre-tournament",
+    "sources": ["Cricinfo", "ESPNcricinfo analysis", "ICC reports", "team internal scouts"],
+    "confidence_scale": "low (0-30%), medium (30-70%), high (70-100%)",
+    "last_updated": "2026-05-15",
+    "version": "1.0"
+  },
+  "india": {
+    "smriti_mandhana": {
+      "overall_form": {
+        "rating": "strong",
+        "confidence": 0.85,
+        "notes": "3 consecutive 40+ scores in last T20I series. Confident stroke-play."
+      },
+      "strengths": [
+        "Excellent against pace bowlers",
+        "Aggressive mindset, thrives under pressure",
+        "Strong off-side play",
+        "Strike rotation vs spin"
+      ],
+      "concerns": null,
+      "injury_status": "fit",
+      "psychological_state": "aggressive, fearless, composed under pressure",
+      "phase_performance": {
+        "powerplay": {
+          "assessment": "strong",
+          "notes": "Prefers boundary hitting; SR 95+ in last 12m"
+        },
+        "middle": {
+          "assessment": "excellent",
+          "notes": "Best phase for Smriti; aggressive acceleration"
+        },
+        "death": {
+          "assessment": "elite",
+          "notes": "SR 145+ in last 12 months; world-class executioner"
+        }
+      },
+      "vs_opponent": {
+        "australia": {
+          "assessment": "struggle",
+          "confidence": 0.85,
+          "specific_bowler_notes": "3 ducks in last 5 meetings vs Megan Schutt; uncomfortable vs short-pitched deliveries",
+          "recommendation": "avoid Schutt in powerplay if possible; consider aggressive field if Schutt bowls"
+        },
+        "england": {
+          "assessment": "strong",
+          "confidence": 0.80,
+          "specific_bowler_notes": "Excellent vs Sophie Ecclestone (SR 145+); uncomfortable vs Charlie Dean's variations",
+          "recommendation": "target Ecclestone early; cautious vs Dean"
+        },
+        "south_africa": {
+          "assessment": "adequate",
+          "confidence": 0.70,
+          "notes": "Mixed record; strong vs pace, weaker vs Marizanne Kapp's spin"
+        }
+      },
+      "recent_events": null,
+      "last_updated": "2026-05-15",
+      "analyst": "Harsha Bhogle",
+      "notes": "Vice-captain; consistent T20I performer. Key to India's aggressive approach."
+    },
+    "harmanpreet_kaur": {
+      "overall_form": {
+        "rating": "exceptional",
+        "confidence": 0.90,
+        "notes": "Captain's form has elevated entire team batting order. Match-winning performances in last series."
+      },
+      "strengths": [
+        "Elite decision-making under pressure",
+        "Leader; calms high-stress situations",
+        "Powerful striker of the ball",
+        "Strong vs quality off-spinners"
+      ],
+      "concerns": "Occasional inconsistency vs quality off-spinners on turning pitches (though rare)",
+      "injury_status": "fit",
+      "psychological_state": "leader mentality; thrives when team needs acceleration; excellent under pressure",
+      "phase_performance": {
+        "powerplay": {
+          "assessment": "cautious",
+          "notes": "Captain often plays second fiddle early; SR 75-85. Accelerates mid-innings."
+        },
+        "middle": {
+          "assessment": "strong",
+          "notes": "Sweet spot for captain; aggressive batting from ball 1 if team requires"
+        },
+        "death": {
+          "assessment": "elite_contextual",
+          "notes": "Captain's knock counts; can accelerate from any ball. SR 135+ when team chasing"
+        }
+      },
+      "vs_opponent": {
+        "australia": {
+          "assessment": "caution",
+          "confidence": 0.80,
+          "specific_bowler_notes": "28 runs in 3 meetings vs Ellyse Perry; tactically outthought. Perry's variations on this pitch likely to trouble captain.",
+          "recommendation": "avoid Perry in early overs if possible; consider aggressive field if Perry opens"
+        },
+        "england": {
+          "assessment": "strong",
+          "confidence": 0.85,
+          "notes": "Excellent record vs English spinners and pace bowlers"
+        },
+        "south_africa": {
+          "assessment": "strong",
+          "confidence": 0.85,
+          "notes": "5 matches, 180 runs, SR 130+; strong vs Marizanne Kapp and Shabnim Ismail"
+        }
+      },
+      "field_setting_notes": "Prefers compact mid-off and mid-on when attacking; spreads field on defensive days",
+      "recent_events": null,
+      "last_updated": "2026-05-14",
+      "analyst": "Sanjay Manjrekar",
+      "notes": "Tournament captain. High-pressure performer. Avoid overloading her with responsibility in powerplay."
+    },
+    "shafali_verma": {
+      "overall_form": {
+        "rating": "strong",
+        "confidence": 0.75,
+        "notes": "Recent ankle niggle; expected to be fit for tournament. Conservative approach early; builds innings gradually."
+      },
+      "strengths": [
+        "Elite strike rotation",
+        "Excellent against spin",
+        "Young, fearless mindset"
+      ],
+      "concerns": "Ankle injury (minor) may affect movement in first 3-4 balls; may take conservative approach initially",
+      "injury_status": "fit_with_caution",
+      "psychological_state": "young, fearless, builds confidence through strike rotation",
+      "phase_performance": {
+        "powerplay": {
+          "assessment": "cautious_early",
+          "notes": "May take 3-4 balls to settle due to ankle. Not the aggressive opener pre-injury; expect measured start."
+        },
+        "middle": {
+          "assessment": "strong",
+          "notes": "Sweet spot; aggressive acceleration vs spin"
+        },
+        "death": {
+          "assessment": "adequate",
+          "notes": "Less experienced in death; learning curve"
+        }
+      },
+      "vs_opponent": {
+        "australia": {
+          "assessment": "adequate",
+          "confidence": 0.70,
+          "notes": "Young player; limited head-to-head data vs Schutt and McGrath"
+        }
+      },
+      "recent_events": "Minor ankle injury (resolved, expected fit)",
+      "last_updated": "2026-05-13",
+      "analyst": "India team scout",
+      "notes": "Opening option. Protect early; allow 3-4 balls to settle. Confidence grows through strike rotation."
+    },
+    "nandini_sharma": {
+      "overall_form": {
+        "rating": "unproven_but_talented",
+        "confidence": 0.50,
+        "notes": "Debut player in T20Is. Limited data (6 T20I matches). Aggressive mindset in domestic WPL leagues (6 caps)."
+      },
+      "strengths": [
+        "Fearless shot-making",
+        "Excellent off-side play",
+        "Strong strike rotation vs spin",
+        "Domestic form impressive (SR 112+ in WPL)"
+      ],
+      "concerns": "Inexperience vs pace bowlers in international cricket. May struggle initial overs vs quality pace attack. Limited exposure to reverse swing.",
+      "injury_status": "fit",
+      "psychological_state": "fearless, plays big shots regardless of situation — risky in early innings",
+      "phase_performance": {
+        "powerplay": {
+          "assessment": "risk_high",
+          "notes": "Inexperience vs pace in international T20; aggressive shot-making may lead to early wickets. Recommend protective batting order placement."
+        },
+        "middle": {
+          "assessment": "strong",
+          "notes": "Domestic form excellent vs domestic spinners; international quality spin TBD"
+        },
+        "death": {
+          "assessment": "unknown",
+          "notes": "Zero death-over experience in international cricket"
+        }
+      },
+      "vs_opponent": {
+        "australia": {
+          "assessment": "unknown",
+          "confidence": 0.0,
+          "notes": "No prior international matches; first tournament exposure"
+        }
+      },
+      "recent_events": "Called up for maiden T20 WC squad. Domestic form excellent (WPL 2026: 6 matches, SR 112+)",
+      "last_updated": "2026-05-15",
+      "analyst": "India team scout",
+      "notes": "DEBUT PLAYER. Protect in batting order (4 or 5). Allow adjustment to international pace. Fearless mindset is asset and liability."
+    }
+  },
+  "australia": {
+    "ellyse_perry": {
+      "overall_form": {
+        "rating": "strong",
+        "confidence": 0.85,
+        "notes": "Veteran fast bowler. Consistently among Australia's best. Form excellent leading into tournament."
+      },
+      "strengths": [
+        "Variations in pace (can extract reverse swing)",
+        "Experienced; tactical bowling",
+        "Strong vs aggressive batters (pins them down)"
+      ],
+      "concerns": null,
+      "bowling_role": "opening bowler, powerplay and death specialist",
+      "phase_performance": {
+        "powerplay": {
+          "assessment": "elite",
+          "notes": "Perry is go-to powerplay bowler; economical and takes wickets. Avg economy 6.2"
+        },
+        "death": {
+          "assessment": "strong",
+          "notes": "Experienced in death; can execute yorkers under pressure"
+        }
+      },
+      "vs_opposition_batter": {
+        "harmanpreet_kaur": {
+          "assessment": "perry_advantage",
+          "confidence": 0.80,
+          "notes": "28 runs in 3 meetings. Perry's variations on this pitch expected to trouble Harmanpreet.",
+          "recommendation": "use Perry early vs India captain"
+        },
+        "smriti_mandhana": {
+          "assessment": "perry_advantage",
+          "confidence": 0.75,
+          "notes": "Smriti uncomfortable vs short-pitched deliveries; Perry can exploit"
+        }
+      },
+      "recent_events": null,
+      "last_updated": "2026-05-14",
+      "analyst": "ESPNcricinfo Australia correspondent",
+      "notes": "Veteran match-winner. Key to Australia's bowling attack."
+    }
+  },
+  "england": {
+    "tilly_corteen_coleman": {
+      "overall_form": {
+        "rating": "emerging_talent",
+        "confidence": 0.60,
+        "notes": "Debut T20 WC squad. Limited international caps (2 matches). Strong domestic form in The Hundred (17 matches, economy 6.62)."
+      },
+      "strengths": [
+        "Right-arm medium pacer; economical",
+        "Domestic T20 form excellent",
+        "Adaptable to different match situations"
+      ],
+      "concerns": "Limited international experience. First WC tournament; adjustment period expected.",
+      "bowling_role": "medium pace, death bowler potential",
+      "injury_status": "fit",
+      "phase_performance": {
+        "powerplay": {
+          "assessment": "developing",
+          "notes": "Domestic form good; international TBD"
+        },
+        "death": {
+          "assessment": "developing",
+          "notes": "Domestic economy 6.6; has not bowled death overs much internationally"
+        }
+      },
+      "recent_events": "Called up for maiden T20 WC squad",
+      "last_updated": "2026-05-15",
+      "analyst": "England team scout",
+      "notes": "DEBUT PLAYER. Emerging talent with strong domestic form. Expected to get opportunities in group stage."
+    }
+  },
+  "scotland": {
+    "kirstie_gordon": {
+      "overall_form": {
+        "rating": "strong",
+        "confidence": 0.80,
+        "notes": "Experienced allrounder. Strong domestic form in The Hundred (43 matches, economy 6.87). T20I form solid (10 matches)."
+      },
+      "strengths": [
+        "Reliable left-arm spinner",
+        "Aggressive batter (SR 112+)",
+        "Allrounder value",
+        "Domestic tournament experience (The Hundred)"
+      ],
+      "concerns": null,
+      "roles": ["bowler", "lower-order batter"],
+      "bowling_role": "left-arm spinner, middle and death overs",
+      "batting_role": "lower-order hitter; aggressive in death",
+      "phase_performance": {
+        "middle": {
+          "assessment": "strong",
+          "notes": "Excellent death option vs left-hand batters"
+        },
+        "death": {
+          "assessment": "elite",
+          "notes": "Economy 6.87 in The Hundred death overs; aggressive batting (SR 112+ last 5 matches)"
+        }
+      },
+      "recent_events": null,
+      "last_updated": "2026-05-15",
+      "analyst": "Scotland team scout",
+      "notes": "Valuable allrounder. Key to Scotland's balance."
+    }
+  },
+  "new_zealand": {
+    "sophie_devine": {
+      "overall_form": {
+        "rating": "strong",
+        "confidence": 0.85,
+        "notes": "New Zealand captain. Consistent performer. Recent form excellent."
+      },
+      "strengths": [
+        "Captain's leadership",
+        "Reliable batter and occasional bowler",
+        "Experienced in tournament cricket"
+      ],
+      "concerns": null,
+      "injury_status": "fit",
+      "psychological_state": "leader; calm under pressure",
+      "recent_events": null,
+      "last_updated": "2026-05-15",
+      "analyst": "NZ team scout",
+      "notes": "New Zealand captain. Tournament favorite."
+    }
+  },
+  "south_africa": {
+    "laura_wolvaardt": {
+      "overall_form": {
+        "rating": "strong",
+        "confidence": 0.85,
+        "notes": "South Africa captain. Consistent and reliable opening batter."
+      },
+      "strengths": [
+        "Captain's composure",
+        "Strong opening batsman",
+        "Technical solidity"
+      ],
+      "concerns": null,
+      "injury_status": "fit",
+      "last_updated": "2026-05-15",
+      "analyst": "SA team scout",
+      "notes": "South Africa captain. Strong opening batter."
+    }
+  },
+  "pakistan": {
+    "_note": "Squad announced. Analyst insights to be populated by Pakistan team coaches and analysts in coordination with India coaching staff."
+  },
+  "west_indies": {
+    "_note": "Squad announced. Analyst insights to be populated by West Indies team coaches and analysts."
+  },
+  "sri_lanka": {
+    "_note": "Squad announced. Analyst insights to be populated by Sri Lanka team coaches and analysts."
+  },
+  "bangladesh": {
+    "_note": "Squad announced. Analyst insights to be populated by Bangladesh team coaches and analysts."
+  },
+  "ireland": {
+    "_note": "Squad announced. Analyst insights to be populated by Ireland team coaches and analysts."
+  },
+  "netherlands": {
+    "_note": "Squad announced. Analyst insights to be populated by Netherlands team coaches and analysts."
+  }
+}

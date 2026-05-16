@@ -1,0 +1,94 @@
+[
+  {
+    "id": "india",
+    "name": "India",
+    "group": "A",
+    "icc_ranking": null,
+    "captain": "harmanpreet_kaur",
+    "coach": null,
+    "batting_phase_performance": {
+      "powerplay": {
+        "avg_score": null, "avg_wickets_lost": null,
+        "run_rate": null, "economy": null, "wickets_taken_per_match": null
+      },
+      "middle": {
+        "avg_score": null, "avg_wickets_lost": null,
+        "run_rate": null, "economy": null, "wickets_taken_per_match": null
+      },
+      "death": {
+        "avg_score": null, "avg_wickets_lost": null,
+        "run_rate": null, "economy": null, "wickets_taken_per_match": null
+      }
+    },
+    "bowling_phase_performance": {
+      "powerplay": {
+        "avg_score": null, "avg_wickets_lost": null,
+        "run_rate": null, "economy": null, "wickets_taken_per_match": null
+      },
+      "middle": {
+        "avg_score": null, "avg_wickets_lost": null,
+        "run_rate": null, "economy": null, "wickets_taken_per_match": null
+      },
+      "death": {
+        "avg_score": null, "avg_wickets_lost": null,
+        "run_rate": null, "economy": null, "wickets_taken_per_match": null
+      }
+    },
+    "batting_first": {
+      "matches": null, "wins": null, "avg_score": null, "avg_winning_score": null
+    },
+    "chasing": {
+      "matches": null, "wins": null, "avg_target": null, "avg_winning_score": null
+    },
+    "toss": {
+      "won": null, "elected_bat": null, "elected_field": null
+    },
+    "h2h": {
+      "australia":    { "matches": null, "wins": null, "losses": null },
+      "south_africa": { "matches": null, "wins": null, "losses": null },
+      "pakistan":     { "matches": null, "wins": null, "losses": null },
+      "bangladesh":   { "matches": null, "wins": null, "losses": null },
+      "netherlands":  { "matches": null, "wins": null, "losses": null },
+      "england":      { "matches": null, "wins": null, "losses": null },
+      "new_zealand":  { "matches": null, "wins": null, "losses": null },
+      "west_indies":  { "matches": null, "wins": null, "losses": null },
+      "sri_lanka":    { "matches": null, "wins": null, "losses": null },
+      "ireland":      { "matches": null, "wins": null, "losses": null },
+      "scotland":     { "matches": null, "wins": null, "losses": null }
+    },
+    "last_12_months": {
+      "matches": null, "wins": null, "losses": null, "nrr": null
+    },
+    "set_plays": [],
+    "weak_links": [],
+    "notes": null
+  },
+  {
+    "id": "australia",
+    "name": "Australia",
+    "group": "A",
+    "icc_ranking": null,
+    "captain": null,
+    "coach": null,
+    "batting_phase_performance": { "powerplay": {}, "middle": {}, "death": {} },
+    "bowling_phase_performance": { "powerplay": {}, "middle": {}, "death": {} },
+    "batting_first": {},
+    "chasing": {},
+    "toss": {},
+    "h2h": {},
+    "last_12_months": {},
+    "set_plays": [],
+    "weak_links": [],
+    "notes": null
+  },
+  { "id": "south_africa", "name": "South Africa",  "group": "A", "icc_ranking": null, "captain": null, "coach": null, "batting_phase_performance": {}, "bowling_phase_performance": {}, "batting_first": {}, "chasing": {}, "toss": {}, "h2h": {}, "last_12_months": {}, "set_plays": [], "weak_links": [], "notes": null },
+  { "id": "pakistan",     "name": "Pakistan",       "group": "A", "icc_ranking": null, "captain": null, "coach": null, "batting_phase_performance": {}, "bowling_phase_performance": {}, "batting_first": {}, "chasing": {}, "toss": {}, "h2h": {}, "last_12_months": {}, "set_plays": [], "weak_links": [], "notes": null },
+  { "id": "bangladesh",   "name": "Bangladesh",     "group": "A", "icc_ranking": null, "captain": null, "coach": null, "batting_phase_performance": {}, "bowling_phase_performance": {}, "batting_first": {}, "chasing": {}, "toss": {}, "h2h": {}, "last_12_months": {}, "set_plays": [], "weak_links": [], "notes": null },
+  { "id": "netherlands",  "name": "Netherlands",    "group": "A", "icc_ranking": null, "captain": null, "coach": null, "batting_phase_performance": {}, "bowling_phase_performance": {}, "batting_first": {}, "chasing": {}, "toss": {}, "h2h": {}, "last_12_months": {}, "set_plays": [], "weak_links": [], "notes": null },
+  { "id": "england",      "name": "England",        "group": "B", "icc_ranking": null, "captain": null, "coach": null, "batting_phase_performance": {}, "bowling_phase_performance": {}, "batting_first": {}, "chasing": {}, "toss": {}, "h2h": {}, "last_12_months": {}, "set_plays": [], "weak_links": [], "notes": null },
+  { "id": "new_zealand",  "name": "New Zealand",    "group": "B", "icc_ranking": null, "captain": null, "coach": null, "batting_phase_performance": {}, "bowling_phase_performance": {}, "batting_first": {}, "chasing": {}, "toss": {}, "h2h": {}, "last_12_months": {}, "set_plays": [], "weak_links": [], "notes": null },
+  { "id": "west_indies",  "name": "West Indies",    "group": "B", "icc_ranking": null, "captain": null, "coach": null, "batting_phase_performance": {}, "bowling_phase_performance": {}, "batting_first": {}, "chasing": {}, "toss": {}, "h2h": {}, "last_12_months": {}, "set_plays": [], "weak_links": [], "notes": null },
+  { "id": "sri_lanka",    "name": "Sri Lanka",      "group": "B", "icc_ranking": null, "captain": null, "coach": null, "batting_phase_performance": {}, "bowling_phase_performance": {}, "batting_first": {}, "chasing": {}, "toss": {}, "h2h": {}, "last_12_months": {}, "set_plays": [], "weak_links": [], "notes": null },
+  { "id": "ireland",      "name": "Ireland",        "group": "B", "icc_ranking": null, "captain": null, "coach": null, "batting_phase_performance": {}, "bowling_phase_performance": {}, "batting_first": {}, "chasing": {}, "toss": {}, "h2h": {}, "last_12_months": {}, "set_plays": [], "weak_links": [], "notes": null },
+  { "id": "scotland",     "name": "Scotland",       "group": "B", "icc_ranking": null, "captain": null, "coach": null, "batting_phase_performance": {}, "bowling_phase_performance": {}, "batting_first": {}, "chasing": {}, "toss": {}, "h2h": {}, "last_12_months": {}, "set_plays": [], "weak_links": [], "notes": null }
+]

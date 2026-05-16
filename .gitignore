@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+dist/
+build/
+
+# Env
+.env
+.env.*
+
+# Tools
+.ruff_cache/
+.pytest_cache/
+.DS_Store
+
+# Data — raw CricSheet downloads go here, not in version control
+wt20_oracle/data/raw/
+wt20_oracle/data/cricsheet/

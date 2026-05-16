@@ -1,0 +1,73 @@
+{
+  "tournament": "ICC Women's T20 World Cup 2026",
+  "host": "England and Wales",
+  "start_date": "2026-06-13",
+  "final_date": "2026-07-05",
+  "final_venue": "lords",
+  "format": "12 teams, 2 groups of 6. Top 2 per group advance to semi-finals.",
+  "total_matches": 33,
+  "groups": {
+    "A": ["india", "australia", "south_africa", "pakistan", "bangladesh", "netherlands"],
+    "B": ["england", "new_zealand", "west_indies", "sri_lanka", "ireland", "scotland"]
+  },
+  "venues": [
+    "lords",
+    "old_trafford",
+    "headingley",
+    "edgbaston",
+    "rose_bowl",
+    "the_oval",
+    "bristol"
+  ],
+  "knockout_structure": {
+    "semi_final_1": "Winner Group A vs Runner-up Group B",
+    "semi_final_2": "Winner Group B vs Runner-up Group A"
+  },
+  "matches": [
+    {
+      "id": "m001",
+      "date": "2026-06-13",
+      "time_local": null,
+      "day_night": null,
+      "team_a": null,
+      "team_b": null,
+      "venue_id": null,
+      "stage": "group",
+      "group": "A",
+      "nrr_implications": null
+    }
+  ],
+  "india_group_matches": [
+    {
+      "opponent": "australia",
+      "date": null,
+      "venue_id": null,
+      "day_night": null
+    },
+    {
+      "opponent": "south_africa",
+      "date": null,
+      "venue_id": null,
+      "day_night": null
+    },
+    {
+      "opponent": "pakistan",
+      "date": null,
+      "venue_id": null,
+      "day_night": null
+    },
+    {
+      "opponent": "bangladesh",
+      "date": null,
+      "venue_id": null,
+      "day_night": null
+    },
+    {
+      "opponent": "netherlands",
+      "date": null,
+      "venue_id": null,
+      "day_night": null
+    }
+  ],
+  "notes": "Full match schedule to be populated from ESPN Cricinfo series ID 1483859"
+}

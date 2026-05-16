@@ -1,0 +1,240 @@
+[
+  {
+    "id": "lords",
+    "name": "Lord's Cricket Ground",
+    "city": "London",
+    "country": "England",
+    "capacity": 30000,
+    "dimensions": {
+      "straight_boundary_m": null,
+      "square_boundary_m": null,
+      "oval": true
+    },
+    "pitch": {
+      "type": "seam_friendly",
+      "pace_advantage": true,
+      "spin_advantage": false,
+      "notes": "Slope from Pavilion End affects line; seam movement early, eases after 8 overs"
+    },
+    "conditions": {
+      "dew_factor": "medium",
+      "typically_day_night": false,
+      "avg_humidity_pct": null
+    },
+    "women_t20_stats": {
+      "matches_played": null,
+      "avg_first_innings_score": null,
+      "avg_winning_chase_score": null,
+      "toss_impact": { "bat_first_win_pct": null, "field_first_win_pct": null },
+      "pace_economy": null,
+      "spin_economy": null,
+      "highest_score": null,
+      "lowest_defended": null
+    },
+    "notes": "Final venue — July 5, 2026"
+  },
+  {
+    "id": "old_trafford",
+    "name": "Emirates Old Trafford",
+    "city": "Manchester",
+    "country": "England",
+    "capacity": 26000,
+    "dimensions": {
+      "straight_boundary_m": null,
+      "square_boundary_m": null,
+      "oval": false
+    },
+    "pitch": {
+      "type": "balanced",
+      "pace_advantage": false,
+      "spin_advantage": false,
+      "notes": null
+    },
+    "conditions": {
+      "dew_factor": "low",
+      "typically_day_night": true,
+      "avg_humidity_pct": null
+    },
+    "women_t20_stats": {
+      "matches_played": null,
+      "avg_first_innings_score": null,
+      "avg_winning_chase_score": null,
+      "toss_impact": { "bat_first_win_pct": null, "field_first_win_pct": null },
+      "pace_economy": null,
+      "spin_economy": null,
+      "highest_score": null,
+      "lowest_defended": null
+    },
+    "notes": null
+  },
+  {
+    "id": "headingley",
+    "name": "Headingley Cricket Ground",
+    "city": "Leeds",
+    "country": "England",
+    "capacity": 17000,
+    "dimensions": {
+      "straight_boundary_m": null,
+      "square_boundary_m": null,
+      "oval": false
+    },
+    "pitch": {
+      "type": "seam_friendly",
+      "pace_advantage": true,
+      "spin_advantage": false,
+      "notes": "Bowler-friendly in overcast conditions common in Leeds"
+    },
+    "conditions": {
+      "dew_factor": "low",
+      "typically_day_night": false,
+      "avg_humidity_pct": null
+    },
+    "women_t20_stats": {
+      "matches_played": null,
+      "avg_first_innings_score": null,
+      "avg_winning_chase_score": null,
+      "toss_impact": { "bat_first_win_pct": null, "field_first_win_pct": null },
+      "pace_economy": null,
+      "spin_economy": null,
+      "highest_score": null,
+      "lowest_defended": null
+    },
+    "notes": null
+  },
+  {
+    "id": "edgbaston",
+    "name": "Edgbaston Cricket Ground",
+    "city": "Birmingham",
+    "country": "England",
+    "capacity": 25000,
+    "dimensions": {
+      "straight_boundary_m": null,
+      "square_boundary_m": null,
+      "oval": false
+    },
+    "pitch": {
+      "type": "balanced",
+      "pace_advantage": false,
+      "spin_advantage": false,
+      "notes": "Good batting surface; shorter square boundaries inflate scoring"
+    },
+    "conditions": {
+      "dew_factor": "medium",
+      "typically_day_night": true,
+      "avg_humidity_pct": null
+    },
+    "women_t20_stats": {
+      "matches_played": null,
+      "avg_first_innings_score": null,
+      "avg_winning_chase_score": null,
+      "toss_impact": { "bat_first_win_pct": null, "field_first_win_pct": null },
+      "pace_economy": null,
+      "spin_economy": null,
+      "highest_score": null,
+      "lowest_defended": null
+    },
+    "notes": null
+  },
+  {
+    "id": "rose_bowl",
+    "name": "Utilita Bowl (Rose Bowl)",
+    "city": "Southampton",
+    "country": "England",
+    "capacity": 15000,
+    "dimensions": {
+      "straight_boundary_m": null,
+      "square_boundary_m": null,
+      "oval": false
+    },
+    "pitch": {
+      "type": "seam_friendly",
+      "pace_advantage": true,
+      "spin_advantage": false,
+      "notes": "Coastal humidity aids swing; pace bowlers historically dominant"
+    },
+    "conditions": {
+      "dew_factor": "high",
+      "typically_day_night": true,
+      "avg_humidity_pct": null
+    },
+    "women_t20_stats": {
+      "matches_played": null,
+      "avg_first_innings_score": null,
+      "avg_winning_chase_score": null,
+      "toss_impact": { "bat_first_win_pct": null, "field_first_win_pct": null },
+      "pace_economy": null,
+      "spin_economy": null,
+      "highest_score": null,
+      "lowest_defended": null
+    },
+    "notes": "Dew factor high in evening matches — affects death bowling grip"
+  },
+  {
+    "id": "the_oval",
+    "name": "Kia Oval",
+    "city": "London",
+    "country": "England",
+    "capacity": 25500,
+    "dimensions": {
+      "straight_boundary_m": null,
+      "square_boundary_m": null,
+      "oval": true
+    },
+    "pitch": {
+      "type": "flat",
+      "pace_advantage": false,
+      "spin_advantage": false,
+      "notes": "Traditionally good batting surface; high scores common in T20"
+    },
+    "conditions": {
+      "dew_factor": "medium",
+      "typically_day_night": true,
+      "avg_humidity_pct": null
+    },
+    "women_t20_stats": {
+      "matches_played": null,
+      "avg_first_innings_score": null,
+      "avg_winning_chase_score": null,
+      "toss_impact": { "bat_first_win_pct": null, "field_first_win_pct": null },
+      "pace_economy": null,
+      "spin_economy": null,
+      "highest_score": null,
+      "lowest_defended": null
+    },
+    "notes": null
+  },
+  {
+    "id": "bristol",
+    "name": "Bristol County Ground",
+    "city": "Bristol",
+    "country": "England",
+    "capacity": 8000,
+    "dimensions": {
+      "straight_boundary_m": null,
+      "square_boundary_m": null,
+      "oval": false
+    },
+    "pitch": {
+      "type": "balanced",
+      "pace_advantage": false,
+      "spin_advantage": true,
+      "notes": "Smaller ground; spin can be effective in mid-overs"
+    },
+    "conditions": {
+      "dew_factor": "medium",
+      "typically_day_night": false,
+      "avg_humidity_pct": null
+    },
+    "women_t20_stats": {
+      "matches_played": null,
+      "avg_first_innings_score": null,
+      "avg_winning_chase_score": null,
+      "toss_impact": { "bat_first_win_pct": null, "field_first_win_pct": null },
+      "pace_economy": null,
+      "spin_economy": null,
+      "highest_score": null,
+      "lowest_defended": null
+    },
+    "notes": "Smallest ground in the tournament — boundary dimensions critical to populate"
+  }
+]

@@ -1,0 +1,2265 @@
+[
+  {
+    "id": "nigar_sultana",
+    "name": "Nigar Sultana Joty",
+    "team": "bangladesh",
+    "role": "wk_batter",
+    "batting_hand": "right",
+    "bowling_hand": null,
+    "bowling_style": null,
+    "caps": 101,
+    "t20i_stats": {
+      "batting": {
+        "matches": 101,
+        "caps": 101,
+        "innings": 101,
+        "runs": 2167,
+        "average": 30.96,
+        "strike_rate": 90.18,
+        "boundary_pct": 9.57,
+        "dot_ball_pct": 46.23,
+        "fifties": 0,
+        "hundreds": 0,
+        "phase_splits": {
+          "powerplay": {
+            "balls": 408,
+            "runs": 266,
+            "strike_rate": 65.2,
+            "dot_ball_pct": 66.42,
+            "boundary_pct": 8.82,
+            "dismissals": 7
+          },
+          "middle": {
+            "balls": 1493,
+            "runs": 1234,
+            "strike_rate": 82.65,
+            "dot_ball_pct": 46.42,
+            "boundary_pct": 7.43,
+            "dismissals": 33
+          },
+          "death": {
+            "balls": 502,
+            "runs": 667,
+            "strike_rate": 132.87,
+            "dot_ball_pct": 29.28,
+            "boundary_pct": 16.53,
+            "dismissals": 30
+          }
+        },
+        "vs_pace": {
+          "strike_rate": 92.43,
+          "dot_ball_pct": 45.76,
+          "dismissal_rate": 0.03
+        },
+        "vs_spin": {
+          "strike_rate": 79.17,
+          "dot_ball_pct": 48.53,
+          "dismissal_rate": 0.03
+        },
+        "vs_left_arm": {
+          "strike_rate": 77.12,
+          "dot_ball_pct": 54.24,
+          "dismissal_rate": 0.05
+        },
+        "vs_right_arm": {
+          "strike_rate": 90.85,
+          "dot_ball_pct": 45.82,
+          "dismissal_rate": 0.03
+        },
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "runs": 126,
+            "balls": 98,
+            "strike_rate": 128.57,
+            "average": 63.0
+          },
+          "last_6_months": {
+            "matches": 10,
+            "runs": 174,
+            "balls": 161,
+            "strike_rate": 108.07,
+            "average": 29.0
+          },
+          "last_12_months": {
+            "matches": 10,
+            "runs": 174,
+            "balls": 161,
+            "strike_rate": 108.07,
+            "average": 29.0
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 51,
+          "runs": 1223,
+          "average": 37.06,
+          "strike_rate": 89.66
+        },
+        "pressure_index": {
+          "high_rr_sr": null,
+          "low_rr_sr": null,
+          "defending_sr": null
+        },
+        "statistical_reliability": "high"
+      },
+      "bowling": null
+    },
+    "domestic_t20": [],
+    "fitness": {
+      "status": "fit",
+      "notes": null,
+      "last_updated": null
+    },
+    "notes": "Captain"
+  },
+  {
+    "id": "nahida_akter",
+    "name": "Nahida Akter",
+    "team": "bangladesh",
+    "role": "bowler",
+    "batting_hand": "right",
+    "bowling_hand": "right",
+    "bowling_style": "right_arm_off_spin",
+    "caps": 33,
+    "t20i_stats": {
+      "batting": {
+        "matches": 33,
+        "caps": 33,
+        "innings": 33,
+        "runs": 135,
+        "average": 7.11,
+        "strike_rate": 68.18,
+        "boundary_pct": 4.55,
+        "dot_ball_pct": 53.54,
+        "fifties": 0,
+        "hundreds": 0,
+        "phase_splits": {
+          "powerplay": {
+            "balls": 0,
+            "runs": 0,
+            "strike_rate": 0.0,
+            "dot_ball_pct": 0.0,
+            "boundary_pct": 0.0,
+            "dismissals": 0
+          },
+          "middle": {
+            "balls": 53,
+            "runs": 16,
+            "strike_rate": 30.19,
+            "dot_ball_pct": 79.25,
+            "boundary_pct": 1.89,
+            "dismissals": 2
+          },
+          "death": {
+            "balls": 145,
+            "runs": 119,
+            "strike_rate": 82.07,
+            "dot_ball_pct": 44.14,
+            "boundary_pct": 5.52,
+            "dismissals": 17
+          }
+        },
+        "vs_pace": {
+          "strike_rate": 72.9,
+          "dot_ball_pct": 50.97,
+          "dismissal_rate": 0.08
+        },
+        "vs_spin": {
+          "strike_rate": 51.16,
+          "dot_ball_pct": 62.79,
+          "dismissal_rate": 0.14
+        },
+        "vs_left_arm": {
+          "strike_rate": 33.33,
+          "dot_ball_pct": 66.67,
+          "dismissal_rate": 0.44
+        },
+        "vs_right_arm": {
+          "strike_rate": 69.84,
+          "dot_ball_pct": 52.91,
+          "dismissal_rate": 0.08
+        },
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "runs": 7,
+            "balls": 11,
+            "strike_rate": 63.64,
+            "average": 2.33
+          },
+          "last_6_months": {
+            "matches": 0,
+            "runs": 0,
+            "balls": 0,
+            "strike_rate": 0.0,
+            "average": 0.0
+          },
+          "last_12_months": {
+            "matches": 0,
+            "runs": 0,
+            "balls": 0,
+            "strike_rate": 0.0,
+            "average": 0.0
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 13,
+          "runs": 54,
+          "average": 10.8,
+          "strike_rate": 93.1
+        },
+        "pressure_index": {
+          "high_rr_sr": null,
+          "low_rr_sr": null,
+          "defending_sr": null
+        },
+        "statistical_reliability": "high"
+      },
+      "bowling": {
+        "matches": 91,
+        "caps": 91,
+        "innings": 91,
+        "overs": 318.3,
+        "wickets": 108,
+        "average": 16.98,
+        "economy": 5.76,
+        "strike_rate": 17.69,
+        "dot_ball_pct": 44.76,
+        "phase_splits": {
+          "powerplay": {
+            "overs": 110.2,
+            "runs": 644,
+            "wickets": 22,
+            "economy": 5.85,
+            "dot_ball_pct": 52.04
+          },
+          "middle": {
+            "overs": 122.0,
+            "runs": 647,
+            "wickets": 44,
+            "economy": 5.3,
+            "dot_ball_pct": 42.49
+          },
+          "death": {
+            "overs": 86.2,
+            "runs": 543,
+            "wickets": 42,
+            "economy": 6.3,
+            "dot_ball_pct": 38.68
+          }
+        },
+        "vs_left_hand": {
+          "economy": 7.57,
+          "dot_ball_pct": 37.5,
+          "wickets_per_over": 0.22
+        },
+        "vs_right_hand": {
+          "economy": 5.68,
+          "dot_ball_pct": 45.08,
+          "wickets_per_over": 0.34
+        },
+        "death_specialist": true,
+        "powerplay_specialist": true,
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "overs": 19.2,
+            "wickets": 6,
+            "economy": 6.1
+          },
+          "last_6_months": {
+            "matches": 7,
+            "overs": 27.2,
+            "wickets": 10,
+            "economy": 6.52
+          },
+          "last_12_months": {
+            "matches": 7,
+            "overs": 27.2,
+            "wickets": 10,
+            "economy": 6.52
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 46,
+          "wickets": 53,
+          "economy": 5.31
+        },
+        "statistical_reliability": "high"
+      }
+    },
+    "domestic_t20": [],
+    "fitness": {
+      "status": "fit",
+      "notes": null,
+      "last_updated": null
+    },
+    "notes": null
+  },
+  {
+    "id": "sharmin_akter_supta",
+    "name": "Sharmin Akter Supta",
+    "team": "bangladesh",
+    "role": "batter",
+    "batting_hand": "right",
+    "bowling_hand": null,
+    "bowling_style": null,
+    "caps": 1,
+    "t20i_stats": {
+      "batting": {
+        "matches": 1,
+        "caps": 1,
+        "innings": 1,
+        "runs": 1,
+        "average": 1.0,
+        "strike_rate": 100.0,
+        "boundary_pct": 0.0,
+        "dot_ball_pct": 0.0,
+        "fifties": 0,
+        "hundreds": 0,
+        "phase_splits": {
+          "powerplay": {
+            "balls": 0,
+            "runs": 0,
+            "strike_rate": 0.0,
+            "dot_ball_pct": 0.0,
+            "boundary_pct": 0.0,
+            "dismissals": 0
+          },
+          "middle": {
+            "balls": 1,
+            "runs": 1,
+            "strike_rate": 100.0,
+            "dot_ball_pct": 0.0,
+            "boundary_pct": 0.0,
+            "dismissals": 0
+          },
+          "death": {
+            "balls": 0,
+            "runs": 0,
+            "strike_rate": 0.0,
+            "dot_ball_pct": 0.0,
+            "boundary_pct": 0.0,
+            "dismissals": 0
+          }
+        },
+        "vs_pace": {
+          "strike_rate": 100.0,
+          "dot_ball_pct": 0.0,
+          "dismissal_rate": 0.0
+        },
+        "vs_spin": {
+          "strike_rate": 0.0,
+          "dot_ball_pct": 0.0,
+          "dismissal_rate": 0.0
+        },
+        "vs_left_arm": {
+          "strike_rate": 0.0,
+          "dot_ball_pct": 0.0,
+          "dismissal_rate": 0.0
+        },
+        "vs_right_arm": {
+          "strike_rate": 100.0,
+          "dot_ball_pct": 0.0,
+          "dismissal_rate": 0.0
+        },
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 1,
+            "runs": 1,
+            "balls": 1,
+            "strike_rate": 100.0,
+            "average": 1.0
+          },
+          "last_6_months": {
+            "matches": 1,
+            "runs": 1,
+            "balls": 1,
+            "strike_rate": 100.0,
+            "average": 1.0
+          },
+          "last_12_months": {
+            "matches": 1,
+            "runs": 1,
+            "balls": 1,
+            "strike_rate": 100.0,
+            "average": 1.0
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 0,
+          "runs": 0,
+          "average": 0.0,
+          "strike_rate": 0.0
+        },
+        "pressure_index": {
+          "high_rr_sr": null,
+          "low_rr_sr": null,
+          "defending_sr": null
+        },
+        "statistical_reliability": "low"
+      },
+      "bowling": null
+    },
+    "domestic_t20": [],
+    "fitness": {
+      "status": "fit",
+      "notes": null,
+      "last_updated": null
+    },
+    "notes": null
+  },
+  {
+    "id": "sobhana_mostary",
+    "name": "Sobhana Mostary",
+    "team": "bangladesh",
+    "role": "batter",
+    "batting_hand": "right",
+    "bowling_hand": null,
+    "bowling_style": null,
+    "caps": 50,
+    "t20i_stats": {
+      "batting": {
+        "matches": 50,
+        "caps": 50,
+        "innings": 50,
+        "runs": 885,
+        "average": 20.11,
+        "strike_rate": 91.24,
+        "boundary_pct": 11.13,
+        "dot_ball_pct": 51.55,
+        "fifties": 0,
+        "hundreds": 0,
+        "phase_splits": {
+          "powerplay": {
+            "balls": 324,
+            "runs": 275,
+            "strike_rate": 84.88,
+            "dot_ball_pct": 63.58,
+            "boundary_pct": 13.89,
+            "dismissals": 11
+          },
+          "middle": {
+            "balls": 526,
+            "runs": 447,
+            "strike_rate": 84.98,
+            "dot_ball_pct": 48.48,
+            "boundary_pct": 8.37,
+            "dismissals": 20
+          },
+          "death": {
+            "balls": 120,
+            "runs": 163,
+            "strike_rate": 135.83,
+            "dot_ball_pct": 32.5,
+            "boundary_pct": 15.83,
+            "dismissals": 13
+          }
+        },
+        "vs_pace": {
+          "strike_rate": 91.84,
+          "dot_ball_pct": 51.42,
+          "dismissal_rate": 0.04
+        },
+        "vs_spin": {
+          "strike_rate": 87.1,
+          "dot_ball_pct": 52.42,
+          "dismissal_rate": 0.06
+        },
+        "vs_left_arm": {
+          "strike_rate": 50.0,
+          "dot_ball_pct": 63.16,
+          "dismissal_rate": 0.05
+        },
+        "vs_right_arm": {
+          "strike_rate": 92.92,
+          "dot_ball_pct": 51.07,
+          "dismissal_rate": 0.05
+        },
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "runs": 117,
+            "balls": 97,
+            "strike_rate": 120.62,
+            "average": 29.25
+          },
+          "last_6_months": {
+            "matches": 10,
+            "runs": 299,
+            "balls": 236,
+            "strike_rate": 126.69,
+            "average": 37.38
+          },
+          "last_12_months": {
+            "matches": 10,
+            "runs": 299,
+            "balls": 236,
+            "strike_rate": 126.69,
+            "average": 37.38
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 22,
+          "runs": 497,
+          "average": 26.16,
+          "strike_rate": 101.43
+        },
+        "pressure_index": {
+          "high_rr_sr": null,
+          "low_rr_sr": null,
+          "defending_sr": null
+        },
+        "statistical_reliability": "high"
+      },
+      "bowling": null
+    },
+    "domestic_t20": [],
+    "fitness": {
+      "status": "fit",
+      "notes": null,
+      "last_updated": null
+    },
+    "notes": null
+  },
+  {
+    "id": "shorna_akter",
+    "name": "Shorna Akter",
+    "team": "bangladesh",
+    "role": "all_rounder",
+    "batting_hand": "right",
+    "bowling_hand": "right",
+    "bowling_style": "right_arm_medium",
+    "caps": 40,
+    "t20i_stats": {
+      "batting": {
+        "matches": 40,
+        "caps": 40,
+        "innings": 40,
+        "runs": 472,
+        "average": 15.73,
+        "strike_rate": 94.59,
+        "boundary_pct": 8.22,
+        "dot_ball_pct": 41.68,
+        "fifties": 0,
+        "hundreds": 0,
+        "phase_splits": {
+          "powerplay": {
+            "balls": 16,
+            "runs": 1,
+            "strike_rate": 6.25,
+            "dot_ball_pct": 93.75,
+            "boundary_pct": 0.0,
+            "dismissals": 2
+          },
+          "middle": {
+            "balls": 270,
+            "runs": 195,
+            "strike_rate": 72.22,
+            "dot_ball_pct": 48.89,
+            "boundary_pct": 4.44,
+            "dismissals": 10
+          },
+          "death": {
+            "balls": 213,
+            "runs": 276,
+            "strike_rate": 129.58,
+            "dot_ball_pct": 28.64,
+            "boundary_pct": 13.62,
+            "dismissals": 18
+          }
+        },
+        "vs_pace": {
+          "strike_rate": 97.66,
+          "dot_ball_pct": 39.84,
+          "dismissal_rate": 0.06
+        },
+        "vs_spin": {
+          "strike_rate": 84.35,
+          "dot_ball_pct": 47.83,
+          "dismissal_rate": 0.05
+        },
+        "vs_left_arm": {
+          "strike_rate": 83.33,
+          "dot_ball_pct": 43.33,
+          "dismissal_rate": 0.03
+        },
+        "vs_right_arm": {
+          "strike_rate": 95.31,
+          "dot_ball_pct": 41.58,
+          "dismissal_rate": 0.06
+        },
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "runs": 85,
+            "balls": 71,
+            "strike_rate": 119.72,
+            "average": 17.0
+          },
+          "last_6_months": {
+            "matches": 9,
+            "runs": 162,
+            "balls": 118,
+            "strike_rate": 137.29,
+            "average": 20.25
+          },
+          "last_12_months": {
+            "matches": 9,
+            "runs": 162,
+            "balls": 118,
+            "strike_rate": 137.29,
+            "average": 20.25
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 16,
+          "runs": 200,
+          "average": 15.38,
+          "strike_rate": 112.99
+        },
+        "pressure_index": {
+          "high_rr_sr": null,
+          "low_rr_sr": null,
+          "defending_sr": null
+        },
+        "statistical_reliability": "high"
+      },
+      "bowling": {
+        "matches": 33,
+        "caps": 33,
+        "innings": 33,
+        "overs": 66.3,
+        "wickets": 22,
+        "average": 21.0,
+        "economy": 6.96,
+        "strike_rate": 18.09,
+        "dot_ball_pct": 35.18,
+        "phase_splits": {
+          "powerplay": {
+            "overs": 0.0,
+            "runs": 0,
+            "wickets": 0,
+            "economy": 0.0,
+            "dot_ball_pct": 0.0
+          },
+          "middle": {
+            "overs": 45.0,
+            "runs": 310,
+            "wickets": 12,
+            "economy": 6.89,
+            "dot_ball_pct": 37.41
+          },
+          "death": {
+            "overs": 21.3,
+            "runs": 152,
+            "wickets": 10,
+            "economy": 7.12,
+            "dot_ball_pct": 30.47
+          }
+        },
+        "vs_left_hand": {
+          "economy": 4.8,
+          "dot_ball_pct": 40.0,
+          "wickets_per_over": 0.0
+        },
+        "vs_right_hand": {
+          "economy": 6.99,
+          "dot_ball_pct": 35.11,
+          "wickets_per_over": 0.34
+        },
+        "death_specialist": true,
+        "powerplay_specialist": false,
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "overs": 14.0,
+            "wickets": 7,
+            "economy": 5.57
+          },
+          "last_6_months": {
+            "matches": 7,
+            "overs": 16.0,
+            "wickets": 8,
+            "economy": 5.56
+          },
+          "last_12_months": {
+            "matches": 7,
+            "overs": 16.0,
+            "wickets": 8,
+            "economy": 5.56
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 16,
+          "wickets": 11,
+          "economy": 6.0
+        },
+        "statistical_reliability": "high"
+      }
+    },
+    "domestic_t20": [],
+    "fitness": {
+      "status": "fit",
+      "notes": null,
+      "last_updated": null
+    },
+    "notes": null
+  },
+  {
+    "id": "ritu_moni",
+    "name": "Ritu Moni",
+    "team": "bangladesh",
+    "role": "bowler",
+    "batting_hand": "right",
+    "bowling_hand": "right",
+    "bowling_style": "right_arm_off_spin",
+    "caps": 58,
+    "t20i_stats": {
+      "batting": {
+        "matches": 58,
+        "caps": 58,
+        "innings": 58,
+        "runs": 440,
+        "average": 11.89,
+        "strike_rate": 75.86,
+        "boundary_pct": 6.21,
+        "dot_ball_pct": 49.31,
+        "fifties": 0,
+        "hundreds": 0,
+        "phase_splits": {
+          "powerplay": {
+            "balls": 39,
+            "runs": 17,
+            "strike_rate": 43.59,
+            "dot_ball_pct": 71.79,
+            "boundary_pct": 5.13,
+            "dismissals": 2
+          },
+          "middle": {
+            "balls": 266,
+            "runs": 176,
+            "strike_rate": 66.17,
+            "dot_ball_pct": 57.89,
+            "boundary_pct": 6.02,
+            "dismissals": 13
+          },
+          "death": {
+            "balls": 275,
+            "runs": 247,
+            "strike_rate": 89.82,
+            "dot_ball_pct": 37.82,
+            "boundary_pct": 6.55,
+            "dismissals": 22
+          }
+        },
+        "vs_pace": {
+          "strike_rate": 79.46,
+          "dot_ball_pct": 48.34,
+          "dismissal_rate": 0.07
+        },
+        "vs_spin": {
+          "strike_rate": 58.16,
+          "dot_ball_pct": 54.08,
+          "dismissal_rate": 0.05
+        },
+        "vs_left_arm": {
+          "strike_rate": 67.86,
+          "dot_ball_pct": 50.0,
+          "dismissal_rate": 0.04
+        },
+        "vs_right_arm": {
+          "strike_rate": 76.27,
+          "dot_ball_pct": 49.28,
+          "dismissal_rate": 0.07
+        },
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "runs": 33,
+            "balls": 24,
+            "strike_rate": 137.5,
+            "average": 11.0
+          },
+          "last_6_months": {
+            "matches": 6,
+            "runs": 38,
+            "balls": 26,
+            "strike_rate": 146.15,
+            "average": 12.67
+          },
+          "last_12_months": {
+            "matches": 6,
+            "runs": 38,
+            "balls": 26,
+            "strike_rate": 146.15,
+            "average": 12.67
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 28,
+          "runs": 168,
+          "average": 10.5,
+          "strike_rate": 68.02
+        },
+        "pressure_index": {
+          "high_rr_sr": null,
+          "low_rr_sr": null,
+          "defending_sr": null
+        },
+        "statistical_reliability": "high"
+      },
+      "bowling": {
+        "matches": 47,
+        "caps": 47,
+        "innings": 47,
+        "overs": 125.5,
+        "wickets": 34,
+        "average": 20.35,
+        "economy": 5.51,
+        "strike_rate": 22.15,
+        "dot_ball_pct": 43.82,
+        "phase_splits": {
+          "powerplay": {
+            "overs": 18.7,
+            "runs": 86,
+            "wickets": 8,
+            "economy": 4.61,
+            "dot_ball_pct": 56.25
+          },
+          "middle": {
+            "overs": 88.5,
+            "runs": 465,
+            "wickets": 20,
+            "economy": 5.25,
+            "dot_ball_pct": 44.63
+          },
+          "death": {
+            "overs": 18.3,
+            "runs": 141,
+            "wickets": 6,
+            "economy": 7.69,
+            "dot_ball_pct": 27.27
+          }
+        },
+        "vs_left_hand": {
+          "economy": 8.0,
+          "dot_ball_pct": 25.0,
+          "wickets_per_over": 0.0
+        },
+        "vs_right_hand": {
+          "economy": 5.39,
+          "dot_ball_pct": 44.77,
+          "wickets_per_over": 0.28
+        },
+        "death_specialist": true,
+        "powerplay_specialist": true,
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "overs": 16.3,
+            "wickets": 3,
+            "economy": 6.73
+          },
+          "last_6_months": {
+            "matches": 9,
+            "overs": 30.5,
+            "wickets": 7,
+            "economy": 6.07
+          },
+          "last_12_months": {
+            "matches": 9,
+            "overs": 30.5,
+            "wickets": 7,
+            "economy": 6.07
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 32,
+          "wickets": 23,
+          "economy": 5.45
+        },
+        "statistical_reliability": "high"
+      }
+    },
+    "domestic_t20": [],
+    "fitness": {
+      "status": "fit",
+      "notes": null,
+      "last_updated": null
+    },
+    "notes": null
+  },
+  {
+    "id": "rabeya_khan",
+    "name": "Rabeya Khan",
+    "team": "bangladesh",
+    "role": "bowler",
+    "batting_hand": "right",
+    "bowling_hand": "left",
+    "bowling_style": "left_arm_orthodox",
+    "caps": 26,
+    "t20i_stats": {
+      "batting": {
+        "matches": 26,
+        "caps": 26,
+        "innings": 26,
+        "runs": 127,
+        "average": 9.77,
+        "strike_rate": 69.4,
+        "boundary_pct": 4.37,
+        "dot_ball_pct": 54.64,
+        "fifties": 0,
+        "hundreds": 0,
+        "phase_splits": {
+          "powerplay": {
+            "balls": 0,
+            "runs": 0,
+            "strike_rate": 0.0,
+            "dot_ball_pct": 0.0,
+            "boundary_pct": 0.0,
+            "dismissals": 0
+          },
+          "middle": {
+            "balls": 67,
+            "runs": 34,
+            "strike_rate": 50.75,
+            "dot_ball_pct": 62.69,
+            "boundary_pct": 2.99,
+            "dismissals": 5
+          },
+          "death": {
+            "balls": 116,
+            "runs": 93,
+            "strike_rate": 80.17,
+            "dot_ball_pct": 50.0,
+            "boundary_pct": 5.17,
+            "dismissals": 8
+          }
+        },
+        "vs_pace": {
+          "strike_rate": 73.53,
+          "dot_ball_pct": 52.94,
+          "dismissal_rate": 0.08
+        },
+        "vs_spin": {
+          "strike_rate": 57.45,
+          "dot_ball_pct": 59.57,
+          "dismissal_rate": 0.04
+        },
+        "vs_left_arm": {
+          "strike_rate": 66.67,
+          "dot_ball_pct": 55.56,
+          "dismissal_rate": 0.06
+        },
+        "vs_right_arm": {
+          "strike_rate": 69.7,
+          "dot_ball_pct": 54.55,
+          "dismissal_rate": 0.07
+        },
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "runs": 31,
+            "balls": 29,
+            "strike_rate": 106.9,
+            "average": 10.33
+          },
+          "last_6_months": {
+            "matches": 5,
+            "runs": 31,
+            "balls": 29,
+            "strike_rate": 106.9,
+            "average": 10.33
+          },
+          "last_12_months": {
+            "matches": 5,
+            "runs": 31,
+            "balls": 29,
+            "strike_rate": 106.9,
+            "average": 10.33
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 9,
+          "runs": 40,
+          "average": 10.0,
+          "strike_rate": 78.43
+        },
+        "pressure_index": {
+          "high_rr_sr": null,
+          "low_rr_sr": null,
+          "defending_sr": null
+        },
+        "statistical_reliability": "high"
+      },
+      "bowling": {
+        "matches": 43,
+        "caps": 43,
+        "innings": 43,
+        "overs": 151.5,
+        "wickets": 47,
+        "average": 17.34,
+        "economy": 5.38,
+        "strike_rate": 19.34,
+        "dot_ball_pct": 42.35,
+        "phase_splits": {
+          "powerplay": {
+            "overs": 17.3,
+            "runs": 74,
+            "wickets": 6,
+            "economy": 4.27,
+            "dot_ball_pct": 58.65
+          },
+          "middle": {
+            "overs": 102.5,
+            "runs": 544,
+            "wickets": 25,
+            "economy": 5.31,
+            "dot_ball_pct": 41.95
+          },
+          "death": {
+            "overs": 31.7,
+            "runs": 197,
+            "wickets": 16,
+            "economy": 6.22,
+            "dot_ball_pct": 34.74
+          }
+        },
+        "vs_left_hand": {
+          "economy": 6.13,
+          "dot_ball_pct": 41.3,
+          "wickets_per_over": 0.39
+        },
+        "vs_right_hand": {
+          "economy": 5.34,
+          "dot_ball_pct": 42.41,
+          "wickets_per_over": 0.31
+        },
+        "death_specialist": true,
+        "powerplay_specialist": true,
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "overs": 17.3,
+            "wickets": 3,
+            "economy": 6.46
+          },
+          "last_6_months": {
+            "matches": 8,
+            "overs": 29.5,
+            "wickets": 9,
+            "economy": 5.97
+          },
+          "last_12_months": {
+            "matches": 8,
+            "overs": 29.5,
+            "wickets": 9,
+            "economy": 5.97
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 15,
+          "wickets": 16,
+          "economy": 5.51
+        },
+        "statistical_reliability": "high"
+      }
+    },
+    "domestic_t20": [],
+    "fitness": {
+      "status": "fit",
+      "notes": null,
+      "last_updated": null
+    },
+    "notes": null
+  },
+  {
+    "id": "fahima_khatun",
+    "name": "Fahima Khatun",
+    "team": "bangladesh",
+    "role": "bowler",
+    "batting_hand": "right",
+    "bowling_hand": "left",
+    "bowling_style": "left_arm_wrist_spin",
+    "caps": 51,
+    "t20i_stats": {
+      "batting": {
+        "matches": 51,
+        "caps": 51,
+        "innings": 51,
+        "runs": 355,
+        "average": 12.24,
+        "strike_rate": 92.69,
+        "boundary_pct": 7.83,
+        "dot_ball_pct": 40.21,
+        "fifties": 0,
+        "hundreds": 0,
+        "phase_splits": {
+          "powerplay": {
+            "balls": 15,
+            "runs": 8,
+            "strike_rate": 53.33,
+            "dot_ball_pct": 73.33,
+            "boundary_pct": 6.67,
+            "dismissals": 1
+          },
+          "middle": {
+            "balls": 157,
+            "runs": 129,
+            "strike_rate": 82.17,
+            "dot_ball_pct": 38.85,
+            "boundary_pct": 5.1,
+            "dismissals": 9
+          },
+          "death": {
+            "balls": 211,
+            "runs": 218,
+            "strike_rate": 103.32,
+            "dot_ball_pct": 38.86,
+            "boundary_pct": 9.95,
+            "dismissals": 19
+          }
+        },
+        "vs_pace": {
+          "strike_rate": 93.07,
+          "dot_ball_pct": 40.26,
+          "dismissal_rate": 0.07
+        },
+        "vs_spin": {
+          "strike_rate": 91.25,
+          "dot_ball_pct": 40.0,
+          "dismissal_rate": 0.11
+        },
+        "vs_left_arm": {
+          "strike_rate": 73.33,
+          "dot_ball_pct": 46.67,
+          "dismissal_rate": 0.2
+        },
+        "vs_right_arm": {
+          "strike_rate": 93.48,
+          "dot_ball_pct": 39.95,
+          "dismissal_rate": 0.07
+        },
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "runs": 14,
+            "balls": 23,
+            "strike_rate": 60.87,
+            "average": 4.67
+          },
+          "last_6_months": {
+            "matches": 2,
+            "runs": 2,
+            "balls": 5,
+            "strike_rate": 40.0,
+            "average": 2.0
+          },
+          "last_12_months": {
+            "matches": 2,
+            "runs": 2,
+            "balls": 5,
+            "strike_rate": 40.0,
+            "average": 2.0
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 24,
+          "runs": 178,
+          "average": 16.18,
+          "strike_rate": 103.49
+        },
+        "pressure_index": {
+          "high_rr_sr": null,
+          "low_rr_sr": null,
+          "defending_sr": null
+        },
+        "statistical_reliability": "high"
+      },
+      "bowling": {
+        "matches": 79,
+        "caps": 79,
+        "innings": 79,
+        "overs": 227.8,
+        "wickets": 62,
+        "average": 20.79,
+        "economy": 5.66,
+        "strike_rate": 22.05,
+        "dot_ball_pct": 40.67,
+        "phase_splits": {
+          "powerplay": {
+            "overs": 22.5,
+            "runs": 131,
+            "wickets": 5,
+            "economy": 5.82,
+            "dot_ball_pct": 48.89
+          },
+          "middle": {
+            "overs": 155.2,
+            "runs": 862,
+            "wickets": 38,
+            "economy": 5.56,
+            "dot_ball_pct": 40.92
+          },
+          "death": {
+            "overs": 50.2,
+            "runs": 296,
+            "wickets": 19,
+            "economy": 5.9,
+            "dot_ball_pct": 36.21
+          }
+        },
+        "vs_left_hand": {
+          "economy": 5.09,
+          "dot_ball_pct": 39.39,
+          "wickets_per_over": 0.36
+        },
+        "vs_right_hand": {
+          "economy": 5.67,
+          "dot_ball_pct": 40.7,
+          "wickets_per_over": 0.27
+        },
+        "death_specialist": true,
+        "powerplay_specialist": true,
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "overs": 10.0,
+            "wickets": 1,
+            "economy": 8.0
+          },
+          "last_6_months": {
+            "matches": 7,
+            "overs": 16.8,
+            "wickets": 5,
+            "economy": 6.24
+          },
+          "last_12_months": {
+            "matches": 7,
+            "overs": 16.8,
+            "wickets": 5,
+            "economy": 6.24
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 40,
+          "wickets": 30,
+          "economy": 5.02
+        },
+        "statistical_reliability": "high"
+      }
+    },
+    "domestic_t20": [],
+    "fitness": {
+      "status": "fit",
+      "notes": null,
+      "last_updated": null
+    },
+    "notes": null
+  },
+  {
+    "id": "fariha_islam_trisna",
+    "name": "Fariha Islam Trisna",
+    "team": "bangladesh",
+    "role": "bowler",
+    "batting_hand": "right",
+    "bowling_hand": "right",
+    "bowling_style": "right_arm_medium",
+    "caps": 6,
+    "t20i_stats": {
+      "batting": {
+        "matches": 6,
+        "caps": 6,
+        "innings": 6,
+        "runs": 5,
+        "average": 2.5,
+        "strike_rate": 23.81,
+        "boundary_pct": 0.0,
+        "dot_ball_pct": 76.19,
+        "fifties": 0,
+        "hundreds": 0,
+        "phase_splits": {
+          "powerplay": {
+            "balls": 0,
+            "runs": 0,
+            "strike_rate": 0.0,
+            "dot_ball_pct": 0.0,
+            "boundary_pct": 0.0,
+            "dismissals": 0
+          },
+          "middle": {
+            "balls": 0,
+            "runs": 0,
+            "strike_rate": 0.0,
+            "dot_ball_pct": 0.0,
+            "boundary_pct": 0.0,
+            "dismissals": 0
+          },
+          "death": {
+            "balls": 21,
+            "runs": 5,
+            "strike_rate": 23.81,
+            "dot_ball_pct": 76.19,
+            "boundary_pct": 0.0,
+            "dismissals": 2
+          }
+        },
+        "vs_pace": {
+          "strike_rate": 23.81,
+          "dot_ball_pct": 76.19,
+          "dismissal_rate": 0.1
+        },
+        "vs_spin": {
+          "strike_rate": 0.0,
+          "dot_ball_pct": 0.0,
+          "dismissal_rate": 0.0
+        },
+        "vs_left_arm": {
+          "strike_rate": 0.0,
+          "dot_ball_pct": 0.0,
+          "dismissal_rate": 0.0
+        },
+        "vs_right_arm": {
+          "strike_rate": 23.81,
+          "dot_ball_pct": 76.19,
+          "dismissal_rate": 0.1
+        },
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "runs": 4,
+            "balls": 18,
+            "strike_rate": 22.22,
+            "average": 4.0
+          },
+          "last_6_months": {
+            "matches": 0,
+            "runs": 0,
+            "balls": 0,
+            "strike_rate": 0.0,
+            "average": 0.0
+          },
+          "last_12_months": {
+            "matches": 0,
+            "runs": 0,
+            "balls": 0,
+            "strike_rate": 0.0,
+            "average": 0.0
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 0,
+          "runs": 0,
+          "average": 0.0,
+          "strike_rate": 0.0
+        },
+        "pressure_index": {
+          "high_rr_sr": null,
+          "low_rr_sr": null,
+          "defending_sr": null
+        },
+        "statistical_reliability": "low"
+      },
+      "bowling": {
+        "matches": 20,
+        "caps": 20,
+        "innings": 20,
+        "overs": 64.8,
+        "wickets": 14,
+        "average": 32.93,
+        "economy": 7.11,
+        "strike_rate": 27.79,
+        "dot_ball_pct": 40.62,
+        "phase_splits": {
+          "powerplay": {
+            "overs": 45.5,
+            "runs": 296,
+            "wickets": 8,
+            "economy": 6.51,
+            "dot_ball_pct": 45.05
+          },
+          "middle": {
+            "overs": 8.0,
+            "runs": 71,
+            "wickets": 0,
+            "economy": 8.88,
+            "dot_ball_pct": 31.25
+          },
+          "death": {
+            "overs": 11.3,
+            "runs": 94,
+            "wickets": 6,
+            "economy": 8.29,
+            "dot_ball_pct": 29.41
+          }
+        },
+        "vs_left_hand": {
+          "economy": 7.55,
+          "dot_ball_pct": 35.48,
+          "wickets_per_over": 0.39
+        },
+        "vs_right_hand": {
+          "economy": 7.07,
+          "dot_ball_pct": 41.06,
+          "wickets_per_over": 0.2
+        },
+        "death_specialist": true,
+        "powerplay_specialist": true,
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "overs": 15.8,
+            "wickets": 1,
+            "economy": 6.69
+          },
+          "last_6_months": {
+            "matches": 4,
+            "overs": 12.3,
+            "wickets": 1,
+            "economy": 6.97
+          },
+          "last_12_months": {
+            "matches": 4,
+            "overs": 12.3,
+            "wickets": 1,
+            "economy": 6.97
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 3,
+          "wickets": 3,
+          "economy": 5.28
+        },
+        "statistical_reliability": "high"
+      }
+    },
+    "domestic_t20": [],
+    "fitness": {
+      "status": "fit",
+      "notes": null,
+      "last_updated": null
+    },
+    "notes": null
+  },
+  {
+    "id": "marufa_akter",
+    "name": "Marufa Akter",
+    "team": "bangladesh",
+    "role": "bowler",
+    "batting_hand": "right",
+    "bowling_hand": "right",
+    "bowling_style": "right_arm_medium",
+    "caps": 9,
+    "t20i_stats": {
+      "batting": {
+        "matches": 9,
+        "caps": 9,
+        "innings": 9,
+        "runs": 9,
+        "average": 1.8,
+        "strike_rate": 32.14,
+        "boundary_pct": 0.0,
+        "dot_ball_pct": 71.43,
+        "fifties": 0,
+        "hundreds": 0,
+        "phase_splits": {
+          "powerplay": {
+            "balls": 0,
+            "runs": 0,
+            "strike_rate": 0.0,
+            "dot_ball_pct": 0.0,
+            "boundary_pct": 0.0,
+            "dismissals": 0
+          },
+          "middle": {
+            "balls": 5,
+            "runs": 0,
+            "strike_rate": 0.0,
+            "dot_ball_pct": 100.0,
+            "boundary_pct": 0.0,
+            "dismissals": 1
+          },
+          "death": {
+            "balls": 23,
+            "runs": 9,
+            "strike_rate": 39.13,
+            "dot_ball_pct": 65.22,
+            "boundary_pct": 0.0,
+            "dismissals": 4
+          }
+        },
+        "vs_pace": {
+          "strike_rate": 44.44,
+          "dot_ball_pct": 61.11,
+          "dismissal_rate": 0.22
+        },
+        "vs_spin": {
+          "strike_rate": 10.0,
+          "dot_ball_pct": 90.0,
+          "dismissal_rate": 0.1
+        },
+        "vs_left_arm": {
+          "strike_rate": 12.5,
+          "dot_ball_pct": 87.5,
+          "dismissal_rate": 0.0
+        },
+        "vs_right_arm": {
+          "strike_rate": 40.0,
+          "dot_ball_pct": 65.0,
+          "dismissal_rate": 0.25
+        },
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "runs": 5,
+            "balls": 18,
+            "strike_rate": 27.78,
+            "average": 2.5
+          },
+          "last_6_months": {
+            "matches": 0,
+            "runs": 0,
+            "balls": 0,
+            "strike_rate": 0.0,
+            "average": 0.0
+          },
+          "last_12_months": {
+            "matches": 0,
+            "runs": 0,
+            "balls": 0,
+            "strike_rate": 0.0,
+            "average": 0.0
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 2,
+          "runs": 1,
+          "average": 1.0,
+          "strike_rate": 25.0
+        },
+        "pressure_index": {
+          "high_rr_sr": null,
+          "low_rr_sr": null,
+          "defending_sr": null
+        },
+        "statistical_reliability": "low"
+      },
+      "bowling": {
+        "matches": 36,
+        "caps": 36,
+        "innings": 36,
+        "overs": 115.7,
+        "wickets": 28,
+        "average": 23.61,
+        "economy": 5.71,
+        "strike_rate": 24.79,
+        "dot_ball_pct": 47.26,
+        "phase_splits": {
+          "powerplay": {
+            "overs": 87.3,
+            "runs": 431,
+            "wickets": 19,
+            "economy": 4.94,
+            "dot_ball_pct": 53.63
+          },
+          "middle": {
+            "overs": 10.2,
+            "runs": 71,
+            "wickets": 2,
+            "economy": 6.98,
+            "dot_ball_pct": 29.51
+          },
+          "death": {
+            "overs": 18.2,
+            "runs": 159,
+            "wickets": 7,
+            "economy": 8.75,
+            "dot_ball_pct": 26.61
+          }
+        },
+        "vs_left_hand": {
+          "economy": 6.18,
+          "dot_ball_pct": 48.53,
+          "wickets_per_over": 0.09
+        },
+        "vs_right_hand": {
+          "economy": 5.66,
+          "dot_ball_pct": 47.12,
+          "wickets_per_over": 0.26
+        },
+        "death_specialist": true,
+        "powerplay_specialist": true,
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "overs": 19.2,
+            "wickets": 8,
+            "economy": 6.1
+          },
+          "last_6_months": {
+            "matches": 7,
+            "overs": 27.8,
+            "wickets": 8,
+            "economy": 5.68
+          },
+          "last_12_months": {
+            "matches": 7,
+            "overs": 27.8,
+            "wickets": 8,
+            "economy": 5.68
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 16,
+          "wickets": 13,
+          "economy": 5.23
+        },
+        "statistical_reliability": "high"
+      }
+    },
+    "domestic_t20": [],
+    "fitness": {
+      "status": "fit",
+      "notes": null,
+      "last_updated": null
+    },
+    "notes": null
+  },
+  {
+    "id": "shanjida_meghla",
+    "name": "Shanjida Akther Meghla",
+    "team": "bangladesh",
+    "role": "batter",
+    "batting_hand": "right",
+    "bowling_hand": null,
+    "bowling_style": null,
+    "caps": 3,
+    "t20i_stats": {
+      "batting": {
+        "matches": 3,
+        "caps": 3,
+        "innings": 3,
+        "runs": 2,
+        "average": 2.0,
+        "strike_rate": 22.22,
+        "boundary_pct": 0.0,
+        "dot_ball_pct": 77.78,
+        "fifties": 0,
+        "hundreds": 0,
+        "phase_splits": {
+          "powerplay": {
+            "balls": 0,
+            "runs": 0,
+            "strike_rate": 0.0,
+            "dot_ball_pct": 0.0,
+            "boundary_pct": 0.0,
+            "dismissals": 0
+          },
+          "middle": {
+            "balls": 2,
+            "runs": 1,
+            "strike_rate": 50.0,
+            "dot_ball_pct": 50.0,
+            "boundary_pct": 0.0,
+            "dismissals": 0
+          },
+          "death": {
+            "balls": 7,
+            "runs": 1,
+            "strike_rate": 14.29,
+            "dot_ball_pct": 85.71,
+            "boundary_pct": 0.0,
+            "dismissals": 1
+          }
+        },
+        "vs_pace": {
+          "strike_rate": 22.22,
+          "dot_ball_pct": 77.78,
+          "dismissal_rate": 0.11
+        },
+        "vs_spin": {
+          "strike_rate": 0.0,
+          "dot_ball_pct": 0.0,
+          "dismissal_rate": 0.0
+        },
+        "vs_left_arm": {
+          "strike_rate": 0.0,
+          "dot_ball_pct": 0.0,
+          "dismissal_rate": 0.0
+        },
+        "vs_right_arm": {
+          "strike_rate": 22.22,
+          "dot_ball_pct": 77.78,
+          "dismissal_rate": 0.11
+        },
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 3,
+            "runs": 2,
+            "balls": 9,
+            "strike_rate": 22.22,
+            "average": 2.0
+          },
+          "last_6_months": {
+            "matches": 0,
+            "runs": 0,
+            "balls": 0,
+            "strike_rate": 0.0,
+            "average": 0.0
+          },
+          "last_12_months": {
+            "matches": 0,
+            "runs": 0,
+            "balls": 0,
+            "strike_rate": 0.0,
+            "average": 0.0
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 0,
+          "runs": 0,
+          "average": 0.0,
+          "strike_rate": 0.0
+        },
+        "pressure_index": {
+          "high_rr_sr": null,
+          "low_rr_sr": null,
+          "defending_sr": null
+        },
+        "statistical_reliability": "low"
+      },
+      "bowling": null
+    },
+    "domestic_t20": [],
+    "fitness": {
+      "status": "fit",
+      "notes": null,
+      "last_updated": null
+    },
+    "notes": null
+  },
+  {
+    "id": "sultana_khatun",
+    "name": "Sultana Khatun",
+    "team": "bangladesh",
+    "role": "bowler",
+    "batting_hand": "right",
+    "bowling_hand": "right",
+    "bowling_style": "right_arm_medium",
+    "caps": 10,
+    "t20i_stats": {
+      "batting": {
+        "matches": 10,
+        "caps": 10,
+        "innings": 10,
+        "runs": 46,
+        "average": 7.67,
+        "strike_rate": 67.65,
+        "boundary_pct": 5.88,
+        "dot_ball_pct": 55.88,
+        "fifties": 0,
+        "hundreds": 0,
+        "phase_splits": {
+          "powerplay": {
+            "balls": 0,
+            "runs": 0,
+            "strike_rate": 0.0,
+            "dot_ball_pct": 0.0,
+            "boundary_pct": 0.0,
+            "dismissals": 0
+          },
+          "middle": {
+            "balls": 14,
+            "runs": 21,
+            "strike_rate": 150.0,
+            "dot_ball_pct": 35.71,
+            "boundary_pct": 21.43,
+            "dismissals": 1
+          },
+          "death": {
+            "balls": 54,
+            "runs": 25,
+            "strike_rate": 46.3,
+            "dot_ball_pct": 61.11,
+            "boundary_pct": 1.85,
+            "dismissals": 5
+          }
+        },
+        "vs_pace": {
+          "strike_rate": 60.0,
+          "dot_ball_pct": 55.0,
+          "dismissal_rate": 0.08
+        },
+        "vs_spin": {
+          "strike_rate": 125.0,
+          "dot_ball_pct": 62.5,
+          "dismissal_rate": 0.12
+        },
+        "vs_left_arm": {
+          "strike_rate": 200.0,
+          "dot_ball_pct": 50.0,
+          "dismissal_rate": 0.0
+        },
+        "vs_right_arm": {
+          "strike_rate": 63.64,
+          "dot_ball_pct": 56.06,
+          "dismissal_rate": 0.09
+        },
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "runs": 19,
+            "balls": 28,
+            "strike_rate": 67.86,
+            "average": 9.5
+          },
+          "last_6_months": {
+            "matches": 2,
+            "runs": 15,
+            "balls": 15,
+            "strike_rate": 100.0,
+            "average": 15.0
+          },
+          "last_12_months": {
+            "matches": 2,
+            "runs": 15,
+            "balls": 15,
+            "strike_rate": 100.0,
+            "average": 15.0
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 0,
+          "runs": 0,
+          "average": 0.0,
+          "strike_rate": 0.0
+        },
+        "pressure_index": {
+          "high_rr_sr": null,
+          "low_rr_sr": null,
+          "defending_sr": null
+        },
+        "statistical_reliability": "medium"
+      },
+      "bowling": {
+        "matches": 20,
+        "caps": 20,
+        "innings": 20,
+        "overs": 65.8,
+        "wickets": 18,
+        "average": 24.06,
+        "economy": 6.58,
+        "strike_rate": 21.94,
+        "dot_ball_pct": 41.27,
+        "phase_splits": {
+          "powerplay": {
+            "overs": 35.7,
+            "runs": 237,
+            "wickets": 11,
+            "economy": 6.64,
+            "dot_ball_pct": 48.6
+          },
+          "middle": {
+            "overs": 26.3,
+            "runs": 173,
+            "wickets": 6,
+            "economy": 6.57,
+            "dot_ball_pct": 33.54
+          },
+          "death": {
+            "overs": 3.8,
+            "runs": 23,
+            "wickets": 1,
+            "economy": 6.0,
+            "dot_ball_pct": 26.09
+          }
+        },
+        "vs_left_hand": {
+          "economy": 7.3,
+          "dot_ball_pct": 36.96,
+          "wickets_per_over": 0.26
+        },
+        "vs_right_hand": {
+          "economy": 6.48,
+          "dot_ball_pct": 41.83,
+          "wickets_per_over": 0.28
+        },
+        "death_specialist": false,
+        "powerplay_specialist": true,
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "overs": 18.5,
+            "wickets": 8,
+            "economy": 5.95
+          },
+          "last_6_months": {
+            "matches": 4,
+            "overs": 14.3,
+            "wickets": 6,
+            "economy": 5.65
+          },
+          "last_12_months": {
+            "matches": 4,
+            "overs": 14.3,
+            "wickets": 6,
+            "economy": 5.65
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 2,
+          "wickets": 0,
+          "economy": 7.57
+        },
+        "statistical_reliability": "high"
+      }
+    },
+    "domestic_t20": [],
+    "fitness": {
+      "status": "fit",
+      "notes": null,
+      "last_updated": null
+    },
+    "notes": null
+  },
+  {
+    "id": "dilara_akter",
+    "name": "Dilara Akter",
+    "team": "bangladesh",
+    "role": "batter",
+    "batting_hand": "right",
+    "bowling_hand": null,
+    "bowling_style": null,
+    "caps": 33,
+    "t20i_stats": {
+      "batting": {
+        "matches": 33,
+        "caps": 33,
+        "innings": 33,
+        "runs": 518,
+        "average": 16.71,
+        "strike_rate": 106.37,
+        "boundary_pct": 16.02,
+        "dot_ball_pct": 53.39,
+        "fifties": 0,
+        "hundreds": 0,
+        "phase_splits": {
+          "powerplay": {
+            "balls": 403,
+            "runs": 423,
+            "strike_rate": 104.96,
+            "dot_ball_pct": 56.58,
+            "boundary_pct": 16.63,
+            "dismissals": 20
+          },
+          "middle": {
+            "balls": 84,
+            "runs": 95,
+            "strike_rate": 113.1,
+            "dot_ball_pct": 38.1,
+            "boundary_pct": 13.1,
+            "dismissals": 11
+          },
+          "death": {
+            "balls": 0,
+            "runs": 0,
+            "strike_rate": 0.0,
+            "dot_ball_pct": 0.0,
+            "boundary_pct": 0.0,
+            "dismissals": 0
+          }
+        },
+        "vs_pace": {
+          "strike_rate": 108.08,
+          "dot_ball_pct": 53.35,
+          "dismissal_rate": 0.06
+        },
+        "vs_spin": {
+          "strike_rate": 92.59,
+          "dot_ball_pct": 53.7,
+          "dismissal_rate": 0.13
+        },
+        "vs_left_arm": {
+          "strike_rate": 50.0,
+          "dot_ball_pct": 57.14,
+          "dismissal_rate": 0.14
+        },
+        "vs_right_arm": {
+          "strike_rate": 108.03,
+          "dot_ball_pct": 53.28,
+          "dismissal_rate": 0.06
+        },
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "runs": 98,
+            "balls": 79,
+            "strike_rate": 124.05,
+            "average": 19.6
+          },
+          "last_6_months": {
+            "matches": 10,
+            "runs": 210,
+            "balls": 164,
+            "strike_rate": 128.05,
+            "average": 21.0
+          },
+          "last_12_months": {
+            "matches": 10,
+            "runs": 210,
+            "balls": 164,
+            "strike_rate": 128.05,
+            "average": 21.0
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 14,
+          "runs": 242,
+          "average": 18.62,
+          "strike_rate": 126.04
+        },
+        "pressure_index": {
+          "high_rr_sr": null,
+          "low_rr_sr": null,
+          "defending_sr": null
+        },
+        "statistical_reliability": "high"
+      },
+      "bowling": null
+    },
+    "domestic_t20": [],
+    "fitness": {
+      "status": "fit",
+      "notes": null,
+      "last_updated": null
+    },
+    "notes": null
+  },
+  {
+    "id": "juairiya_ferdous",
+    "name": "Juairiya Ferdous",
+    "team": "bangladesh",
+    "role": "batter",
+    "batting_hand": "right",
+    "bowling_hand": null,
+    "bowling_style": null,
+    "caps": 10,
+    "t20i_stats": {
+      "batting": {
+        "matches": 10,
+        "caps": 10,
+        "innings": 10,
+        "runs": 183,
+        "average": 20.33,
+        "strike_rate": 104.57,
+        "boundary_pct": 14.29,
+        "dot_ball_pct": 50.86,
+        "fifties": 0,
+        "hundreds": 0,
+        "phase_splits": {
+          "powerplay": {
+            "balls": 129,
+            "runs": 114,
+            "strike_rate": 88.37,
+            "dot_ball_pct": 57.36,
+            "boundary_pct": 12.4,
+            "dismissals": 6
+          },
+          "middle": {
+            "balls": 45,
+            "runs": 69,
+            "strike_rate": 153.33,
+            "dot_ball_pct": 31.11,
+            "boundary_pct": 20.0,
+            "dismissals": 2
+          },
+          "death": {
+            "balls": 1,
+            "runs": 0,
+            "strike_rate": 0.0,
+            "dot_ball_pct": 100.0,
+            "boundary_pct": 0.0,
+            "dismissals": 1
+          }
+        },
+        "vs_pace": {
+          "strike_rate": 105.92,
+          "dot_ball_pct": 51.48,
+          "dismissal_rate": 0.05
+        },
+        "vs_spin": {
+          "strike_rate": 66.67,
+          "dot_ball_pct": 33.33,
+          "dismissal_rate": 0.0
+        },
+        "vs_left_arm": {
+          "strike_rate": 0.0,
+          "dot_ball_pct": 0.0,
+          "dismissal_rate": 0.0
+        },
+        "vs_right_arm": {
+          "strike_rate": 104.57,
+          "dot_ball_pct": 50.86,
+          "dismissal_rate": 0.05
+        },
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "runs": 82,
+            "balls": 77,
+            "strike_rate": 106.49,
+            "average": 20.5
+          },
+          "last_6_months": {
+            "matches": 10,
+            "runs": 183,
+            "balls": 175,
+            "strike_rate": 104.57,
+            "average": 20.33
+          },
+          "last_12_months": {
+            "matches": 10,
+            "runs": 183,
+            "balls": 175,
+            "strike_rate": 104.57,
+            "average": 20.33
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 7,
+          "runs": 123,
+          "average": 17.57,
+          "strike_rate": 100.82
+        },
+        "pressure_index": {
+          "high_rr_sr": null,
+          "low_rr_sr": null,
+          "defending_sr": null
+        },
+        "statistical_reliability": "high"
+      },
+      "bowling": null
+    },
+    "domestic_t20": [],
+    "fitness": {
+      "status": "fit",
+      "notes": null,
+      "last_updated": null
+    },
+    "notes": null
+  },
+  {
+    "id": "taj_nehar",
+    "name": "Taj Nehar",
+    "team": "bangladesh",
+    "role": "all_rounder",
+    "batting_hand": "right",
+    "bowling_hand": "right",
+    "bowling_style": "right_arm_medium",
+    "caps": 7,
+    "t20i_stats": {
+      "batting": {
+        "matches": 7,
+        "caps": 7,
+        "innings": 7,
+        "runs": 44,
+        "average": 7.33,
+        "strike_rate": 88.0,
+        "boundary_pct": 10.0,
+        "dot_ball_pct": 54.0,
+        "fifties": 0,
+        "hundreds": 0,
+        "phase_splits": {
+          "powerplay": {
+            "balls": 8,
+            "runs": 7,
+            "strike_rate": 87.5,
+            "dot_ball_pct": 62.5,
+            "boundary_pct": 12.5,
+            "dismissals": 2
+          },
+          "middle": {
+            "balls": 32,
+            "runs": 23,
+            "strike_rate": 71.88,
+            "dot_ball_pct": 56.25,
+            "boundary_pct": 6.25,
+            "dismissals": 2
+          },
+          "death": {
+            "balls": 10,
+            "runs": 14,
+            "strike_rate": 140.0,
+            "dot_ball_pct": 40.0,
+            "boundary_pct": 20.0,
+            "dismissals": 2
+          }
+        },
+        "vs_pace": {
+          "strike_rate": 89.58,
+          "dot_ball_pct": 54.17,
+          "dismissal_rate": 0.1
+        },
+        "vs_spin": {
+          "strike_rate": 50.0,
+          "dot_ball_pct": 50.0,
+          "dismissal_rate": 0.5
+        },
+        "vs_left_arm": {
+          "strike_rate": 0.0,
+          "dot_ball_pct": 100.0,
+          "dismissal_rate": 1.0
+        },
+        "vs_right_arm": {
+          "strike_rate": 89.8,
+          "dot_ball_pct": 53.06,
+          "dismissal_rate": 0.1
+        },
+        "form_windows": {
+          "last_5_matches": {
+            "matches": 5,
+            "runs": 37,
+            "balls": 37,
+            "strike_rate": 100.0,
+            "average": 7.4
+          },
+          "last_6_months": {
+            "matches": 0,
+            "runs": 0,
+            "balls": 0,
+            "strike_rate": 0.0,
+            "average": 0.0
+          },
+          "last_12_months": {
+            "matches": 0,
+            "runs": 0,
+            "balls": 0,
+            "strike_rate": 0.0,
+            "average": 0.0
+          }
+        },
+        "icc_tournament_record": {
+          "matches": 3,
+          "runs": 8,
+          "average": 4.0,
+          "strike_rate": 44.44
+        },
+        "pressure_index": {
+          "high_rr_sr": null,
+          "low_rr_sr": null,
+          "defending_sr": null
+        },
+        "statistical_reliability": "medium"
+      },
+      "bowling": null
+    },
+    "domestic_t20": [],
+    "fitness": {
+      "status": "fit",
+      "notes": null,
+      "last_updated": null
+    },
+    "notes": null
+  }
+]
