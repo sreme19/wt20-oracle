@@ -11,7 +11,7 @@
     "series_result": "win",
     "series_wins_before": 0
   },
-  "generated_at": "2026-05-16T13:01:58.747014Z",
+  "generated_at": "2026-05-16T13:03:54.304122Z",
   "scenario": "pre_toss_blended",
   "pitch_difficulty": "very_difficult",
   "chase_penalty": -30,
@@ -19,8 +19,8 @@
   "adjusted_runs_estimate": 92.1,
   "runs_lower": 101.8,
   "runs_upper": 105.8,
-  "win_probability": 0.372,
-  "win_probability_reasoning": "Pre-toss blend: batting-first WP=45.8%, chasing WP=28.6% \u2192 blended 37.2%",
+  "win_probability": 0.376,
+  "win_probability_reasoning": "Pre-toss blend: batting-first WP=46.5%, chasing WP=28.7% \u2192 blended 37.6%",
   "selected_xi": [
     "nigar_sultana",
     "nahida_akter",
@@ -207,24 +207,24 @@
   "warnings": [],
   "batting_first_scenario": {
     "scenario": "batting_first",
-    "adjusted_runs_estimate": 108.6,
-    "runs_lower": 116.6,
-    "runs_upper": 120.6,
-    "win_probability": 0.458,
+    "adjusted_runs_estimate": 108.7,
+    "runs_lower": 116.7,
+    "runs_upper": 120.7,
+    "win_probability": 0.465,
     "pitch_difficulty": "very_difficult",
     "chase_penalty": 0,
     "tactical_flags": [
       "prioritise_spinners_middle_overs",
       "set_par_total_conservative_approach_first_6_overs"
     ],
-    "strategy_brief": "STRATEGY BRIEF: BANGLADESH vs SRI_LANKA at Upper Mulpani Cricket Ground\n======================================================================\n\nTOSS: bangladesh chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~109 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 45% (POOR)\n\nPITCH: Spin Friendly\n  Smaller ground at high altitude (1400m). Similar to Kirtipur \u2014 slow pitch with spin grip. Very compact boundaries give batters opportunities if they connect.\n\nBATTING ORDER (Top 4):\n  1. Nigar Sultana Joty (SR 90)\n  2. Juairiya Ferdous (SR 105)\n  3. Dilara Akter (SR 106)\n  4. Sobhana Mostary (SR 91)\n\nBOWLING PLAN:\n  Powerplay: Fahima Khatun, Nahida Akter, Ritu Moni, Rabeya Khan\n  Middle: Rabeya Khan, Fahima Khatun, Taj Nehar, Nahida Akter, Ritu Moni\n  Death: Rabeya Khan, Fahima Khatun, Shorna Akter, Nahida Akter, Ritu Moni\n\nTACTICAL NOTES:\n  \u2022 Prioritise spinners middle overs\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: BANGLADESH vs SRI_LANKA at Upper Mulpani Cricket Ground\n======================================================================\n\nTOSS: bangladesh chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~109 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 46% (POOR)\n\nPITCH: Spin Friendly\n  Smaller ground at high altitude (1400m). Similar to Kirtipur \u2014 slow pitch with spin grip. Very compact boundaries give batters opportunities if they connect.\n\nBATTING ORDER (Top 4):\n  1. Nigar Sultana Joty (SR 90)\n  2. Juairiya Ferdous (SR 105)\n  3. Dilara Akter (SR 106)\n  4. Sobhana Mostary (SR 91)\n\nBOWLING PLAN:\n  Powerplay: Nahida Akter, Rabeya Khan, Ritu Moni, Fahima Khatun\n  Middle: Rabeya Khan, Nahida Akter, Ritu Moni, Taj Nehar, Fahima Khatun\n  Death: Rabeya Khan, Nahida Akter, Ritu Moni, Fahima Khatun, Shorna Akter\n\nTACTICAL NOTES:\n  \u2022 Prioritise spinners middle overs\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
   },
   "chasing_scenario": {
     "scenario": "chasing",
-    "adjusted_runs_estimate": 75.6,
-    "runs_lower": 87.1,
-    "runs_upper": 91.1,
-    "win_probability": 0.286,
+    "adjusted_runs_estimate": 75.4,
+    "runs_lower": 86.9,
+    "runs_upper": 90.9,
+    "win_probability": 0.287,
     "pitch_difficulty": "very_difficult",
     "chase_penalty": -30,
     "tactical_flags": [
@@ -233,6 +233,6 @@
       "monitor_required_run_rate_per_phase",
       "underdog_scenario_high_risk_strategy_required"
     ],
-    "strategy_brief": "STRATEGY BRIEF: BANGLADESH vs SRI_LANKA at Upper Mulpani Cricket Ground\n======================================================================\n\nTOSS: sri_lanka chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~76 runs to win.\n  (Chase penalty applied: -30 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 28% (FAILING)\n\nPITCH: Spin Friendly\n  Smaller ground at high altitude (1400m). Similar to Kirtipur \u2014 slow pitch with spin grip. Very compact boundaries give batters opportunities if they connect.\n\nBATTING ORDER (Top 4):\n  1. Nigar Sultana Joty (SR 90)\n  2. Juairiya Ferdous (SR 105)\n  3. Dilara Akter (SR 106)\n  4. Sobhana Mostary (SR 91)\n\nBOWLING PLAN:\n  Powerplay: Fahima Khatun, Nahida Akter, Ritu Moni, Rabeya Khan\n  Middle: Rabeya Khan, Fahima Khatun, Taj Nehar, Nahida Akter, Ritu Moni\n  Death: Rabeya Khan, Fahima Khatun, Shorna Akter, Nahida Akter, Ritu Moni\n\nTACTICAL NOTES:\n  \u2022 Prioritise spinners middle overs\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n  \u2022 Underdog scenario high risk strategy required\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: BANGLADESH vs SRI_LANKA at Upper Mulpani Cricket Ground\n======================================================================\n\nTOSS: sri_lanka chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~75 runs to win.\n  (Chase penalty applied: -30 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 28% (FAILING)\n\nPITCH: Spin Friendly\n  Smaller ground at high altitude (1400m). Similar to Kirtipur \u2014 slow pitch with spin grip. Very compact boundaries give batters opportunities if they connect.\n\nBATTING ORDER (Top 4):\n  1. Nigar Sultana Joty (SR 90)\n  2. Juairiya Ferdous (SR 105)\n  3. Dilara Akter (SR 106)\n  4. Sobhana Mostary (SR 91)\n\nBOWLING PLAN:\n  Powerplay: Nahida Akter, Rabeya Khan, Ritu Moni, Fahima Khatun\n  Middle: Rabeya Khan, Nahida Akter, Ritu Moni, Taj Nehar, Fahima Khatun\n  Death: Rabeya Khan, Nahida Akter, Ritu Moni, Fahima Khatun, Shorna Akter\n\nTACTICAL NOTES:\n  \u2022 Prioritise spinners middle overs\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n  \u2022 Underdog scenario high risk strategy required\n\n======================================================================"
   }
 }

@@ -241,6 +241,58 @@ def _calculate_batter_bowler_boost(
     return min(5.0, bonus)
 
 
+def _calculate_recent_form_bonus(analyst_insights: Dict[str, Any], scenario: str, our_squad: List[Dict]) -> Dict[str, Any]:
+    """
+    Phase 2 Task 4: Calculate runs and WP bonus for recent star performances.
+
+    Identifies breakout performers from analyst_insights:
+    - Exceptional form rating: +3 runs, +2% WP
+    - Multiple strong scores in notes: +2 runs, +1% WP (batting_first only)
+
+    Returns: {"runs_bonus": float, "wp_bonus": float}
+    """
+    runs_bonus = 0.0
+    wp_bonus = 0.0
+
+    if not analyst_insights or not our_squad:
+        return {"runs_bonus": runs_bonus, "wp_bonus": wp_bonus}
+
+    # Check each player in our squad for recent form
+    for player in our_squad:
+        player_id = player.get("id", "")
+        if not player_id:
+            continue
+
+        # Look up player in analyst_insights
+        player_insights = analyst_insights.get(player_id, {})
+        if not player_insights:
+            continue
+
+        # Check overall form rating
+        overall_form = player_insights.get("overall_form", {})
+        rating = overall_form.get("rating", "").lower()
+        notes = overall_form.get("notes", "").lower()
+
+        # Exceptional form: +3 runs, +2% WP
+        if rating == "exceptional":
+            runs_bonus += 3.0
+            wp_bonus += 0.02
+
+        # Strong form with evidence of recent success: +2 runs, +1% WP (batting_first only)
+        elif rating == "strong" and scenario == "batting_first":
+            # Look for signs of recent success in notes
+            has_consecutive_scores = any(phrase in notes for phrase in ["consecutive", "runs in last", "last t20i series", "recent"])
+            if has_consecutive_scores:
+                runs_bonus += 2.0
+                wp_bonus += 0.01
+
+    # Cap the bonuses to avoid over-application
+    return {
+        "runs_bonus": min(runs_bonus, 10.0),  # Cap at +10 runs
+        "wp_bonus": min(wp_bonus, 0.08),  # Cap at +8% WP
+    }
+
+
 def _calculate_pitch_calibration_adjustment(
     pitch_difficulty: str,
     venue_data: Dict[str, Any],
@@ -384,6 +436,24 @@ def prediction_node(state: PreMatchState) -> Dict[str, Any]:
     else:
         batter_bowler_reasoning = ""
 
+    # ── Recent Form Bonus (Phase 2 Task 4) ────────────────────────────────────
+    # Boost predictions for players in exceptional form or with recent breakout performances
+    form_bonus_result = _calculate_recent_form_bonus(analyst_insights, scenario, our_squad)
+    form_runs_bonus = form_bonus_result.get("runs_bonus", 0.0)
+    form_wp_bonus = form_bonus_result.get("wp_bonus", 0.0)
+
+    if form_runs_bonus > 0:
+        runs_result["adjusted_runs"] += form_runs_bonus
+        runs_result["adjusted_runs"] = round(runs_result["adjusted_runs"], 1)
+        if "upper_bound" in runs_result:
+            runs_result["upper_bound"] += form_runs_bonus
+        if "lower_bound" in runs_result:
+            runs_result["lower_bound"] += form_runs_bonus
+        win_result["adjusted_win_probability"] = min(0.95, win_result["adjusted_win_probability"] + form_wp_bonus)
+        form_reasoning = f" (+{form_runs_bonus:.0f} runs from recent form bonus)"
+    else:
+        form_reasoning = ""
+
     # ── Series Momentum Factor ─────────────────────────────────────────────────
     # If team is up 3-0 or better in series and batting first, apply aggression boost
     series_score = state.get("series_score", 0)
@@ -441,7 +511,7 @@ def prediction_node(state: PreMatchState) -> Dict[str, Any]:
         multiplier_pct = int((aggression_multiplier - 1) * 100)
         series_momentum_reasoning = f" ({momentum_type} series {series_score}-0, match {series_number}: +{multiplier_pct}% runs, +{int(wp_bonus*100)}% WP)"
 
-    win_reasoning = win_result["reasoning"] + pitch_reasoning + batter_bowler_reasoning + series_momentum_reasoning
+    win_reasoning = win_result["reasoning"] + pitch_reasoning + batter_bowler_reasoning + form_reasoning + series_momentum_reasoning
     if scenario == "unknown":
         win_reasoning += " (toss not yet known — confidence reduced)"
 
