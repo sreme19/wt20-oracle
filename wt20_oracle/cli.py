@@ -11,10 +11,84 @@ Usage:
 import json
 import sys
 import argparse
+from pathlib import Path
+from datetime import datetime
 
 from wt20_oracle.pre_match_graph import run_pre_match_pipeline
 
 DEFAULT_TEAM = "india"
+PROJECT_ROOT = Path(__file__).parent.parent
+MATCHES_DIR = PROJECT_ROOT / "matches"
+
+
+def _generate_match_id(team_id: str, opponent_id: str, venue_id: str, match_date: str) -> str:
+    """Generate a match ID from team/opponent/venue/date."""
+    team_abbr = team_id[:3]
+    opp_abbr = opponent_id[:3]
+    venue_abbr = venue_id[:3]
+
+    if match_date:
+        date_str = match_date.replace("-", "")
+        return f"{team_abbr}_{opp_abbr}_{venue_abbr}_{date_str}"
+    return f"{team_abbr}_{opp_abbr}_{venue_abbr}"
+
+
+def _save_prediction(state: dict, team_id: str, opponent_id: str, venue_id: str, match_date: str) -> str:
+    """Save prediction to matches/{match_id}/ directory. Returns match_id."""
+    match_id = _generate_match_id(team_id, opponent_id, venue_id, match_date)
+    match_dir = MATCHES_DIR / match_id
+
+    match_dir.mkdir(parents=True, exist_ok=True)
+    (match_dir / "prediction").mkdir(exist_ok=True)
+    (match_dir / "actual").mkdir(exist_ok=True)
+
+    metadata = {
+        "match_id": match_id,
+        "date": match_date or "unknown",
+        "team_id": team_id,
+        "opponent_id": opponent_id,
+        "venue_id": venue_id,
+        "prediction_generated": datetime.utcnow().isoformat() + "Z",
+    }
+
+    result = {
+        "team": state.get("team_id"),
+        "opponent": state.get("opponent_id"),
+        "venue": state.get("venue_id"),
+        "scenario": state.get("scenario"),
+        "pitch_difficulty": state.get("pitch_difficulty"),
+        "chase_penalty": state.get("chase_penalty"),
+        "selected_xi": state.get("selected_xi", []),
+        "batting_order": state.get("batting_order", []),
+        "bowling_plan": state.get("bowling_plan", []),
+        "runs_estimate": {
+            "base": state.get("base_runs_estimate"),
+            "adjusted": state.get("adjusted_runs_estimate"),
+            "lower": state.get("runs_lower"),
+            "upper": state.get("runs_upper"),
+        },
+        "win_probability": state.get("win_probability"),
+        "strategy_brief": state.get("strategy_brief"),
+        "key_matchups": state.get("key_matchups", []),
+        "tactical_flags": state.get("tactical_flags", []),
+        "scenario_report": state.get("scenario_report", {}),
+        "generated_at": datetime.utcnow().isoformat() + "Z",
+        "errors": state.get("errors", []),
+        "warnings": state.get("warnings", []),
+    }
+
+    if state.get("batting_first_scenario"):
+        result["batting_first_scenario"] = state["batting_first_scenario"]
+    if state.get("chasing_scenario"):
+        result["chasing_scenario"] = state["chasing_scenario"]
+
+    with open(match_dir / "metadata.json", "w") as f:
+        json.dump(metadata, f, indent=2)
+
+    with open(match_dir / "prediction" / "prediction.json", "w") as f:
+        json.dump(result, f, indent=2)
+
+    return match_id
 
 
 def build_parser():
@@ -133,6 +207,10 @@ def run_prematch(args):
     # Show warnings
     for warn in state.get("warnings", []):
         print(f"⚠️  WARNING: {warn}")
+
+    # Save prediction to matches directory
+    match_id = _save_prediction(state, args.team, args.opponent, venue_to_use, args.date)
+    print(f"\n💾 Prediction saved: matches/{match_id}/")
 
     if args.format == "json":
         _print_json(state)
