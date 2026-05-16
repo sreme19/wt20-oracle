@@ -17,6 +17,7 @@ was never set, so batting-first assumptions propagated through all nodes.
 """
 
 from typing import Any, Dict, List, Optional
+from pathlib import Path
 
 from wt20_oracle.state import PreMatchState
 from wt20_oracle.io.loader import load_match_context, venue_pace_score, avg_first_innings_score
@@ -698,6 +699,45 @@ def run_pre_match_pipeline(
     Returns:
         Completed PreMatchState with all fields populated
     """
+    # ──────────────────────────────────────────────────────────────────────────
+    # VALIDATION GATE: Hard fail on invalid inputs
+    # ──────────────────────────────────────────────────────────────────────────
+    from wt20_oracle.validation import validate_match_inputs
+    from wt20_oracle.io.loader import _read
+
+    venues_data = _read(Path(__file__).parent / "data" / "venues.json")
+    validation = validate_match_inputs(
+        team_id,
+        opponent_id,
+        venue_id,
+        match_date,
+        toss_winner,
+        toss_decision,
+        venues_data,
+    )
+
+    if not validation.valid:
+        # Hard fail: return early with error state
+        return {
+            "team_id": team_id,
+            "opponent_id": opponent_id,
+            "venue_id": venue_id,
+            "match_date": match_date,
+            "errors": validation.errors,
+            "warnings": validation.warnings,
+            "scenario": None,
+            "win_probability": None,
+            "adjusted_runs_estimate": None,
+            "runs_lower": None,
+            "runs_upper": None,
+            "selected_xi": [],
+            "batting_order": [],
+            "bowling_plan": [],
+            "strategy_brief": None,
+            "key_matchups": [],
+            "tactical_flags": [],
+        }
+
     if toss_winner is not None:
         # Toss known — single deterministic path
         return _run_pipeline_single(

@@ -26,7 +26,11 @@ def build_parser():
 
     pm = subparsers.add_parser("prematch", help="Pre-match analysis and recommendations")
     pm.add_argument("--opponent", required=True, help="Opponent team ID (e.g. australia)")
-    pm.add_argument("--venue", required=True, help="Venue ID (e.g. lords, edgbaston)")
+    pm.add_argument(
+        "--venue",
+        default=None,
+        help="Venue ID (e.g. lords, edgbaston). Auto-fetch if omitted with future date.",
+    )
     pm.add_argument("--team", default=DEFAULT_TEAM, help=f"Our team (default: {DEFAULT_TEAM})")
     pm.add_argument("--date", default="", help="Match date YYYY-MM-DD")
     pm.add_argument("--toss-winner", default=None, dest="toss_winner",
@@ -36,22 +40,82 @@ def build_parser():
                     help="Toss decision: bat_first or bowl_first")
     pm.add_argument("--format", default="text", choices=["text", "json"])
     pm.add_argument("--verbose", action="store_true")
+    pm.add_argument(
+        "--fetch",
+        action="store_true",
+        help="Force internet search for match details (auto for future matches)",
+    )
+    pm.add_argument(
+        "--no-confirm",
+        action="store_true",
+        help="Auto-confirm venue additions (skip interactive prompts)",
+    )
     return parser
 
 
 def run_prematch(args):
-    print(f"\nPre-match: {args.team.upper()} vs {args.opponent.upper()} at {args.venue}")
+    print(f"\nPre-match: {args.team.upper()} vs {args.opponent.upper()}")
+    if args.venue:
+        print(f"Venue: {args.venue}")
     if args.toss_winner:
         print(f"Toss: {args.toss_winner} chose to {(args.toss_decision or '?').replace('_', ' ')}")
     else:
         print("Toss: not yet known")
     print()
 
+    # ──────────────────────────────────────────────────────────────────────────
+    # SMART DATA FETCHING: Auto-fetch for future matches, explicit --fetch otherwise
+    # ──────────────────────────────────────────────────────────────────────────
+    from wt20_oracle.data_fetcher import (
+        should_auto_fetch,
+        fetch_match_details,
+        update_venues_json_with_confirmation,
+    )
+
+    venue_to_use = args.venue
+    if not venue_to_use:
+        should_fetch = should_auto_fetch(args.date, args.venue) or args.fetch
+
+        if should_fetch:
+            print("🔍 Searching for match details...")
+            fetch_result = fetch_match_details(
+                args.team, args.opponent, args.date, force_fetch=args.fetch
+            )
+
+            if fetch_result.get("cached"):
+                print("  (using cached result)")
+
+            if fetch_result["status"] in ["success", "partial"]:
+                print(f"  ✓ Found: {fetch_result['venue_name']}")
+
+                if fetch_result.get("requires_confirmation"):
+                    if fetch_result.get("venue_to_add"):
+                        if not args.no_confirm:
+                            if not update_venues_json_with_confirmation(
+                                fetch_result["venue_to_add"]
+                            ):
+                                print("  Proceeding without updating database...")
+                        else:
+                            # Auto-confirm
+                            update_venues_json_with_confirmation(fetch_result["venue_to_add"])
+
+                venue_to_use = fetch_result["venue_id"]
+            else:
+                print(f"  ✗ {fetch_result['message']}")
+                print("  Please provide --venue manually")
+                return 1
+        else:
+            print("❌ Venue required. Provide --venue or use --fetch for future matches")
+            return 1
+
+    # ──────────────────────────────────────────────────────────────────────────
+    # RUN PIPELINE with validation & error handling
+    # ──────────────────────────────────────────────────────────────────────────
     try:
         state = run_pre_match_pipeline(
             team_id=args.team,
             opponent_id=args.opponent,
-            venue_id=args.venue,
+            venue_id=venue_to_use,
             match_date=args.date,
             toss_winner=args.toss_winner,
             toss_decision=args.toss_decision,
@@ -60,10 +124,15 @@ def run_prematch(args):
         print(f"ERROR: {e}", file=sys.stderr)
         return 1
 
-    for err in state.get("errors", []):
-        print(f"  ERROR: {err}", file=sys.stderr)
+    # Hard fail on validation errors
+    if state.get("errors"):
+        for err in state.get("errors", []):
+            print(f"❌ ERROR: {err}", file=sys.stderr)
+        return 1
+
+    # Show warnings
     for warn in state.get("warnings", []):
-        print(f"  WARNING: {warn}")
+        print(f"⚠️  WARNING: {warn}")
 
     if args.format == "json":
         _print_json(state)
