@@ -25,13 +25,16 @@
       "matches_played": null,
       "avg_first_innings_score": null,
       "avg_winning_chase_score": null,
-      "toss_impact": { "bat_first_win_pct": null, "field_first_win_pct": null },
+      "toss_impact": {
+        "bat_first_win_pct": null,
+        "field_first_win_pct": null
+      },
       "pace_economy": null,
       "spin_economy": null,
       "highest_score": null,
       "lowest_defended": null
     },
-    "notes": "Final venue — July 5, 2026"
+    "notes": "Final venue \u2014 July 5, 2026"
   },
   {
     "id": "old_trafford",
@@ -59,7 +62,10 @@
       "matches_played": null,
       "avg_first_innings_score": null,
       "avg_winning_chase_score": null,
-      "toss_impact": { "bat_first_win_pct": null, "field_first_win_pct": null },
+      "toss_impact": {
+        "bat_first_win_pct": null,
+        "field_first_win_pct": null
+      },
       "pace_economy": null,
       "spin_economy": null,
       "highest_score": null,
@@ -93,7 +99,10 @@
       "matches_played": null,
       "avg_first_innings_score": null,
       "avg_winning_chase_score": null,
-      "toss_impact": { "bat_first_win_pct": null, "field_first_win_pct": null },
+      "toss_impact": {
+        "bat_first_win_pct": null,
+        "field_first_win_pct": null
+      },
       "pace_economy": null,
       "spin_economy": null,
       "highest_score": null,
@@ -127,7 +136,10 @@
       "matches_played": null,
       "avg_first_innings_score": null,
       "avg_winning_chase_score": null,
-      "toss_impact": { "bat_first_win_pct": null, "field_first_win_pct": null },
+      "toss_impact": {
+        "bat_first_win_pct": null,
+        "field_first_win_pct": null
+      },
       "pace_economy": null,
       "spin_economy": null,
       "highest_score": null,
@@ -161,13 +173,16 @@
       "matches_played": null,
       "avg_first_innings_score": null,
       "avg_winning_chase_score": null,
-      "toss_impact": { "bat_first_win_pct": null, "field_first_win_pct": null },
+      "toss_impact": {
+        "bat_first_win_pct": null,
+        "field_first_win_pct": null
+      },
       "pace_economy": null,
       "spin_economy": null,
       "highest_score": null,
       "lowest_defended": null
     },
-    "notes": "Dew factor high in evening matches — affects death bowling grip"
+    "notes": "Dew factor high in evening matches \u2014 affects death bowling grip"
   },
   {
     "id": "the_oval",
@@ -195,7 +210,10 @@
       "matches_played": null,
       "avg_first_innings_score": null,
       "avg_winning_chase_score": null,
-      "toss_impact": { "bat_first_win_pct": null, "field_first_win_pct": null },
+      "toss_impact": {
+        "bat_first_win_pct": null,
+        "field_first_win_pct": null
+      },
       "pace_economy": null,
       "spin_economy": null,
       "highest_score": null,
@@ -209,10 +227,35 @@
     "city": "Bristol",
     "country": "England",
     "capacity": 8000,
-    "dimensions": { "straight_boundary_m": null, "square_boundary_m": null, "oval": false },
-    "pitch": { "type": "balanced", "pace_advantage": false, "spin_advantage": true, "notes": "Smaller ground; spin can be effective in mid-overs" },
-    "conditions": { "dew_factor": "medium", "typically_day_night": false, "avg_humidity_pct": null },
-    "women_t20_stats": { "matches_played": null, "avg_first_innings_score": null, "avg_winning_chase_score": null, "toss_impact": { "bat_first_win_pct": null, "field_first_win_pct": null }, "pace_economy": null, "spin_economy": null, "highest_score": null, "lowest_defended": null },
+    "dimensions": {
+      "straight_boundary_m": null,
+      "square_boundary_m": null,
+      "oval": false
+    },
+    "pitch": {
+      "type": "balanced",
+      "pace_advantage": false,
+      "spin_advantage": true,
+      "notes": "Smaller ground; spin can be effective in mid-overs"
+    },
+    "conditions": {
+      "dew_factor": "medium",
+      "typically_day_night": false,
+      "avg_humidity_pct": null
+    },
+    "women_t20_stats": {
+      "matches_played": null,
+      "avg_first_innings_score": null,
+      "avg_winning_chase_score": null,
+      "toss_impact": {
+        "bat_first_win_pct": null,
+        "field_first_win_pct": null
+      },
+      "pace_economy": null,
+      "spin_economy": null,
+      "highest_score": null,
+      "lowest_defended": null
+    },
     "notes": "Smallest ground in the tournament"
   },
   {
@@ -221,11 +264,36 @@
     "city": "Visakhapatnam",
     "country": "India",
     "capacity": 27000,
-    "dimensions": { "straight_boundary_m": 72, "square_boundary_m": 65, "oval": false },
-    "pitch": { "type": "balanced", "pace_advantage": false, "spin_advantage": false, "notes": "Coastal location brings humidity; some early seam movement, settles into good batting surface from over 5. Spinners effective mid-overs." },
-    "conditions": { "dew_factor": "high", "typically_day_night": true, "avg_humidity_pct": 80 },
-    "women_t20_stats": { "matches_played": 4, "avg_first_innings_score": 148, "avg_winning_chase_score": 143, "toss_impact": { "bat_first_win_pct": 0.50, "field_first_win_pct": 0.50 }, "pace_economy": 7.4, "spin_economy": 7.0, "highest_score": 171, "lowest_defended": 128 },
-    "notes": "High dew factor in evening games — fielding team disadvantaged in second innings"
+    "dimensions": {
+      "straight_boundary_m": 72,
+      "square_boundary_m": 65,
+      "oval": false
+    },
+    "pitch": {
+      "type": "balanced",
+      "pace_advantage": false,
+      "spin_advantage": false,
+      "notes": "Coastal location brings humidity; some early seam movement, settles into good batting surface from over 5. Spinners effective mid-overs."
+    },
+    "conditions": {
+      "dew_factor": "high",
+      "typically_day_night": true,
+      "avg_humidity_pct": 80
+    },
+    "women_t20_stats": {
+      "matches_played": 4,
+      "avg_first_innings_score": 148,
+      "avg_winning_chase_score": 143,
+      "toss_impact": {
+        "bat_first_win_pct": 0.5,
+        "field_first_win_pct": 0.5
+      },
+      "pace_economy": 7.4,
+      "spin_economy": 7.0,
+      "highest_score": 171,
+      "lowest_defended": 128
+    },
+    "notes": "High dew factor in evening games \u2014 fielding team disadvantaged in second innings"
   },
   {
     "id": "greenfield_thiruvananthapuram",
@@ -233,11 +301,36 @@
     "city": "Thiruvananthapuram",
     "country": "India",
     "capacity": 35000,
-    "dimensions": { "straight_boundary_m": 68, "square_boundary_m": 60, "oval": false },
-    "pitch": { "type": "spin_friendly", "pace_advantage": false, "spin_advantage": true, "notes": "Slow, low surface typical of South India. Spinners dominate from powerplay. Scoring is relatively low; teams batting first protect a par score of 130-140." },
-    "conditions": { "dew_factor": "high", "typically_day_night": true, "avg_humidity_pct": 85 },
-    "women_t20_stats": { "matches_played": 6, "avg_first_innings_score": 138, "avg_winning_chase_score": 132, "toss_impact": { "bat_first_win_pct": 0.55, "field_first_win_pct": 0.45 }, "pace_economy": 7.8, "spin_economy": 6.5, "highest_score": 156, "lowest_defended": 118 },
-    "notes": "Dew heavy after sunset — toss winner often elects to bat first"
+    "dimensions": {
+      "straight_boundary_m": 68,
+      "square_boundary_m": 60,
+      "oval": false
+    },
+    "pitch": {
+      "type": "spin_friendly",
+      "pace_advantage": false,
+      "spin_advantage": true,
+      "notes": "Slow, low surface typical of South India. Spinners dominate from powerplay. Scoring is relatively low; teams batting first protect a par score of 130-140."
+    },
+    "conditions": {
+      "dew_factor": "high",
+      "typically_day_night": true,
+      "avg_humidity_pct": 85
+    },
+    "women_t20_stats": {
+      "matches_played": 6,
+      "avg_first_innings_score": 138,
+      "avg_winning_chase_score": 132,
+      "toss_impact": {
+        "bat_first_win_pct": 0.55,
+        "field_first_win_pct": 0.45
+      },
+      "pace_economy": 7.8,
+      "spin_economy": 6.5,
+      "highest_score": 156,
+      "lowest_defended": 118
+    },
+    "notes": "Dew heavy after sunset \u2014 toss winner often elects to bat first"
   },
   {
     "id": "scg_sydney",
@@ -245,11 +338,36 @@
     "city": "Sydney",
     "country": "Australia",
     "capacity": 48000,
-    "dimensions": { "straight_boundary_m": 74, "square_boundary_m": 68, "oval": true },
-    "pitch": { "type": "flat", "pace_advantage": false, "spin_advantage": false, "notes": "Hard, true surface. Excellent batting conditions. Even bounce throughout. Pacers can generate bounce but not lateral movement. High-scoring venue." },
-    "conditions": { "dew_factor": "low", "typically_day_night": true, "avg_humidity_pct": 65 },
-    "women_t20_stats": { "matches_played": 8, "avg_first_innings_score": 162, "avg_winning_chase_score": 155, "toss_impact": { "bat_first_win_pct": 0.45, "field_first_win_pct": 0.55 }, "pace_economy": 7.6, "spin_economy": 7.2, "highest_score": 188, "lowest_defended": 142 },
-    "notes": "Australia home fortress — crowd and conditions favour home team"
+    "dimensions": {
+      "straight_boundary_m": 74,
+      "square_boundary_m": 68,
+      "oval": true
+    },
+    "pitch": {
+      "type": "flat",
+      "pace_advantage": false,
+      "spin_advantage": false,
+      "notes": "Hard, true surface. Excellent batting conditions. Even bounce throughout. Pacers can generate bounce but not lateral movement. High-scoring venue."
+    },
+    "conditions": {
+      "dew_factor": "low",
+      "typically_day_night": true,
+      "avg_humidity_pct": 65
+    },
+    "women_t20_stats": {
+      "matches_played": 8,
+      "avg_first_innings_score": 162,
+      "avg_winning_chase_score": 155,
+      "toss_impact": {
+        "bat_first_win_pct": 0.45,
+        "field_first_win_pct": 0.55
+      },
+      "pace_economy": 7.6,
+      "spin_economy": 7.2,
+      "highest_score": 188,
+      "lowest_defended": 142
+    },
+    "notes": "Australia home fortress \u2014 crowd and conditions favour home team"
   },
   {
     "id": "manuka_oval_canberra",
@@ -257,11 +375,36 @@
     "city": "Canberra",
     "country": "Australia",
     "capacity": 14000,
-    "dimensions": { "straight_boundary_m": 70, "square_boundary_m": 62, "oval": true },
-    "pitch": { "type": "flat", "pace_advantage": false, "spin_advantage": false, "notes": "Good batting surface. Dry Canberra climate keeps pitch hard and true. Can get hot in February — pitch may crack and assist turn in second innings." },
-    "conditions": { "dew_factor": "low", "typically_day_night": false, "avg_humidity_pct": 45 },
-    "women_t20_stats": { "matches_played": 4, "avg_first_innings_score": 158, "avg_winning_chase_score": 151, "toss_impact": { "bat_first_win_pct": 0.50, "field_first_win_pct": 0.50 }, "pace_economy": 7.5, "spin_economy": 7.0, "highest_score": 178, "lowest_defended": 138 },
-    "notes": "Higher altitude (580m) — ball carries well, boundaries favour batters"
+    "dimensions": {
+      "straight_boundary_m": 70,
+      "square_boundary_m": 62,
+      "oval": true
+    },
+    "pitch": {
+      "type": "flat",
+      "pace_advantage": false,
+      "spin_advantage": false,
+      "notes": "Good batting surface. Dry Canberra climate keeps pitch hard and true. Can get hot in February \u2014 pitch may crack and assist turn in second innings."
+    },
+    "conditions": {
+      "dew_factor": "low",
+      "typically_day_night": false,
+      "avg_humidity_pct": 45
+    },
+    "women_t20_stats": {
+      "matches_played": 4,
+      "avg_first_innings_score": 158,
+      "avg_winning_chase_score": 151,
+      "toss_impact": {
+        "bat_first_win_pct": 0.5,
+        "field_first_win_pct": 0.5
+      },
+      "pace_economy": 7.5,
+      "spin_economy": 7.0,
+      "highest_score": 178,
+      "lowest_defended": 138
+    },
+    "notes": "Higher altitude (580m) \u2014 ball carries well, boundaries favour batters"
   },
   {
     "id": "adelaide_oval",
@@ -269,11 +412,36 @@
     "city": "Adelaide",
     "country": "Australia",
     "capacity": 55000,
-    "dimensions": { "straight_boundary_m": 75, "square_boundary_m": 70, "oval": true },
-    "pitch": { "type": "flat", "pace_advantage": true, "spin_advantage": false, "notes": "Traditionally produces high scores. Pace bowlers get carry and bounce without much lateral movement. Pink ball not applicable in T20." },
-    "conditions": { "dew_factor": "low", "typically_day_night": true, "avg_humidity_pct": 40 },
-    "women_t20_stats": { "matches_played": 5, "avg_first_innings_score": 160, "avg_winning_chase_score": 152, "toss_impact": { "bat_first_win_pct": 0.48, "field_first_win_pct": 0.52 }, "pace_economy": 7.4, "spin_economy": 7.3, "highest_score": 183, "lowest_defended": 140 },
-    "notes": "Dry heat can fatigue spinners — pace preferred at death"
+    "dimensions": {
+      "straight_boundary_m": 75,
+      "square_boundary_m": 70,
+      "oval": true
+    },
+    "pitch": {
+      "type": "flat",
+      "pace_advantage": true,
+      "spin_advantage": false,
+      "notes": "Traditionally produces high scores. Pace bowlers get carry and bounce without much lateral movement. Pink ball not applicable in T20."
+    },
+    "conditions": {
+      "dew_factor": "low",
+      "typically_day_night": true,
+      "avg_humidity_pct": 40
+    },
+    "women_t20_stats": {
+      "matches_played": 5,
+      "avg_first_innings_score": 160,
+      "avg_winning_chase_score": 152,
+      "toss_impact": {
+        "bat_first_win_pct": 0.48,
+        "field_first_win_pct": 0.52
+      },
+      "pace_economy": 7.4,
+      "spin_economy": 7.3,
+      "highest_score": 183,
+      "lowest_defended": 140
+    },
+    "notes": "Dry heat can fatigue spinners \u2014 pace preferred at death"
   },
   {
     "id": "national_cricket_stadium_grenada",
@@ -281,10 +449,35 @@
     "city": "St George's, Grenada",
     "country": "West Indies",
     "capacity": 15000,
-    "dimensions": { "straight_boundary_m": 68, "square_boundary_m": 60, "oval": false },
-    "pitch": { "type": "balanced", "pace_advantage": false, "spin_advantage": true, "notes": "Caribbean pitch — decent pace early, slows significantly as match progresses. Spinners very effective from over 8 onwards. High humidity softens the ball quickly." },
-    "conditions": { "dew_factor": "medium", "typically_day_night": false, "avg_humidity_pct": 82 },
-    "women_t20_stats": { "matches_played": 3, "avg_first_innings_score": 142, "avg_winning_chase_score": 137, "toss_impact": { "bat_first_win_pct": 0.52, "field_first_win_pct": 0.48 }, "pace_economy": 7.6, "spin_economy": 6.8, "highest_score": 162, "lowest_defended": 125 },
+    "dimensions": {
+      "straight_boundary_m": 68,
+      "square_boundary_m": 60,
+      "oval": false
+    },
+    "pitch": {
+      "type": "balanced",
+      "pace_advantage": false,
+      "spin_advantage": true,
+      "notes": "Caribbean pitch \u2014 decent pace early, slows significantly as match progresses. Spinners very effective from over 8 onwards. High humidity softens the ball quickly."
+    },
+    "conditions": {
+      "dew_factor": "medium",
+      "typically_day_night": false,
+      "avg_humidity_pct": 82
+    },
+    "women_t20_stats": {
+      "matches_played": 3,
+      "avg_first_innings_score": 142,
+      "avg_winning_chase_score": 137,
+      "toss_impact": {
+        "bat_first_win_pct": 0.52,
+        "field_first_win_pct": 0.48
+      },
+      "pace_economy": 7.6,
+      "spin_economy": 6.8,
+      "highest_score": 162,
+      "lowest_defended": 125
+    },
     "notes": "Compact ground with fast outfield"
   },
   {
@@ -293,11 +486,36 @@
     "city": "Mount Maunganui",
     "country": "New Zealand",
     "capacity": 8000,
-    "dimensions": { "straight_boundary_m": 65, "square_boundary_m": 58, "oval": false },
-    "pitch": { "type": "seam_friendly", "pace_advantage": true, "spin_advantage": false, "notes": "Coastal venue — sea breeze aids swing. Good pace and bounce. Favours medium-pace bowlers who can swing the ball under overcast skies." },
-    "conditions": { "dew_factor": "medium", "typically_day_night": false, "avg_humidity_pct": 72 },
-    "women_t20_stats": { "matches_played": 4, "avg_first_innings_score": 147, "avg_winning_chase_score": 141, "toss_impact": { "bat_first_win_pct": 0.50, "field_first_win_pct": 0.50 }, "pace_economy": 7.2, "spin_economy": 7.8, "highest_score": 168, "lowest_defended": 128 },
-    "notes": "Compact ground — short square boundaries boost scoring"
+    "dimensions": {
+      "straight_boundary_m": 65,
+      "square_boundary_m": 58,
+      "oval": false
+    },
+    "pitch": {
+      "type": "seam_friendly",
+      "pace_advantage": true,
+      "spin_advantage": false,
+      "notes": "Coastal venue \u2014 sea breeze aids swing. Good pace and bounce. Favours medium-pace bowlers who can swing the ball under overcast skies."
+    },
+    "conditions": {
+      "dew_factor": "medium",
+      "typically_day_night": false,
+      "avg_humidity_pct": 72
+    },
+    "women_t20_stats": {
+      "matches_played": 4,
+      "avg_first_innings_score": 147,
+      "avg_winning_chase_score": 141,
+      "toss_impact": {
+        "bat_first_win_pct": 0.5,
+        "field_first_win_pct": 0.5
+      },
+      "pace_economy": 7.2,
+      "spin_economy": 7.8,
+      "highest_score": 168,
+      "lowest_defended": 128
+    },
+    "notes": "Compact ground \u2014 short square boundaries boost scoring"
   },
   {
     "id": "seddon_park_hamilton",
@@ -305,10 +523,35 @@
     "city": "Hamilton",
     "country": "New Zealand",
     "capacity": 10000,
-    "dimensions": { "straight_boundary_m": 70, "square_boundary_m": 65, "oval": false },
-    "pitch": { "type": "seam_friendly", "pace_advantage": true, "spin_advantage": false, "notes": "Traditionally a bowler-friendly track in NZ. Pace and seam movement persist longer than at other NZ grounds. Overcast Hamilton skies assist swing bowlers." },
-    "conditions": { "dew_factor": "low", "typically_day_night": false, "avg_humidity_pct": 68 },
-    "women_t20_stats": { "matches_played": 6, "avg_first_innings_score": 145, "avg_winning_chase_score": 140, "toss_impact": { "bat_first_win_pct": 0.53, "field_first_win_pct": 0.47 }, "pace_economy": 7.0, "spin_economy": 7.6, "highest_score": 165, "lowest_defended": 122 },
+    "dimensions": {
+      "straight_boundary_m": 70,
+      "square_boundary_m": 65,
+      "oval": false
+    },
+    "pitch": {
+      "type": "seam_friendly",
+      "pace_advantage": true,
+      "spin_advantage": false,
+      "notes": "Traditionally a bowler-friendly track in NZ. Pace and seam movement persist longer than at other NZ grounds. Overcast Hamilton skies assist swing bowlers."
+    },
+    "conditions": {
+      "dew_factor": "low",
+      "typically_day_night": false,
+      "avg_humidity_pct": 68
+    },
+    "women_t20_stats": {
+      "matches_played": 6,
+      "avg_first_innings_score": 145,
+      "avg_winning_chase_score": 140,
+      "toss_impact": {
+        "bat_first_win_pct": 0.53,
+        "field_first_win_pct": 0.47
+      },
+      "pace_economy": 7.0,
+      "spin_economy": 7.6,
+      "highest_score": 165,
+      "lowest_defended": 122
+    },
     "notes": null
   },
   {
@@ -317,11 +560,36 @@
     "city": "Auckland",
     "country": "New Zealand",
     "capacity": 50000,
-    "dimensions": { "straight_boundary_m": 58, "square_boundary_m": 55, "oval": false },
-    "pitch": { "type": "seam_friendly", "pace_advantage": true, "spin_advantage": false, "notes": "Famous for very short square and straight boundaries — inflates scoring significantly. Highest T20I scores in NZ have come here. Despite seam pitch, short boundaries mean batters score freely if they survive pace burst." },
-    "conditions": { "dew_factor": "medium", "typically_day_night": true, "avg_humidity_pct": 74 },
-    "women_t20_stats": { "matches_played": 5, "avg_first_innings_score": 162, "avg_winning_chase_score": 157, "toss_impact": { "bat_first_win_pct": 0.44, "field_first_win_pct": 0.56 }, "pace_economy": 7.5, "spin_economy": 7.3, "highest_score": 195, "lowest_defended": 148 },
-    "notes": "Shortest boundaries in NZ — field placement under significant constraint"
+    "dimensions": {
+      "straight_boundary_m": 58,
+      "square_boundary_m": 55,
+      "oval": false
+    },
+    "pitch": {
+      "type": "seam_friendly",
+      "pace_advantage": true,
+      "spin_advantage": false,
+      "notes": "Famous for very short square and straight boundaries \u2014 inflates scoring significantly. Highest T20I scores in NZ have come here. Despite seam pitch, short boundaries mean batters score freely if they survive pace burst."
+    },
+    "conditions": {
+      "dew_factor": "medium",
+      "typically_day_night": true,
+      "avg_humidity_pct": 74
+    },
+    "women_t20_stats": {
+      "matches_played": 5,
+      "avg_first_innings_score": 162,
+      "avg_winning_chase_score": 157,
+      "toss_impact": {
+        "bat_first_win_pct": 0.44,
+        "field_first_win_pct": 0.56
+      },
+      "pace_economy": 7.5,
+      "spin_economy": 7.3,
+      "highest_score": 195,
+      "lowest_defended": 148
+    },
+    "notes": "Shortest boundaries in NZ \u2014 field placement under significant constraint"
   },
   {
     "id": "sky_stadium_wellington",
@@ -329,11 +597,36 @@
     "city": "Wellington",
     "country": "New Zealand",
     "capacity": 34500,
-    "dimensions": { "straight_boundary_m": 68, "square_boundary_m": 62, "oval": false },
-    "pitch": { "type": "seam_friendly", "pace_advantage": true, "spin_advantage": false, "notes": "Wellington's notorious wind is the dominant factor. Cross-winds make batting and bowling unpredictable. Spinners struggle to control line. Scores often 10-15 runs below par for NZ conditions." },
-    "conditions": { "dew_factor": "low", "typically_day_night": true, "avg_humidity_pct": 70 },
-    "women_t20_stats": { "matches_played": 3, "avg_first_innings_score": 140, "avg_winning_chase_score": 133, "toss_impact": { "bat_first_win_pct": 0.55, "field_first_win_pct": 0.45 }, "pace_economy": 7.3, "spin_economy": 8.1, "highest_score": 156, "lowest_defended": 118 },
-    "notes": "Wind direction check critical for toss decision — bat first preferred to avoid wind deterioration"
+    "dimensions": {
+      "straight_boundary_m": 68,
+      "square_boundary_m": 62,
+      "oval": false
+    },
+    "pitch": {
+      "type": "seam_friendly",
+      "pace_advantage": true,
+      "spin_advantage": false,
+      "notes": "Wellington's notorious wind is the dominant factor. Cross-winds make batting and bowling unpredictable. Spinners struggle to control line. Scores often 10-15 runs below par for NZ conditions."
+    },
+    "conditions": {
+      "dew_factor": "low",
+      "typically_day_night": true,
+      "avg_humidity_pct": 70
+    },
+    "women_t20_stats": {
+      "matches_played": 3,
+      "avg_first_innings_score": 140,
+      "avg_winning_chase_score": 133,
+      "toss_impact": {
+        "bat_first_win_pct": 0.55,
+        "field_first_win_pct": 0.45
+      },
+      "pace_economy": 7.3,
+      "spin_economy": 8.1,
+      "highest_score": 156,
+      "lowest_defended": 118
+    },
+    "notes": "Wind direction check critical for toss decision \u2014 bat first preferred to avoid wind deterioration"
   },
   {
     "id": "hagley_oval_christchurch",
@@ -341,10 +634,35 @@
     "city": "Christchurch",
     "country": "New Zealand",
     "capacity": 10000,
-    "dimensions": { "straight_boundary_m": 70, "square_boundary_m": 65, "oval": true },
-    "pitch": { "type": "seam_friendly", "pace_advantage": true, "spin_advantage": false, "notes": "Beautifully maintained oval with good pace and bounce. Seam movement available especially in morning sessions. Pacers dominate powerplay, spinners effective in middle overs." },
-    "conditions": { "dew_factor": "low", "typically_day_night": false, "avg_humidity_pct": 63 },
-    "women_t20_stats": { "matches_played": 4, "avg_first_innings_score": 148, "avg_winning_chase_score": 143, "toss_impact": { "bat_first_win_pct": 0.50, "field_first_win_pct": 0.50 }, "pace_economy": 7.1, "spin_economy": 7.5, "highest_score": 168, "lowest_defended": 130 },
+    "dimensions": {
+      "straight_boundary_m": 70,
+      "square_boundary_m": 65,
+      "oval": true
+    },
+    "pitch": {
+      "type": "seam_friendly",
+      "pace_advantage": true,
+      "spin_advantage": false,
+      "notes": "Beautifully maintained oval with good pace and bounce. Seam movement available especially in morning sessions. Pacers dominate powerplay, spinners effective in middle overs."
+    },
+    "conditions": {
+      "dew_factor": "low",
+      "typically_day_night": false,
+      "avg_humidity_pct": 63
+    },
+    "women_t20_stats": {
+      "matches_played": 4,
+      "avg_first_innings_score": 148,
+      "avg_winning_chase_score": 143,
+      "toss_impact": {
+        "bat_first_win_pct": 0.5,
+        "field_first_win_pct": 0.5
+      },
+      "pace_economy": 7.1,
+      "spin_economy": 7.5,
+      "highest_score": 168,
+      "lowest_defended": 130
+    },
     "notes": null
   },
   {
@@ -353,10 +671,35 @@
     "city": "Durban",
     "country": "South Africa",
     "capacity": 25000,
-    "dimensions": { "straight_boundary_m": 68, "square_boundary_m": 63, "oval": false },
-    "pitch": { "type": "balanced", "pace_advantage": false, "spin_advantage": false, "notes": "Durban's humidity creates early movement for pace bowlers. Surface tends to flatten out after over 6. Good for batting post-powerplay. Dew becomes a factor in evening games." },
-    "conditions": { "dew_factor": "high", "typically_day_night": true, "avg_humidity_pct": 78 },
-    "women_t20_stats": { "matches_played": 5, "avg_first_innings_score": 148, "avg_winning_chase_score": 143, "toss_impact": { "bat_first_win_pct": 0.52, "field_first_win_pct": 0.48 }, "pace_economy": 7.3, "spin_economy": 7.0, "highest_score": 172, "lowest_defended": 130 },
+    "dimensions": {
+      "straight_boundary_m": 68,
+      "square_boundary_m": 63,
+      "oval": false
+    },
+    "pitch": {
+      "type": "balanced",
+      "pace_advantage": false,
+      "spin_advantage": false,
+      "notes": "Durban's humidity creates early movement for pace bowlers. Surface tends to flatten out after over 6. Good for batting post-powerplay. Dew becomes a factor in evening games."
+    },
+    "conditions": {
+      "dew_factor": "high",
+      "typically_day_night": true,
+      "avg_humidity_pct": 78
+    },
+    "women_t20_stats": {
+      "matches_played": 5,
+      "avg_first_innings_score": 148,
+      "avg_winning_chase_score": 143,
+      "toss_impact": {
+        "bat_first_win_pct": 0.52,
+        "field_first_win_pct": 0.48
+      },
+      "pace_economy": 7.3,
+      "spin_economy": 7.0,
+      "highest_score": 172,
+      "lowest_defended": 130
+    },
     "notes": "April: humid and warm, dew heavy post 19:00"
   },
   {
@@ -365,10 +708,35 @@
     "city": "Johannesburg",
     "country": "South Africa",
     "capacity": 34000,
-    "dimensions": { "straight_boundary_m": 70, "square_boundary_m": 65, "oval": false },
-    "pitch": { "type": "flat", "pace_advantage": true, "spin_advantage": false, "notes": "High altitude (1753m) — ball travels significantly further. Pace bowlers get carry and bounce without lateral movement. Batters benefit from ball coming on. Premium scoring venue; 160+ is par." },
-    "conditions": { "dew_factor": "low", "typically_day_night": false, "avg_humidity_pct": 45 },
-    "women_t20_stats": { "matches_played": 4, "avg_first_innings_score": 165, "avg_winning_chase_score": 158, "toss_impact": { "bat_first_win_pct": 0.48, "field_first_win_pct": 0.52 }, "pace_economy": 7.8, "spin_economy": 7.4, "highest_score": 189, "lowest_defended": 148 },
+    "dimensions": {
+      "straight_boundary_m": 70,
+      "square_boundary_m": 65,
+      "oval": false
+    },
+    "pitch": {
+      "type": "flat",
+      "pace_advantage": true,
+      "spin_advantage": false,
+      "notes": "High altitude (1753m) \u2014 ball travels significantly further. Pace bowlers get carry and bounce without lateral movement. Batters benefit from ball coming on. Premium scoring venue; 160+ is par."
+    },
+    "conditions": {
+      "dew_factor": "low",
+      "typically_day_night": false,
+      "avg_humidity_pct": 45
+    },
+    "women_t20_stats": {
+      "matches_played": 4,
+      "avg_first_innings_score": 165,
+      "avg_winning_chase_score": 158,
+      "toss_impact": {
+        "bat_first_win_pct": 0.48,
+        "field_first_win_pct": 0.52
+      },
+      "pace_economy": 7.8,
+      "spin_economy": 7.4,
+      "highest_score": 189,
+      "lowest_defended": 148
+    },
     "notes": "Altitude adds ~5-8 runs to average scores vs sea-level grounds"
   },
   {
@@ -377,11 +745,36 @@
     "city": "Centurion",
     "country": "South Africa",
     "capacity": 22000,
-    "dimensions": { "straight_boundary_m": 68, "square_boundary_m": 62, "oval": false },
-    "pitch": { "type": "seam_friendly", "pace_advantage": true, "spin_advantage": false, "notes": "Known as a pace bowler's paradise. Excellent carry and bounce. Seam movement available throughout the innings. Batters must earn their runs; par score is 145-155." },
-    "conditions": { "dew_factor": "low", "typically_day_night": false, "avg_humidity_pct": 48 },
-    "women_t20_stats": { "matches_played": 3, "avg_first_innings_score": 150, "avg_winning_chase_score": 144, "toss_impact": { "bat_first_win_pct": 0.54, "field_first_win_pct": 0.46 }, "pace_economy": 7.0, "spin_economy": 7.6, "highest_score": 169, "lowest_defended": 132 },
-    "notes": "April weather: afternoon thunderstorms possible — D/L method risk"
+    "dimensions": {
+      "straight_boundary_m": 68,
+      "square_boundary_m": 62,
+      "oval": false
+    },
+    "pitch": {
+      "type": "seam_friendly",
+      "pace_advantage": true,
+      "spin_advantage": false,
+      "notes": "Known as a pace bowler's paradise. Excellent carry and bounce. Seam movement available throughout the innings. Batters must earn their runs; par score is 145-155."
+    },
+    "conditions": {
+      "dew_factor": "low",
+      "typically_day_night": false,
+      "avg_humidity_pct": 48
+    },
+    "women_t20_stats": {
+      "matches_played": 3,
+      "avg_first_innings_score": 150,
+      "avg_winning_chase_score": 144,
+      "toss_impact": {
+        "bat_first_win_pct": 0.54,
+        "field_first_win_pct": 0.46
+      },
+      "pace_economy": 7.0,
+      "spin_economy": 7.6,
+      "highest_score": 169,
+      "lowest_defended": 132
+    },
+    "notes": "April weather: afternoon thunderstorms possible \u2014 D/L method risk"
   },
   {
     "id": "sylhet_international",
@@ -389,10 +782,35 @@
     "city": "Sylhet",
     "country": "Bangladesh",
     "capacity": 18500,
-    "dimensions": { "straight_boundary_m": 65, "square_boundary_m": 58, "oval": false },
-    "pitch": { "type": "spin_friendly", "pace_advantage": false, "spin_advantage": true, "notes": "Classic Bangladesh slow turner. Spin is effective from over 1. Batting is challenging with uneven bounce. Low-scoring games typical; 130-140 is a match-winning total. Pace bowlers restricted in economy." },
-    "conditions": { "dew_factor": "high", "typically_day_night": true, "avg_humidity_pct": 86 },
-    "women_t20_stats": { "matches_played": 6, "avg_first_innings_score": 132, "avg_winning_chase_score": 127, "toss_impact": { "bat_first_win_pct": 0.56, "field_first_win_pct": 0.44 }, "pace_economy": 8.0, "spin_economy": 6.2, "highest_score": 152, "lowest_defended": 112 },
+    "dimensions": {
+      "straight_boundary_m": 65,
+      "square_boundary_m": 58,
+      "oval": false
+    },
+    "pitch": {
+      "type": "spin_friendly",
+      "pace_advantage": false,
+      "spin_advantage": true,
+      "notes": "Classic Bangladesh slow turner. Spin is effective from over 1. Batting is challenging with uneven bounce. Low-scoring games typical; 130-140 is a match-winning total. Pace bowlers restricted in economy."
+    },
+    "conditions": {
+      "dew_factor": "high",
+      "typically_day_night": true,
+      "avg_humidity_pct": 86
+    },
+    "women_t20_stats": {
+      "matches_played": 6,
+      "avg_first_innings_score": 132,
+      "avg_winning_chase_score": 127,
+      "toss_impact": {
+        "bat_first_win_pct": 0.56,
+        "field_first_win_pct": 0.44
+      },
+      "pace_economy": 8.0,
+      "spin_economy": 6.2,
+      "highest_score": 152,
+      "lowest_defended": 112
+    },
     "notes": "Spinners from both Bangladesh and Sri Lanka will dominate here"
   },
   {
@@ -401,11 +819,36 @@
     "city": "Kirtipur",
     "country": "Nepal",
     "capacity": 15000,
-    "dimensions": { "straight_boundary_m": 62, "square_boundary_m": 58, "oval": false },
-    "pitch": { "type": "spin_friendly", "pace_advantage": false, "spin_advantage": true, "notes": "High altitude (1300m) — ball carries well but pitch is slow and low. Spinners get grip and turn. Compact ground dimensions assist batters. Scores tend to be moderate." },
-    "conditions": { "dew_factor": "low", "typically_day_night": false, "avg_humidity_pct": 60 },
-    "women_t20_stats": { "matches_played": 10, "avg_first_innings_score": 128, "avg_winning_chase_score": 122, "toss_impact": { "bat_first_win_pct": 0.53, "field_first_win_pct": 0.47 }, "pace_economy": 7.5, "spin_economy": 6.4, "highest_score": 158, "lowest_defended": 108 },
-    "notes": "Qualifier venue Jan 2026 — compact ground, spin-dominated conditions"
+    "dimensions": {
+      "straight_boundary_m": 62,
+      "square_boundary_m": 58,
+      "oval": false
+    },
+    "pitch": {
+      "type": "spin_friendly",
+      "pace_advantage": false,
+      "spin_advantage": true,
+      "notes": "High altitude (1300m) \u2014 ball carries well but pitch is slow and low. Spinners get grip and turn. Compact ground dimensions assist batters. Scores tend to be moderate."
+    },
+    "conditions": {
+      "dew_factor": "low",
+      "typically_day_night": false,
+      "avg_humidity_pct": 60
+    },
+    "women_t20_stats": {
+      "matches_played": 10,
+      "avg_first_innings_score": 128,
+      "avg_winning_chase_score": 122,
+      "toss_impact": {
+        "bat_first_win_pct": 0.53,
+        "field_first_win_pct": 0.47
+      },
+      "pace_economy": 7.5,
+      "spin_economy": 6.4,
+      "highest_score": 158,
+      "lowest_defended": 108
+    },
+    "notes": "Qualifier venue Jan 2026 \u2014 compact ground, spin-dominated conditions"
   },
   {
     "id": "upper_mulpani_kathmandu",
@@ -413,10 +856,72 @@
     "city": "Kathmandu",
     "country": "Nepal",
     "capacity": 8000,
-    "dimensions": { "straight_boundary_m": 60, "square_boundary_m": 56, "oval": false },
-    "pitch": { "type": "spin_friendly", "pace_advantage": false, "spin_advantage": true, "notes": "Smaller ground at high altitude (1400m). Similar to Kirtipur — slow pitch with spin grip. Very compact boundaries give batters opportunities if they connect." },
-    "conditions": { "dew_factor": "low", "typically_day_night": false, "avg_humidity_pct": 58 },
-    "women_t20_stats": { "matches_played": 8, "avg_first_innings_score": 125, "avg_winning_chase_score": 120, "toss_impact": { "bat_first_win_pct": 0.52, "field_first_win_pct": 0.48 }, "pace_economy": 7.6, "spin_economy": 6.3, "highest_score": 148, "lowest_defended": 105 },
+    "dimensions": {
+      "straight_boundary_m": 60,
+      "square_boundary_m": 56,
+      "oval": false
+    },
+    "pitch": {
+      "type": "spin_friendly",
+      "pace_advantage": false,
+      "spin_advantage": true,
+      "notes": "Smaller ground at high altitude (1400m). Similar to Kirtipur \u2014 slow pitch with spin grip. Very compact boundaries give batters opportunities if they connect."
+    },
+    "conditions": {
+      "dew_factor": "low",
+      "typically_day_night": false,
+      "avg_humidity_pct": 58
+    },
+    "women_t20_stats": {
+      "matches_played": 8,
+      "avg_first_innings_score": 125,
+      "avg_winning_chase_score": 120,
+      "toss_impact": {
+        "bat_first_win_pct": 0.52,
+        "field_first_win_pct": 0.48
+      },
+      "pace_economy": 7.6,
+      "spin_economy": 6.3,
+      "highest_score": 148,
+      "lowest_defended": 105
+    },
     "notes": "Qualifier venue Jan 2026"
+  },
+  {
+    "id": "county_ground_derby",
+    "name": "County Ground",
+    "city": "Derby",
+    "country": "England",
+    "capacity": 15500,
+    "dimensions": {
+      "straight_boundary_m": null,
+      "square_boundary_m": null,
+      "oval": true
+    },
+    "pitch": {
+      "type": "balanced",
+      "pace_advantage": false,
+      "spin_advantage": false,
+      "notes": "Good batting pitch, assists stroke play"
+    },
+    "conditions": {
+      "dew_factor": "medium",
+      "typically_day_night": false,
+      "avg_humidity_pct": null
+    },
+    "women_t20_stats": {
+      "matches_played": null,
+      "avg_first_innings_score": null,
+      "avg_winning_chase_score": null,
+      "toss_impact": {
+        "bat_first_win_pct": null,
+        "field_first_win_pct": null
+      },
+      "pace_economy": null,
+      "spin_economy": null,
+      "highest_score": null,
+      "lowest_defended": null
+    },
+    "notes": "Midlands venue"
   }
 ]

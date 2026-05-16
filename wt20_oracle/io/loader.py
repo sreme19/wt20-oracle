@@ -32,12 +32,61 @@ def load_squad(team_id: str) -> List[Dict[str, Any]]:
 
 
 def load_venue(venue_id: str) -> Dict[str, Any]:
-    """Load venue data by ID."""
+    """
+    Load venue data by ID with validation.
+
+    Validates:
+    - Venue exists in database
+    - Has required fields (name, city, pitch)
+    - Pitch type is valid (seam_friendly, balanced, spin_friendly, flat)
+    - Warns if women_t20_stats are sparse
+    """
     venues = _read(DATA_DIR / "venues.json")
+    venue = None
     for v in venues:
         if v.get("id") == venue_id:
-            return v
-    raise ValueError(f"Venue '{venue_id}' not found in venues.json")
+            venue = v
+            break
+
+    if not venue:
+        raise ValueError(f"Venue '{venue_id}' not found in venues.json")
+
+    # Validate required structure
+    required_fields = ["name", "city", "pitch"]
+    missing = [f for f in required_fields if f not in venue or not venue.get(f)]
+    if missing:
+        raise ValueError(
+            f"Venue '{venue_id}' missing required fields: {', '.join(missing)}"
+        )
+
+    # Validate pitch.type
+    valid_pitch_types = ["seam_friendly", "balanced", "spin_friendly", "flat"]
+    pitch_type = venue.get("pitch", {}).get("type")
+    if pitch_type not in valid_pitch_types:
+        raise ValueError(
+            f"Invalid pitch type '{pitch_type}' for venue '{venue_id}'. "
+            f"Must be one of: {', '.join(valid_pitch_types)}"
+        )
+
+    # Warn if women_t20_stats are sparse
+    stats = venue.get("women_t20_stats", {})
+    sparse_stats = all(
+        v is None
+        for v in [
+            stats.get("matches_played"),
+            stats.get("avg_first_innings_score"),
+            stats.get("toss_impact"),
+        ]
+    )
+    if sparse_stats:
+        import warnings
+        warnings.warn(
+            f"Venue '{venue_id}': Limited women's T20 statistics available. "
+            f"Predictions may be less accurate.",
+            UserWarning,
+        )
+
+    return venue
 
 
 def load_team(team_id: str) -> Dict[str, Any]:

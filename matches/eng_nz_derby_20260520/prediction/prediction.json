@@ -1,0 +1,346 @@
+{
+  "match_id": "eng_nz_derby_20260520",
+  "fixture": {
+    "id": "eng_nz_derby_20260520",
+    "date": "2026-05-20",
+    "team_id": "england",
+    "opponent_id": "new_zealand",
+    "venue_id": "county_ground_derby",
+    "venue_name": "County Ground, Derby",
+    "series": "England vs New Zealand T20I Series 2026",
+    "match_no": 4,
+    "series_result": null,
+    "series_wins_before": 2
+  },
+  "generated_at": "2026-05-16T13:23:29.247097Z",
+  "scenario": "pre_toss_blended",
+  "pitch_difficulty": "moderate",
+  "chase_penalty": -20,
+  "base_runs_estimate": 140.2,
+  "adjusted_runs_estimate": 132.7,
+  "runs_lower": 130.7,
+  "runs_upper": 134.7,
+  "win_probability": 0.483,
+  "win_probability_reasoning": "Pre-toss blend: batting-first WP=53.3%, chasing WP=43.2% \u2192 blended 48.3%",
+  "selected_xi": [
+    "nat_sciver_brunt",
+    "danni_wyatt_hodge",
+    "dani_gibson",
+    "issy_wong",
+    "freya_kemp",
+    "sophia_dunkley",
+    "lauren_filer",
+    "sophie_ecclestone",
+    "heather_knight",
+    "alice_capsey",
+    "amy_jones"
+  ],
+  "batting_order": [
+    "nat_sciver_brunt",
+    "danni_wyatt_hodge",
+    "sophia_dunkley",
+    "amy_jones",
+    "heather_knight",
+    "dani_gibson",
+    "alice_capsey",
+    "freya_kemp",
+    "sophie_ecclestone",
+    "lauren_filer",
+    "issy_wong"
+  ],
+  "batting_reasoning": {
+    "nat_sciver_brunt": "Opens \u2014 SR 138, aggressive start needed setting total",
+    "danni_wyatt_hodge": "Opens \u2014 SR 126, aggressive start needed setting total",
+    "sophia_dunkley": "#3 \u2014 anchor/accelerator, SR 122",
+    "amy_jones": "#4 \u2014 anchor/accelerator, SR 119",
+    "heather_knight": "#5 \u2014 anchor/accelerator, SR 120",
+    "dani_gibson": "#6 (all_rounder) \u2014 depth batting, lower-order contribution",
+    "alice_capsey": "#7 (all_rounder) \u2014 depth batting, lower-order contribution",
+    "freya_kemp": "#8 (all_rounder) \u2014 depth batting, lower-order contribution",
+    "sophie_ecclestone": "#9 (bowler) \u2014 depth batting, lower-order contribution",
+    "lauren_filer": "#10 (bowler) \u2014 depth batting, lower-order contribution",
+    "issy_wong": "#11 (bowler) \u2014 depth batting, lower-order contribution"
+  },
+  "bowling_plan": [
+    {
+      "player_id": "nat_sciver_brunt",
+      "player_name": "Nat Sciver-Brunt",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 7.04,
+      "rationale": "Nat Sciver-Brunt: powerplay specialist, economy 6.2"
+    },
+    {
+      "player_id": "nat_sciver_brunt",
+      "player_name": "Nat Sciver-Brunt",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 7.04,
+      "rationale": "Nat Sciver-Brunt: middle specialist, economy 7.2"
+    },
+    {
+      "player_id": "nat_sciver_brunt",
+      "player_name": "Nat Sciver-Brunt",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 7.04,
+      "rationale": "Nat Sciver-Brunt: death specialist, economy 8.8"
+    },
+    {
+      "player_id": "danni_wyatt_hodge",
+      "player_name": "Danni Wyatt-Hodge",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.68,
+      "rationale": "Danni Wyatt-Hodge: powerplay specialist, economy 5.7"
+    },
+    {
+      "player_id": "danni_wyatt_hodge",
+      "player_name": "Danni Wyatt-Hodge",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.68,
+      "rationale": "Danni Wyatt-Hodge: middle specialist, economy 5.5"
+    },
+    {
+      "player_id": "danni_wyatt_hodge",
+      "player_name": "Danni Wyatt-Hodge",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.68,
+      "rationale": "Danni Wyatt-Hodge: death specialist, economy 6.0"
+    },
+    {
+      "player_id": "dani_gibson",
+      "player_name": "Dani Gibson",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 7.19,
+      "rationale": "Dani Gibson: powerplay specialist, economy 6.4"
+    },
+    {
+      "player_id": "dani_gibson",
+      "player_name": "Dani Gibson",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 7.19,
+      "rationale": "Dani Gibson: middle specialist, economy 6.5"
+    },
+    {
+      "player_id": "dani_gibson",
+      "player_name": "Dani Gibson",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 7.19,
+      "rationale": "Dani Gibson: death specialist, economy 9.4"
+    },
+    {
+      "player_id": "issy_wong",
+      "player_name": "Issy Wong",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.57,
+      "rationale": "Issy Wong: powerplay specialist, economy 6.1"
+    },
+    {
+      "player_id": "issy_wong",
+      "player_name": "Issy Wong",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.57,
+      "rationale": "Issy Wong: middle specialist, economy 6.7"
+    },
+    {
+      "player_id": "issy_wong",
+      "player_name": "Issy Wong",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.57,
+      "rationale": "Issy Wong: death specialist, economy 7.7"
+    },
+    {
+      "player_id": "freya_kemp",
+      "player_name": "Freya Kemp",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 7.45,
+      "rationale": "Freya Kemp: powerplay specialist, economy 8.2"
+    },
+    {
+      "player_id": "freya_kemp",
+      "player_name": "Freya Kemp",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 7.45,
+      "rationale": "Freya Kemp: middle specialist, economy 7.0"
+    },
+    {
+      "player_id": "freya_kemp",
+      "player_name": "Freya Kemp",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 7.45,
+      "rationale": "Freya Kemp: death specialist, economy 7.0"
+    },
+    {
+      "player_id": "sophia_dunkley",
+      "player_name": "Sophia Dunkley",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.84,
+      "rationale": "Sophia Dunkley: assigned powerplay overs"
+    },
+    {
+      "player_id": "sophia_dunkley",
+      "player_name": "Sophia Dunkley",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.84,
+      "rationale": "Sophia Dunkley: middle specialist, economy 6.8"
+    },
+    {
+      "player_id": "sophia_dunkley",
+      "player_name": "Sophia Dunkley",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.84,
+      "rationale": "Sophia Dunkley: death specialist, economy 7.0"
+    },
+    {
+      "player_id": "lauren_filer",
+      "player_name": "Lauren Filer",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.36,
+      "rationale": "Lauren Filer: powerplay specialist, economy 6.4"
+    },
+    {
+      "player_id": "lauren_filer",
+      "player_name": "Lauren Filer",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.36,
+      "rationale": "Lauren Filer: middle specialist, economy 6.0"
+    },
+    {
+      "player_id": "lauren_filer",
+      "player_name": "Lauren Filer",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.36,
+      "rationale": "Lauren Filer: death specialist, economy 7.4"
+    },
+    {
+      "player_id": "sophie_ecclestone",
+      "player_name": "Sophie Ecclestone",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.1,
+      "rationale": "Sophie Ecclestone: powerplay specialist, economy 5.6"
+    },
+    {
+      "player_id": "sophie_ecclestone",
+      "player_name": "Sophie Ecclestone",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.1,
+      "rationale": "Sophie Ecclestone: middle specialist, economy 5.8"
+    },
+    {
+      "player_id": "sophie_ecclestone",
+      "player_name": "Sophie Ecclestone",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.1,
+      "rationale": "Sophie Ecclestone: death specialist, economy 7.1"
+    },
+    {
+      "player_id": "heather_knight",
+      "player_name": "Heather Knight",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.73,
+      "rationale": "Heather Knight: powerplay specialist, economy 7.4"
+    },
+    {
+      "player_id": "heather_knight",
+      "player_name": "Heather Knight",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.73,
+      "rationale": "Heather Knight: middle specialist, economy 6.3"
+    },
+    {
+      "player_id": "heather_knight",
+      "player_name": "Heather Knight",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.73,
+      "rationale": "Heather Knight: death specialist, economy 7.8"
+    },
+    {
+      "player_id": "alice_capsey",
+      "player_name": "Alice Capsey",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.72,
+      "rationale": "Alice Capsey: powerplay specialist, economy 6.7"
+    },
+    {
+      "player_id": "alice_capsey",
+      "player_name": "Alice Capsey",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.72,
+      "rationale": "Alice Capsey: middle specialist, economy 6.4"
+    },
+    {
+      "player_id": "alice_capsey",
+      "player_name": "Alice Capsey",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.72,
+      "rationale": "Alice Capsey: death specialist, economy 7.5"
+    }
+  ],
+  "strategy_brief": "STRATEGY BRIEF: ENGLAND vs NEW_ZEALAND at County Ground\n======================================================================\n\nTOSS: england chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~140 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 53% (FAIR)\n\nPITCH: Balanced\n  Good batting pitch, assists stroke play\n\nBATTING ORDER (Top 4):\n  1. Nat Sciver-Brunt (SR 138)\n  2. Danni Wyatt-Hodge (SR 126)\n  3. Sophia Dunkley (SR 122)\n  4. Amy Jones (SR 119)\n\nBOWLING PLAN:\n  Powerplay: Lauren Filer, Dani Gibson, Heather Knight, Danni Wyatt-Hodge, Nat Sciver-Brunt, Sophie Ecclestone, Freya Kemp, Alice Capsey, Issy Wong, Sophia Dunkley\n  Middle: Lauren Filer, Dani Gibson, Heather Knight, Danni Wyatt-Hodge, Nat Sciver-Brunt, Sophie Ecclestone, Freya Kemp, Alice Capsey, Issy Wong, Sophia Dunkley\n  Death: Lauren Filer, Dani Gibson, Heather Knight, Danni Wyatt-Hodge, Nat Sciver-Brunt, Sophie Ecclestone, Freya Kemp, Alice Capsey, Issy Wong, Sophia Dunkley\n\nTACTICAL NOTES:\n  \u2022 Dew factor affects grip and swing\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================",
+  "key_matchups": [],
+  "tactical_flags": [
+    "dew_factor_affects_grip_and_swing",
+    "set_par_total_conservative_approach_first_6_overs"
+  ],
+  "errors": [],
+  "warnings": [
+    "MILP infeasible \u2014 used fallback utility sort for XI selection",
+    "MILP infeasible \u2014 used fallback utility sort for XI selection"
+  ],
+  "batting_first_scenario": {
+    "scenario": "batting_first",
+    "adjusted_runs_estimate": 140.2,
+    "runs_lower": 138.2,
+    "runs_upper": 142.2,
+    "win_probability": 0.533,
+    "pitch_difficulty": "moderate",
+    "chase_penalty": 0,
+    "tactical_flags": [
+      "dew_factor_affects_grip_and_swing",
+      "set_par_total_conservative_approach_first_6_overs"
+    ],
+    "strategy_brief": "STRATEGY BRIEF: ENGLAND vs NEW_ZEALAND at County Ground\n======================================================================\n\nTOSS: england chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~140 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 53% (FAIR)\n\nPITCH: Balanced\n  Good batting pitch, assists stroke play\n\nBATTING ORDER (Top 4):\n  1. Nat Sciver-Brunt (SR 138)\n  2. Danni Wyatt-Hodge (SR 126)\n  3. Sophia Dunkley (SR 122)\n  4. Amy Jones (SR 119)\n\nBOWLING PLAN:\n  Powerplay: Lauren Filer, Dani Gibson, Heather Knight, Danni Wyatt-Hodge, Nat Sciver-Brunt, Sophie Ecclestone, Freya Kemp, Alice Capsey, Issy Wong, Sophia Dunkley\n  Middle: Lauren Filer, Dani Gibson, Heather Knight, Danni Wyatt-Hodge, Nat Sciver-Brunt, Sophie Ecclestone, Freya Kemp, Alice Capsey, Issy Wong, Sophia Dunkley\n  Death: Lauren Filer, Dani Gibson, Heather Knight, Danni Wyatt-Hodge, Nat Sciver-Brunt, Sophie Ecclestone, Freya Kemp, Alice Capsey, Issy Wong, Sophia Dunkley\n\nTACTICAL NOTES:\n  \u2022 Dew factor affects grip and swing\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
+  },
+  "chasing_scenario": {
+    "scenario": "chasing",
+    "adjusted_runs_estimate": 125.2,
+    "runs_lower": 123.2,
+    "runs_upper": 127.2,
+    "win_probability": 0.432,
+    "pitch_difficulty": "moderate",
+    "chase_penalty": -20,
+    "tactical_flags": [
+      "dew_factor_affects_grip_and_swing",
+      "chase_scenario_requires_calculated_aggression",
+      "monitor_required_run_rate_per_phase"
+    ],
+    "strategy_brief": "STRATEGY BRIEF: ENGLAND vs NEW_ZEALAND at County Ground\n======================================================================\n\nTOSS: new_zealand chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~125 runs to win.\n  (Chase penalty applied: -20 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 43% (POOR)\n\nPITCH: Balanced\n  Good batting pitch, assists stroke play\n\nBATTING ORDER (Top 4):\n  1. Nat Sciver-Brunt (SR 138)\n  2. Danni Wyatt-Hodge (SR 126)\n  3. Sophia Dunkley (SR 122)\n  4. Amy Jones (SR 119)\n\nBOWLING PLAN:\n  Powerplay: Lauren Filer, Dani Gibson, Heather Knight, Danni Wyatt-Hodge, Nat Sciver-Brunt, Sophie Ecclestone, Freya Kemp, Alice Capsey, Issy Wong, Sophia Dunkley\n  Middle: Lauren Filer, Dani Gibson, Heather Knight, Danni Wyatt-Hodge, Nat Sciver-Brunt, Sophie Ecclestone, Freya Kemp, Alice Capsey, Issy Wong, Sophia Dunkley\n  Death: Lauren Filer, Dani Gibson, Heather Knight, Danni Wyatt-Hodge, Nat Sciver-Brunt, Sophie Ecclestone, Freya Kemp, Alice Capsey, Issy Wong, Sophia Dunkley\n\nTACTICAL NOTES:\n  \u2022 Dew factor affects grip and swing\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n\n======================================================================"
+  }
+}
