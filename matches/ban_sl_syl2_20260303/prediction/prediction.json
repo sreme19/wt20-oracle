@@ -1,0 +1,206 @@
+{
+  "match_id": "ban_sl_syl2_20260303",
+  "fixture": {
+    "id": "ban_sl_syl2_20260303",
+    "date": "2026-03-03",
+    "team_id": "bangladesh",
+    "opponent_id": "sri_lanka",
+    "venue_id": "sylhet_international",
+    "series": "Bangladesh vs Sri Lanka T20I Series 2026",
+    "match_no": 2
+  },
+  "generated_at": "2026-05-16T06:03:49.954028Z",
+  "scenario": "unknown",
+  "pitch_difficulty": "very_difficult",
+  "chase_penalty": 0,
+  "base_runs_estimate": 118.9,
+  "adjusted_runs_estimate": 118.9,
+  "runs_lower": 114.9,
+  "runs_upper": 122.9,
+  "win_probability": 0.466,
+  "win_probability_reasoning": "Batting first: standard conditions (toss not yet known \u2014 confidence reduced)",
+  "selected_xi": [
+    "nigar_sultana",
+    "nahida_akter",
+    "sharmin_akter_supta",
+    "sobhana_mostary",
+    "shorna_akter",
+    "ritu_moni",
+    "rabeya_khan",
+    "fahima_khatun",
+    "dilara_akter",
+    "juairiya_ferdous",
+    "taj_nehar"
+  ],
+  "batting_order": [
+    "nigar_sultana",
+    "juairiya_ferdous",
+    "dilara_akter",
+    "sobhana_mostary",
+    "shorna_akter",
+    "sharmin_akter_supta",
+    "taj_nehar",
+    "fahima_khatun",
+    "ritu_moni",
+    "rabeya_khan",
+    "nahida_akter"
+  ],
+  "bowling_plan": [
+    {
+      "player_id": "nahida_akter",
+      "player_name": "Nahida Akter",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.76,
+      "rationale": "Nahida Akter: powerplay specialist, economy 5.8 (spin pitch advantage)"
+    },
+    {
+      "player_id": "nahida_akter",
+      "player_name": "Nahida Akter",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.76,
+      "rationale": "Nahida Akter: middle specialist, economy 5.3 (spin pitch advantage)"
+    },
+    {
+      "player_id": "nahida_akter",
+      "player_name": "Nahida Akter",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.76,
+      "rationale": "Nahida Akter: death specialist, economy 6.3 (spin pitch advantage)"
+    },
+    {
+      "player_id": "shorna_akter",
+      "player_name": "Shorna Akter",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.96,
+      "rationale": "Shorna Akter: death specialist, economy 7.1"
+    },
+    {
+      "player_id": "ritu_moni",
+      "player_name": "Ritu Moni",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.51,
+      "rationale": "Ritu Moni: powerplay specialist, economy 4.6 (spin pitch advantage)"
+    },
+    {
+      "player_id": "ritu_moni",
+      "player_name": "Ritu Moni",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.51,
+      "rationale": "Ritu Moni: middle specialist, economy 5.2 (spin pitch advantage)"
+    },
+    {
+      "player_id": "ritu_moni",
+      "player_name": "Ritu Moni",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.51,
+      "rationale": "Ritu Moni: death specialist, economy 7.7 (spin pitch advantage)"
+    },
+    {
+      "player_id": "rabeya_khan",
+      "player_name": "Rabeya Khan",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.38,
+      "rationale": "Rabeya Khan: powerplay specialist, economy 4.3"
+    },
+    {
+      "player_id": "rabeya_khan",
+      "player_name": "Rabeya Khan",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.38,
+      "rationale": "Rabeya Khan: middle specialist, economy 5.3"
+    },
+    {
+      "player_id": "rabeya_khan",
+      "player_name": "Rabeya Khan",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.38,
+      "rationale": "Rabeya Khan: death specialist, economy 6.2"
+    },
+    {
+      "player_id": "fahima_khatun",
+      "player_name": "Fahima Khatun",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.66,
+      "rationale": "Fahima Khatun: powerplay specialist, economy 5.8 (spin pitch advantage)"
+    },
+    {
+      "player_id": "fahima_khatun",
+      "player_name": "Fahima Khatun",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.66,
+      "rationale": "Fahima Khatun: middle specialist, economy 5.6 (spin pitch advantage)"
+    },
+    {
+      "player_id": "fahima_khatun",
+      "player_name": "Fahima Khatun",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.66,
+      "rationale": "Fahima Khatun: death specialist, economy 5.9 (spin pitch advantage)"
+    },
+    {
+      "player_id": "taj_nehar",
+      "player_name": "Taj Nehar",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 7.5,
+      "rationale": "Taj Nehar: assigned middle overs"
+    }
+  ],
+  "key_matchups": [
+    {
+      "type": "exploit",
+      "batter": "sobhana_mostary",
+      "bowler": "achini_kulasuriya",
+      "insight": "Strong: SR 133 over 6 balls, 0 dismissal(s)"
+    },
+    {
+      "type": "exploit",
+      "batter": "juairiya_ferdous",
+      "bowler": "sugandika_kumari",
+      "insight": "Favourable: SR 86 over 14 balls"
+    },
+    {
+      "type": "exploit",
+      "batter": "dilara_akter",
+      "bowler": "sugandika_kumari",
+      "insight": "Favourable: SR 80 over 15 balls"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "hasini_madavi",
+      "our_bowler": "ritu_moni",
+      "insight": "Threat: batter SR 162 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "hasini_madavi",
+      "our_bowler": "ritu_moni",
+      "insight": "Threat: batter SR 162 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "hasini_madavi",
+      "our_bowler": "ritu_moni",
+      "insight": "Threat: batter SR 162 against this bowler"
+    }
+  ],
+  "tactical_flags": [
+    "prioritise_spinners_middle_overs",
+    "dew_factor_affects_grip_and_swing"
+  ],
+  "errors": [],
+  "warnings": []
+}

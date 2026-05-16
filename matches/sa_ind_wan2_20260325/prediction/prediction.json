@@ -1,0 +1,279 @@
+{
+  "match_id": "sa_ind_wan2_20260325",
+  "fixture": {
+    "id": "sa_ind_wan2_20260325",
+    "date": "2026-03-25",
+    "team_id": "south_africa",
+    "opponent_id": "india",
+    "venue_id": "wanderers_johannesburg",
+    "series": "South Africa vs India T20I Series 2026",
+    "match_no": 4
+  },
+  "generated_at": "2026-05-16T06:03:49.274494Z",
+  "scenario": "unknown",
+  "pitch_difficulty": "easy",
+  "chase_penalty": 0,
+  "base_runs_estimate": 143.9,
+  "adjusted_runs_estimate": 143.9,
+  "runs_lower": 139.9,
+  "runs_upper": 147.9,
+  "win_probability": 0.491,
+  "win_probability_reasoning": "Batting first: standard conditions (toss not yet known \u2014 confidence reduced)",
+  "selected_xi": [
+    "kayla_reyneke",
+    "chloe_tryon",
+    "sinalo_jafta",
+    "laura_wolvaardt",
+    "annerie_dercksen",
+    "marizanne_kapp",
+    "sune_luus",
+    "nadine_de_klerk",
+    "dane_van_niekerk",
+    "tazmin_brits",
+    "nonkululeko_mlaba"
+  ],
+  "batting_order": [
+    "laura_wolvaardt",
+    "tazmin_brits",
+    "sinalo_jafta",
+    "chloe_tryon",
+    "sune_luus",
+    "dane_van_niekerk",
+    "marizanne_kapp",
+    "nadine_de_klerk",
+    "kayla_reyneke",
+    "annerie_dercksen",
+    "nonkululeko_mlaba"
+  ],
+  "bowling_plan": [
+    {
+      "player_id": "kayla_reyneke",
+      "player_name": "Kayla Reyneke",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 4.74,
+      "rationale": "Kayla Reyneke: middle specialist, economy 4.4 (pace pitch advantage)"
+    },
+    {
+      "player_id": "kayla_reyneke",
+      "player_name": "Kayla Reyneke",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 4.74,
+      "rationale": "Kayla Reyneke: death specialist, economy 5.3 (pace pitch advantage)"
+    },
+    {
+      "player_id": "chloe_tryon",
+      "player_name": "Chloe Tryon",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.75,
+      "rationale": "Chloe Tryon: powerplay specialist, economy 7.0 (pace pitch advantage)"
+    },
+    {
+      "player_id": "chloe_tryon",
+      "player_name": "Chloe Tryon",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.75,
+      "rationale": "Chloe Tryon: middle specialist, economy 6.5 (pace pitch advantage)"
+    },
+    {
+      "player_id": "chloe_tryon",
+      "player_name": "Chloe Tryon",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.75,
+      "rationale": "Chloe Tryon: death specialist, economy 7.5 (pace pitch advantage)"
+    },
+    {
+      "player_id": "annerie_dercksen",
+      "player_name": "Annerie Dercksen",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.57,
+      "rationale": "Annerie Dercksen: powerplay specialist, economy 7.1 (pace pitch advantage)"
+    },
+    {
+      "player_id": "annerie_dercksen",
+      "player_name": "Annerie Dercksen",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.57,
+      "rationale": "Annerie Dercksen: middle specialist, economy 6.4 (pace pitch advantage)"
+    },
+    {
+      "player_id": "annerie_dercksen",
+      "player_name": "Annerie Dercksen",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.57,
+      "rationale": "Annerie Dercksen: death specialist, economy 6.8 (pace pitch advantage)"
+    },
+    {
+      "player_id": "marizanne_kapp",
+      "player_name": "Marizanne Kapp",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.41,
+      "rationale": "Marizanne Kapp: powerplay specialist, economy 4.8 (pace pitch advantage)"
+    },
+    {
+      "player_id": "marizanne_kapp",
+      "player_name": "Marizanne Kapp",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.41,
+      "rationale": "Marizanne Kapp: middle specialist, economy 5.6 (pace pitch advantage)"
+    },
+    {
+      "player_id": "marizanne_kapp",
+      "player_name": "Marizanne Kapp",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.41,
+      "rationale": "Marizanne Kapp: death specialist, economy 7.5 (pace pitch advantage)"
+    },
+    {
+      "player_id": "sune_luus",
+      "player_name": "Sune Luus",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.6,
+      "rationale": "Sune Luus: powerplay specialist, economy 7.0"
+    },
+    {
+      "player_id": "sune_luus",
+      "player_name": "Sune Luus",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.6,
+      "rationale": "Sune Luus: middle specialist, economy 6.7"
+    },
+    {
+      "player_id": "sune_luus",
+      "player_name": "Sune Luus",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.6,
+      "rationale": "Sune Luus: death specialist, economy 5.7"
+    },
+    {
+      "player_id": "nadine_de_klerk",
+      "player_name": "Nadine de Klerk",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.8,
+      "rationale": "Nadine de Klerk: powerplay specialist, economy 6.4 (pace pitch advantage)"
+    },
+    {
+      "player_id": "nadine_de_klerk",
+      "player_name": "Nadine de Klerk",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.8,
+      "rationale": "Nadine de Klerk: middle specialist, economy 6.6 (pace pitch advantage)"
+    },
+    {
+      "player_id": "nadine_de_klerk",
+      "player_name": "Nadine de Klerk",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.8,
+      "rationale": "Nadine de Klerk: death specialist, economy 7.4 (pace pitch advantage)"
+    },
+    {
+      "player_id": "dane_van_niekerk",
+      "player_name": "Dane van Niekerk",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.88,
+      "rationale": "Dane van Niekerk: powerplay specialist, economy 5.6"
+    },
+    {
+      "player_id": "dane_van_niekerk",
+      "player_name": "Dane van Niekerk",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.88,
+      "rationale": "Dane van Niekerk: middle specialist, economy 5.7"
+    },
+    {
+      "player_id": "dane_van_niekerk",
+      "player_name": "Dane van Niekerk",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.88,
+      "rationale": "Dane van Niekerk: death specialist, economy 6.8"
+    },
+    {
+      "player_id": "nonkululeko_mlaba",
+      "player_name": "Nonkululeko Mlaba",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.1,
+      "rationale": "Nonkululeko Mlaba: powerplay specialist, economy 6.0"
+    },
+    {
+      "player_id": "nonkululeko_mlaba",
+      "player_name": "Nonkululeko Mlaba",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.1,
+      "rationale": "Nonkululeko Mlaba: middle specialist, economy 5.9"
+    },
+    {
+      "player_id": "nonkululeko_mlaba",
+      "player_name": "Nonkululeko Mlaba",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.1,
+      "rationale": "Nonkululeko Mlaba: death specialist, economy 7.0"
+    }
+  ],
+  "key_matchups": [
+    {
+      "type": "exploit",
+      "batter": "laura_wolvaardt",
+      "bowler": "arundhati_reddy",
+      "insight": "Strong: SR 154 over 65 balls, 1 dismissal(s)"
+    },
+    {
+      "type": "exploit",
+      "batter": "sune_luus",
+      "bowler": "arundhati_reddy",
+      "insight": "Strong: SR 105 over 39 balls, 0 dismissal(s)"
+    },
+    {
+      "type": "exploit",
+      "batter": "tazmin_brits",
+      "bowler": "arundhati_reddy",
+      "insight": "Favourable: SR 53 over 17 balls"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "shafali_verma",
+      "our_bowler": "sune_luus",
+      "insight": "Threat: batter SR 186 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "shafali_verma",
+      "our_bowler": "sune_luus",
+      "insight": "Threat: batter SR 186 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "shafali_verma",
+      "our_bowler": "sune_luus",
+      "insight": "Threat: batter SR 186 against this bowler"
+    }
+  ],
+  "tactical_flags": [
+    "use_pace_in_powerplay"
+  ],
+  "errors": [],
+  "warnings": [
+    "MILP infeasible \u2014 used fallback utility sort for XI selection"
+  ]
+}

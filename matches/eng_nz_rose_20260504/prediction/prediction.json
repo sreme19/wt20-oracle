@@ -1,0 +1,299 @@
+{
+  "match_id": "eng_nz_rose_20260504",
+  "fixture": {
+    "id": "eng_nz_rose_20260504",
+    "date": "2026-05-04",
+    "team_id": "england",
+    "opponent_id": "new_zealand",
+    "venue_id": "rose_bowl",
+    "series": "England vs New Zealand T20I Series 2026",
+    "match_no": 2
+  },
+  "generated_at": "2026-05-16T06:03:51.362415Z",
+  "scenario": "unknown",
+  "pitch_difficulty": "easy",
+  "chase_penalty": 0,
+  "base_runs_estimate": 143.2,
+  "adjusted_runs_estimate": 143.2,
+  "runs_lower": 139.2,
+  "runs_upper": 147.2,
+  "win_probability": 0.526,
+  "win_probability_reasoning": "Batting first: standard conditions (toss not yet known \u2014 confidence reduced)",
+  "selected_xi": [
+    "nat_sciver_brunt",
+    "danni_wyatt_hodge",
+    "dani_gibson",
+    "issy_wong",
+    "lauren_filer",
+    "freya_kemp",
+    "sophia_dunkley",
+    "sophie_ecclestone",
+    "heather_knight",
+    "alice_capsey",
+    "amy_jones"
+  ],
+  "batting_order": [
+    "nat_sciver_brunt",
+    "danni_wyatt_hodge",
+    "sophia_dunkley",
+    "amy_jones",
+    "heather_knight",
+    "dani_gibson",
+    "alice_capsey",
+    "freya_kemp",
+    "sophie_ecclestone",
+    "lauren_filer",
+    "issy_wong"
+  ],
+  "bowling_plan": [
+    {
+      "player_id": "nat_sciver_brunt",
+      "player_name": "Nat Sciver-Brunt",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 7.04,
+      "rationale": "Nat Sciver-Brunt: powerplay specialist, economy 6.2 (pace pitch advantage)"
+    },
+    {
+      "player_id": "nat_sciver_brunt",
+      "player_name": "Nat Sciver-Brunt",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 7.04,
+      "rationale": "Nat Sciver-Brunt: middle specialist, economy 7.2 (pace pitch advantage)"
+    },
+    {
+      "player_id": "nat_sciver_brunt",
+      "player_name": "Nat Sciver-Brunt",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 7.04,
+      "rationale": "Nat Sciver-Brunt: death specialist, economy 8.8 (pace pitch advantage)"
+    },
+    {
+      "player_id": "danni_wyatt_hodge",
+      "player_name": "Danni Wyatt-Hodge",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.68,
+      "rationale": "Danni Wyatt-Hodge: powerplay specialist, economy 5.7"
+    },
+    {
+      "player_id": "danni_wyatt_hodge",
+      "player_name": "Danni Wyatt-Hodge",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.68,
+      "rationale": "Danni Wyatt-Hodge: middle specialist, economy 5.5"
+    },
+    {
+      "player_id": "danni_wyatt_hodge",
+      "player_name": "Danni Wyatt-Hodge",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.68,
+      "rationale": "Danni Wyatt-Hodge: death specialist, economy 6.0"
+    },
+    {
+      "player_id": "dani_gibson",
+      "player_name": "Dani Gibson",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 7.19,
+      "rationale": "Dani Gibson: powerplay specialist, economy 6.4 (pace pitch advantage)"
+    },
+    {
+      "player_id": "dani_gibson",
+      "player_name": "Dani Gibson",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 7.19,
+      "rationale": "Dani Gibson: middle specialist, economy 6.5 (pace pitch advantage)"
+    },
+    {
+      "player_id": "dani_gibson",
+      "player_name": "Dani Gibson",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 7.19,
+      "rationale": "Dani Gibson: death specialist, economy 9.4 (pace pitch advantage)"
+    },
+    {
+      "player_id": "issy_wong",
+      "player_name": "Issy Wong",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.57,
+      "rationale": "Issy Wong: powerplay specialist, economy 6.1 (pace pitch advantage)"
+    },
+    {
+      "player_id": "issy_wong",
+      "player_name": "Issy Wong",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.57,
+      "rationale": "Issy Wong: middle specialist, economy 6.7 (pace pitch advantage)"
+    },
+    {
+      "player_id": "issy_wong",
+      "player_name": "Issy Wong",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.57,
+      "rationale": "Issy Wong: death specialist, economy 7.7 (pace pitch advantage)"
+    },
+    {
+      "player_id": "lauren_filer",
+      "player_name": "Lauren Filer",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.36,
+      "rationale": "Lauren Filer: powerplay specialist, economy 6.4 (pace pitch advantage)"
+    },
+    {
+      "player_id": "lauren_filer",
+      "player_name": "Lauren Filer",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.36,
+      "rationale": "Lauren Filer: middle specialist, economy 6.0 (pace pitch advantage)"
+    },
+    {
+      "player_id": "lauren_filer",
+      "player_name": "Lauren Filer",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.36,
+      "rationale": "Lauren Filer: death specialist, economy 7.4 (pace pitch advantage)"
+    },
+    {
+      "player_id": "freya_kemp",
+      "player_name": "Freya Kemp",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 7.45,
+      "rationale": "Freya Kemp: powerplay specialist, economy 8.2 (pace pitch advantage)"
+    },
+    {
+      "player_id": "freya_kemp",
+      "player_name": "Freya Kemp",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 7.45,
+      "rationale": "Freya Kemp: middle specialist, economy 7.0 (pace pitch advantage)"
+    },
+    {
+      "player_id": "freya_kemp",
+      "player_name": "Freya Kemp",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 7.45,
+      "rationale": "Freya Kemp: death specialist, economy 7.0 (pace pitch advantage)"
+    },
+    {
+      "player_id": "sophia_dunkley",
+      "player_name": "Sophia Dunkley",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.84,
+      "rationale": "Sophia Dunkley: assigned powerplay overs"
+    },
+    {
+      "player_id": "sophia_dunkley",
+      "player_name": "Sophia Dunkley",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.84,
+      "rationale": "Sophia Dunkley: middle specialist, economy 6.8"
+    },
+    {
+      "player_id": "sophia_dunkley",
+      "player_name": "Sophia Dunkley",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.84,
+      "rationale": "Sophia Dunkley: death specialist, economy 7.0"
+    },
+    {
+      "player_id": "sophie_ecclestone",
+      "player_name": "Sophie Ecclestone",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.1,
+      "rationale": "Sophie Ecclestone: powerplay specialist, economy 5.6"
+    },
+    {
+      "player_id": "sophie_ecclestone",
+      "player_name": "Sophie Ecclestone",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.1,
+      "rationale": "Sophie Ecclestone: middle specialist, economy 5.8"
+    },
+    {
+      "player_id": "sophie_ecclestone",
+      "player_name": "Sophie Ecclestone",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.1,
+      "rationale": "Sophie Ecclestone: death specialist, economy 7.1"
+    },
+    {
+      "player_id": "heather_knight",
+      "player_name": "Heather Knight",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.73,
+      "rationale": "Heather Knight: powerplay specialist, economy 7.4"
+    },
+    {
+      "player_id": "heather_knight",
+      "player_name": "Heather Knight",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.73,
+      "rationale": "Heather Knight: middle specialist, economy 6.3"
+    },
+    {
+      "player_id": "heather_knight",
+      "player_name": "Heather Knight",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.73,
+      "rationale": "Heather Knight: death specialist, economy 7.8"
+    },
+    {
+      "player_id": "alice_capsey",
+      "player_name": "Alice Capsey",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.72,
+      "rationale": "Alice Capsey: powerplay specialist, economy 6.7"
+    },
+    {
+      "player_id": "alice_capsey",
+      "player_name": "Alice Capsey",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.72,
+      "rationale": "Alice Capsey: middle specialist, economy 6.4"
+    },
+    {
+      "player_id": "alice_capsey",
+      "player_name": "Alice Capsey",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.72,
+      "rationale": "Alice Capsey: death specialist, economy 7.5"
+    }
+  ],
+  "key_matchups": [],
+  "tactical_flags": [
+    "use_pace_in_powerplay",
+    "dew_factor_affects_grip_and_swing"
+  ],
+  "errors": [],
+  "warnings": [
+    "MILP infeasible \u2014 used fallback utility sort for XI selection"
+  ]
+}

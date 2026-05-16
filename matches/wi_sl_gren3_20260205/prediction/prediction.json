@@ -1,0 +1,229 @@
+{
+  "match_id": "wi_sl_gren3_20260205",
+  "fixture": {
+    "id": "wi_sl_gren3_20260205",
+    "date": "2026-02-05",
+    "team_id": "west_indies",
+    "opponent_id": "sri_lanka",
+    "venue_id": "national_cricket_stadium_grenada",
+    "series": "West Indies vs Sri Lanka T20I Series 2026",
+    "match_no": 3
+  },
+  "generated_at": "2026-05-16T06:03:47.276487Z",
+  "scenario": "unknown",
+  "pitch_difficulty": "difficult",
+  "chase_penalty": 0,
+  "base_runs_estimate": 126.4,
+  "adjusted_runs_estimate": 126.4,
+  "runs_lower": 122.4,
+  "runs_upper": 130.4,
+  "win_probability": 0.5,
+  "win_probability_reasoning": "Batting first: standard conditions (toss not yet known \u2014 confidence reduced)",
+  "selected_xi": [
+    "hayley_matthews",
+    "deandra_dottin",
+    "aaliyah_alleyne",
+    "qiana_joseph",
+    "zaida_james",
+    "jannillea_glasgow",
+    "jadene_claxton",
+    "stafanie_taylor",
+    "chinelle_henry",
+    "shemaine_campbelle",
+    "chedean_nation"
+  ],
+  "batting_order": [
+    "deandra_dottin",
+    "stafanie_taylor",
+    "hayley_matthews",
+    "jannillea_glasgow",
+    "shemaine_campbelle",
+    "chedean_nation",
+    "aaliyah_alleyne",
+    "jadene_claxton",
+    "qiana_joseph",
+    "chinelle_henry",
+    "zaida_james"
+  ],
+  "bowling_plan": [
+    {
+      "player_id": "hayley_matthews",
+      "player_name": "HK Matthews",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.58,
+      "rationale": "HK Matthews: powerplay specialist, economy 6.2"
+    },
+    {
+      "player_id": "hayley_matthews",
+      "player_name": "HK Matthews",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.58,
+      "rationale": "HK Matthews: middle specialist, economy 6.3"
+    },
+    {
+      "player_id": "hayley_matthews",
+      "player_name": "HK Matthews",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.58,
+      "rationale": "HK Matthews: death specialist, economy 7.7"
+    },
+    {
+      "player_id": "deandra_dottin",
+      "player_name": "DJS Dottin",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.51,
+      "rationale": "DJS Dottin: powerplay specialist, economy 5.8"
+    },
+    {
+      "player_id": "deandra_dottin",
+      "player_name": "DJS Dottin",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.51,
+      "rationale": "DJS Dottin: middle specialist, economy 6.3"
+    },
+    {
+      "player_id": "deandra_dottin",
+      "player_name": "DJS Dottin",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.51,
+      "rationale": "DJS Dottin: death specialist, economy 7.5"
+    },
+    {
+      "player_id": "qiana_joseph",
+      "player_name": "Q Joseph",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.67,
+      "rationale": "Q Joseph: powerplay specialist, economy 5.3"
+    },
+    {
+      "player_id": "qiana_joseph",
+      "player_name": "Q Joseph",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.67,
+      "rationale": "Q Joseph: middle specialist, economy 5.2"
+    },
+    {
+      "player_id": "qiana_joseph",
+      "player_name": "Q Joseph",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.67,
+      "rationale": "Q Joseph: death specialist, economy 7.4"
+    },
+    {
+      "player_id": "zaida_james",
+      "player_name": "Z James",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 7.09,
+      "rationale": "Z James: powerplay specialist, economy 5.2"
+    },
+    {
+      "player_id": "zaida_james",
+      "player_name": "Z James",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 7.09,
+      "rationale": "Z James: death specialist, economy 7.5"
+    },
+    {
+      "player_id": "stafanie_taylor",
+      "player_name": "SR Taylor",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.0,
+      "rationale": "SR Taylor: powerplay specialist, economy 6.2"
+    },
+    {
+      "player_id": "stafanie_taylor",
+      "player_name": "SR Taylor",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.0,
+      "rationale": "SR Taylor: middle specialist, economy 5.5"
+    },
+    {
+      "player_id": "stafanie_taylor",
+      "player_name": "SR Taylor",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.0,
+      "rationale": "SR Taylor: death specialist, economy 6.6"
+    },
+    {
+      "player_id": "chinelle_henry",
+      "player_name": "CA Henry",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.7,
+      "rationale": "CA Henry: powerplay specialist, economy 6.1"
+    },
+    {
+      "player_id": "chinelle_henry",
+      "player_name": "CA Henry",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.7,
+      "rationale": "CA Henry: middle specialist, economy 7.2"
+    },
+    {
+      "player_id": "chinelle_henry",
+      "player_name": "CA Henry",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.7,
+      "rationale": "CA Henry: death specialist, economy 8.5"
+    }
+  ],
+  "key_matchups": [
+    {
+      "type": "exploit",
+      "batter": "stafanie_taylor",
+      "bowler": "kavindi_pathirana",
+      "insight": "Strong: SR 125 over 8 balls, 0 dismissal(s)"
+    },
+    {
+      "type": "exploit",
+      "batter": "shemaine_campbelle",
+      "bowler": "inoka_ranaweera",
+      "insight": "Strong: SR 117 over 6 balls, 0 dismissal(s)"
+    },
+    {
+      "type": "exploit",
+      "batter": "deandra_dottin",
+      "bowler": "sugandika_kumari",
+      "insight": "Favourable: SR 138 over 29 balls"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "kavisha_dilhari",
+      "our_bowler": "hayley_matthews",
+      "insight": "Threat: batter SR 189 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "kavisha_dilhari",
+      "our_bowler": "hayley_matthews",
+      "insight": "Threat: batter SR 189 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "kavisha_dilhari",
+      "our_bowler": "hayley_matthews",
+      "insight": "Threat: batter SR 189 against this bowler"
+    }
+  ],
+  "tactical_flags": [
+    "dew_factor_affects_grip_and_swing"
+  ],
+  "errors": [],
+  "warnings": []
+}

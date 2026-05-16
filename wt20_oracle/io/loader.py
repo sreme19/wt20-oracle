@@ -50,15 +50,81 @@ def load_team(team_id: str) -> Dict[str, Any]:
     return {}
 
 
+def _build_name_id_map() -> Dict[str, str]:
+    """
+    Build a display-name → snake_case_id map from all squad JSONs.
+
+    Handles three name formats found in matchups.json:
+      - Full name:       "Harmanpreet Kaur"  → harmanpreet_kaur
+      - All initials:    "H Kaur"            → harmanpreet_kaur  (1 word before surname)
+      - Multi-initial:   "JI Rodrigues"      → jemimah_rodrigues (initials of all but last word)
+    """
+    name_map: Dict[str, str] = {}
+    players_dir = DATA_DIR / "players"
+    if not players_dir.exists():
+        return name_map
+
+    for squad_file in players_dir.glob("*.json"):
+        raw = _read(squad_file)
+        squad = raw if isinstance(raw, list) else raw.get("squad", [])
+        for p in squad:
+            pid: str = p.get("id", "")
+            full_name: str = p.get("name", "")
+            if not pid or not full_name:
+                continue
+
+            # Full name → id
+            name_map[full_name] = pid
+
+            parts = full_name.split()
+            if len(parts) < 2:
+                continue
+
+            # "H Kaur" style — first initial + surname
+            simple = parts[0][0].upper() + " " + parts[-1]
+            name_map.setdefault(simple, pid)
+
+            # "JI Rodrigues" style — initials of all but last word + surname
+            if len(parts) > 2:
+                multi_init = "".join(w[0].upper() for w in parts[:-1]) + " " + parts[-1]
+                name_map.setdefault(multi_init, pid)
+
+    return name_map
+
+
 def load_matchups() -> Dict[str, Any]:
-    """Load batter-vs-bowler matchup matrix keyed 'batter_id::bowler_id'."""
+    """
+    Load batter-vs-bowler matchup matrix keyed 'batter_id::bowler_id'.
+
+    matchups.json stores player names as display abbreviations ("S Mandhana",
+    "H Kaur", "JI Rodrigues"). This function normalises those to snake_case IDs
+    so downstream code can look up matchups using player IDs.
+    """
     path = DATA_DIR / "matchups.json"
     if not path.exists():
         return {}
-    data = _read(path)
-    if isinstance(data, dict):
-        return data
-    return {f"{m['batter_id']}::{m['bowler_id']}": m for m in data}
+    raw = _read(path)
+
+    # Support both list and pre-keyed dict formats
+    matchup_list = raw.get("matchups", raw) if isinstance(raw, dict) else raw
+    if not isinstance(matchup_list, list):
+        # Already keyed dict — return as-is (legacy format)
+        return matchup_list
+
+    name_map = _build_name_id_map()
+    result: Dict[str, Any] = {}
+
+    for m in matchup_list:
+        batter_display = m.get("batter_id", "")
+        bowler_display = m.get("bowler_id", "")
+
+        batter_id = name_map.get(batter_display, batter_display)
+        bowler_id = name_map.get(bowler_display, bowler_display)
+
+        key = f"{batter_id}::{bowler_id}"
+        result[key] = {**m, "batter_id": batter_id, "bowler_id": bowler_id}
+
+    return result
 
 
 def load_analyst_insights() -> Dict[str, Any]:

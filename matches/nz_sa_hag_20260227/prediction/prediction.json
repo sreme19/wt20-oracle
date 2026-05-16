@@ -1,0 +1,232 @@
+{
+  "match_id": "nz_sa_hag_20260227",
+  "fixture": {
+    "id": "nz_sa_hag_20260227",
+    "date": "2026-02-27",
+    "team_id": "new_zealand",
+    "opponent_id": "south_africa",
+    "venue_id": "hagley_oval_christchurch",
+    "series": "New Zealand vs South Africa T20I Series 2026",
+    "match_no": 5
+  },
+  "generated_at": "2026-05-16T06:03:48.346564Z",
+  "scenario": "unknown",
+  "pitch_difficulty": "easy",
+  "chase_penalty": 0,
+  "base_runs_estimate": 139.0,
+  "adjusted_runs_estimate": 139.0,
+  "runs_lower": 135.0,
+  "runs_upper": 143.0,
+  "win_probability": 0.517,
+  "win_probability_reasoning": "Batting first: standard conditions (toss not yet known \u2014 confidence reduced)",
+  "selected_xi": [
+    "melie_kerr",
+    "suzie_bates",
+    "sophie_devine",
+    "flora_devonshire",
+    "izzy_gaze",
+    "maddy_green",
+    "brooke_halliday",
+    "jess_kerr",
+    "nensi_patel",
+    "georgia_plimmer",
+    "izzy_sharp"
+  ],
+  "batting_order": [
+    "sophie_devine",
+    "izzy_gaze",
+    "izzy_sharp",
+    "suzie_bates",
+    "melie_kerr",
+    "georgia_plimmer",
+    "brooke_halliday",
+    "maddy_green",
+    "flora_devonshire",
+    "nensi_patel",
+    "jess_kerr"
+  ],
+  "bowling_plan": [
+    {
+      "player_id": "melie_kerr",
+      "player_name": "Melie Kerr",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.37,
+      "rationale": "Melie Kerr: powerplay specialist, economy 7.0"
+    },
+    {
+      "player_id": "melie_kerr",
+      "player_name": "Melie Kerr",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.37,
+      "rationale": "Melie Kerr: middle specialist, economy 6.1"
+    },
+    {
+      "player_id": "melie_kerr",
+      "player_name": "Melie Kerr",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.37,
+      "rationale": "Melie Kerr: death specialist, economy 7.0"
+    },
+    {
+      "player_id": "suzie_bates",
+      "player_name": "Suzie Bates",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.33,
+      "rationale": "Suzie Bates: powerplay specialist, economy 5.8"
+    },
+    {
+      "player_id": "suzie_bates",
+      "player_name": "Suzie Bates",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.33,
+      "rationale": "Suzie Bates: middle specialist, economy 6.2"
+    },
+    {
+      "player_id": "suzie_bates",
+      "player_name": "Suzie Bates",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.33,
+      "rationale": "Suzie Bates: death specialist, economy 6.8"
+    },
+    {
+      "player_id": "sophie_devine",
+      "player_name": "Sophie Devine",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.54,
+      "rationale": "Sophie Devine: powerplay specialist, economy 5.8 (pace pitch advantage)"
+    },
+    {
+      "player_id": "sophie_devine",
+      "player_name": "Sophie Devine",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.54,
+      "rationale": "Sophie Devine: middle specialist, economy 6.7 (pace pitch advantage)"
+    },
+    {
+      "player_id": "sophie_devine",
+      "player_name": "Sophie Devine",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.54,
+      "rationale": "Sophie Devine: death specialist, economy 7.6 (pace pitch advantage)"
+    },
+    {
+      "player_id": "flora_devonshire",
+      "player_name": "Flora Devonshire",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.81,
+      "rationale": "Flora Devonshire: assigned powerplay overs (pace pitch advantage)"
+    },
+    {
+      "player_id": "flora_devonshire",
+      "player_name": "Flora Devonshire",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.81,
+      "rationale": "Flora Devonshire: middle specialist, economy 5.8 (pace pitch advantage)"
+    },
+    {
+      "player_id": "flora_devonshire",
+      "player_name": "Flora Devonshire",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.81,
+      "rationale": "Flora Devonshire: death specialist, economy 6.0 (pace pitch advantage)"
+    },
+    {
+      "player_id": "maddy_green",
+      "player_name": "Maddy Green",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.02,
+      "rationale": "Maddy Green: assigned powerplay overs"
+    },
+    {
+      "player_id": "maddy_green",
+      "player_name": "Maddy Green",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.02,
+      "rationale": "Maddy Green: middle specialist, economy 5.7"
+    },
+    {
+      "player_id": "maddy_green",
+      "player_name": "Maddy Green",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.02,
+      "rationale": "Maddy Green: death specialist, economy 4.5"
+    },
+    {
+      "player_id": "jess_kerr",
+      "player_name": "Jess Kerr",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.03,
+      "rationale": "Jess Kerr: powerplay specialist, economy 5.3 (pace pitch advantage)"
+    },
+    {
+      "player_id": "jess_kerr",
+      "player_name": "Jess Kerr",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.03,
+      "rationale": "Jess Kerr: middle specialist, economy 6.0 (pace pitch advantage)"
+    },
+    {
+      "player_id": "jess_kerr",
+      "player_name": "Jess Kerr",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.03,
+      "rationale": "Jess Kerr: death specialist, economy 8.7 (pace pitch advantage)"
+    },
+    {
+      "player_id": "nensi_patel",
+      "player_name": "Nensi Patel",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 3.37,
+      "rationale": "Nensi Patel: powerplay specialist, economy 3.1"
+    },
+    {
+      "player_id": "nensi_patel",
+      "player_name": "Nensi Patel",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 3.37,
+      "rationale": "Nensi Patel: middle specialist, economy 3.5"
+    },
+    {
+      "player_id": "nensi_patel",
+      "player_name": "Nensi Patel",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 3.37,
+      "rationale": "Nensi Patel: death specialist, economy 3.4"
+    },
+    {
+      "player_id": "izzy_sharp",
+      "player_name": "Izzy Sharp",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 7.5,
+      "rationale": "Izzy Sharp: assigned middle overs (pace pitch advantage)"
+    }
+  ],
+  "key_matchups": [],
+  "tactical_flags": [
+    "use_pace_in_powerplay"
+  ],
+  "errors": [],
+  "warnings": []
+}

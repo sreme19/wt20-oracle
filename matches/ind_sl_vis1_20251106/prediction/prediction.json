@@ -1,0 +1,253 @@
+{
+  "match_id": "ind_sl_vis1_20251106",
+  "fixture": {
+    "id": "ind_sl_vis1_20251106",
+    "date": "2025-11-06",
+    "team_id": "india",
+    "opponent_id": "sri_lanka",
+    "venue_id": "aca_vdca_visakhapatnam",
+    "series": "India vs Sri Lanka T20I Series 2025",
+    "match_no": 1
+  },
+  "generated_at": "2026-05-16T06:03:45.104230Z",
+  "scenario": "unknown",
+  "pitch_difficulty": "moderate",
+  "chase_penalty": 0,
+  "base_runs_estimate": 137.7,
+  "adjusted_runs_estimate": 137.7,
+  "runs_lower": 133.7,
+  "runs_upper": 141.7,
+  "win_probability": 0.633,
+  "win_probability_reasoning": "Batting first: standard conditions (toss not yet known \u2014 confidence reduced)",
+  "selected_xi": [
+    "harmanpreet_kaur",
+    "smriti_mandhana",
+    "shafali_verma",
+    "jemimah_rodrigues",
+    "bharti_fulmali",
+    "deepti_sharma",
+    "richa_ghosh",
+    "shree_charani",
+    "kranti_gaud",
+    "shreyanka_patil",
+    "radha_yadav"
+  ],
+  "batting_order": [
+    "shafali_verma",
+    "harmanpreet_kaur",
+    "smriti_mandhana",
+    "richa_ghosh",
+    "jemimah_rodrigues",
+    "bharti_fulmali",
+    "deepti_sharma",
+    "shree_charani",
+    "shreyanka_patil",
+    "radha_yadav",
+    "kranti_gaud"
+  ],
+  "bowling_plan": [
+    {
+      "player_id": "harmanpreet_kaur",
+      "player_name": "Harmanpreet Kaur",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.72,
+      "rationale": "Harmanpreet Kaur: powerplay specialist, economy 6.9"
+    },
+    {
+      "player_id": "harmanpreet_kaur",
+      "player_name": "Harmanpreet Kaur",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.72,
+      "rationale": "Harmanpreet Kaur: middle specialist, economy 6.6"
+    },
+    {
+      "player_id": "harmanpreet_kaur",
+      "player_name": "Harmanpreet Kaur",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.72,
+      "rationale": "Harmanpreet Kaur: death specialist, economy 6.8"
+    },
+    {
+      "player_id": "shafali_verma",
+      "player_name": "Shafali Verma",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.33,
+      "rationale": "Shafali Verma: assigned powerplay overs"
+    },
+    {
+      "player_id": "shafali_verma",
+      "player_name": "Shafali Verma",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.33,
+      "rationale": "Shafali Verma: middle specialist, economy 6.7"
+    },
+    {
+      "player_id": "shafali_verma",
+      "player_name": "Shafali Verma",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.33,
+      "rationale": "Shafali Verma: death specialist, economy 5.7"
+    },
+    {
+      "player_id": "bharti_fulmali",
+      "player_name": "Bharti Fulmali",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 7.5,
+      "rationale": "Bharti Fulmali: assigned middle overs"
+    },
+    {
+      "player_id": "deepti_sharma",
+      "player_name": "Deepti Sharma",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.43,
+      "rationale": "Deepti Sharma: powerplay specialist, economy 5.7"
+    },
+    {
+      "player_id": "deepti_sharma",
+      "player_name": "Deepti Sharma",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.43,
+      "rationale": "Deepti Sharma: middle specialist, economy 6.1"
+    },
+    {
+      "player_id": "deepti_sharma",
+      "player_name": "Deepti Sharma",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.43,
+      "rationale": "Deepti Sharma: death specialist, economy 7.7"
+    },
+    {
+      "player_id": "shree_charani",
+      "player_name": "Shree Charani",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 7.62,
+      "rationale": "Shree Charani: powerplay specialist, economy 10.2"
+    },
+    {
+      "player_id": "shree_charani",
+      "player_name": "Shree Charani",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 7.62,
+      "rationale": "Shree Charani: middle specialist, economy 7.2"
+    },
+    {
+      "player_id": "shree_charani",
+      "player_name": "Shree Charani",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 7.62,
+      "rationale": "Shree Charani: death specialist, economy 7.8"
+    },
+    {
+      "player_id": "kranti_gaud",
+      "player_name": "Kranti Gaud",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 8.03,
+      "rationale": "Kranti Gaud: powerplay specialist, economy 7.5"
+    },
+    {
+      "player_id": "shreyanka_patil",
+      "player_name": "Shreyanka Patil",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 7.46,
+      "rationale": "Shreyanka Patil: powerplay specialist, economy 7.4"
+    },
+    {
+      "player_id": "shreyanka_patil",
+      "player_name": "Shreyanka Patil",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 7.46,
+      "rationale": "Shreyanka Patil: middle specialist, economy 7.2"
+    },
+    {
+      "player_id": "shreyanka_patil",
+      "player_name": "Shreyanka Patil",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 7.46,
+      "rationale": "Shreyanka Patil: death specialist, economy 8.0"
+    },
+    {
+      "player_id": "radha_yadav",
+      "player_name": "Radha Yadav",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.54,
+      "rationale": "Radha Yadav: powerplay specialist, economy 5.2"
+    },
+    {
+      "player_id": "radha_yadav",
+      "player_name": "Radha Yadav",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.54,
+      "rationale": "Radha Yadav: middle specialist, economy 6.6"
+    },
+    {
+      "player_id": "radha_yadav",
+      "player_name": "Radha Yadav",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.54,
+      "rationale": "Radha Yadav: death specialist, economy 7.0"
+    }
+  ],
+  "key_matchups": [
+    {
+      "type": "exploit",
+      "batter": "harmanpreet_kaur",
+      "bowler": "kavindi_pathirana",
+      "insight": "Strong: SR 145 over 11 balls, 0 dismissal(s)"
+    },
+    {
+      "type": "exploit",
+      "batter": "harmanpreet_kaur",
+      "bowler": "nilakshi_de_silva",
+      "insight": "Strong: SR 130 over 10 balls, 0 dismissal(s)"
+    },
+    {
+      "type": "exploit",
+      "batter": "smriti_mandhana",
+      "bowler": "kavindi_pathirana",
+      "insight": "Strong: SR 132 over 22 balls, 0 dismissal(s)"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "kavisha_dilhari",
+      "our_bowler": "harmanpreet_kaur",
+      "insight": "Threat: batter SR 160 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "kavisha_dilhari",
+      "our_bowler": "harmanpreet_kaur",
+      "insight": "Threat: batter SR 160 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "kavisha_dilhari",
+      "our_bowler": "harmanpreet_kaur",
+      "insight": "Threat: batter SR 160 against this bowler"
+    }
+  ],
+  "tactical_flags": [
+    "dew_factor_affects_grip_and_swing"
+  ],
+  "errors": [],
+  "warnings": []
+}

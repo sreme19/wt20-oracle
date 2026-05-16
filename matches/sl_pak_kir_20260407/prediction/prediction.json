@@ -1,0 +1,173 @@
+{
+  "match_id": "sl_pak_kir_20260407",
+  "fixture": {
+    "id": "sl_pak_kir_20260407",
+    "date": "2026-04-07",
+    "team_id": "sri_lanka",
+    "opponent_id": "pakistan",
+    "venue_id": "tribhuvan_university_kirtipur",
+    "series": "ICC Women's T20 WC Asia Qualifier 2026",
+    "match_no": 2
+  },
+  "generated_at": "2026-05-16T06:03:50.663246Z",
+  "scenario": "unknown",
+  "pitch_difficulty": "very_difficult",
+  "chase_penalty": 0,
+  "base_runs_estimate": 121.0,
+  "adjusted_runs_estimate": 121.0,
+  "runs_lower": 117.0,
+  "runs_upper": 125.0,
+  "win_probability": 0.42,
+  "win_probability_reasoning": "Batting first: standard conditions (toss not yet known \u2014 confidence reduced)",
+  "selected_xi": [
+    "chamari_athapaththu",
+    "nilakshi_de_silva",
+    "inoshi_perera",
+    "hasini_madavi",
+    "sugandika_kumari",
+    "kavisha_dilhari",
+    "rashmi_gunaratne",
+    "kavindi_pathirana",
+    "anushka_jayangani",
+    "oshadi_ranasinghe",
+    "udeshika_prabodhani"
+  ],
+  "batting_order": [
+    "chamari_athapaththu",
+    "hasini_madavi",
+    "anushka_jayangani",
+    "kavisha_dilhari",
+    "inoshi_perera",
+    "nilakshi_de_silva",
+    "rashmi_gunaratne",
+    "kavindi_pathirana",
+    "oshadi_ranasinghe",
+    "udeshika_prabodhani",
+    "sugandika_kumari"
+  ],
+  "bowling_plan": [
+    {
+      "player_id": "nilakshi_de_silva",
+      "player_name": "NND de Silva",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.08,
+      "rationale": "NND de Silva: powerplay specialist, economy 4.1 (spin pitch advantage)"
+    },
+    {
+      "player_id": "nilakshi_de_silva",
+      "player_name": "NND de Silva",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.08,
+      "rationale": "NND de Silva: middle specialist, economy 5.3 (spin pitch advantage)"
+    },
+    {
+      "player_id": "nilakshi_de_silva",
+      "player_name": "NND de Silva",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.08,
+      "rationale": "NND de Silva: death specialist, economy 5.5 (spin pitch advantage)"
+    },
+    {
+      "player_id": "sugandika_kumari",
+      "player_name": "BMSM Kumari",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.64,
+      "rationale": "BMSM Kumari: death specialist, economy 6.3"
+    },
+    {
+      "player_id": "rashmi_gunaratne",
+      "player_name": "RMVD Gunaratne",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 7.5,
+      "rationale": "RMVD Gunaratne: assigned middle overs"
+    },
+    {
+      "player_id": "kavindi_pathirana",
+      "player_name": "K Kavindi",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.85,
+      "rationale": "K Kavindi: powerplay specialist, economy 5.7 (spin pitch advantage)"
+    },
+    {
+      "player_id": "kavindi_pathirana",
+      "player_name": "K Kavindi",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.85,
+      "rationale": "K Kavindi: middle specialist, economy 6.5 (spin pitch advantage)"
+    },
+    {
+      "player_id": "kavindi_pathirana",
+      "player_name": "K Kavindi",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.85,
+      "rationale": "K Kavindi: death specialist, economy 5.6 (spin pitch advantage)"
+    },
+    {
+      "player_id": "oshadi_ranasinghe",
+      "player_name": "OU Ranasinghe",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.57,
+      "rationale": "OU Ranasinghe: death specialist, economy 7.6"
+    },
+    {
+      "player_id": "udeshika_prabodhani",
+      "player_name": "KDU Prabodhani",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.32,
+      "rationale": "KDU Prabodhani: death specialist, economy 6.6"
+    }
+  ],
+  "key_matchups": [
+    {
+      "type": "exploit",
+      "batter": "nilakshi_de_silva",
+      "bowler": "fatima_sana",
+      "insight": "Strong: SR 171 over 7 balls, 0 dismissal(s)"
+    },
+    {
+      "type": "exploit",
+      "batter": "chamari_athapaththu",
+      "bowler": "tuba_hassan",
+      "insight": "Favourable: SR 175 over 12 balls"
+    },
+    {
+      "type": "exploit",
+      "batter": "hasini_madavi",
+      "bowler": "sadia_iqbal",
+      "insight": "Even: SR 44 over 16 balls, 0 dismissal(s)"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "fatima_sana",
+      "our_bowler": "sugandika_kumari",
+      "insight": "Threat: batter SR 82 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "muneeba_ali",
+      "our_bowler": "udeshika_prabodhani",
+      "insight": "Threat: batter SR 93 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "aliya_riaz",
+      "our_bowler": "sugandika_kumari",
+      "insight": "Threat: batter SR 53 against this bowler"
+    }
+  ],
+  "tactical_flags": [
+    "prioritise_spinners_middle_overs"
+  ],
+  "errors": [],
+  "warnings": []
+}

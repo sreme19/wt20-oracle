@@ -130,8 +130,8 @@ def opponent_analysis_node(state: PreMatchState) -> Dict[str, Any]:
     batting_first_data = opponent_data.get("batting_first", {})
     chasing_data = opponent_data.get("chasing", {})
 
-    bf_wins = batting_first_data.get("wins", 0)
-    bf_matches = batting_first_data.get("matches", 1)
+    bf_wins = batting_first_data.get("wins") or 0
+    bf_matches = batting_first_data.get("matches") or 1
     bf_win_pct = bf_wins / max(bf_matches, 1)
 
     if bf_win_pct > 0.65:
@@ -139,8 +139,8 @@ def opponent_analysis_node(state: PreMatchState) -> Dict[str, Any]:
     elif bf_win_pct < 0.40:
         weaknesses.append(f"Weak when batting first ({bf_win_pct:.0%} win rate)")
 
-    chase_wins = chasing_data.get("wins", 0)
-    chase_matches = chasing_data.get("matches", 1)
+    chase_wins = chasing_data.get("wins") or 0
+    chase_matches = chasing_data.get("matches") or 1
     chase_win_pct = chase_wins / max(chase_matches, 1)
 
     if chase_win_pct > 0.65:
@@ -233,29 +233,15 @@ def prediction_node(state: PreMatchState) -> Dict[str, Any]:
 # Main pipeline runner
 # ---------------------------------------------------------------------------
 
-def run_pre_match_pipeline(
+def _run_pipeline_single(
     team_id: str,
     opponent_id: str,
     venue_id: str,
-    match_date: str = "",
-    toss_winner: Optional[str] = None,
-    toss_decision: Optional[str] = None,
+    match_date: str,
+    toss_winner: Optional[str],
+    toss_decision: Optional[str],
 ) -> PreMatchState:
-    """
-    Run the full pre-match pipeline and return completed state.
-
-    Args:
-        team_id: Our team (e.g. "india")
-        opponent_id: Opponent (e.g. "south_africa")
-        venue_id: Venue slug (e.g. "lords")
-        match_date: ISO date string (e.g. "2026-06-17")
-        toss_winner: team_id of toss winner, or None if not yet known
-        toss_decision: "bat_first" or "bowl_first", or None
-
-    Returns:
-        Completed PreMatchState with all fields populated
-    """
-    # Initialise state
+    """Internal: run the pipeline for one specific toss outcome."""
     state: PreMatchState = {
         "team_id": team_id,
         "opponent_id": opponent_id,
@@ -267,10 +253,9 @@ def run_pre_match_pipeline(
         "warnings": [],
     }
 
-    # Run nodes sequentially — each returns a dict that gets merged into state
     pipeline = [
         ("data", data_node),
-        ("scenario", scenario_node),           # ← CRITICAL: must run before prediction
+        ("scenario", scenario_node),
         ("opponent_analysis", opponent_analysis_node),
         ("squad_selector", squad_selector_node),
         ("batting_order", batting_order_node),
@@ -287,3 +272,129 @@ def run_pre_match_pipeline(
             state["errors"] = state.get("errors", []) + [f"{node_name}: {e}"]
 
     return state
+
+
+def run_pre_match_pipeline(
+    team_id: str,
+    opponent_id: str,
+    venue_id: str,
+    match_date: str = "",
+    toss_winner: Optional[str] = None,
+    toss_decision: Optional[str] = None,
+) -> PreMatchState:
+    """
+    Run the full pre-match pipeline and return completed state.
+
+    When toss_winner is known, runs one scenario path.
+    When toss_winner is None (pre-toss), runs BOTH scenarios (batting_first
+    and chasing) and blends the results 50/50 — because either outcome is
+    equally likely before the coin is flipped.
+
+    The returned state includes:
+      - `batting_first_scenario`: full state snapshot for batting-first path
+      - `chasing_scenario`: full state snapshot for chasing path
+      - Blended headline figures in the top-level fields (runs, win_probability)
+      - `scenario` = "pre_toss_blended" to distinguish from toss-known runs
+
+    Args:
+        team_id: Our team (e.g. "india")
+        opponent_id: Opponent (e.g. "south_africa")
+        venue_id: Venue slug (e.g. "lords")
+        match_date: ISO date string (e.g. "2026-06-17")
+        toss_winner: team_id of toss winner, or None if toss not yet known
+        toss_decision: "bat_first" or "bowl_first", or None
+
+    Returns:
+        Completed PreMatchState with all fields populated
+    """
+    if toss_winner is not None:
+        # Toss known — single deterministic path
+        return _run_pipeline_single(
+            team_id, opponent_id, venue_id, match_date, toss_winner, toss_decision
+        )
+
+    # ── Pre-toss: run both scenarios and blend ────────────────────────────────
+    #
+    # Scenario A: we win toss and bat first
+    state_bat = _run_pipeline_single(
+        team_id, opponent_id, venue_id, match_date,
+        toss_winner=team_id,
+        toss_decision="bat_first",
+    )
+
+    # Scenario B: opponent wins toss and bats first → we chase
+    state_chase = _run_pipeline_single(
+        team_id, opponent_id, venue_id, match_date,
+        toss_winner=opponent_id,
+        toss_decision="bat_first",
+    )
+
+    # ── Blend headline numbers (equal 50/50 weight) ───────────────────────────
+    bat_runs = state_bat.get("adjusted_runs_estimate") or 0.0
+    chase_runs = state_chase.get("adjusted_runs_estimate") or 0.0
+    bat_lower = state_bat.get("runs_lower") or 0.0
+    chase_lower = state_chase.get("runs_lower") or 0.0
+    bat_upper = state_bat.get("runs_upper") or 0.0
+    chase_upper = state_chase.get("runs_upper") or 0.0
+    bat_wp = state_bat.get("win_probability") or 0.5
+    chase_wp = state_chase.get("win_probability") or 0.5
+
+    blended_runs = round((bat_runs + chase_runs) / 2, 1)
+    blended_lower = round((bat_lower + chase_lower) / 2, 1)
+    blended_upper = round((bat_upper + chase_upper) / 2, 1)
+    blended_wp = round((bat_wp + chase_wp) / 2, 3)
+
+    # Combine errors / warnings from both paths
+    all_errors = (state_bat.get("errors") or []) + (state_chase.get("errors") or [])
+    all_warnings = (state_bat.get("warnings") or []) + (state_chase.get("warnings") or [])
+
+    # Base the merged state on the batting-first path (XI, bowling plan are
+    # scenario-independent at this stage), then overlay blended numbers
+    merged: PreMatchState = {
+        **state_bat,
+        # Blended headline fields
+        "scenario": "pre_toss_blended",
+        "adjusted_runs_estimate": blended_runs,
+        "base_runs_estimate": round((
+            (state_bat.get("base_runs_estimate") or 0.0) +
+            (state_chase.get("base_runs_estimate") or 0.0)
+        ) / 2, 1),
+        "runs_lower": blended_lower,
+        "runs_upper": blended_upper,
+        "win_probability": blended_wp,
+        "win_probability_reasoning": (
+            f"Pre-toss blend: batting-first WP={bat_wp:.1%}, "
+            f"chasing WP={chase_wp:.1%} → blended {blended_wp:.1%}"
+        ),
+        "chase_penalty": state_chase.get("chase_penalty", 0),
+        # Per-scenario snapshots for downstream analysis
+        "batting_first_scenario": {
+            "scenario": state_bat.get("scenario"),
+            "adjusted_runs_estimate": bat_runs,
+            "runs_lower": bat_lower,
+            "runs_upper": bat_upper,
+            "win_probability": bat_wp,
+            "pitch_difficulty": state_bat.get("pitch_difficulty"),
+            "chase_penalty": 0,
+            "tactical_flags": state_bat.get("tactical_flags"),
+            "strategy_brief": state_bat.get("strategy_brief"),
+        },
+        "chasing_scenario": {
+            "scenario": state_chase.get("scenario"),
+            "adjusted_runs_estimate": chase_runs,
+            "runs_lower": chase_lower,
+            "runs_upper": chase_upper,
+            "win_probability": chase_wp,
+            "pitch_difficulty": state_chase.get("pitch_difficulty"),
+            "chase_penalty": state_chase.get("chase_penalty", 0),
+            "tactical_flags": state_chase.get("tactical_flags"),
+            "strategy_brief": state_chase.get("strategy_brief"),
+        },
+        "errors": all_errors,
+        "warnings": all_warnings,
+        # Clear toss fields — not yet known
+        "toss_winner": None,
+        "toss_decision": None,
+    }
+
+    return merged
