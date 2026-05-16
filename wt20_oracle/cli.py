@@ -221,41 +221,83 @@ def run_prematch(args):
 
 
 def _print_text(state, verbose=False):
-    print(state.get("strategy_brief", "(No strategy brief generated)"))
+    team = state.get("team_id", "").upper()
+
+    # Check if we have both scenarios stored in state
+    batting_first = state.get("batting_first_scenario")
+    chasing = state.get("chasing_scenario")
+
+    if batting_first and chasing:
+        # Print both scenarios
+        _print_dual_scenario_text(team, batting_first, chasing, verbose)
+    else:
+        # Fallback to single scenario (old behavior)
+        print(state.get("strategy_brief", "(No strategy brief generated)"))
+
+        if verbose:
+            print("\n── DETAILED OUTPUT ──────────────────────────────────────────────────")
+            selected = state.get("selected_xi", [])
+            print(f"\nSELECTED XI ({len(selected)} players):")
+            for pid in selected:
+                print(f"  {pid}")
+
+            order = state.get("batting_order", [])
+            reasoning = state.get("batting_reasoning", {})
+            if order:
+                print("\nBATTING ORDER:")
+                for pos, pid in enumerate(order, 1):
+                    print(f"  {pos:2}. {pid:<30} {reasoning.get(pid, '')}")
+
+            plan = state.get("bowling_plan", [])
+            if plan:
+                print("\nBOWLING PLAN:")
+                for entry in plan:
+                    econ = entry.get("economy")
+                    econ_str = f"econ {econ:.1f}" if econ else ""
+                    print(f"  {entry.get('player_name', entry.get('player_id')):<25} "
+                          f"{entry.get('phase', '?'):<12} {econ_str}")
+
+            sr = state.get("scenario_report", {})
+            print(f"\nSCENARIO: {sr.get('message', state.get('scenario', '?'))}")
+            adj = state.get("adjusted_runs_estimate")
+            lo = state.get("runs_lower")
+            hi = state.get("runs_upper")
+            if adj:
+                print(f"Runs estimate: {adj:.0f} ({lo:.0f}–{hi:.0f})")
+            wp = state.get("win_probability")
+            if wp is not None:
+                print(f"Win probability: {wp:.0%}")
+
+
+def _print_dual_scenario_text(team: str, batting_first: dict, chasing: dict, verbose=False):
+    """Print both batting-first and chasing scenarios."""
+    print(f"\n{'═' * 75}")
+    print(f"SITUATION 1: If {team} bats first")
+    print(f"{'═' * 75}")
+    print(batting_first.get("strategy_brief", "(No strategy generated)"))
 
     if verbose:
-        print("\n── DETAILED OUTPUT ──────────────────────────────────────────────────")
-        selected = state.get("selected_xi", [])
-        print(f"\nSELECTED XI ({len(selected)} players):")
-        for pid in selected:
-            print(f"  {pid}")
+        wp_bf = batting_first.get("win_probability")
+        runs_bf = batting_first.get("adjusted_runs_estimate")
+        print(f"\nWin Probability: {wp_bf:.0%}" if wp_bf is not None else "")
+        if runs_bf:
+            lo = batting_first.get("runs_lower")
+            hi = batting_first.get("runs_upper")
+            print(f"Runs Estimate: {runs_bf:.0f} ({lo:.0f}–{hi:.0f})")
 
-        order = state.get("batting_order", [])
-        reasoning = state.get("batting_reasoning", {})
-        if order:
-            print("\nBATTING ORDER:")
-            for pos, pid in enumerate(order, 1):
-                print(f"  {pos:2}. {pid:<30} {reasoning.get(pid, '')}")
+    print(f"\n{'═' * 75}")
+    print(f"SITUATION 2: If {team} bowls first (chasing)")
+    print(f"{'═' * 75}")
+    print(chasing.get("strategy_brief", "(No strategy generated)"))
 
-        plan = state.get("bowling_plan", [])
-        if plan:
-            print("\nBOWLING PLAN:")
-            for entry in plan:
-                econ = entry.get("economy")
-                econ_str = f"econ {econ:.1f}" if econ else ""
-                print(f"  {entry.get('player_name', entry.get('player_id')):<25} "
-                      f"{entry.get('phase', '?'):<12} {econ_str}")
-
-        sr = state.get("scenario_report", {})
-        print(f"\nSCENARIO: {sr.get('message', state.get('scenario', '?'))}")
-        adj = state.get("adjusted_runs_estimate")
-        lo = state.get("runs_lower")
-        hi = state.get("runs_upper")
-        if adj:
-            print(f"Runs estimate: {adj:.0f} ({lo:.0f}–{hi:.0f})")
-        wp = state.get("win_probability")
-        if wp is not None:
-            print(f"Win probability: {wp:.0%}")
+    if verbose:
+        wp_chase = chasing.get("win_probability")
+        runs_chase = chasing.get("adjusted_runs_estimate")
+        print(f"\nWin Probability: {wp_chase:.0%}" if wp_chase is not None else "")
+        if runs_chase:
+            lo = chasing.get("runs_lower")
+            hi = chasing.get("runs_upper")
+            print(f"Runs Estimate: {runs_chase:.0f} ({lo:.0f}–{hi:.0f})")
 
 
 def _print_json(state):

@@ -16,7 +16,7 @@ Think of wt20-oracle as a **"cricket coach in your pocket"** that analyzes data 
 
 | Mode | When to Use | What You Get |
 |------|-------------|--------------|
-| **Pre-Match** | Night before or morning of match | ✓ Best 11 players to pick<br>✓ Optimal batting order<br>✓ Bowling strategy<br>✓ Tactical advice |
+| **Pre-Match** | Night before or morning of match | ✓ Best 11 players to pick<br>✓ Optimal batting order<br>✓ Bowling strategy<br>✓ **Dual-scenario output** (bat first + chase)<br>✓ Tactical advice |
 | **Live Match** | During the match (between overs) | ✓ Should we change bowler?<br>✓ Where to place fielders?<br>✓ Send aggressive batter?<br>✓ Win probability % |
 
 ---
@@ -126,7 +126,9 @@ Five "experts" make decisions:
   4. Bowling Plan Creator: "Who bowls when?"
   5. Narrator: "Explain this in plain English"
           ↓
-Output: Full game plan
+Output: Full game plan for BOTH scenarios
+  → Situation 1: If we bat first  (target score, win %)
+  → Situation 2: If we bowl first (chase plan, win %)
 ```
 
 ### Live Match Mode: Fast Decisions
@@ -162,19 +164,33 @@ Answer: "Yes, bring on Jhulan (she has history vs this batter)"
 ## 🎯 Real-World Example
 
 ### Pre-Match Scenario
+
+The system always outputs **both scenarios** in a single run — you don't need to know the toss outcome in advance:
+
 ```
 India vs Australia at Edgbaston (June 17, 2026)
 
-System Analysis:
-  • Smriti Mandhana: 125 strike rate vs Australia (good!)
-  • Alyssa Healy: Vulnerable to leg-spin (Ravindra)
-  • Australia's death bowling is strong (avoid risky lower order)
+═══════════════════════════════════════════════════════════════
+SITUATION 1: If INDIA bats first
+═══════════════════════════════════════════════════════════════
+TARGET: Set a score of ~158 runs.
+  → Aggressive powerplay (50+ in 6 overs)
+  → Consolidate middle (overs 7–15)
+  → Accelerate death (50+ in last 5 overs)
 
-Recommendation:
-  ✓ Pick Harmanpreet (captain, proven vs Australia)
-  ✓ Order: Shafali (fast) → Smriti (consistent) → Harmanpreet (flexible)
-  ✓ Bowling: Pace upfront, Ravindra in middle to target Healy
-  ✓ Strategy: Accumulate 160+ target to take pressure off bowlers
+WIN PROBABILITY: 63% (GOOD)
+Top 4: Shafali → Smriti → Harmanpreet → Jemimah
+
+═══════════════════════════════════════════════════════════════
+SITUATION 2: If INDIA bowls first (chasing)
+═══════════════════════════════════════════════════════════════
+CHASE PLAN: Need ~142 runs to win.
+  → Patient powerplay — don't lose more than 2 wickets
+  → Accelerate from over 12 if on track
+  → Keep wickets in hand for last 5 overs push
+
+WIN PROBABILITY: 58% (FAIR)
+Top 4: Smriti → Shafali → Harmanpreet → Jemimah
 ```
 
 ### Live Match Example

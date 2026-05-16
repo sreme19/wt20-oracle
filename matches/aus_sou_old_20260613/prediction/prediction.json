@@ -1,0 +1,318 @@
+{
+  "team": "australia",
+  "opponent": "south_africa",
+  "venue": "old_trafford",
+  "scenario": "pre_toss_blended",
+  "pitch_difficulty": "moderate",
+  "chase_penalty": -20,
+  "selected_xi": [
+    "lucy_hamilton",
+    "grace_harris",
+    "georgia_wareham",
+    "ellyse_perry",
+    "phoebe_litchfield",
+    "georgia_voll",
+    "ash_gardner",
+    "megan_schutt",
+    "beth_mooney",
+    "sophie_molineux",
+    "annabel_sutherland"
+  ],
+  "batting_order": [
+    "beth_mooney",
+    "ellyse_perry",
+    "phoebe_litchfield",
+    "georgia_voll",
+    "grace_harris",
+    "ash_gardner",
+    "annabel_sutherland",
+    "georgia_wareham",
+    "lucy_hamilton",
+    "sophie_molineux",
+    "megan_schutt"
+  ],
+  "bowling_plan": [
+    {
+      "player_id": "lucy_hamilton",
+      "player_name": "Lucy Hamilton",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.48,
+      "rationale": "Lucy Hamilton: powerplay specialist, economy 6.4"
+    },
+    {
+      "player_id": "lucy_hamilton",
+      "player_name": "Lucy Hamilton",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.48,
+      "rationale": "Lucy Hamilton: middle specialist, economy 5.9"
+    },
+    {
+      "player_id": "lucy_hamilton",
+      "player_name": "Lucy Hamilton",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.48,
+      "rationale": "Lucy Hamilton: death specialist, economy 7.5"
+    },
+    {
+      "player_id": "grace_harris",
+      "player_name": "Grace Harris",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.88,
+      "rationale": "Grace Harris: powerplay specialist, economy 6.9"
+    },
+    {
+      "player_id": "grace_harris",
+      "player_name": "Grace Harris",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.88,
+      "rationale": "Grace Harris: middle specialist, economy 6.3"
+    },
+    {
+      "player_id": "grace_harris",
+      "player_name": "Grace Harris",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.88,
+      "rationale": "Grace Harris: death specialist, economy 8.4"
+    },
+    {
+      "player_id": "georgia_wareham",
+      "player_name": "Georgia Wareham",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.49,
+      "rationale": "Georgia Wareham: powerplay specialist, economy 5.8"
+    },
+    {
+      "player_id": "georgia_wareham",
+      "player_name": "Georgia Wareham",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.49,
+      "rationale": "Georgia Wareham: middle specialist, economy 6.5"
+    },
+    {
+      "player_id": "georgia_wareham",
+      "player_name": "Georgia Wareham",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.49,
+      "rationale": "Georgia Wareham: death specialist, economy 6.9"
+    },
+    {
+      "player_id": "ellyse_perry",
+      "player_name": "Ellyse Perry",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.13,
+      "rationale": "Ellyse Perry: powerplay specialist, economy 5.6"
+    },
+    {
+      "player_id": "ellyse_perry",
+      "player_name": "Ellyse Perry",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.13,
+      "rationale": "Ellyse Perry: middle specialist, economy 6.5"
+    },
+    {
+      "player_id": "ellyse_perry",
+      "player_name": "Ellyse Perry",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.13,
+      "rationale": "Ellyse Perry: death specialist, economy 7.4"
+    },
+    {
+      "player_id": "ash_gardner",
+      "player_name": "Ash Gardner",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 7.02,
+      "rationale": "Ash Gardner: powerplay specialist, economy 6.4"
+    },
+    {
+      "player_id": "ash_gardner",
+      "player_name": "Ash Gardner",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 7.02,
+      "rationale": "Ash Gardner: middle specialist, economy 6.9"
+    },
+    {
+      "player_id": "ash_gardner",
+      "player_name": "Ash Gardner",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 7.02,
+      "rationale": "Ash Gardner: death specialist, economy 8.0"
+    },
+    {
+      "player_id": "megan_schutt",
+      "player_name": "Megan Schutt",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.92,
+      "rationale": "Megan Schutt: powerplay specialist, economy 5.0"
+    },
+    {
+      "player_id": "megan_schutt",
+      "player_name": "Megan Schutt",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.92,
+      "rationale": "Megan Schutt: middle specialist, economy 6.8"
+    },
+    {
+      "player_id": "megan_schutt",
+      "player_name": "Megan Schutt",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.92,
+      "rationale": "Megan Schutt: death specialist, economy 7.4"
+    },
+    {
+      "player_id": "sophie_molineux",
+      "player_name": "Sophie Molineux",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.4,
+      "rationale": "Sophie Molineux: powerplay specialist, economy 6.1"
+    },
+    {
+      "player_id": "sophie_molineux",
+      "player_name": "Sophie Molineux",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.4,
+      "rationale": "Sophie Molineux: middle specialist, economy 5.8"
+    },
+    {
+      "player_id": "sophie_molineux",
+      "player_name": "Sophie Molineux",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.4,
+      "rationale": "Sophie Molineux: death specialist, economy 7.6"
+    },
+    {
+      "player_id": "annabel_sutherland",
+      "player_name": "Annabel Sutherland",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.4,
+      "rationale": "Annabel Sutherland: powerplay specialist, economy 6.0"
+    },
+    {
+      "player_id": "annabel_sutherland",
+      "player_name": "Annabel Sutherland",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.4,
+      "rationale": "Annabel Sutherland: middle specialist, economy 6.1"
+    },
+    {
+      "player_id": "annabel_sutherland",
+      "player_name": "Annabel Sutherland",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.4,
+      "rationale": "Annabel Sutherland: death specialist, economy 7.3"
+    }
+  ],
+  "runs_estimate": {
+    "base": 142.6,
+    "adjusted": 135.8,
+    "lower": 133.1,
+    "upper": 137.1
+  },
+  "win_probability": 0.561,
+  "strategy_brief": "STRATEGY BRIEF: AUSTRALIA vs SOUTH_AFRICA at Emirates Old Trafford\n======================================================================\n\nTOSS: australia chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~143 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 60% (FAIR)\n\nPITCH: Balanced\n\nBATTING ORDER (Top 4):\n  1. Beth Mooney (SR 124)\n  2. Ellyse Perry (SR 114)\n  3. Phoebe Litchfield (SR 125)\n  4. Georgia Voll (SR 124)\n\nBOWLING PLAN:\n  Powerplay: Megan Schutt, Ellyse Perry, Grace Harris, Annabel Sutherland, Ash Gardner, Georgia Wareham, Lucy Hamilton, Sophie Molineux\n  Middle: Megan Schutt, Ellyse Perry, Grace Harris, Annabel Sutherland, Ash Gardner, Georgia Wareham, Lucy Hamilton, Sophie Molineux\n  Death: Megan Schutt, Ellyse Perry, Grace Harris, Annabel Sutherland, Ash Gardner, Georgia Wareham, Lucy Hamilton, Sophie Molineux\n\nTACTICAL NOTES:\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================",
+  "key_matchups": [
+    {
+      "type": "exploit",
+      "batter": "ash_gardner",
+      "bowler": "ayabonga_khaka",
+      "insight": "Favourable: SR 67 over 6 balls"
+    },
+    {
+      "type": "exploit",
+      "batter": "georgia_voll",
+      "bowler": "shabnim_ismail",
+      "insight": "Favourable: SR 142 over 26 balls"
+    },
+    {
+      "type": "exploit",
+      "batter": "phoebe_litchfield",
+      "bowler": "marizanne_kapp",
+      "insight": "Favourable: SR 108 over 65 balls"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "laura_wolvaardt",
+      "our_bowler": "ash_gardner",
+      "insight": "Threat: batter SR 129 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "laura_wolvaardt",
+      "our_bowler": "ash_gardner",
+      "insight": "Threat: batter SR 129 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "laura_wolvaardt",
+      "our_bowler": "ash_gardner",
+      "insight": "Threat: batter SR 129 against this bowler"
+    }
+  ],
+  "tactical_flags": [
+    "set_par_total_conservative_approach_first_6_overs"
+  ],
+  "scenario_report": {
+    "status": "complete",
+    "toss_winner": "australia",
+    "toss_decision": "bat_first",
+    "scenario": "batting_first",
+    "prediction_confidence": "high",
+    "message": "Toss known: australia chose to bat_first"
+  },
+  "generated_at": "2026-05-16T14:33:52.044020Z",
+  "errors": [],
+  "warnings": [
+    "MILP infeasible \u2014 used fallback utility sort for XI selection",
+    "MILP infeasible \u2014 used fallback utility sort for XI selection"
+  ],
+  "batting_first_scenario": {
+    "scenario": "batting_first",
+    "adjusted_runs_estimate": 142.6,
+    "runs_lower": 140.6,
+    "runs_upper": 144.6,
+    "win_probability": 0.607,
+    "pitch_difficulty": "moderate",
+    "chase_penalty": 0,
+    "tactical_flags": [
+      "set_par_total_conservative_approach_first_6_overs"
+    ],
+    "strategy_brief": "STRATEGY BRIEF: AUSTRALIA vs SOUTH_AFRICA at Emirates Old Trafford\n======================================================================\n\nTOSS: australia chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~143 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 60% (FAIR)\n\nPITCH: Balanced\n\nBATTING ORDER (Top 4):\n  1. Beth Mooney (SR 124)\n  2. Ellyse Perry (SR 114)\n  3. Phoebe Litchfield (SR 125)\n  4. Georgia Voll (SR 124)\n\nBOWLING PLAN:\n  Powerplay: Megan Schutt, Ellyse Perry, Grace Harris, Annabel Sutherland, Ash Gardner, Georgia Wareham, Lucy Hamilton, Sophie Molineux\n  Middle: Megan Schutt, Ellyse Perry, Grace Harris, Annabel Sutherland, Ash Gardner, Georgia Wareham, Lucy Hamilton, Sophie Molineux\n  Death: Megan Schutt, Ellyse Perry, Grace Harris, Annabel Sutherland, Ash Gardner, Georgia Wareham, Lucy Hamilton, Sophie Molineux\n\nTACTICAL NOTES:\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
+  },
+  "chasing_scenario": {
+    "scenario": "chasing",
+    "adjusted_runs_estimate": 129.1,
+    "runs_lower": 125.6,
+    "runs_upper": 129.6,
+    "win_probability": 0.515,
+    "pitch_difficulty": "moderate",
+    "chase_penalty": -20,
+    "tactical_flags": [
+      "chase_scenario_requires_calculated_aggression",
+      "monitor_required_run_rate_per_phase"
+    ],
+    "strategy_brief": "STRATEGY BRIEF: AUSTRALIA vs SOUTH_AFRICA at Emirates Old Trafford\n======================================================================\n\nTOSS: south_africa chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~129 runs to win.\n  (Chase penalty applied: -20 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 51% (FAIR)\n\nPITCH: Balanced\n\nBATTING ORDER (Top 4):\n  1. Beth Mooney (SR 124)\n  2. Ellyse Perry (SR 114)\n  3. Phoebe Litchfield (SR 125)\n  4. Georgia Voll (SR 124)\n\nBOWLING PLAN:\n  Powerplay: Megan Schutt, Ellyse Perry, Grace Harris, Annabel Sutherland, Ash Gardner, Georgia Wareham, Lucy Hamilton, Sophie Molineux\n  Middle: Megan Schutt, Ellyse Perry, Grace Harris, Annabel Sutherland, Ash Gardner, Georgia Wareham, Lucy Hamilton, Sophie Molineux\n  Death: Megan Schutt, Ellyse Perry, Grace Harris, Annabel Sutherland, Ash Gardner, Georgia Wareham, Lucy Hamilton, Sophie Molineux\n\nTACTICAL NOTES:\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n\n======================================================================"
+  }
+}
