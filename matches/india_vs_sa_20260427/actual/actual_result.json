@@ -1,0 +1,292 @@
+{
+  "match_id": "20260427_india_vs_southafrica_benoni",
+  "date": "2026-04-27T14:00:00Z",
+  "type": "T20I",
+  "series": "International T20",
+  "venue": {
+    "name": "Willowmoore Park Cricket Stadium",
+    "city": "Benoni",
+    "country": "South Africa"
+  },
+  "teams": {
+    "team1": "India",
+    "team2": "South Africa"
+  },
+  "toss": {
+    "winner": "India",
+    "decision": "bat"
+  },
+  "result": {
+    "status": "completed",
+    "winner": "team1",
+    "margin": {
+      "value": 5,
+      "unit": "runs"
+    },
+    "batting_first": "team1",
+    "innings": [
+      {
+        "team": "India",
+        "runs": 164,
+        "wickets": 6,
+        "overs": 20.0
+      },
+      {
+        "team": "South Africa",
+        "runs": 159,
+        "wickets": 8,
+        "overs": 20.0
+      }
+    ]
+  },
+  "playing_xi": [
+    "Harmanpreet Kaur",
+    "Shafali Verma",
+    "Smriti Mandhana",
+    "Jemimah Rodrigues",
+    "Pooja Vastrakar",
+    "Deepti Sharma",
+    "Yastika Bhatia",
+    "Renuka Singh",
+    "Arundhati Reddy",
+    "Radha Yadav",
+    "Meghna Singh"
+  ],
+  "actual_batting_order": [
+    {
+      "name": "Shafali Verma",
+      "position": 1,
+      "runs": 42,
+      "balls": 28,
+      "strikeRate": 150.0,
+      "fours": 4,
+      "sixes": 2
+    },
+    {
+      "name": "Smriti Mandhana",
+      "position": 2,
+      "runs": 16,
+      "balls": 15,
+      "strikeRate": 106.7,
+      "fours": 2,
+      "sixes": 0
+    },
+    {
+      "name": "Jemimah Rodrigues",
+      "position": 3,
+      "runs": 28,
+      "balls": 24,
+      "strikeRate": 116.7,
+      "fours": 3,
+      "sixes": 0
+    },
+    {
+      "name": "Pooja Vastrakar",
+      "position": 4,
+      "runs": 18,
+      "balls": 16,
+      "strikeRate": 112.5,
+      "fours": 1,
+      "sixes": 1
+    },
+    {
+      "name": "Deepti Sharma",
+      "position": 5,
+      "runs": 50,
+      "balls": 32,
+      "strikeRate": 156.3,
+      "fours": 3,
+      "sixes": 3
+    },
+    {
+      "name": "Yastika Bhatia",
+      "position": 6,
+      "runs": 10,
+      "balls": 8,
+      "strikeRate": 125.0,
+      "fours": 0,
+      "sixes": 1
+    }
+  ],
+  "actual_bowling_phases": {
+    "powerplay": [
+      {
+        "bowler": "Shabnim Ismail",
+        "overs": 2,
+        "runs": 28,
+        "wickets": 0,
+        "maidens": 0
+      },
+      {
+        "bowler": "Michelle Coetzee",
+        "overs": 2,
+        "runs": 18,
+        "wickets": 1,
+        "maidens": 0
+      }
+    ],
+    "middle_overs": [
+      {
+        "bowler": "Nadine de Klerk",
+        "overs": 2,
+        "runs": 18,
+        "wickets": 0,
+        "maidens": 0
+      },
+      {
+        "bowler": "Nonkululeko Mlaba",
+        "overs": 2,
+        "runs": 22,
+        "wickets": 1,
+        "maidens": 0
+      },
+      {
+        "bowler": "Michelle Coetzee",
+        "overs": 2,
+        "runs": 16,
+        "wickets": 0,
+        "maidens": 0
+      }
+    ],
+    "death": [
+      {
+        "bowler": "Shabnim Ismail",
+        "overs": 2,
+        "runs": 20,
+        "wickets": 2,
+        "maidens": 0
+      },
+      {
+        "bowler": "Ayanda Dlomo",
+        "overs": 2,
+        "runs": 26,
+        "wickets": 1,
+        "maidens": 0
+      }
+    ]
+  },
+  "sa_batting_order": [
+    {
+      "name": "Alyssa Harris",
+      "position": 1,
+      "runs": 35,
+      "balls": 26,
+      "strikeRate": 134.6,
+      "fours": 4,
+      "sixes": 1
+    },
+    {
+      "name": "Laura Wolvaardt",
+      "position": 2,
+      "runs": 8,
+      "balls": 10,
+      "strikeRate": 80.0,
+      "fours": 1,
+      "sixes": 0
+    },
+    {
+      "name": "Mignon du Preez",
+      "position": 3,
+      "runs": 22,
+      "balls": 18,
+      "strikeRate": 122.2,
+      "fours": 2,
+      "sixes": 1
+    },
+    {
+      "name": "Suné Luus",
+      "position": 4,
+      "runs": 32,
+      "balls": 28,
+      "strikeRate": 114.3,
+      "fours": 2,
+      "sixes": 2
+    },
+    {
+      "name": "Marizanne Kapp",
+      "position": 5,
+      "runs": 48,
+      "balls": 34,
+      "strikeRate": 141.2,
+      "fours": 4,
+      "sixes": 1
+    },
+    {
+      "name": "Sinalo Jafta",
+      "position": 6,
+      "runs": 14,
+      "balls": 10,
+      "strikeRate": 140.0,
+      "fours": 1,
+      "sixes": 1
+    }
+  ],
+  "sa_bowling_analysis": {
+    "ismail": {
+      "overs": 4,
+      "runs": 48,
+      "wickets": 2,
+      "economy": 12.0,
+      "maidens": 0
+    },
+    "coetzee": {
+      "overs": 4,
+      "runs": 34,
+      "wickets": 1,
+      "economy": 8.5,
+      "maidens": 0
+    },
+    "de_klerk": {
+      "overs": 2,
+      "runs": 18,
+      "wickets": 0,
+      "economy": 9.0,
+      "maidens": 0
+    },
+    "mlaba": {
+      "overs": 2,
+      "runs": 22,
+      "wickets": 1,
+      "economy": 11.0,
+      "maidens": 0
+    },
+    "dlomo": {
+      "overs": 2,
+      "runs": 26,
+      "wickets": 1,
+      "economy": 13.0,
+      "maidens": 0
+    }
+  },
+  "match_summary": {
+    "toss_impact": "India won toss, chose to bat - correct decision on pace-friendly pitch",
+    "key_moments": [
+      {
+        "over": 6,
+        "event": "Shafali completes aggressive powerplay - 42 off 28 - exceeds expectations"
+      },
+      {
+        "over": 15,
+        "event": "Deepti arrives at crease, India at 86/4 - 25 runs needed in 5 overs"
+      },
+      {
+        "over": 20,
+        "event": "Deepti finishes with 50 off 32 - India reaches 164"
+      },
+      {
+        "over": 5,
+        "event": "Harris gets 35 off 26 - SA off to perfect chase start"
+      },
+      {
+        "over": 15,
+        "event": "SA at 115/3 - need 49 off 5 overs - within reach"
+      },
+      {
+        "over": 20,
+        "event": "Renuka bowls tight death overs, takes 2 wickets - India wins by 5"
+      }
+    ],
+    "weather_impact": "Clear skies, 28°C, slight wind favoring fast bowlers",
+    "pitch_behavior": "Pitched as expected - hard and bouncy. Broke significantly in death overs. Spinners struggled (18 and 22 runs in 2 overs each)."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "team_id": "india",
+  "team_name": "India",
+  "format": "T20I",
+  "region": "Asia",
+  "recent_form": {
+    "last_5_matches": [
+      {
+        "date": "2026-04-27",
+        "opponent": "South Africa",
+        "result": "W",
+        "runs_for": 164,
+        "runs_against": 159,
+        "venue": "Willowmoore Park"
+      },
+      {
+        "date": "2026-04-20",
+        "opponent": "Bangladesh",
+        "result": "W",
+        "runs_for": 172,
+        "runs_against": 145,
+        "venue": "Arun Jaitley Stadium"
+      }
+    ],
+    "win_rate": 0.72,
+    "avg_runs_for": 165,
+    "avg_runs_against": 148
+  },
+  "squad_profile": {
+    "batting_strength": "strong",
+    "bowling_strength": "strong",
+    "fielding_strength": "strong",
+    "key_players": [
+      {
+        "name": "Harmanpreet Kaur",
+        "role": "Captain, All-rounder",
+        "specialty": "Batting"
+      },
+      {
+        "name": "Shafali Verma",
+        "role": "Opener, Batter",
+        "specialty": "Aggressive batting"
+      },
+      {
+        "name": "Smriti Mandhana",
+        "role": "Batter",
+        "specialty": "Consistent batting"
+      },
+      {
+        "name": "Deepti Sharma",
+        "role": "All-rounder",
+        "specialty": "Finishing, Spin bowling"
+      },
+      {
+        "name": "Renuka Singh",
+        "role": "Fast bowler",
+        "specialty": "Pace bowling, Powerplay"
+      },
+      {
+        "name": "Arundhati Reddy",
+        "role": "Fast bowler",
+        "specialty": "Death bowling"
+      }
+    ]
+  },
+  "tactical_preferences": {
+    "batting_philosophy": "aggressive_early_games",
+    "bowling_strategy": "pace_first",
+    "powerplay_approach": "attack",
+    "death_bowling": "aggressive",
+    "toss_preference": "bat_first"
+  },
+  "home_away_split": {
+    "home_venues": ["Arun Jaitley Stadium", "MA Chidambaram Stadium", "Rajiv Gandhi Oval"],
+    "away_performance": "0.68",
+    "home_performance": "0.78"
+  },
+  "metadata": {
+    "icc_ranking": 3,
+    "last_updated": "2026-05-16",
+    "matches_played": 128,
+    "wins": 92,
+    "losses": 36
+  }
+}

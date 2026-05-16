@@ -1,0 +1,101 @@
+{
+  "venues": {
+    "willowmoore_park": {
+      "venue_id": "willowmoore_park",
+      "name": "Willowmoore Park Cricket Stadium",
+      "city": "Benoni",
+      "country": "South Africa",
+      "coordinates": {
+        "latitude": -26.1667,
+        "longitude": 28.3333
+      },
+      "pitch_characteristics": {
+        "hardness": 8.5,
+        "grass_coverage": 35,
+        "bounce": "high",
+        "pace_friendly": 8.0,
+        "spin_friendly": 5.5,
+        "dryness_level": 7.0
+      },
+      "historical_stats": {
+        "avg_first_innings_runs": 162,
+        "avg_second_innings_runs": 155,
+        "avg_wickets_lost": 6.2,
+        "win_rate_batting_first": 0.58,
+        "matches_analyzed": 24
+      },
+      "surface_trend": {
+        "observations": [
+          {
+            "date": "2026-04-20",
+            "observation": "Pitch hardened significantly, high bounce expected"
+          },
+          {
+            "date": "2026-04-15",
+            "observation": "Fresh pitch preparation, good for pace bowling"
+          }
+        ]
+      },
+      "metadata": {
+        "last_updated": "2026-04-27T15:00:00Z",
+        "data_source": "match_analyst",
+        "reliability_score": 0.92
+      }
+    },
+    "arun_jaitley_stadium": {
+      "venue_id": "arun_jaitley_stadium",
+      "name": "Arun Jaitley Stadium",
+      "city": "Delhi",
+      "country": "India",
+      "coordinates": {
+        "latitude": 28.5593,
+        "longitude": 77.1895
+      },
+      "pitch_characteristics": {
+        "hardness": 7.5,
+        "grass_coverage": 45,
+        "bounce": "medium",
+        "pace_friendly": 6.5,
+        "spin_friendly": 6.5,
+        "dryness_level": 5.0
+      },
+      "historical_stats": {
+        "avg_first_innings_runs": 165,
+        "avg_second_innings_runs": 158,
+        "avg_wickets_lost": 5.8,
+        "win_rate_batting_first": 0.55,
+        "matches_analyzed": 28
+      }
+    },
+    "lord_s": {
+      "venue_id": "lords",
+      "name": "Lord's Cricket Ground",
+      "city": "London",
+      "country": "England",
+      "coordinates": {
+        "latitude": 51.2844,
+        "longitude": -0.1699
+      },
+      "pitch_characteristics": {
+        "hardness": 7.0,
+        "grass_coverage": 60,
+        "bounce": "medium",
+        "pace_friendly": 7.0,
+        "spin_friendly": 4.5,
+        "dryness_level": 4.0
+      },
+      "historical_stats": {
+        "avg_first_innings_runs": 158,
+        "avg_second_innings_runs": 152,
+        "avg_wickets_lost": 6.5,
+        "win_rate_batting_first": 0.52,
+        "matches_analyzed": 32
+      }
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2026-05-16",
+    "total_venues": 3
+  }
+}
