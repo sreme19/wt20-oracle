@@ -1,129 +1,159 @@
 {
-  "generated_at": "2026-05-16T12:42:20.951217Z",
+  "generated_at": "2026-05-16T12:58:14.098737Z",
   "total": 30,
-  "ok": 0,
-  "skipped": 30,
+  "ok": 30,
+  "skipped": 0,
   "errors": 0,
   "results": [
     {
-      "status": "skipped",
-      "id": "ind_sl_vis1_20251106"
+      "status": "ok",
+      "id": "ind_sl_vis1_20251106",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "ind_sl_vis2_20251108"
+      "status": "ok",
+      "id": "ind_sl_vis2_20251108",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "ind_sl_tvm1_20251112"
+      "status": "ok",
+      "id": "ind_sl_tvm1_20251112",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "ind_sl_tvm2_20251114"
+      "status": "ok",
+      "id": "ind_sl_tvm2_20251114",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "ind_sl_tvm3_20251116"
+      "status": "ok",
+      "id": "ind_sl_tvm3_20251116",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "aus_ind_scg_20260118"
+      "status": "ok",
+      "id": "aus_ind_scg_20260118",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "aus_ind_can_20260121"
+      "status": "ok",
+      "id": "aus_ind_can_20260121",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "aus_ind_adl_20260124"
+      "status": "ok",
+      "id": "aus_ind_adl_20260124",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "wi_sl_gren1_20260201"
+      "status": "ok",
+      "id": "wi_sl_gren1_20260201",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "wi_sl_gren2_20260203"
+      "status": "ok",
+      "id": "wi_sl_gren2_20260203",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "wi_sl_gren3_20260205"
+      "status": "ok",
+      "id": "wi_sl_gren3_20260205",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "nz_sa_bay_20260215"
+      "status": "ok",
+      "id": "nz_sa_bay_20260215",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "nz_sa_sed_20260218"
+      "status": "ok",
+      "id": "nz_sa_sed_20260218",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "nz_sa_eden_20260221"
+      "status": "ok",
+      "id": "nz_sa_eden_20260221",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "nz_sa_sky_20260224"
+      "status": "ok",
+      "id": "nz_sa_sky_20260224",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "nz_sa_hag_20260227"
+      "status": "ok",
+      "id": "nz_sa_hag_20260227",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "sa_ind_dur1_20260315"
+      "status": "ok",
+      "id": "sa_ind_dur1_20260315",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "sa_ind_dur2_20260318"
+      "status": "ok",
+      "id": "sa_ind_dur2_20260318",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "sa_ind_wan1_20260322"
+      "status": "ok",
+      "id": "sa_ind_wan1_20260322",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "sa_ind_wan2_20260325"
+      "status": "ok",
+      "id": "sa_ind_wan2_20260325",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "sa_ind_cen_20260427"
+      "status": "ok",
+      "id": "sa_ind_cen_20260427",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "ban_sl_syl1_20260301"
+      "status": "ok",
+      "id": "ban_sl_syl1_20260301",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "ban_sl_syl2_20260303"
+      "status": "ok",
+      "id": "ban_sl_syl2_20260303",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "ban_sl_syl3_20260305"
+      "status": "ok",
+      "id": "ban_sl_syl3_20260305",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "ban_pak_kir_20260405"
+      "status": "ok",
+      "id": "ban_pak_kir_20260405",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "sl_pak_kir_20260407"
+      "status": "ok",
+      "id": "sl_pak_kir_20260407",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "ban_sl_mul_20260410"
+      "status": "ok",
+      "id": "ban_sl_mul_20260410",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "eng_nz_oval_20260501"
+      "status": "ok",
+      "id": "eng_nz_oval_20260501",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "eng_nz_rose_20260504"
+      "status": "ok",
+      "id": "eng_nz_rose_20260504",
+      "errors": []
     },
     {
-      "status": "skipped",
-      "id": "eng_nz_hd_20260507"
+      "status": "ok",
+      "id": "eng_nz_hd_20260507",
+      "errors": []
     }
   ]
 }

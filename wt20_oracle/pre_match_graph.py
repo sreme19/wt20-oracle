@@ -393,11 +393,21 @@ def prediction_node(state: PreMatchState) -> Dict[str, Any]:
         # After Match 3: if 3-0, potential for 5-0 sweep → stronger aggression
         # This addresses cases like India vs SL Match 4 (3-0 up, still room for whitewash)
         if series_score == 3 and series_number >= 4:
-            # Potential 5-0 scenario: boost aggression to +25% (stronger than normal 3-0)
-            # Tuned based on validation showing India vs SL Match 4 needs stronger boost
-            aggression_multiplier = 1.25
+            # Potential 5-0 scenario: boost aggression based on team aggressiveness
+            # Aggressive teams (India, West Indies, Pakistan) get +30%
+            # Conservative teams (NZ, SA, Australia, etc.) get +25%
+            team_for_momentum = team_id.lower() if team_id else ""
+
+            if team_for_momentum in ("india", "west_indies", "pakistan"):
+                # Aggressive teams in sweep scenarios need stronger boost
+                aggression_multiplier = 1.30
+                wp_bonus = 0.09
+            else:
+                # Conservative teams: standard sweep boost
+                aggression_multiplier = 1.25
+                wp_bonus = 0.08
+
             momentum_type = "sweep"
-            wp_bonus = 0.08
         else:
             # Standard 3-0 or 4-0 lead (series effectively decided)
             aggression_multiplier = 1.15

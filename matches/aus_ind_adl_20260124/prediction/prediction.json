@@ -11,16 +11,16 @@
     "series_result": "loss",
     "series_wins_before": 0
   },
-  "generated_at": "2026-05-16T10:43:45.945091Z",
+  "generated_at": "2026-05-16T12:57:59.182488Z",
   "scenario": "pre_toss_blended",
   "pitch_difficulty": "easy",
   "chase_penalty": -15,
-  "base_runs_estimate": 151.9,
+  "base_runs_estimate": 152.0,
   "adjusted_runs_estimate": 157.2,
-  "runs_lower": 142.4,
-  "runs_upper": 146.4,
-  "win_probability": 0.589,
-  "win_probability_reasoning": "Pre-toss blend: batting-first WP=60.4%, chasing WP=57.4% \u2192 blended 58.9%",
+  "runs_lower": 142.5,
+  "runs_upper": 146.5,
+  "win_probability": 0.59,
+  "win_probability_reasoning": "Pre-toss blend: batting-first WP=61.0%, chasing WP=57.0% \u2192 blended 59.0%",
   "selected_xi": [
     "lucy_hamilton",
     "grace_harris",
@@ -293,21 +293,21 @@
     "adjusted_runs_estimate": 167.9,
     "runs_lower": 149.9,
     "runs_upper": 153.9,
-    "win_probability": 0.604,
+    "win_probability": 0.61,
     "pitch_difficulty": "easy",
     "chase_penalty": 0,
     "tactical_flags": [
       "use_pace_in_powerplay",
       "set_par_total_conservative_approach_first_6_overs"
     ],
-    "strategy_brief": "STRATEGY BRIEF: AUSTRALIA vs INDIA at Adelaide Oval\n======================================================================\n\nTOSS: australia chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~168 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 60% (FAIR)\n\nPITCH: Flat\n  Traditionally produces high scores. Pace bowlers get carry and bounce without much lateral movement. Pink ball not applicable in T20.\n\nBATTING ORDER (Top 4):\n  1. Beth Mooney (SR 124)\n  2. Ellyse Perry (SR 114)\n  3. Phoebe Litchfield (SR 125)\n  4. Georgia Voll (SR 124)\n\nBOWLING PLAN:\n  Powerplay: Lucy Hamilton, Megan Schutt, Georgia Wareham, Annabel Sutherland, Tahlia McGrath, Grace Harris, Ash Gardner, Ellyse Perry\n  Middle: Lucy Hamilton, Megan Schutt, Georgia Wareham, Annabel Sutherland, Tahlia McGrath, Grace Harris, Ash Gardner, Ellyse Perry\n  Death: Lucy Hamilton, Megan Schutt, Georgia Wareham, Annabel Sutherland, Tahlia McGrath, Grace Harris, Ash Gardner, Ellyse Perry\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: AUSTRALIA vs INDIA at Adelaide Oval\n======================================================================\n\nTOSS: australia chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~168 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 61% (FAIR)\n\nPITCH: Flat\n  Traditionally produces high scores. Pace bowlers get carry and bounce without much lateral movement. Pink ball not applicable in T20.\n\nBATTING ORDER (Top 4):\n  1. Beth Mooney (SR 124)\n  2. Ellyse Perry (SR 114)\n  3. Phoebe Litchfield (SR 125)\n  4. Georgia Voll (SR 124)\n\nBOWLING PLAN:\n  Powerplay: Tahlia McGrath, Lucy Hamilton, Annabel Sutherland, Ellyse Perry, Georgia Wareham, Grace Harris, Ash Gardner, Megan Schutt\n  Middle: Tahlia McGrath, Lucy Hamilton, Annabel Sutherland, Ellyse Perry, Georgia Wareham, Grace Harris, Ash Gardner, Megan Schutt\n  Death: Tahlia McGrath, Lucy Hamilton, Annabel Sutherland, Ellyse Perry, Georgia Wareham, Grace Harris, Ash Gardner, Megan Schutt\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
   },
   "chasing_scenario": {
     "scenario": "chasing",
-    "adjusted_runs_estimate": 146.4,
-    "runs_lower": 134.9,
-    "runs_upper": 138.9,
-    "win_probability": 0.574,
+    "adjusted_runs_estimate": 146.6,
+    "runs_lower": 135.1,
+    "runs_upper": 139.1,
+    "win_probability": 0.57,
     "pitch_difficulty": "easy",
     "chase_penalty": -15,
     "tactical_flags": [
@@ -315,6 +315,6 @@
       "chase_scenario_requires_calculated_aggression",
       "monitor_required_run_rate_per_phase"
     ],
-    "strategy_brief": "STRATEGY BRIEF: AUSTRALIA vs INDIA at Adelaide Oval\n======================================================================\n\nTOSS: india chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~146 runs to win.\n  (Chase penalty applied: -15 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 57% (FAIR)\n\nPITCH: Flat\n  Traditionally produces high scores. Pace bowlers get carry and bounce without much lateral movement. Pink ball not applicable in T20.\n\nBATTING ORDER (Top 4):\n  1. Beth Mooney (SR 124)\n  2. Ellyse Perry (SR 114)\n  3. Phoebe Litchfield (SR 125)\n  4. Georgia Voll (SR 124)\n\nBOWLING PLAN:\n  Powerplay: Lucy Hamilton, Megan Schutt, Georgia Wareham, Annabel Sutherland, Tahlia McGrath, Grace Harris, Ash Gardner, Ellyse Perry\n  Middle: Lucy Hamilton, Megan Schutt, Georgia Wareham, Annabel Sutherland, Tahlia McGrath, Grace Harris, Ash Gardner, Ellyse Perry\n  Death: Lucy Hamilton, Megan Schutt, Georgia Wareham, Annabel Sutherland, Tahlia McGrath, Grace Harris, Ash Gardner, Ellyse Perry\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n\n======================================================================"
+    "strategy_brief": "STRATEGY BRIEF: AUSTRALIA vs INDIA at Adelaide Oval\n======================================================================\n\nTOSS: india chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~147 runs to win.\n  (Chase penalty applied: -15 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 56% (FAIR)\n\nPITCH: Flat\n  Traditionally produces high scores. Pace bowlers get carry and bounce without much lateral movement. Pink ball not applicable in T20.\n\nBATTING ORDER (Top 4):\n  1. Beth Mooney (SR 124)\n  2. Ellyse Perry (SR 114)\n  3. Phoebe Litchfield (SR 125)\n  4. Georgia Voll (SR 124)\n\nBOWLING PLAN:\n  Powerplay: Tahlia McGrath, Lucy Hamilton, Annabel Sutherland, Ellyse Perry, Georgia Wareham, Grace Harris, Ash Gardner, Megan Schutt\n  Middle: Tahlia McGrath, Lucy Hamilton, Annabel Sutherland, Ellyse Perry, Georgia Wareham, Grace Harris, Ash Gardner, Megan Schutt\n  Death: Tahlia McGrath, Lucy Hamilton, Annabel Sutherland, Ellyse Perry, Georgia Wareham, Grace Harris, Ash Gardner, Megan Schutt\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n\n======================================================================"
   }
 }
