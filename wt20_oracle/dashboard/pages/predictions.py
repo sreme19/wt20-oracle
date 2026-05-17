@@ -284,8 +284,14 @@ def render(df: pd.DataFrame) -> None:
         "win_prob_%", "pred_bat_runs", "pred_chase_runs", "pred_runs_adj",
         "actual_winner", "actual_bat_runs", "actual_chase_runs", "margin", "✓/✗",
     ]
-    display = display.loc[:, ~display.columns.duplicated(keep="first")]
-    display = display[[c for c in col_order if c in display.columns]]
+    # Select final columns by position (first occurrence) to guard against any
+    # duplicate column names that older pandas may create during apply/assign.
+    col_list = display.columns.tolist()
+    final: dict = {}
+    for c in col_order:
+        if c in col_list and c not in final:
+            final[c] = display.iloc[:, col_list.index(c)]
+    display = pd.DataFrame(final)
 
     st.dataframe(
         display,
