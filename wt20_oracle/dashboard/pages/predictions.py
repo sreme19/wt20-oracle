@@ -279,7 +279,7 @@ def render(df: pd.DataFrame) -> None:
     })
     col_order = [
         "date", "match_id", "pitch_difficulty",
-        "team_batting1st", "team_chasing",
+        "team_batting1st",
         "venue", "situation",
         "win_prob_%", "pred_bat_runs", "pred_chase_runs", "pred_runs_adj",
         "actual_winner", "actual_bat_runs", "actual_chase_runs", "margin", "✓/✗",
