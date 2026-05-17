@@ -204,9 +204,9 @@ def render(df: pd.DataFrame) -> None:
             return opp_disp, team_disp   # opponent batted first
         return team_disp, opp_disp       # team batted first (Batting First or Single)
 
-    display[["team_batting1st", "team_chasing"]] = display.apply(
-        lambda r: pd.Series(_batting_order(r)), axis=1
-    )
+    _bo = display.apply(lambda r: _batting_order(r), axis=1)
+    display["team_batting1st"] = _bo.apply(lambda x: x[0])
+    display["team_chasing"]    = _bo.apply(lambda x: x[1])
 
     # ── Infer which team actually batted first from stored result ────────────
     def _actual_batting_first(actual: dict, team_raw: str, opp_display: str) -> str:
@@ -253,8 +253,11 @@ def render(df: pd.DataFrame) -> None:
             "margin":            margin,
         })
 
-    display[["actual_winner", "actual_bat_runs",
-             "actual_chase_runs", "margin"]] = display.apply(_actual_cols, axis=1)
+    _ac = display.apply(_actual_cols, axis=1)
+    display["actual_winner"]     = _ac["actual_winner"]
+    display["actual_bat_runs"]   = _ac["actual_bat_runs"]
+    display["actual_chase_runs"] = _ac["actual_chase_runs"]
+    display["margin"]            = _ac["margin"]
 
     # ── Prediction correct? team's win_prob > 0.5 == team actually won ───────
     def _correct(row):
@@ -281,6 +284,7 @@ def render(df: pd.DataFrame) -> None:
         "win_prob_%", "pred_bat_runs", "pred_chase_runs", "pred_runs_adj",
         "actual_winner", "actual_bat_runs", "actual_chase_runs", "margin", "✓/✗",
     ]
+    display = display.loc[:, ~display.columns.duplicated(keep="first")]
     display = display[[c for c in col_order if c in display.columns]]
 
     st.dataframe(
