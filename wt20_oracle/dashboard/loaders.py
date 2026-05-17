@@ -351,13 +351,22 @@ def fetch_actual_result(match_id: str, team: str, opponent: str,
     if not winner and not batting_score:
         return None
 
+    # Extract just the runs integer for comparability with predicted runs
+    def _runs_int(score_str):
+        if not score_str:
+            return None
+        try:
+            return int(score_str.split("/")[0])
+        except (ValueError, AttributeError):
+            return None
+
     from datetime import datetime as _dt2
     return {
         "match_id": match_id,
         "date": match_date,
         "winner": winner,
-        "batting_team_score": batting_score,
-        "chasing_team_score": chasing_score,
+        "actual_bat_runs": _runs_int(batting_score),
+        "actual_chase_runs": _runs_int(chasing_score),
         "margin": margin,
         "source": "duckduckgo",
         "fetched_at": _dt2.utcnow().isoformat() + "Z",

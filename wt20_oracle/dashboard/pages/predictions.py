@@ -198,11 +198,11 @@ def render(df: pd.DataFrame) -> None:
     display["actual_winner"] = display["match_id"].map(
         lambda mid: (actuals.get(mid) or {}).get("winner", "")
     )
-    display["actual_bat_score"] = display["match_id"].map(
-        lambda mid: (actuals.get(mid) or {}).get("batting_team_score", "")
+    display["actual_bat_runs"] = display["match_id"].map(
+        lambda mid: (actuals.get(mid) or {}).get("actual_bat_runs")
     )
-    display["actual_chase_score"] = display["match_id"].map(
-        lambda mid: (actuals.get(mid) or {}).get("chasing_team_score", "")
+    display["actual_chase_runs"] = display["match_id"].map(
+        lambda mid: (actuals.get(mid) or {}).get("actual_chase_runs")
     )
     display["margin"] = display["match_id"].map(
         lambda mid: (actuals.get(mid) or {}).get("margin", "")
@@ -223,18 +223,23 @@ def render(df: pd.DataFrame) -> None:
     # Column order as requested
     ordered = [
         "date_str", "match_id", "pitch_difficulty", "opponent", "venue", "situation",
-        "win_pct", "pr_runs_batting_team", "pr_runs_chasing_team", "runs_adjusted",
-        "actual_winner", "actual_bat_score", "actual_chase_score", "margin", "correct",
+        "win_pct", "pred_bat_runs", "pred_chase_runs", "runs_adjusted",
+        "actual_winner", "actual_bat_runs", "actual_chase_runs", "margin", "correct",
     ]
-    display = display[[c for c in ordered if c in display.columns]].rename(columns={
-        "date_str": "date",
-        "win_pct": "win_prob_%",
+    display = display.rename(columns={
         "pr_runs_batting_team": "pred_bat_runs",
         "pr_runs_chasing_team": "pred_chase_runs",
         "runs_adjusted": "pred_runs_adj",
-        "actual_bat_score": "act_bat_score",
-        "actual_chase_score": "act_chase_score",
         "correct": "✓/✗",
+    })
+    ordered_renamed = [
+        "date_str", "match_id", "pitch_difficulty", "opponent", "venue", "situation",
+        "win_pct", "pred_bat_runs", "pred_chase_runs", "pred_runs_adj",
+        "actual_winner", "actual_bat_runs", "actual_chase_runs", "margin", "✓/✗",
+    ]
+    display = display[[c for c in ordered_renamed if c in display.columns]].rename(columns={
+        "date_str": "date",
+        "win_pct": "win_prob_%",
     })
 
     st.dataframe(display, use_container_width=True, hide_index=True)
