@@ -193,7 +193,8 @@ def render(df: pd.DataFrame) -> None:
 
     # Merge actuals into display frame
     display = df.copy()
-    display["date_str"] = display["date"].dt.strftime("%d-%b-%Y").fillna("")
+    # Keep date as datetime (for correct column sorting) — formatted via column_config below
+    display["date_str"] = display["date"]  # pass through as datetime, not string
 
     display["actual_winner"] = display["match_id"].map(
         lambda mid: (actuals.get(mid) or {}).get("winner", "")
@@ -238,8 +239,15 @@ def render(df: pd.DataFrame) -> None:
         "actual_winner", "actual_bat_runs", "actual_chase_runs", "margin", "✓/✗",
     ]
     display = display[[c for c in ordered_renamed if c in display.columns]].rename(columns={
-        "date_str": "date",
+        "date_str": "date",   # datetime column — formatted as DD-MMM-YYYY via column_config
         "win_pct": "win_prob_%",
     })
 
-    st.dataframe(display, use_container_width=True, hide_index=True)
+    st.dataframe(
+        display,
+        use_container_width=True,
+        hide_index=True,
+        column_config={
+            "date": st.column_config.DateColumn("date", format="DD-MMM-YYYY"),
+        },
+    )
