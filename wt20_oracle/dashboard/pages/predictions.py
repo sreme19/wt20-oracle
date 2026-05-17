@@ -193,8 +193,6 @@ def render(df: pd.DataFrame) -> None:
 
     # Merge actuals into display frame
     display = df.copy()
-    # Keep date as datetime (for correct column sorting) — formatted via column_config below
-    display["date_str"] = display["date"]  # pass through as datetime, not string
 
     # ── Derive team_batting1st / team_chasing from team + situation ──────────
     # "Batting First" → modelled team bats first; "Chasing" → opponent bats first
@@ -274,7 +272,6 @@ def render(df: pd.DataFrame) -> None:
         "pr_runs_batting_team": "pred_bat_runs",
         "pr_runs_chasing_team": "pred_chase_runs",
         "runs_adjusted":        "pred_runs_adj",
-        "date_str":             "date",
         "win_pct":              "win_prob_%",
     })
     col_order = [
