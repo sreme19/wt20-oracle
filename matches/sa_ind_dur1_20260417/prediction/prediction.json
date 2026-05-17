@@ -1,0 +1,312 @@
+{
+  "match_id": "sa_ind_dur1_20260417",
+  "fixture": {
+    "id": "sa_ind_dur1_20260417",
+    "date": "2026-04-17",
+    "team_id": "south_africa",
+    "opponent_id": "india",
+    "venue_id": "kingsmead_durban",
+    "series": "South Africa vs India T20I Series 2026",
+    "match_no": 1,
+    "series_result": "win",
+    "series_wins_before": 0
+  },
+  "generated_at": "2026-05-17T08:32:32.189319Z",
+  "scenario": "pre_toss_blended",
+  "pitch_difficulty": "moderate",
+  "chase_penalty": -20,
+  "base_runs_estimate": 139.6,
+  "adjusted_runs_estimate": 134.3,
+  "runs_lower": 130.1,
+  "runs_upper": 134.1,
+  "win_probability": 0.465,
+  "win_probability_reasoning": "Pre-toss blend: batting-first WP=49.3%, chasing WP=43.7% \u2192 blended 46.5%",
+  "selected_xi": [
+    "kayla_reyneke",
+    "chloe_tryon",
+    "sinalo_jafta",
+    "laura_wolvaardt",
+    "annerie_dercksen",
+    "marizanne_kapp",
+    "sune_luus",
+    "nadine_de_klerk",
+    "dane_van_niekerk",
+    "tazmin_brits",
+    "nonkululeko_mlaba"
+  ],
+  "batting_order": [
+    "laura_wolvaardt",
+    "tazmin_brits",
+    "sinalo_jafta",
+    "chloe_tryon",
+    "sune_luus",
+    "dane_van_niekerk",
+    "marizanne_kapp",
+    "nadine_de_klerk",
+    "kayla_reyneke",
+    "annerie_dercksen",
+    "nonkululeko_mlaba"
+  ],
+  "bowling_plan": [
+    {
+      "player_id": "kayla_reyneke",
+      "player_name": "Kayla Reyneke",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 4.74,
+      "rationale": "Kayla Reyneke: middle specialist, economy 4.4"
+    },
+    {
+      "player_id": "kayla_reyneke",
+      "player_name": "Kayla Reyneke",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 4.74,
+      "rationale": "Kayla Reyneke: death specialist, economy 5.3"
+    },
+    {
+      "player_id": "chloe_tryon",
+      "player_name": "Chloe Tryon",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.75,
+      "rationale": "Chloe Tryon: powerplay specialist, economy 7.0"
+    },
+    {
+      "player_id": "chloe_tryon",
+      "player_name": "Chloe Tryon",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.75,
+      "rationale": "Chloe Tryon: middle specialist, economy 6.5"
+    },
+    {
+      "player_id": "chloe_tryon",
+      "player_name": "Chloe Tryon",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.75,
+      "rationale": "Chloe Tryon: death specialist, economy 7.5"
+    },
+    {
+      "player_id": "annerie_dercksen",
+      "player_name": "Annerie Dercksen",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.57,
+      "rationale": "Annerie Dercksen: powerplay specialist, economy 7.1"
+    },
+    {
+      "player_id": "annerie_dercksen",
+      "player_name": "Annerie Dercksen",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.57,
+      "rationale": "Annerie Dercksen: middle specialist, economy 6.4"
+    },
+    {
+      "player_id": "annerie_dercksen",
+      "player_name": "Annerie Dercksen",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.57,
+      "rationale": "Annerie Dercksen: death specialist, economy 6.8"
+    },
+    {
+      "player_id": "marizanne_kapp",
+      "player_name": "Marizanne Kapp",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.41,
+      "rationale": "Marizanne Kapp: powerplay specialist, economy 4.8"
+    },
+    {
+      "player_id": "marizanne_kapp",
+      "player_name": "Marizanne Kapp",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.41,
+      "rationale": "Marizanne Kapp: middle specialist, economy 5.6"
+    },
+    {
+      "player_id": "marizanne_kapp",
+      "player_name": "Marizanne Kapp",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.41,
+      "rationale": "Marizanne Kapp: death specialist, economy 7.5"
+    },
+    {
+      "player_id": "sune_luus",
+      "player_name": "Sune Luus",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.6,
+      "rationale": "Sune Luus: powerplay specialist, economy 7.0"
+    },
+    {
+      "player_id": "sune_luus",
+      "player_name": "Sune Luus",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.6,
+      "rationale": "Sune Luus: middle specialist, economy 6.7"
+    },
+    {
+      "player_id": "sune_luus",
+      "player_name": "Sune Luus",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.6,
+      "rationale": "Sune Luus: death specialist, economy 5.7"
+    },
+    {
+      "player_id": "nadine_de_klerk",
+      "player_name": "Nadine de Klerk",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.8,
+      "rationale": "Nadine de Klerk: powerplay specialist, economy 6.4"
+    },
+    {
+      "player_id": "nadine_de_klerk",
+      "player_name": "Nadine de Klerk",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.8,
+      "rationale": "Nadine de Klerk: middle specialist, economy 6.6"
+    },
+    {
+      "player_id": "nadine_de_klerk",
+      "player_name": "Nadine de Klerk",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.8,
+      "rationale": "Nadine de Klerk: death specialist, economy 7.4"
+    },
+    {
+      "player_id": "dane_van_niekerk",
+      "player_name": "Dane van Niekerk",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.88,
+      "rationale": "Dane van Niekerk: powerplay specialist, economy 5.6"
+    },
+    {
+      "player_id": "dane_van_niekerk",
+      "player_name": "Dane van Niekerk",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.88,
+      "rationale": "Dane van Niekerk: middle specialist, economy 5.7"
+    },
+    {
+      "player_id": "dane_van_niekerk",
+      "player_name": "Dane van Niekerk",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.88,
+      "rationale": "Dane van Niekerk: death specialist, economy 6.8"
+    },
+    {
+      "player_id": "nonkululeko_mlaba",
+      "player_name": "Nonkululeko Mlaba",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.1,
+      "rationale": "Nonkululeko Mlaba: powerplay specialist, economy 6.0"
+    },
+    {
+      "player_id": "nonkululeko_mlaba",
+      "player_name": "Nonkululeko Mlaba",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.1,
+      "rationale": "Nonkululeko Mlaba: middle specialist, economy 5.9"
+    },
+    {
+      "player_id": "nonkululeko_mlaba",
+      "player_name": "Nonkululeko Mlaba",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.1,
+      "rationale": "Nonkululeko Mlaba: death specialist, economy 7.0"
+    }
+  ],
+  "key_matchups": [
+    {
+      "type": "exploit",
+      "batter": "laura_wolvaardt",
+      "bowler": "arundhati_reddy",
+      "insight": "Strong: SR 154 over 65 balls, 1 dismissal(s)"
+    },
+    {
+      "type": "exploit",
+      "batter": "sune_luus",
+      "bowler": "arundhati_reddy",
+      "insight": "Strong: SR 105 over 39 balls, 0 dismissal(s)"
+    },
+    {
+      "type": "exploit",
+      "batter": "tazmin_brits",
+      "bowler": "arundhati_reddy",
+      "insight": "Favourable: SR 53 over 17 balls"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "shafali_verma",
+      "our_bowler": "sune_luus",
+      "insight": "Threat: batter SR 186 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "shafali_verma",
+      "our_bowler": "sune_luus",
+      "insight": "Threat: batter SR 186 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "shafali_verma",
+      "our_bowler": "sune_luus",
+      "insight": "Threat: batter SR 186 against this bowler"
+    }
+  ],
+  "tactical_flags": [
+    "dew_factor_affects_grip_and_swing",
+    "set_par_total_conservative_approach_first_6_overs"
+  ],
+  "errors": [],
+  "warnings": [
+    "MILP infeasible \u2014 used fallback utility sort for XI selection",
+    "MILP infeasible \u2014 used fallback utility sort for XI selection"
+  ],
+  "batting_first_scenario": {
+    "scenario": "batting_first",
+    "adjusted_runs_estimate": 139.6,
+    "runs_lower": 137.6,
+    "runs_upper": 141.6,
+    "win_probability": 0.493,
+    "pitch_difficulty": "moderate",
+    "chase_penalty": 0,
+    "tactical_flags": [
+      "dew_factor_affects_grip_and_swing",
+      "set_par_total_conservative_approach_first_6_overs"
+    ],
+    "strategy_brief": "STRATEGY BRIEF: SOUTH_AFRICA vs INDIA at Kingsmead Cricket Ground\n======================================================================\n\nTOSS: south_africa chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~140 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 49% (POOR)\n\nPITCH: Balanced\n  Durban's humidity creates early movement for pace bowlers. Surface tends to flatten out after over 6. Good for batting post-powerplay. Dew becomes a factor in evening games.\n\nBATTING ORDER (Top 4):\n  1. Laura Wolvaardt (SR 117)\n  2. Tazmin Brits (SR 103)\n  3. Sinalo Jafta (SR 129)\n  4. Chloe Tryon (SR 125)\n\nBOWLING PLAN:\n  Powerplay: Nadine de Klerk, Nonkululeko Mlaba, Marizanne Kapp, Dane van Niekerk, Chloe Tryon, Sune Luus, Annerie Dercksen\n  Middle: Kayla Reyneke, Nadine de Klerk, Nonkululeko Mlaba, Marizanne Kapp, Dane van Niekerk, Chloe Tryon, Sune Luus, Annerie Dercksen\n  Death: Kayla Reyneke, Nadine de Klerk, Nonkululeko Mlaba, Marizanne Kapp, Dane van Niekerk, Chloe Tryon, Sune Luus, Annerie Dercksen\n\nTACTICAL NOTES:\n  \u2022 Dew factor affects grip and swing\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
+  },
+  "chasing_scenario": {
+    "scenario": "chasing",
+    "adjusted_runs_estimate": 129.0,
+    "runs_lower": 122.5,
+    "runs_upper": 126.5,
+    "win_probability": 0.437,
+    "pitch_difficulty": "moderate",
+    "chase_penalty": -20,
+    "tactical_flags": [
+      "dew_factor_affects_grip_and_swing",
+      "chase_scenario_requires_calculated_aggression",
+      "monitor_required_run_rate_per_phase"
+    ],
+    "strategy_brief": "STRATEGY BRIEF: SOUTH_AFRICA vs INDIA at Kingsmead Cricket Ground\n======================================================================\n\nTOSS: india chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~129 runs to win.\n  (Chase penalty applied: -20 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 43% (POOR)\n\nPITCH: Balanced\n  Durban's humidity creates early movement for pace bowlers. Surface tends to flatten out after over 6. Good for batting post-powerplay. Dew becomes a factor in evening games.\n\nBATTING ORDER (Top 4):\n  1. Laura Wolvaardt (SR 117)\n  2. Tazmin Brits (SR 103)\n  3. Sinalo Jafta (SR 129)\n  4. Chloe Tryon (SR 125)\n\nBOWLING PLAN:\n  Powerplay: Nadine de Klerk, Nonkululeko Mlaba, Marizanne Kapp, Dane van Niekerk, Chloe Tryon, Sune Luus, Annerie Dercksen\n  Middle: Kayla Reyneke, Nadine de Klerk, Nonkululeko Mlaba, Marizanne Kapp, Dane van Niekerk, Chloe Tryon, Sune Luus, Annerie Dercksen\n  Death: Kayla Reyneke, Nadine de Klerk, Nonkululeko Mlaba, Marizanne Kapp, Dane van Niekerk, Chloe Tryon, Sune Luus, Annerie Dercksen\n\nTACTICAL NOTES:\n  \u2022 Dew factor affects grip and swing\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n\n======================================================================"
+  }
+}

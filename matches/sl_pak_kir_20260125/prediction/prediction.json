@@ -1,0 +1,206 @@
+{
+  "match_id": "sl_pak_kir_20260125",
+  "fixture": {
+    "id": "sl_pak_kir_20260125",
+    "date": "2026-01-25",
+    "team_id": "sri_lanka",
+    "opponent_id": "pakistan",
+    "venue_id": "tribhuvan_university_kirtipur",
+    "series": "ICC Women's T20 WC Asia Qualifier 2026 (synthetic)",
+    "match_no": 2,
+    "series_result": "loss",
+    "series_wins_before": 0
+  },
+  "generated_at": "2026-05-17T08:32:37.598948Z",
+  "scenario": "pre_toss_blended",
+  "pitch_difficulty": "very_difficult",
+  "chase_penalty": -30,
+  "base_runs_estimate": 120.6,
+  "adjusted_runs_estimate": 101.3,
+  "runs_lower": 111.1,
+  "runs_upper": 115.1,
+  "win_probability": 0.321,
+  "win_probability_reasoning": "Pre-toss blend: batting-first WP=41.7%, chasing WP=22.5% \u2192 blended 32.1%",
+  "selected_xi": [
+    "chamari_athapaththu",
+    "nilakshi_de_silva",
+    "inoshi_perera",
+    "hasini_madavi",
+    "sugandika_kumari",
+    "kavisha_dilhari",
+    "rashmi_gunaratne",
+    "kavindi_pathirana",
+    "anushka_jayangani",
+    "oshadi_ranasinghe",
+    "udeshika_prabodhani"
+  ],
+  "batting_order": [
+    "chamari_athapaththu",
+    "hasini_madavi",
+    "anushka_jayangani",
+    "kavisha_dilhari",
+    "inoshi_perera",
+    "nilakshi_de_silva",
+    "rashmi_gunaratne",
+    "kavindi_pathirana",
+    "oshadi_ranasinghe",
+    "udeshika_prabodhani",
+    "sugandika_kumari"
+  ],
+  "bowling_plan": [
+    {
+      "player_id": "nilakshi_de_silva",
+      "player_name": "NND de Silva",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.08,
+      "rationale": "NND de Silva: powerplay specialist, economy 4.1 (spin pitch advantage)"
+    },
+    {
+      "player_id": "nilakshi_de_silva",
+      "player_name": "NND de Silva",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.08,
+      "rationale": "NND de Silva: middle specialist, economy 5.3 (spin pitch advantage)"
+    },
+    {
+      "player_id": "nilakshi_de_silva",
+      "player_name": "NND de Silva",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.08,
+      "rationale": "NND de Silva: death specialist, economy 5.5 (spin pitch advantage)"
+    },
+    {
+      "player_id": "sugandika_kumari",
+      "player_name": "BMSM Kumari",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.64,
+      "rationale": "BMSM Kumari: death specialist, economy 6.3"
+    },
+    {
+      "player_id": "rashmi_gunaratne",
+      "player_name": "RMVD Gunaratne",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 7.5,
+      "rationale": "RMVD Gunaratne: assigned middle overs"
+    },
+    {
+      "player_id": "kavindi_pathirana",
+      "player_name": "K Kavindi",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.85,
+      "rationale": "K Kavindi: powerplay specialist, economy 5.7 (spin pitch advantage)"
+    },
+    {
+      "player_id": "kavindi_pathirana",
+      "player_name": "K Kavindi",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.85,
+      "rationale": "K Kavindi: middle specialist, economy 6.5 (spin pitch advantage)"
+    },
+    {
+      "player_id": "kavindi_pathirana",
+      "player_name": "K Kavindi",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.85,
+      "rationale": "K Kavindi: death specialist, economy 5.6 (spin pitch advantage)"
+    },
+    {
+      "player_id": "oshadi_ranasinghe",
+      "player_name": "OU Ranasinghe",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.57,
+      "rationale": "OU Ranasinghe: death specialist, economy 7.6"
+    },
+    {
+      "player_id": "udeshika_prabodhani",
+      "player_name": "KDU Prabodhani",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.32,
+      "rationale": "KDU Prabodhani: death specialist, economy 6.6"
+    }
+  ],
+  "key_matchups": [
+    {
+      "type": "exploit",
+      "batter": "nilakshi_de_silva",
+      "bowler": "fatima_sana",
+      "insight": "Strong: SR 171 over 7 balls, 0 dismissal(s)"
+    },
+    {
+      "type": "exploit",
+      "batter": "chamari_athapaththu",
+      "bowler": "tuba_hassan",
+      "insight": "Favourable: SR 175 over 12 balls"
+    },
+    {
+      "type": "exploit",
+      "batter": "hasini_madavi",
+      "bowler": "sadia_iqbal",
+      "insight": "Even: SR 44 over 16 balls, 0 dismissal(s)"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "fatima_sana",
+      "our_bowler": "sugandika_kumari",
+      "insight": "Threat: batter SR 82 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "muneeba_ali",
+      "our_bowler": "udeshika_prabodhani",
+      "insight": "Threat: batter SR 93 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "aliya_riaz",
+      "our_bowler": "sugandika_kumari",
+      "insight": "Threat: batter SR 53 against this bowler"
+    }
+  ],
+  "tactical_flags": [
+    "prioritise_spinners_middle_overs",
+    "set_par_total_conservative_approach_first_6_overs"
+  ],
+  "errors": [],
+  "warnings": [],
+  "batting_first_scenario": {
+    "scenario": "batting_first",
+    "adjusted_runs_estimate": 110.6,
+    "runs_lower": 118.6,
+    "runs_upper": 122.6,
+    "win_probability": 0.417,
+    "pitch_difficulty": "very_difficult",
+    "chase_penalty": 0,
+    "tactical_flags": [
+      "prioritise_spinners_middle_overs",
+      "set_par_total_conservative_approach_first_6_overs"
+    ],
+    "strategy_brief": "STRATEGY BRIEF: SRI_LANKA vs PAKISTAN at Tribhuvan University International Cricket Ground\n======================================================================\n\nTOSS: sri_lanka chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~111 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 41% (POOR)\n\nPITCH: Spin Friendly\n  High altitude (1300m) \u2014 ball carries well but pitch is slow and low. Spinners get grip and turn. Compact ground dimensions assist batters. Scores tend to be moderate.\n\nBATTING ORDER (Top 4):\n  1. AC Jayangani (SR 107)\n  2. H Madavi (SR 97)\n  3. EMKNH Senavirathna (SR 115)\n  4. WK Dilhari (SR 105)\n\nBOWLING PLAN:\n  Powerplay: K Kavindi, NND de Silva\n  Middle: K Kavindi, NND de Silva, RMVD Gunaratne\n  Death: K Kavindi, OU Ranasinghe, BMSM Kumari, NND de Silva, KDU Prabodhani\n\nTACTICAL NOTES:\n  \u2022 Prioritise spinners middle overs\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
+  },
+  "chasing_scenario": {
+    "scenario": "chasing",
+    "adjusted_runs_estimate": 92.1,
+    "runs_lower": 103.6,
+    "runs_upper": 107.6,
+    "win_probability": 0.225,
+    "pitch_difficulty": "very_difficult",
+    "chase_penalty": -30,
+    "tactical_flags": [
+      "prioritise_spinners_middle_overs",
+      "chase_scenario_requires_calculated_aggression",
+      "monitor_required_run_rate_per_phase",
+      "underdog_scenario_high_risk_strategy_required"
+    ],
+    "strategy_brief": "STRATEGY BRIEF: SRI_LANKA vs PAKISTAN at Tribhuvan University International Cricket Ground\n======================================================================\n\nTOSS: pakistan chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~92 runs to win.\n  (Chase penalty applied: -30 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 22% (FAILING)\n\nPITCH: Spin Friendly\n  High altitude (1300m) \u2014 ball carries well but pitch is slow and low. Spinners get grip and turn. Compact ground dimensions assist batters. Scores tend to be moderate.\n\nBATTING ORDER (Top 4):\n  1. AC Jayangani (SR 107)\n  2. H Madavi (SR 97)\n  3. EMKNH Senavirathna (SR 115)\n  4. WK Dilhari (SR 105)\n\nBOWLING PLAN:\n  Powerplay: K Kavindi, NND de Silva\n  Middle: K Kavindi, NND de Silva, RMVD Gunaratne\n  Death: K Kavindi, OU Ranasinghe, BMSM Kumari, NND de Silva, KDU Prabodhani\n\nTACTICAL NOTES:\n  \u2022 Prioritise spinners middle overs\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n  \u2022 Underdog scenario high risk strategy required\n\n======================================================================"
+  }
+}

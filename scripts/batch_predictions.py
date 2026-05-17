@@ -34,11 +34,12 @@ from wt20_oracle.pre_match_graph import run_pre_match_pipeline
 # ---------------------------------------------------------------------------
 
 FIXTURES = [
-    # ── India vs Sri Lanka in India (Nov 2025, 5-match series) ──────────────
+    # ── India vs Sri Lanka in India (Dec 2025, 5-match series) ──────────────
     # Result: India won 5-0
+    # Actual dates: Dec 21, 23, 26, 28, 30 (ESPNcricinfo confirmed)
     {
-        "id": "ind_sl_vis1_20251106",
-        "date": "2025-11-06",
+        "id": "ind_sl_vis1_20251221",
+        "date": "2025-12-21",
         "team_id": "india",
         "opponent_id": "sri_lanka",
         "venue_id": "aca_vdca_visakhapatnam",
@@ -48,8 +49,8 @@ FIXTURES = [
         "series_wins_before": 0,
     },
     {
-        "id": "ind_sl_vis2_20251108",
-        "date": "2025-11-08",
+        "id": "ind_sl_vis2_20251223",
+        "date": "2025-12-23",
         "team_id": "india",
         "opponent_id": "sri_lanka",
         "venue_id": "aca_vdca_visakhapatnam",
@@ -59,8 +60,8 @@ FIXTURES = [
         "series_wins_before": 1,
     },
     {
-        "id": "ind_sl_tvm1_20251112",
-        "date": "2025-11-12",
+        "id": "ind_sl_tvm1_20251226",
+        "date": "2025-12-26",
         "team_id": "india",
         "opponent_id": "sri_lanka",
         "venue_id": "greenfield_thiruvananthapuram",
@@ -70,8 +71,8 @@ FIXTURES = [
         "series_wins_before": 2,
     },
     {
-        "id": "ind_sl_tvm2_20251114",
-        "date": "2025-11-14",
+        "id": "ind_sl_tvm2_20251228",
+        "date": "2025-12-28",
         "team_id": "india",
         "opponent_id": "sri_lanka",
         "venue_id": "greenfield_thiruvananthapuram",
@@ -81,8 +82,8 @@ FIXTURES = [
         "series_wins_before": 3,  # ← 3-0 up going into this match: MOMENTUM FACTOR APPLIES
     },
     {
-        "id": "ind_sl_tvm3_20251116",
-        "date": "2025-11-16",
+        "id": "ind_sl_tvm3_20251230",
+        "date": "2025-12-30",
         "team_id": "india",
         "opponent_id": "sri_lanka",
         "venue_id": "greenfield_thiruvananthapuram",
@@ -91,11 +92,12 @@ FIXTURES = [
         "series_result": "win",
         "series_wins_before": 4,
     },
-    # ── Australia vs India in Australia (Jan–Feb 2026, 3-match series) ───────
+    # ── Australia vs India in Australia (Feb 2026, 3-match series) ───────────
     # Result: India won 2-1 (AUS perspective: LOSS, then NR, then LOSS)
+    # Actual dates: Feb 15, 19, 21 (ESPNcricinfo confirmed)
     {
-        "id": "aus_ind_scg_20260118",
-        "date": "2026-01-18",
+        "id": "aus_ind_scg_20260215",
+        "date": "2026-02-15",
         "team_id": "australia",
         "opponent_id": "india",
         "venue_id": "scg_sydney",
@@ -105,8 +107,8 @@ FIXTURES = [
         "series_wins_before": 0,
     },
     {
-        "id": "aus_ind_can_20260121",
-        "date": "2026-01-21",
+        "id": "aus_ind_can_20260219",
+        "date": "2026-02-19",
         "team_id": "australia",
         "opponent_id": "india",
         "venue_id": "manuka_oval_canberra",
@@ -116,8 +118,8 @@ FIXTURES = [
         "series_wins_before": 0,
     },
     {
-        "id": "aus_ind_adl_20260124",
-        "date": "2026-01-24",
+        "id": "aus_ind_adl_20260221",
+        "date": "2026-02-21",
         "team_id": "australia",
         "opponent_id": "india",
         "venue_id": "adelaide_oval",
@@ -126,11 +128,12 @@ FIXTURES = [
         "series_result": "loss",
         "series_wins_before": 0,
     },
-    # ── West Indies vs Sri Lanka in Caribbean (Feb 2026, 3-match series) ─────
+    # ── West Indies vs Sri Lanka in Caribbean (Feb–Mar 2026, 3-match series) ──
     # Result: SL won 2-0 (WI perspective: NR, LOSS, LOSS)
+    # Actual dates: Feb 28, Mar 1, Mar 3 (ESPNcricinfo confirmed)
     {
-        "id": "wi_sl_gren1_20260201",
-        "date": "2026-02-01",
+        "id": "wi_sl_gren1_20260228",
+        "date": "2026-02-28",
         "team_id": "west_indies",
         "opponent_id": "sri_lanka",
         "venue_id": "national_cricket_stadium_grenada",
@@ -140,8 +143,8 @@ FIXTURES = [
         "series_wins_before": 0,
     },
     {
-        "id": "wi_sl_gren2_20260203",
-        "date": "2026-02-03",
+        "id": "wi_sl_gren2_20260301",
+        "date": "2026-03-01",
         "team_id": "west_indies",
         "opponent_id": "sri_lanka",
         "venue_id": "national_cricket_stadium_grenada",
@@ -151,8 +154,8 @@ FIXTURES = [
         "series_wins_before": 0,
     },
     {
-        "id": "wi_sl_gren3_20260205",
-        "date": "2026-02-05",
+        "id": "wi_sl_gren3_20260303",
+        "date": "2026-03-03",
         "team_id": "west_indies",
         "opponent_id": "sri_lanka",
         "venue_id": "national_cricket_stadium_grenada",
@@ -161,11 +164,13 @@ FIXTURES = [
         "series_result": "loss",
         "series_wins_before": 0,
     },
-    # ── New Zealand vs South Africa in New Zealand (Feb–Mar 2026, 5-match) ──
+    # ── New Zealand vs South Africa in New Zealand (Mar 2026, 5-match) ────────
     # Result: NZ won 4-1
+    # Actual dates: Mar 15, 17, 20, 22, 25 (ESPNcricinfo confirmed)
+    # Match 4 venue: Basin Reserve, Wellington (not Sky Stadium)
     {
-        "id": "nz_sa_bay_20260215",
-        "date": "2026-02-15",
+        "id": "nz_sa_bay_20260315",
+        "date": "2026-03-15",
         "team_id": "new_zealand",
         "opponent_id": "south_africa",
         "venue_id": "bay_oval_mount_maunganui",
@@ -175,8 +180,8 @@ FIXTURES = [
         "series_wins_before": 0,
     },
     {
-        "id": "nz_sa_sed_20260218",
-        "date": "2026-02-18",
+        "id": "nz_sa_sed_20260317",
+        "date": "2026-03-17",
         "team_id": "new_zealand",
         "opponent_id": "south_africa",
         "venue_id": "seddon_park_hamilton",
@@ -186,8 +191,8 @@ FIXTURES = [
         "series_wins_before": 1,
     },
     {
-        "id": "nz_sa_eden_20260221",
-        "date": "2026-02-21",
+        "id": "nz_sa_eden_20260320",
+        "date": "2026-03-20",
         "team_id": "new_zealand",
         "opponent_id": "south_africa",
         "venue_id": "eden_park_auckland",
@@ -197,19 +202,19 @@ FIXTURES = [
         "series_wins_before": 1,
     },
     {
-        "id": "nz_sa_sky_20260224",
-        "date": "2026-02-24",
+        "id": "nz_sa_bas_20260322",
+        "date": "2026-03-22",
         "team_id": "new_zealand",
         "opponent_id": "south_africa",
-        "venue_id": "sky_stadium_wellington",
+        "venue_id": "basin_reserve_wellington",
         "series": "New Zealand vs South Africa T20I Series 2026",
         "match_no": 4,
         "series_result": "win",
         "series_wins_before": 2,
     },
     {
-        "id": "nz_sa_hag_20260227",
-        "date": "2026-02-27",
+        "id": "nz_sa_hag_20260325",
+        "date": "2026-03-25",
         "team_id": "new_zealand",
         "opponent_id": "south_africa",
         "venue_id": "hagley_oval_christchurch",
@@ -218,11 +223,13 @@ FIXTURES = [
         "series_result": "win",
         "series_wins_before": 3,
     },
-    # ── South Africa vs India in South Africa (Mar–Apr 2026, 5-match) ────────
+    # ── South Africa vs India in South Africa (Apr 2026, 5-match) ─────────────
     # Result: SA won 4-1
+    # Actual dates: Apr 17, 19, 22, 25, 27 (ESPNcricinfo confirmed)
+    # Match 5 venue: Willowmoore Park, Benoni (not Supersport Park, Centurion)
     {
-        "id": "sa_ind_dur1_20260315",
-        "date": "2026-03-15",
+        "id": "sa_ind_dur1_20260417",
+        "date": "2026-04-17",
         "team_id": "south_africa",
         "opponent_id": "india",
         "venue_id": "kingsmead_durban",
@@ -232,8 +239,8 @@ FIXTURES = [
         "series_wins_before": 0,
     },
     {
-        "id": "sa_ind_dur2_20260318",
-        "date": "2026-03-18",
+        "id": "sa_ind_dur2_20260419",
+        "date": "2026-04-19",
         "team_id": "south_africa",
         "opponent_id": "india",
         "venue_id": "kingsmead_durban",
@@ -243,8 +250,8 @@ FIXTURES = [
         "series_wins_before": 1,
     },
     {
-        "id": "sa_ind_wan1_20260322",
-        "date": "2026-03-22",
+        "id": "sa_ind_wan1_20260422",
+        "date": "2026-04-22",
         "team_id": "south_africa",
         "opponent_id": "india",
         "venue_id": "wanderers_johannesburg",
@@ -254,8 +261,8 @@ FIXTURES = [
         "series_wins_before": 2,  # ← 2-0 up going into this; momentum starts at 3
     },
     {
-        "id": "sa_ind_wan2_20260325",
-        "date": "2026-03-25",
+        "id": "sa_ind_wan2_20260425",
+        "date": "2026-04-25",
         "team_id": "south_africa",
         "opponent_id": "india",
         "venue_id": "wanderers_johannesburg",
@@ -265,22 +272,23 @@ FIXTURES = [
         "series_wins_before": 3,  # ← 3-0 up but lost this one
     },
     {
-        "id": "sa_ind_cen_20260427",
+        "id": "sa_ind_ben_20260427",
         "date": "2026-04-27",
         "team_id": "south_africa",
         "opponent_id": "india",
-        "venue_id": "supersport_park_centurion",
+        "venue_id": "willowmoore_park",
         "series": "South Africa vs India T20I Series 2026",
         "match_no": 5,
         "series_result": "win",
         "series_wins_before": 3,  # ← 3-0 up: MOMENTUM FACTOR APPLIES
-        "notes": "The match that exposed the scenario-detection bug",
+        "notes": "Willowmoore Park, Benoni",
     },
-    # ── Bangladesh vs Sri Lanka in Bangladesh (Mar 2026, 3-match series) ─────
+    # ── Bangladesh vs Sri Lanka in Bangladesh (Apr–May 2026, 3-match series) ──
     # Result: SL won 2-1
+    # Actual dates: Apr 28, 30, May 2 (ESPNcricinfo confirmed)
     {
-        "id": "ban_sl_syl1_20260301",
-        "date": "2026-03-01",
+        "id": "ban_sl_syl1_20260428",
+        "date": "2026-04-28",
         "team_id": "bangladesh",
         "opponent_id": "sri_lanka",
         "venue_id": "sylhet_international",
@@ -290,8 +298,8 @@ FIXTURES = [
         "series_wins_before": 0,
     },
     {
-        "id": "ban_sl_syl2_20260303",
-        "date": "2026-03-03",
+        "id": "ban_sl_syl2_20260430",
+        "date": "2026-04-30",
         "team_id": "bangladesh",
         "opponent_id": "sri_lanka",
         "venue_id": "sylhet_international",
@@ -301,8 +309,8 @@ FIXTURES = [
         "series_wins_before": 1,
     },
     {
-        "id": "ban_sl_syl3_20260305",
-        "date": "2026-03-05",
+        "id": "ban_sl_syl3_20260502",
+        "date": "2026-05-02",
         "team_id": "bangladesh",
         "opponent_id": "sri_lanka",
         "venue_id": "sylhet_international",
@@ -311,37 +319,39 @@ FIXTURES = [
         "series_result": "loss",
         "series_wins_before": 1,
     },
-    # ── WT20 Qualifier Asia (Nepal, Apr 2026) — associate WC teams ───────────
-    # Group matches (not series): Pakistan dominates
+    # ── WT20 Qualifier Asia (Nepal, Jan–Feb 2026) — associate WC teams ────────
+    # NOTE: Bangladesh, Pakistan, Sri Lanka were direct qualifiers and did not
+    # play in the official Asia Qualifier. These are synthetic calibration
+    # fixtures using Nepal qualifier venues for model testing only.
     {
-        "id": "ban_pak_kir_20260405",
-        "date": "2026-04-05",
+        "id": "ban_pak_kir_20260122",
+        "date": "2026-01-22",
         "team_id": "bangladesh",
         "opponent_id": "pakistan",
         "venue_id": "tribhuvan_university_kirtipur",
-        "series": "ICC Women's T20 WC Asia Qualifier 2026",
+        "series": "ICC Women's T20 WC Asia Qualifier 2026 (synthetic)",
         "match_no": 1,
         "series_result": "loss",
         "series_wins_before": 0,
     },
     {
-        "id": "sl_pak_kir_20260407",
-        "date": "2026-04-07",
+        "id": "sl_pak_kir_20260125",
+        "date": "2026-01-25",
         "team_id": "sri_lanka",
         "opponent_id": "pakistan",
         "venue_id": "tribhuvan_university_kirtipur",
-        "series": "ICC Women's T20 WC Asia Qualifier 2026",
+        "series": "ICC Women's T20 WC Asia Qualifier 2026 (synthetic)",
         "match_no": 2,
         "series_result": "loss",
         "series_wins_before": 0,
     },
     {
-        "id": "ban_sl_mul_20260410",
-        "date": "2026-04-10",
+        "id": "ban_sl_mul_20260128",
+        "date": "2026-01-28",
         "team_id": "bangladesh",
         "opponent_id": "sri_lanka",
         "venue_id": "upper_mulpani_kathmandu",
-        "series": "ICC Women's T20 WC Asia Qualifier 2026",
+        "series": "ICC Women's T20 WC Asia Qualifier 2026 (synthetic)",
         "match_no": 3,
         "series_result": "win",
         "series_wins_before": 0,

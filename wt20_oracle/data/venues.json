@@ -923,5 +923,79 @@
       "lowest_defended": null
     },
     "notes": "Midlands venue"
+  },
+  {
+    "id": "basin_reserve_wellington",
+    "name": "Basin Reserve",
+    "city": "Wellington",
+    "country": "New Zealand",
+    "capacity": 11600,
+    "dimensions": {
+      "straight_boundary_m": 65,
+      "square_boundary_m": 60,
+      "oval": true
+    },
+    "pitch": {
+      "type": "seam_friendly",
+      "pace_advantage": true,
+      "spin_advantage": false,
+      "notes": "New Zealand's iconic test ground. Wellington wind affects trajectory. Seam movement available throughout. Scores moderate by NZ standards."
+    },
+    "conditions": {
+      "dew_factor": "low",
+      "typically_day_night": true,
+      "avg_humidity_pct": 72
+    },
+    "women_t20_stats": {
+      "matches_played": 2,
+      "avg_first_innings_score": 138,
+      "avg_winning_chase_score": 131,
+      "toss_impact": {
+        "bat_first_win_pct": 0.55,
+        "field_first_win_pct": 0.45
+      },
+      "pace_economy": 7.2,
+      "spin_economy": 8.0,
+      "highest_score": 152,
+      "lowest_defended": 115
+    },
+    "notes": "Wind-affected venue; similar characteristics to Sky Stadium Wellington"
+  },
+  {
+    "id": "willowmoore_park",
+    "name": "Willowmoore Park",
+    "city": "Benoni",
+    "country": "South Africa",
+    "capacity": 12000,
+    "dimensions": {
+      "straight_boundary_m": 64,
+      "square_boundary_m": 60,
+      "oval": true
+    },
+    "pitch": {
+      "type": "balanced",
+      "pace_advantage": true,
+      "spin_advantage": false,
+      "notes": "Highveld ground at 1620m altitude. Ball carries well; pace bowlers get bounce. Batting-friendly once set. Scores typically in line with Johannesburg venues."
+    },
+    "conditions": {
+      "dew_factor": "moderate",
+      "typically_day_night": true,
+      "avg_humidity_pct": 45
+    },
+    "women_t20_stats": {
+      "matches_played": 3,
+      "avg_first_innings_score": 148,
+      "avg_winning_chase_score": 140,
+      "toss_impact": {
+        "bat_first_win_pct": 0.52,
+        "field_first_win_pct": 0.48
+      },
+      "pace_economy": 7.1,
+      "spin_economy": 7.6,
+      "highest_score": 168,
+      "lowest_defended": 122
+    },
+    "notes": "Benoni altitude boosts pace; similar to Wanderers but slightly slower outfield"
   }
 ]

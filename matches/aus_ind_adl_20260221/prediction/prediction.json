@@ -1,0 +1,320 @@
+{
+  "match_id": "aus_ind_adl_20260221",
+  "fixture": {
+    "id": "aus_ind_adl_20260221",
+    "date": "2026-02-21",
+    "team_id": "australia",
+    "opponent_id": "india",
+    "venue_id": "adelaide_oval",
+    "series": "Australia vs India T20I Series 2026",
+    "match_no": 3,
+    "series_result": "loss",
+    "series_wins_before": 0
+  },
+  "generated_at": "2026-05-17T08:32:26.953549Z",
+  "scenario": "pre_toss_blended",
+  "pitch_difficulty": "easy",
+  "chase_penalty": -15,
+  "base_runs_estimate": 151.9,
+  "adjusted_runs_estimate": 157.1,
+  "runs_lower": 142.4,
+  "runs_upper": 146.4,
+  "win_probability": 0.577,
+  "win_probability_reasoning": "Pre-toss blend: batting-first WP=59.1%, chasing WP=56.4% \u2192 blended 57.7%",
+  "selected_xi": [
+    "lucy_hamilton",
+    "grace_harris",
+    "georgia_wareham",
+    "ellyse_perry",
+    "phoebe_litchfield",
+    "georgia_voll",
+    "ash_gardner",
+    "megan_schutt",
+    "beth_mooney",
+    "annabel_sutherland",
+    "tahlia_mcgrath"
+  ],
+  "batting_order": [
+    "beth_mooney",
+    "ellyse_perry",
+    "phoebe_litchfield",
+    "georgia_voll",
+    "grace_harris",
+    "ash_gardner",
+    "tahlia_mcgrath",
+    "annabel_sutherland",
+    "georgia_wareham",
+    "lucy_hamilton",
+    "megan_schutt"
+  ],
+  "bowling_plan": [
+    {
+      "player_id": "lucy_hamilton",
+      "player_name": "Lucy Hamilton",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.48,
+      "rationale": "Lucy Hamilton: powerplay specialist, economy 6.4 (pace pitch advantage)"
+    },
+    {
+      "player_id": "lucy_hamilton",
+      "player_name": "Lucy Hamilton",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.48,
+      "rationale": "Lucy Hamilton: middle specialist, economy 5.9 (pace pitch advantage)"
+    },
+    {
+      "player_id": "lucy_hamilton",
+      "player_name": "Lucy Hamilton",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.48,
+      "rationale": "Lucy Hamilton: death specialist, economy 7.5 (pace pitch advantage)"
+    },
+    {
+      "player_id": "grace_harris",
+      "player_name": "Grace Harris",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.88,
+      "rationale": "Grace Harris: powerplay specialist, economy 6.9"
+    },
+    {
+      "player_id": "grace_harris",
+      "player_name": "Grace Harris",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.88,
+      "rationale": "Grace Harris: middle specialist, economy 6.3"
+    },
+    {
+      "player_id": "grace_harris",
+      "player_name": "Grace Harris",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.88,
+      "rationale": "Grace Harris: death specialist, economy 8.4"
+    },
+    {
+      "player_id": "georgia_wareham",
+      "player_name": "Georgia Wareham",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.49,
+      "rationale": "Georgia Wareham: powerplay specialist, economy 5.8"
+    },
+    {
+      "player_id": "georgia_wareham",
+      "player_name": "Georgia Wareham",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.49,
+      "rationale": "Georgia Wareham: middle specialist, economy 6.5"
+    },
+    {
+      "player_id": "georgia_wareham",
+      "player_name": "Georgia Wareham",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.49,
+      "rationale": "Georgia Wareham: death specialist, economy 6.9"
+    },
+    {
+      "player_id": "ellyse_perry",
+      "player_name": "Ellyse Perry",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.13,
+      "rationale": "Ellyse Perry: powerplay specialist, economy 5.6 (pace pitch advantage)"
+    },
+    {
+      "player_id": "ellyse_perry",
+      "player_name": "Ellyse Perry",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.13,
+      "rationale": "Ellyse Perry: middle specialist, economy 6.5 (pace pitch advantage)"
+    },
+    {
+      "player_id": "ellyse_perry",
+      "player_name": "Ellyse Perry",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.13,
+      "rationale": "Ellyse Perry: death specialist, economy 7.4 (pace pitch advantage)"
+    },
+    {
+      "player_id": "ash_gardner",
+      "player_name": "Ash Gardner",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 7.02,
+      "rationale": "Ash Gardner: powerplay specialist, economy 6.4"
+    },
+    {
+      "player_id": "ash_gardner",
+      "player_name": "Ash Gardner",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 7.02,
+      "rationale": "Ash Gardner: middle specialist, economy 6.9"
+    },
+    {
+      "player_id": "ash_gardner",
+      "player_name": "Ash Gardner",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 7.02,
+      "rationale": "Ash Gardner: death specialist, economy 8.0"
+    },
+    {
+      "player_id": "megan_schutt",
+      "player_name": "Megan Schutt",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.92,
+      "rationale": "Megan Schutt: powerplay specialist, economy 5.0 (pace pitch advantage)"
+    },
+    {
+      "player_id": "megan_schutt",
+      "player_name": "Megan Schutt",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.92,
+      "rationale": "Megan Schutt: middle specialist, economy 6.8 (pace pitch advantage)"
+    },
+    {
+      "player_id": "megan_schutt",
+      "player_name": "Megan Schutt",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.92,
+      "rationale": "Megan Schutt: death specialist, economy 7.4 (pace pitch advantage)"
+    },
+    {
+      "player_id": "annabel_sutherland",
+      "player_name": "Annabel Sutherland",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.4,
+      "rationale": "Annabel Sutherland: powerplay specialist, economy 6.0 (pace pitch advantage)"
+    },
+    {
+      "player_id": "annabel_sutherland",
+      "player_name": "Annabel Sutherland",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.4,
+      "rationale": "Annabel Sutherland: middle specialist, economy 6.1 (pace pitch advantage)"
+    },
+    {
+      "player_id": "annabel_sutherland",
+      "player_name": "Annabel Sutherland",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.4,
+      "rationale": "Annabel Sutherland: death specialist, economy 7.3 (pace pitch advantage)"
+    },
+    {
+      "player_id": "tahlia_mcgrath",
+      "player_name": "Tahlia McGrath",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 6.91,
+      "rationale": "Tahlia McGrath: powerplay specialist, economy 6.3 (pace pitch advantage)"
+    },
+    {
+      "player_id": "tahlia_mcgrath",
+      "player_name": "Tahlia McGrath",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 6.91,
+      "rationale": "Tahlia McGrath: middle specialist, economy 6.5 (pace pitch advantage)"
+    },
+    {
+      "player_id": "tahlia_mcgrath",
+      "player_name": "Tahlia McGrath",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.91,
+      "rationale": "Tahlia McGrath: death specialist, economy 8.4 (pace pitch advantage)"
+    }
+  ],
+  "key_matchups": [
+    {
+      "type": "exploit",
+      "batter": "ash_gardner",
+      "bowler": "arundhati_reddy",
+      "insight": "Favourable: SR 141 over 68 balls"
+    },
+    {
+      "type": "exploit",
+      "batter": "georgia_voll",
+      "bowler": "arundhati_reddy",
+      "insight": "Caution: bowler has edge, SR only 175 over 8 balls"
+    },
+    {
+      "type": "exploit",
+      "batter": "phoebe_litchfield",
+      "bowler": "arundhati_reddy",
+      "insight": "Caution: bowler has edge, SR only 89 over 9 balls"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "harmanpreet_kaur",
+      "our_bowler": "ash_gardner",
+      "insight": "Threat: batter SR 163 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "harmanpreet_kaur",
+      "our_bowler": "ash_gardner",
+      "insight": "Threat: batter SR 163 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "harmanpreet_kaur",
+      "our_bowler": "ash_gardner",
+      "insight": "Threat: batter SR 163 against this bowler"
+    }
+  ],
+  "tactical_flags": [
+    "use_pace_in_powerplay",
+    "set_par_total_conservative_approach_first_6_overs"
+  ],
+  "errors": [],
+  "warnings": [
+    "MILP infeasible \u2014 used fallback utility sort for XI selection",
+    "MILP infeasible \u2014 used fallback utility sort for XI selection"
+  ],
+  "batting_first_scenario": {
+    "scenario": "batting_first",
+    "adjusted_runs_estimate": 167.8,
+    "runs_lower": 149.8,
+    "runs_upper": 153.8,
+    "win_probability": 0.591,
+    "pitch_difficulty": "easy",
+    "chase_penalty": 0,
+    "tactical_flags": [
+      "use_pace_in_powerplay",
+      "set_par_total_conservative_approach_first_6_overs"
+    ],
+    "strategy_brief": "STRATEGY BRIEF: AUSTRALIA vs INDIA at Adelaide Oval\n======================================================================\n\nTOSS: australia chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~168 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 59% (FAIR)\n\nPITCH: Flat\n  Traditionally produces high scores. Pace bowlers get carry and bounce without much lateral movement. Pink ball not applicable in T20.\n\nBATTING ORDER (Top 4):\n  1. Beth Mooney (SR 124)\n  2. Ellyse Perry (SR 114)\n  3. Phoebe Litchfield (SR 125)\n  4. Georgia Voll (SR 124)\n\nBOWLING PLAN:\n  Powerplay: Georgia Wareham, Lucy Hamilton, Grace Harris, Megan Schutt, Tahlia McGrath, Ash Gardner, Ellyse Perry, Annabel Sutherland\n  Middle: Georgia Wareham, Lucy Hamilton, Grace Harris, Megan Schutt, Tahlia McGrath, Ash Gardner, Ellyse Perry, Annabel Sutherland\n  Death: Georgia Wareham, Lucy Hamilton, Grace Harris, Megan Schutt, Tahlia McGrath, Ash Gardner, Ellyse Perry, Annabel Sutherland\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
+  },
+  "chasing_scenario": {
+    "scenario": "chasing",
+    "adjusted_runs_estimate": 146.4,
+    "runs_lower": 134.9,
+    "runs_upper": 138.9,
+    "win_probability": 0.564,
+    "pitch_difficulty": "easy",
+    "chase_penalty": -15,
+    "tactical_flags": [
+      "use_pace_in_powerplay",
+      "chase_scenario_requires_calculated_aggression",
+      "monitor_required_run_rate_per_phase"
+    ],
+    "strategy_brief": "STRATEGY BRIEF: AUSTRALIA vs INDIA at Adelaide Oval\n======================================================================\n\nTOSS: india chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~146 runs to win.\n  (Chase penalty applied: -15 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 56% (FAIR)\n\nPITCH: Flat\n  Traditionally produces high scores. Pace bowlers get carry and bounce without much lateral movement. Pink ball not applicable in T20.\n\nBATTING ORDER (Top 4):\n  1. Beth Mooney (SR 124)\n  2. Ellyse Perry (SR 114)\n  3. Phoebe Litchfield (SR 125)\n  4. Georgia Voll (SR 124)\n\nBOWLING PLAN:\n  Powerplay: Georgia Wareham, Lucy Hamilton, Grace Harris, Megan Schutt, Tahlia McGrath, Ash Gardner, Ellyse Perry, Annabel Sutherland\n  Middle: Georgia Wareham, Lucy Hamilton, Grace Harris, Megan Schutt, Tahlia McGrath, Ash Gardner, Ellyse Perry, Annabel Sutherland\n  Death: Georgia Wareham, Lucy Hamilton, Grace Harris, Megan Schutt, Tahlia McGrath, Ash Gardner, Ellyse Perry, Annabel Sutherland\n\nTACTICAL NOTES:\n  \u2022 Use pace in powerplay\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n\n======================================================================"
+  }
+}

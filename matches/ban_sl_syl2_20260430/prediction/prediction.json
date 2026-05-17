@@ -1,0 +1,241 @@
+{
+  "match_id": "ban_sl_syl2_20260430",
+  "fixture": {
+    "id": "ban_sl_syl2_20260430",
+    "date": "2026-04-30",
+    "team_id": "bangladesh",
+    "opponent_id": "sri_lanka",
+    "venue_id": "sylhet_international",
+    "series": "Bangladesh vs Sri Lanka T20I Series 2026",
+    "match_no": 2,
+    "series_result": "loss",
+    "series_wins_before": 1
+  },
+  "generated_at": "2026-05-17T08:32:35.579573Z",
+  "scenario": "pre_toss_blended",
+  "pitch_difficulty": "very_difficult",
+  "chase_penalty": -30,
+  "base_runs_estimate": 118.8,
+  "adjusted_runs_estimate": 99.6,
+  "runs_lower": 109.3,
+  "runs_upper": 113.3,
+  "win_probability": 0.372,
+  "win_probability_reasoning": "Pre-toss blend: batting-first WP=46.2%, chasing WP=28.1% \u2192 blended 37.2%",
+  "selected_xi": [
+    "nigar_sultana",
+    "nahida_akter",
+    "sharmin_akter_supta",
+    "sobhana_mostary",
+    "shorna_akter",
+    "ritu_moni",
+    "rabeya_khan",
+    "fahima_khatun",
+    "dilara_akter",
+    "juairiya_ferdous",
+    "taj_nehar"
+  ],
+  "batting_order": [
+    "nigar_sultana",
+    "juairiya_ferdous",
+    "dilara_akter",
+    "sobhana_mostary",
+    "shorna_akter",
+    "sharmin_akter_supta",
+    "taj_nehar",
+    "fahima_khatun",
+    "ritu_moni",
+    "rabeya_khan",
+    "nahida_akter"
+  ],
+  "bowling_plan": [
+    {
+      "player_id": "nahida_akter",
+      "player_name": "Nahida Akter",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.76,
+      "rationale": "Nahida Akter: powerplay specialist, economy 5.8 (spin pitch advantage)"
+    },
+    {
+      "player_id": "nahida_akter",
+      "player_name": "Nahida Akter",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.76,
+      "rationale": "Nahida Akter: middle specialist, economy 5.3 (spin pitch advantage)"
+    },
+    {
+      "player_id": "nahida_akter",
+      "player_name": "Nahida Akter",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.76,
+      "rationale": "Nahida Akter: death specialist, economy 6.3 (spin pitch advantage)"
+    },
+    {
+      "player_id": "shorna_akter",
+      "player_name": "Shorna Akter",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 6.96,
+      "rationale": "Shorna Akter: death specialist, economy 7.1"
+    },
+    {
+      "player_id": "ritu_moni",
+      "player_name": "Ritu Moni",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.51,
+      "rationale": "Ritu Moni: powerplay specialist, economy 4.6 (spin pitch advantage)"
+    },
+    {
+      "player_id": "ritu_moni",
+      "player_name": "Ritu Moni",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.51,
+      "rationale": "Ritu Moni: middle specialist, economy 5.2 (spin pitch advantage)"
+    },
+    {
+      "player_id": "ritu_moni",
+      "player_name": "Ritu Moni",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.51,
+      "rationale": "Ritu Moni: death specialist, economy 7.7 (spin pitch advantage)"
+    },
+    {
+      "player_id": "rabeya_khan",
+      "player_name": "Rabeya Khan",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.38,
+      "rationale": "Rabeya Khan: powerplay specialist, economy 4.3"
+    },
+    {
+      "player_id": "rabeya_khan",
+      "player_name": "Rabeya Khan",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.38,
+      "rationale": "Rabeya Khan: middle specialist, economy 5.3"
+    },
+    {
+      "player_id": "rabeya_khan",
+      "player_name": "Rabeya Khan",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.38,
+      "rationale": "Rabeya Khan: death specialist, economy 6.2"
+    },
+    {
+      "player_id": "fahima_khatun",
+      "player_name": "Fahima Khatun",
+      "phase": "powerplay",
+      "max_overs": 4,
+      "economy": 5.66,
+      "rationale": "Fahima Khatun: powerplay specialist, economy 5.8 (spin pitch advantage)"
+    },
+    {
+      "player_id": "fahima_khatun",
+      "player_name": "Fahima Khatun",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 5.66,
+      "rationale": "Fahima Khatun: middle specialist, economy 5.6 (spin pitch advantage)"
+    },
+    {
+      "player_id": "fahima_khatun",
+      "player_name": "Fahima Khatun",
+      "phase": "death",
+      "max_overs": 4,
+      "economy": 5.66,
+      "rationale": "Fahima Khatun: death specialist, economy 5.9 (spin pitch advantage)"
+    },
+    {
+      "player_id": "taj_nehar",
+      "player_name": "Taj Nehar",
+      "phase": "middle",
+      "max_overs": 4,
+      "economy": 7.5,
+      "rationale": "Taj Nehar: assigned middle overs"
+    }
+  ],
+  "key_matchups": [
+    {
+      "type": "exploit",
+      "batter": "sobhana_mostary",
+      "bowler": "achini_kulasuriya",
+      "insight": "Strong: SR 133 over 6 balls, 0 dismissal(s)"
+    },
+    {
+      "type": "exploit",
+      "batter": "juairiya_ferdous",
+      "bowler": "sugandika_kumari",
+      "insight": "Favourable: SR 86 over 14 balls"
+    },
+    {
+      "type": "exploit",
+      "batter": "dilara_akter",
+      "bowler": "sugandika_kumari",
+      "insight": "Favourable: SR 80 over 15 balls"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "hasini_madavi",
+      "our_bowler": "ritu_moni",
+      "insight": "Threat: batter SR 162 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "hasini_madavi",
+      "our_bowler": "ritu_moni",
+      "insight": "Threat: batter SR 162 against this bowler"
+    },
+    {
+      "type": "threat",
+      "opponent_batter": "hasini_madavi",
+      "our_bowler": "ritu_moni",
+      "insight": "Threat: batter SR 162 against this bowler"
+    }
+  ],
+  "tactical_flags": [
+    "prioritise_spinners_middle_overs",
+    "dew_factor_affects_grip_and_swing",
+    "set_par_total_conservative_approach_first_6_overs"
+  ],
+  "errors": [],
+  "warnings": [],
+  "batting_first_scenario": {
+    "scenario": "batting_first",
+    "adjusted_runs_estimate": 108.7,
+    "runs_lower": 116.7,
+    "runs_upper": 120.7,
+    "win_probability": 0.462,
+    "pitch_difficulty": "very_difficult",
+    "chase_penalty": 0,
+    "tactical_flags": [
+      "prioritise_spinners_middle_overs",
+      "dew_factor_affects_grip_and_swing",
+      "set_par_total_conservative_approach_first_6_overs"
+    ],
+    "strategy_brief": "STRATEGY BRIEF: BANGLADESH vs SRI_LANKA at Sylhet International Cricket Stadium\n======================================================================\n\nTOSS: bangladesh chose to bat first.\nSCENARIO: Batting First\n\nTARGET: Set a score of ~109 runs.\n  \u2192 Aggressive powerplay (target 50+ in 6 overs).\n  \u2192 Consolidate in middle (build platform overs 7-15).\n  \u2192 Accelerate death (last 5 overs, target 50+ runs).\n\nWIN PROBABILITY: 46% (POOR)\n\nPITCH: Spin Friendly\n  Classic Bangladesh slow turner. Spin is effective from over 1. Batting is challenging with uneven bounce. Low-scoring games typical; 130-140 is a match-winning total. Pace bowlers restricted in economy.\n\nBATTING ORDER (Top 4):\n  1. Nigar Sultana Joty (SR 90)\n  2. Juairiya Ferdous (SR 105)\n  3. Dilara Akter (SR 106)\n  4. Sobhana Mostary (SR 91)\n\nBOWLING PLAN:\n  Powerplay: Nahida Akter, Ritu Moni, Rabeya Khan, Fahima Khatun\n  Middle: Rabeya Khan, Fahima Khatun, Ritu Moni, Taj Nehar, Nahida Akter\n  Death: Rabeya Khan, Fahima Khatun, Ritu Moni, Shorna Akter, Nahida Akter\n\nTACTICAL NOTES:\n  \u2022 Prioritise spinners middle overs\n  \u2022 Dew factor affects grip and swing\n  \u2022 Set par total conservative approach first 6 overs\n\n======================================================================"
+  },
+  "chasing_scenario": {
+    "scenario": "chasing",
+    "adjusted_runs_estimate": 90.5,
+    "runs_lower": 102.0,
+    "runs_upper": 106.0,
+    "win_probability": 0.281,
+    "pitch_difficulty": "very_difficult",
+    "chase_penalty": -30,
+    "tactical_flags": [
+      "prioritise_spinners_middle_overs",
+      "dew_factor_affects_grip_and_swing",
+      "chase_scenario_requires_calculated_aggression",
+      "monitor_required_run_rate_per_phase",
+      "underdog_scenario_high_risk_strategy_required"
+    ],
+    "strategy_brief": "STRATEGY BRIEF: BANGLADESH vs SRI_LANKA at Sylhet International Cricket Stadium\n======================================================================\n\nTOSS: sri_lanka chose to bat first.\nSCENARIO: Chasing\n\nCHASE PLAN: Need ~90 runs to win.\n  (Chase penalty applied: -30 runs vs batting-first estimate)\n  \u2192 Patient powerplay \u2014 don't lose more than 2 wickets.\n  \u2192 Accelerate from over 12 if on track.\n  \u2192 Keep wickets in hand for last 5 overs push.\n\nWIN PROBABILITY: 28% (FAILING)\n\nPITCH: Spin Friendly\n  Classic Bangladesh slow turner. Spin is effective from over 1. Batting is challenging with uneven bounce. Low-scoring games typical; 130-140 is a match-winning total. Pace bowlers restricted in economy.\n\nBATTING ORDER (Top 4):\n  1. Nigar Sultana Joty (SR 90)\n  2. Juairiya Ferdous (SR 105)\n  3. Dilara Akter (SR 106)\n  4. Sobhana Mostary (SR 91)\n\nBOWLING PLAN:\n  Powerplay: Nahida Akter, Ritu Moni, Rabeya Khan, Fahima Khatun\n  Middle: Rabeya Khan, Fahima Khatun, Ritu Moni, Taj Nehar, Nahida Akter\n  Death: Rabeya Khan, Fahima Khatun, Ritu Moni, Shorna Akter, Nahida Akter\n\nTACTICAL NOTES:\n  \u2022 Prioritise spinners middle overs\n  \u2022 Dew factor affects grip and swing\n  \u2022 Chase scenario requires calculated aggression\n  \u2022 Monitor required run rate per phase\n  \u2022 Underdog scenario high risk strategy required\n\n======================================================================"
+  }
+}
