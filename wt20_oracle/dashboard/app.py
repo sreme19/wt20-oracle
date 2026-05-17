@@ -52,19 +52,16 @@ st.sidebar.markdown("""
 - `data/matchups.json`
 """)
 
-# ── Load data (cached) ────────────────────────────────────────────────────────
+# ── Load data (no cache — data is small and must stay fresh) ──────────────────
 
-@st.cache_data(show_spinner="Loading predictions...")
 def get_predictions():
     from wt20_oracle.dashboard.loaders import load_predictions
     return load_predictions()
 
-@st.cache_data(show_spinner="Loading player data...")
 def get_players():
     from wt20_oracle.dashboard.loaders import load_players
     return load_players()
 
-@st.cache_data(show_spinner="Loading team data...")
 def get_teams():
     from wt20_oracle.dashboard.loaders import load_teams
     return load_teams()

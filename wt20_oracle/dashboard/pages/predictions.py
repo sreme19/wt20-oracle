@@ -193,7 +193,7 @@ def render(df: pd.DataFrame) -> None:
 
     # Merge actuals into display frame
     display = df.copy()
-    display["date_str"] = display["date"].dt.strftime("%Y-%m-%d").fillna("")
+    display["date_str"] = display["date"].dt.strftime("%d-%b-%Y").fillna("")
 
     display["actual_winner"] = display["match_id"].map(
         lambda mid: (actuals.get(mid) or {}).get("winner", "")
