@@ -1,10 +1,11 @@
 {
   "match_id": "ban_sl_syl2_20260430",
-  "date": "2026-03-03",
+  "date": "2026-04-30",
   "winner": "sri_lanka",
-  "actual_bat_runs": 136,
-  "actual_chase_runs": 161,
-  "margin": "25 runs",
-  "source": "duckduckgo",
-  "fetched_at": "2026-05-17T08:10:35.394360Z"
+  "batting_first_team": "sri_lanka",
+  "actual_bat_runs": 154,
+  "actual_chase_runs": 133,
+  "margin": "21 runs",
+  "source": "manual",
+  "fetched_at": "2026-05-17T00:00:00Z"
 }

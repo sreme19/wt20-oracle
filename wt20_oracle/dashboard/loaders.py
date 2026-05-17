@@ -360,11 +360,24 @@ def fetch_actual_result(match_id: str, team: str, opponent: str,
         except (ValueError, AttributeError):
             return None
 
+    # Infer which team batted first from margin type:
+    # "N runs" → winner batted first; "N wickets" → winner chased (other team batted first)
+    batting_first_team = None
+    if winner and margin:
+        m_lower = margin.lower()
+        if "run" in m_lower:
+            batting_first_team = winner
+        elif "wicket" in m_lower:
+            all_teams = {team, opponent}
+            other = (all_teams - {winner}).pop() if winner in all_teams else None
+            batting_first_team = other
+
     from datetime import datetime as _dt2
     return {
         "match_id": match_id,
         "date": match_date,
         "winner": winner,
+        "batting_first_team": batting_first_team,
         "actual_bat_runs": _runs_int(batting_score),
         "actual_chase_runs": _runs_int(chasing_score),
         "margin": margin,

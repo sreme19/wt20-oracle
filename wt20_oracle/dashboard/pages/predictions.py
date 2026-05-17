@@ -196,52 +196,95 @@ def render(df: pd.DataFrame) -> None:
     # Keep date as datetime (for correct column sorting) — formatted via column_config below
     display["date_str"] = display["date"]  # pass through as datetime, not string
 
-    display["actual_winner"] = display["match_id"].map(
-        lambda mid: (actuals.get(mid) or {}).get("winner", "")
-    )
-    display["actual_bat_runs"] = display["match_id"].map(
-        lambda mid: (actuals.get(mid) or {}).get("actual_bat_runs")
-    )
-    display["actual_chase_runs"] = display["match_id"].map(
-        lambda mid: (actuals.get(mid) or {}).get("actual_chase_runs")
-    )
-    display["margin"] = display["match_id"].map(
-        lambda mid: (actuals.get(mid) or {}).get("margin", "")
+    # ── Derive team_batting1st / team_chasing from team + situation ──────────
+    # "Batting First" → modelled team bats first; "Chasing" → opponent bats first
+    def _batting_order(row):
+        team_disp = str(row.get("team", "")).replace("_", " ").title()
+        opp_disp  = str(row.get("opponent", ""))  # already title-cased by loader
+        sit = str(row.get("situation", ""))
+        if sit == "Chasing":
+            return opp_disp, team_disp   # opponent batted first
+        return team_disp, opp_disp       # team batted first (Batting First or Single)
+
+    display[["team_batting1st", "team_chasing"]] = display.apply(
+        lambda r: pd.Series(_batting_order(r)), axis=1
     )
 
-    # Prediction correct? (india win_prob > 0.5 == india actually won)
-    def _correct(row):
-        aw = row.get("actual_winner", "")
-        wp = row.get("win_probability")
-        if not aw or wp is None:
+    # ── Infer which team actually batted first from stored result ────────────
+    def _actual_batting_first(actual: dict, team_raw: str, opp_display: str) -> str:
+        """Return title-cased name of team that batted first, or '' if unknown."""
+        stored = actual.get("batting_first_team")
+        if stored:
+            return stored.replace("_", " ").title()
+        margin = (actual.get("margin") or "").lower()
+        winner = (actual.get("winner") or "").replace("_", " ").title()
+        team_display = team_raw.replace("_", " ").title()
+        if not winner:
             return ""
-        predicted_india_win = wp > 0.5
-        actually_india_win = "india" in str(aw).lower()
-        return "✓" if predicted_india_win == actually_india_win else "✗"
+        if "run" in margin:
+            return winner   # winner batted first
+        if "wicket" in margin:
+            # chasing team won → other team batted first
+            return opp_display if winner == team_display else team_display
+        return ""
 
-    display["correct"] = display.apply(_correct, axis=1)
+    # ── Merge actual columns, only show run scores for matching scenario ─────
+    def _actual_cols(row):
+        mid = row["match_id"]
+        actual = actuals.get(mid) or {}
+        winner  = actual.get("winner", "")
+        margin  = actual.get("margin", "")
+        bat_runs   = actual.get("actual_bat_runs")
+        chase_runs = actual.get("actual_chase_runs")
 
-    # Column order as requested
-    ordered = [
-        "date_str", "match_id", "pitch_difficulty", "opponent", "venue", "situation",
-        "win_pct", "pred_bat_runs", "pred_chase_runs", "runs_adjusted",
-        "actual_winner", "actual_bat_runs", "actual_chase_runs", "margin", "correct",
-    ]
+        actual_bat_first = _actual_batting_first(
+            actual, str(row.get("team", "")), str(row.get("opponent", ""))
+        )
+        pred_bat_first = str(row.get("team_batting1st", ""))
+
+        # Null out scores when this row's predicted batting order ≠ what happened
+        if actual_bat_first and pred_bat_first:
+            if pred_bat_first.lower() != actual_bat_first.lower():
+                bat_runs   = None
+                chase_runs = None
+
+        return pd.Series({
+            "actual_winner":     winner,
+            "actual_bat_runs":   bat_runs,
+            "actual_chase_runs": chase_runs,
+            "margin":            margin,
+        })
+
+    display[["actual_winner", "actual_bat_runs",
+             "actual_chase_runs", "margin"]] = display.apply(_actual_cols, axis=1)
+
+    # ── Prediction correct? team's win_prob > 0.5 == team actually won ───────
+    def _correct(row):
+        aw = str(row.get("actual_winner", ""))
+        wp = row.get("win_probability")
+        team = str(row.get("team", "")).lower()
+        if not aw or wp is None or not team:
+            return ""
+        return "✓" if (wp > 0.5) == (team in aw.lower()) else "✗"
+
+    display["✓/✗"] = display.apply(_correct, axis=1)
+
+    # ── Rename and select columns ─────────────────────────────────────────────
     display = display.rename(columns={
         "pr_runs_batting_team": "pred_bat_runs",
         "pr_runs_chasing_team": "pred_chase_runs",
-        "runs_adjusted": "pred_runs_adj",
-        "correct": "✓/✗",
+        "runs_adjusted":        "pred_runs_adj",
+        "date_str":             "date",
+        "win_pct":              "win_prob_%",
     })
-    ordered_renamed = [
-        "date_str", "match_id", "pitch_difficulty", "opponent", "venue", "situation",
-        "win_pct", "pred_bat_runs", "pred_chase_runs", "pred_runs_adj",
+    col_order = [
+        "date", "match_id", "pitch_difficulty",
+        "team_batting1st", "team_chasing",
+        "venue", "situation",
+        "win_prob_%", "pred_bat_runs", "pred_chase_runs", "pred_runs_adj",
         "actual_winner", "actual_bat_runs", "actual_chase_runs", "margin", "✓/✗",
     ]
-    display = display[[c for c in ordered_renamed if c in display.columns]].rename(columns={
-        "date_str": "date",   # datetime column — formatted as DD-MMM-YYYY via column_config
-        "win_pct": "win_prob_%",
-    })
+    display = display[[c for c in col_order if c in display.columns]]
 
     st.dataframe(
         display,
