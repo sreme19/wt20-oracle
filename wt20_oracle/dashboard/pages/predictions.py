@@ -13,6 +13,34 @@ def render(df: pd.DataFrame) -> None:
         st.warning("No predictions found in matches/ directory.")
         return
 
+    # ── Date filter ───────────────────────────────────────────────────────────
+    dated = df.dropna(subset=["date"])
+    has_dates = not dated.empty
+
+    if has_dates:
+        min_date = dated["date"].min().date()
+        max_date = dated["date"].max().date()
+
+        fc1, fc2 = st.columns(2)
+        date_from = fc1.date_input("From", value=min_date, min_value=min_date,
+                                   max_value=max_date, key="pred_date_from")
+        date_to   = fc2.date_input("To",   value=max_date, min_value=min_date,
+                                   max_value=max_date, key="pred_date_to")
+
+        if date_from > date_to:
+            st.error("'From' date must be on or before 'To' date.")
+            return
+
+        mask = (
+            df["date"].isna() |
+            ((df["date"].dt.date >= date_from) & (df["date"].dt.date <= date_to))
+        )
+        df = df[mask]
+
+        undated = df["date"].isna().sum()
+        if undated:
+            st.caption(f"{undated} prediction(s) have no match date and are always included.")
+
     # ── KPI strip ─────────────────────────────────────────────────────────────
     total = df["match_id"].nunique()
     avg_wp = df["win_probability"].mean()
