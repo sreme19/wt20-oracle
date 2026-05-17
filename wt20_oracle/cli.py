@@ -98,6 +98,69 @@ def build_parser():
     )
     subparsers = parser.add_subparsers(dest="command", required=True)
 
+    # ── refresh ────────────────────────────────────────────────────────────────
+    rf = subparsers.add_parser(
+        "refresh",
+        help="Detect data gaps and scrape internet to fill them",
+    )
+    rf.add_argument(
+        "--dry-run",
+        action="store_true",
+        default=True,
+        help="Show proposed changes without writing (default: on)",
+    )
+    rf.add_argument(
+        "--apply",
+        action="store_true",
+        help="Actually write the scraped updates to data files",
+    )
+    rf.add_argument(
+        "--data-type",
+        default="all",
+        choices=["all", "players", "teams", "venues", "analyst"],
+        help="Limit scan/scrape to a specific data type (default: all)",
+    )
+    rf.add_argument(
+        "--team",
+        default=None,
+        help="Limit player scraping to a specific team (e.g. india)",
+    )
+    rf.add_argument(
+        "--verbose",
+        action="store_true",
+        help="Show schema warnings in addition to critical gaps",
+    )
+    rf.add_argument(
+        "--gaps-only",
+        action="store_true",
+        help="Only detect and report gaps, skip scraping",
+    )
+
+    # ── accuracy ───────────────────────────────────────────────────────────────
+    ac = subparsers.add_parser(
+        "accuracy",
+        help="Audit prediction accuracy against latest T20I Women's results",
+    )
+    ac.add_argument(
+        "--last-n",
+        type=int,
+        default=10,
+        dest="last_n",
+        help="Number of recent results to check (default: 10)",
+    )
+    ac.add_argument(
+        "--opponent",
+        default=None,
+        help="Filter results to a specific opponent (e.g. australia)",
+    )
+    ac.add_argument(
+        "--format",
+        default="text",
+        choices=["text", "json"],
+        help="Output format (default: text)",
+    )
+
+    # ── prematch ───────────────────────────────────────────────────────────────
     pm = subparsers.add_parser("prematch", help="Pre-match analysis and recommendations")
     pm.add_argument("--opponent", required=True, help="Opponent team ID (e.g. australia)")
     pm.add_argument(
@@ -328,11 +391,55 @@ def _print_json(state):
     print(json.dumps(output, indent=2))
 
 
+def run_refresh(args):
+    from wt20_oracle.refresh.gap_detector import detect_all_gaps, print_gap_report
+    from wt20_oracle.refresh.scraper import run_scraper
+
+    print(f"\nDetecting data gaps (data_type={args.data_type}"
+          + (f", team={args.team}" if args.team else "") + ")...")
+
+    report = detect_all_gaps(data_type=args.data_type, team=args.team)
+    print_gap_report(report, verbose=args.verbose)
+
+    if args.gaps_only:
+        return 0
+
+    if report["summary"]["total_gaps"] == 0:
+        print("No gaps to fill.")
+        return 0
+
+    dry_run = not args.apply
+    run_scraper(
+        report,
+        dry_run=dry_run,
+        data_type=args.data_type,
+        team=args.team,
+    )
+    return 0
+
+
+def run_accuracy(args):
+    from wt20_oracle.accuracy.auditor import run_accuracy_audit, print_accuracy_report
+
+    report = run_accuracy_audit(last_n=args.last_n, opponent=args.opponent)
+
+    if args.format == "json":
+        print(json.dumps(report, indent=2))
+    else:
+        print_accuracy_report(report)
+
+    return 0
+
+
 def main():
     parser = build_parser()
     args = parser.parse_args()
     if args.command == "prematch":
         return run_prematch(args)
+    if args.command == "refresh":
+        return run_refresh(args)
+    if args.command == "accuracy":
+        return run_accuracy(args)
     parser.print_help()
     return 1
 
