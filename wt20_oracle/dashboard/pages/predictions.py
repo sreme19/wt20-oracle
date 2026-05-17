@@ -157,6 +157,7 @@ def render(df: pd.DataFrame) -> None:
     # ── Full predictions table ────────────────────────────────────────────────
     st.subheader("All Predictions")
     show_cols = ["match_id", "opponent", "venue", "situation", "win_pct",
+                 "pr_runs_batting_team", "pr_runs_chasing_team",
                  "runs_adjusted", "pitch_difficulty", "date"]
     display = df[[c for c in show_cols if c in df.columns]].copy()
     if "date" in display.columns:

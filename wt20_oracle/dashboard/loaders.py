@@ -45,6 +45,9 @@ def load_predictions() -> pd.DataFrame:
         except (json.JSONDecodeError, OSError):
             continue
 
+        bf = pred.get("batting_first_scenario") or {}
+        ch = pred.get("chasing_scenario") or {}
+
         base = {
             "match_id": match_dir.name,
             "team": pred.get("team") or meta.get("team_id", "india"),
@@ -58,13 +61,12 @@ def load_predictions() -> pd.DataFrame:
             "runs_adjusted": (pred.get("runs_estimate") or {}).get("adjusted"),
             "runs_lower": (pred.get("runs_estimate") or {}).get("lower"),
             "runs_upper": (pred.get("runs_estimate") or {}).get("upper"),
+            "pr_runs_batting_team": bf.get("adjusted_runs_estimate"),
+            "pr_runs_chasing_team": ch.get("adjusted_runs_estimate"),
             "generated_at": pred.get("generated_at", ""),
             "errors": len(pred.get("errors", [])),
             "warnings": len(pred.get("warnings", [])),
         }
-
-        bf = pred.get("batting_first_scenario")
-        ch = pred.get("chasing_scenario")
 
         if bf and ch:
             rows.append({**base,
