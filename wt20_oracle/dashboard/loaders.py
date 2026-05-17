@@ -253,6 +253,117 @@ def load_matchups(batter_filter: Optional[str] = None, bowler_filter: Optional[s
     return pd.DataFrame(rows)
 
 
+# ── Actual results ───────────────────────────────────────────────────────────
+
+def load_actuals() -> dict:
+    """
+    Load all actual/result.json files from matches/.
+    Returns dict keyed by match_id.
+    """
+    actuals: dict = {}
+    if not MATCHES_DIR.exists():
+        return actuals
+    for match_dir in MATCHES_DIR.iterdir():
+        result_file = match_dir / "actual" / "result.json"
+        if result_file.exists():
+            try:
+                with open(result_file) as f:
+                    actuals[match_dir.name] = json.load(f)
+            except (json.JSONDecodeError, OSError):
+                pass
+    return actuals
+
+
+def save_actual(match_id: str, result: dict) -> None:
+    """Write an actual result dict to matches/{match_id}/actual/result.json."""
+    actual_dir = MATCHES_DIR / match_id / "actual"
+    actual_dir.mkdir(parents=True, exist_ok=True)
+    with open(actual_dir / "result.json", "w") as f:
+        json.dump(result, f, indent=2)
+
+
+def fetch_actual_result(match_id: str, team: str, opponent: str,
+                        match_date: str) -> Optional[dict]:
+    """
+    Scrape DuckDuckGo for the actual result of a past match.
+    Returns a result dict or None if not found.
+    """
+    import re
+    import urllib.parse
+    import urllib.request
+    from datetime import datetime as _dt
+
+    def _search(query: str) -> Optional[str]:
+        try:
+            params = urllib.parse.urlencode({"q": query, "kl": "us-en"})
+            url = f"https://html.duckduckgo.com/html/?{params}"
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                html = resp.read().decode("utf-8", errors="ignore")
+            text = re.sub(r"<[^>]+>", " ", html)
+            return re.sub(r"\s+", " ", text)[:6000]
+        except Exception:
+            return None
+
+    team_display = team.replace("_", " ").title()
+    opp_display = opponent.replace("_", " ").title()
+    date_display = match_date  # YYYY-MM-DD
+
+    query = (
+        f"{team_display} vs {opp_display} women T20 cricket result {date_display}"
+    )
+    text = _search(query)
+    if not text:
+        return None
+
+    text_lower = text.lower()
+
+    # Determine winner
+    winner = None
+    TEAM_ALIASES = {
+        team: [team.replace("_", " "), team[:3]],
+        opponent: [opponent.replace("_", " "), opponent[:3]],
+    }
+    won_pats = [
+        r"([A-Za-z ]+?)\s+(?:beat|defeated|won)\s+(?:[A-Za-z ]+?)\s+by",
+        r"([A-Za-z ]+?)\s+(?:beat|defeated)\s+[A-Za-z ]+?\s+(?:to|by|\d)",
+    ]
+    for pat in won_pats:
+        m = re.search(pat, text, re.IGNORECASE)
+        if m:
+            raw = m.group(1).lower().strip()
+            for tid, aliases in TEAM_ALIASES.items():
+                if any(a.lower() in raw for a in aliases):
+                    winner = tid
+                    break
+        if winner:
+            break
+
+    # Extract scores (e.g. 145/6)
+    scores = re.findall(r"(\d{2,3})/(\d{1,2})", text)
+    batting_score = f"{scores[0][0]}/{scores[0][1]}" if scores else None
+    chasing_score = f"{scores[1][0]}/{scores[1][1]}" if len(scores) > 1 else None
+
+    # Extract margin (e.g. "by 22 runs" / "by 4 wickets")
+    margin_m = re.search(r"by\s+(\d+\s+(?:runs?|wickets?))", text, re.IGNORECASE)
+    margin = margin_m.group(1) if margin_m else None
+
+    if not winner and not batting_score:
+        return None
+
+    from datetime import datetime as _dt2
+    return {
+        "match_id": match_id,
+        "date": match_date,
+        "winner": winner,
+        "batting_team_score": batting_score,
+        "chasing_team_score": chasing_score,
+        "margin": margin,
+        "source": "duckduckgo",
+        "fetched_at": _dt2.utcnow().isoformat() + "Z",
+    }
+
+
 # ── Prediction XI frequency ───────────────────────────────────────────────────
 
 def load_xi_frequency() -> pd.DataFrame:

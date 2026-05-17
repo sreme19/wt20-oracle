@@ -154,12 +154,87 @@ def render(df: pd.DataFrame) -> None:
                            coloraxis_showscale=False, yaxis={"autorange": "reversed"})
         st.plotly_chart(fig4, use_container_width=True)
 
-    # ── Full predictions table ────────────────────────────────────────────────
+    # ── All Predictions table with actuals ────────────────────────────────────
     st.subheader("All Predictions")
-    show_cols = ["match_id", "opponent", "venue", "situation", "win_pct",
-                 "pr_runs_batting_team", "pr_runs_chasing_team",
-                 "runs_adjusted", "pitch_difficulty", "date"]
-    display = df[[c for c in show_cols if c in df.columns]].copy()
-    if "date" in display.columns:
-        display["date"] = display["date"].dt.strftime("%Y-%m-%d").fillna("")
+
+    from wt20_oracle.dashboard.loaders import load_actuals, fetch_actual_result, save_actual
+    from datetime import date as _date
+
+    actuals = load_actuals()
+
+    # Fetch button for past matches missing actual data
+    past_ids = df[df["date"].dt.date < _date.today()]["match_id"].unique().tolist()
+    missing = [mid for mid in past_ids if mid not in actuals]
+
+    if missing:
+        st.caption(f"{len(missing)} past match(es) have no actual result on file.")
+        if st.button(f"Fetch actual results ({len(missing)} matches)", key="fetch_actuals"):
+            progress = st.progress(0, text="Fetching...")
+            fetched = 0
+            rows_meta = df[["match_id", "team", "opponent", "date"]].drop_duplicates("match_id")
+            for i, mid in enumerate(missing):
+                row = rows_meta[rows_meta["match_id"] == mid].iloc[0]
+                date_str = row["date"].strftime("%Y-%m-%d") if pd.notna(row["date"]) else ""
+                result = fetch_actual_result(
+                    mid, row["team"].lower().replace(" ", "_"),
+                    row["opponent"].lower().replace(" ", "_"),
+                    date_str,
+                )
+                if result:
+                    save_actual(mid, result)
+                    actuals[mid] = result
+                    fetched += 1
+                progress.progress((i + 1) / len(missing),
+                                  text=f"Fetched {i+1}/{len(missing)}: {mid}")
+            progress.empty()
+            st.success(f"Done — {fetched}/{len(missing)} results found.")
+            st.cache_data.clear()
+            st.rerun()
+
+    # Merge actuals into display frame
+    display = df.copy()
+    display["date_str"] = display["date"].dt.strftime("%Y-%m-%d").fillna("")
+
+    display["actual_winner"] = display["match_id"].map(
+        lambda mid: (actuals.get(mid) or {}).get("winner", "")
+    )
+    display["actual_bat_score"] = display["match_id"].map(
+        lambda mid: (actuals.get(mid) or {}).get("batting_team_score", "")
+    )
+    display["actual_chase_score"] = display["match_id"].map(
+        lambda mid: (actuals.get(mid) or {}).get("chasing_team_score", "")
+    )
+    display["margin"] = display["match_id"].map(
+        lambda mid: (actuals.get(mid) or {}).get("margin", "")
+    )
+
+    # Prediction correct? (india win_prob > 0.5 == india actually won)
+    def _correct(row):
+        aw = row.get("actual_winner", "")
+        wp = row.get("win_probability")
+        if not aw or wp is None:
+            return ""
+        predicted_india_win = wp > 0.5
+        actually_india_win = "india" in str(aw).lower()
+        return "✓" if predicted_india_win == actually_india_win else "✗"
+
+    display["correct"] = display.apply(_correct, axis=1)
+
+    # Column order as requested
+    ordered = [
+        "date_str", "match_id", "pitch_difficulty", "opponent", "venue", "situation",
+        "win_pct", "pr_runs_batting_team", "pr_runs_chasing_team", "runs_adjusted",
+        "actual_winner", "actual_bat_score", "actual_chase_score", "margin", "correct",
+    ]
+    display = display[[c for c in ordered if c in display.columns]].rename(columns={
+        "date_str": "date",
+        "win_pct": "win_prob_%",
+        "pr_runs_batting_team": "pred_bat_runs",
+        "pr_runs_chasing_team": "pred_chase_runs",
+        "runs_adjusted": "pred_runs_adj",
+        "actual_bat_score": "act_bat_score",
+        "actual_chase_score": "act_chase_score",
+        "correct": "✓/✗",
+    })
+
     st.dataframe(display, use_container_width=True, hide_index=True)
